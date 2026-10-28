@@ -1,0 +1,1 @@
+const fs=require('fs'),assert=require('assert');const s=fs.readFileSync('outputs/GD메트로타워-상세페이지.html','utf8').split('<script>')[0].split('</head>')[1];assert(s.includes('CUSTOMER CONTACT'));assert(s.includes('contact-gold'));assert(s.includes('문의 내용을 남겨주시면 안내해 드립니다.'));assert(!s.includes('class="detail-kakao"'));console.log('GD contact heading and removed Kakao button checked.');
