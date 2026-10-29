@@ -1,6 +1,6 @@
 const $=s=>document.querySelector(s);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const properties=window.PORTAL_PROPERTIES||[];
-const promotion=p=>p.promotion?`<button type="button" class="property-promotion" data-detail="${p.id}" aria-label="${esc(p.promotion)} · ${esc(p.name)} 상세페이지 열기" title="${esc(p.promotion)}">프로모션 진행 중</button>`:'';
+const promotion=p=>p.promotion?`<button type="button" class="property-promotion" data-detail="${p.id}" aria-label="${esc(p.promotion)} · ${esc(p.name)} 상세페이지 열기" title="${esc(p.promotion)}">${esc(p.promotionLabel||'프로모션 진행 중')}</button>`:'';
 const nameButton=p=>`<button class="property-name" data-detail="${p.id}">${esc(p.name)}</button>`;
 function thumb(p){return `<button type="button" class="property-thumb" data-detail="${p.id}" aria-label="${esc(p.name)} 상세페이지 열기">${p.img?`<img src="${p.img}" alt="${esc(p.name)} 기존 현장 이미지" loading="lazy">`:'<div class="photo-pending"><span>⌂</span><small>현장 이미지 준비 중</small></div>'}<span class="property-status">${p.status}</span></button>`}
 function summary(p){return `<div class="compact-content">${nameButton(p)}${promotion(p)}<p class="feature-text">${esc(p.tag)}</p><p class="spec-text">${esc(p.type)} · ${esc(p.area)}</p><p class="spec-text">${esc(p.sizes?.join(' · ')||'타입 안내 확인')}</p><div class="price-line"><strong>${esc(p.price==='상담문의'?'분양가 확인 중':p.price)}</strong><span>${p.priceNote?'부가세 별도':'현재 조건 확인'}</span></div></div>`}

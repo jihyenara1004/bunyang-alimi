@@ -30,3 +30,15 @@
   - 내려둔 상태에서 다른 현장을 누르면 그 현장 상세가 열림
   - 창 제목에 현장명 표시 (예: 현장 상세 · DK밸리뷰 용산)
 - 변경 파일: `outputs/portal/app.js`, `outputs/portal/property-detail.css`, `index.html`, `outputs/portal/index.html`(캐시 버전·버튼 이름)
+
+## 2026-10-29 · 한강 푸르지오 리버프론트 상세 + 검색용 텍스트 + 카드 문구
+- 브랜치: `claude/riverfront-detail-seo`
+- 한강 푸르지오 리버프론트 상세페이지 신규 (루카831·PH1603과 같은 구조)
+  - 자료: 부동산 배포자료(1안·2안) + 배포용 이미지(외관·커뮤니티). 내부 교육자료 이미지는 사용하지 않음
+  - 사업개요·단지배치, PREMIUM 6, 커뮤니티·조경, 세대창고·천장고, 입지·미래비전, 평면 12종
+  - 분양가 6억대부터(84㎡ 저층 6억 4,400만원~), 입주 2031년 1월 예정
+- 검색엔진(네이버·구글)용 텍스트: PH1603·리버프론트 상세에 "한눈에 보기" 글·핵심 포인트·타입표 추가 (`window.renderSeoSummary`)
+- 모든 현장 상세페이지: 제목·설명(meta description)·canonical·og 태그 보강 (`work/generate-property-pages.cjs`)
+- `sitemap.xml`: 홈 + 현장 상세페이지 12개 등록
+- 추천 현장 카드: 서초 PH1603 "프로모션 진행 중", GD메트로타워 "청약 시작"(빨간 배지)
+  - 배지 문구는 `promotionLabel`로 바꿀 수 있음 (없으면 "프로모션 진행 중")
