@@ -2182,7 +2182,7 @@
       "52㎡"
     ],
     "builder": "현대건설",
-    "img": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/summary.jpg",
+    "img": "assets/songpa-hero.jpg",
     "intro": "복정역세권 송파·위례 더그리드 복합개발 부지에 들어서는 현대건설 힐스테이트 오피스텔입니다. 지하 4층~지상 16층, 10개 동 총 1,393실 규모입니다.",
     "highlights": [
       [
@@ -2227,40 +2227,40 @@
     "coverage": "58.40% / 492.76%",
     "parking": "총 1,771대 (오피스텔 1,670대 · 호실당 1.19대)",
     "contractTerms": "1차 계약금 1,000만원 정액제 · 중도금 무이자(1군 34A/34B/36)",
-    "heroImg": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/summary.jpg",
+    "heroImg": "assets/songpa-hero.jpg",
     "site": {
       "summary": {
-        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/summary.jpg",
+        "file": "assets/songpa-summary.jpg",
         "width": 1342,
         "height": 1152
       },
       "overview": {
-        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/overview.jpg",
+        "file": "assets/songpa-overview.jpg",
         "width": 1342,
         "height": 3229
       },
       "premium": {
-        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/premium.jpg",
+        "file": "assets/songpa-premium.jpg",
         "width": 1200,
         "height": 704
       },
       "location": {
-        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/location.jpg",
+        "file": "assets/songpa-location.jpg",
         "width": 1200,
         "height": 770
       },
       "environment": {
-        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/environment.jpg",
+        "file": "assets/songpa-environment.jpg",
         "width": 1342,
         "height": 6909
       },
       "community": {
-        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/community.jpg",
+        "file": "assets/songpa-community.jpg",
         "width": 1342,
         "height": 1936
       },
       "schedule": {
-        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/schedule.jpg",
+        "file": "assets/songpa-schedule.jpg",
         "width": 1342,
         "height": 786
       }
@@ -2271,93 +2271,93 @@
       {
         "id": "34a",
         "label": "34A",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_34a.jpg",
-        "width": 1342,
-        "height": 2511
+        "src": "assets/songpa-plan-34a.jpg",
+        "width": 635,
+        "height": 1100
       },
       {
         "id": "34b",
         "label": "34B",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_34b.jpg",
-        "width": 1342,
-        "height": 1110
+        "src": "assets/songpa-plan-34b.jpg",
+        "width": 646,
+        "height": 1100
       },
       {
         "id": "36",
         "label": "36",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_36.jpg",
-        "width": 1342,
-        "height": 1179
+        "src": "assets/songpa-plan-36.jpg",
+        "width": 625,
+        "height": 1100
       },
       {
         "id": "42a",
         "label": "42A",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42a.jpg",
-        "width": 1342,
-        "height": 1179
+        "src": "assets/songpa-plan-42a.jpg",
+        "width": 926,
+        "height": 1100
       },
       {
         "id": "42b1",
         "label": "42B1",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42b1.jpg",
-        "width": 1342,
-        "height": 1179
+        "src": "assets/songpa-plan-42b1.jpg",
+        "width": 760,
+        "height": 1100
       },
       {
         "id": "42b2",
         "label": "42B2",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42b2.jpg",
-        "width": 1342,
-        "height": 1179
+        "src": "assets/songpa-plan-42b2.jpg",
+        "width": 795,
+        "height": 1100
       },
       {
         "id": "42c1",
         "label": "42C1",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42c1.jpg",
-        "width": 1342,
-        "height": 1179
+        "src": "assets/songpa-plan-42c1.jpg",
+        "width": 770,
+        "height": 1100
       },
       {
         "id": "42c2",
         "label": "42C2",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42c2.jpg",
-        "width": 1342,
-        "height": 1179
+        "src": "assets/songpa-plan-42c2.jpg",
+        "width": 778,
+        "height": 1100
       },
       {
         "id": "48",
         "label": "48",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_48.jpg",
-        "width": 1342,
-        "height": 1223
+        "src": "assets/songpa-plan-48.jpg",
+        "width": 717,
+        "height": 1100
       },
       {
         "id": "50a",
         "label": "50A",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_50a.jpg",
-        "width": 1342,
-        "height": 1223
+        "src": "assets/songpa-plan-50a.jpg",
+        "width": 834,
+        "height": 1100
       },
       {
         "id": "50b",
         "label": "50B",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_50b.jpg",
-        "width": 1342,
-        "height": 1300
+        "src": "assets/songpa-plan-50b.jpg",
+        "width": 746,
+        "height": 1100
       },
       {
         "id": "50c",
         "label": "50C",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_50c.jpg",
-        "width": 1342,
-        "height": 1300
+        "src": "assets/songpa-plan-50c.jpg",
+        "width": 855,
+        "height": 1100
       },
       {
         "id": "52",
         "label": "52",
-        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_52.jpg",
-        "width": 1342,
-        "height": 1300
+        "src": "assets/songpa-plan-52.jpg",
+        "width": 823,
+        "height": 1100
       }
     ],
     "popup": {
