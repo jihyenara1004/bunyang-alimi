@@ -2161,8 +2161,8 @@ window.PORTAL_PROPERTIES=[
     "recommended": false
   },
   {
-    "price": "상담문의",
-    "moveIn": "상담 시 확인",
+    "price": "계약금 1,000만원 정액제",
+    "moveIn": "2031년 1월 입주 예정",
     "checked": "2026.10.28",
     "status": "현장 안내",
     "id": "songpa",
@@ -2170,31 +2170,36 @@ window.PORTAL_PROPERTIES=[
     "region": "서울",
     "area": "서울 · 송파구 장지동",
     "type": "오피스텔",
-    "tag": "총 1,393실 · 복정역 생활권",
-    "address": "서울특별시 송파구 위례중앙로34",
-    "scale": "공식 상세 사업개요 확인",
-    "count": "총 1,393실",
+    "tag": "복정역세권 · 오피스텔 1,393실",
+    "address": "서울특별시 송파구 위례중앙로 34",
+    "scale": "지하 4층 ~ 지상 16층 · 10개 동",
+    "count": "오피스텔 1,393실",
     "sizes": [
-      "공식 타입별 평면정보 확인"
+      "34㎡",
+      "36㎡",
+      "42㎡",
+      "48㎡",
+      "50㎡",
+      "52㎡"
     ],
     "builder": "현대건설",
-    "img": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/main/complex-img-01.jpg",
-    "intro": "현대건설 힐스테이트 사이트에서 연결되는 현장 홈페이지를 기준으로 정리했습니다. 총 1,393실 규모의 송파 오피스텔입니다.",
+    "img": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/summary.jpg",
+    "intro": "복정역세권 송파·위례 더그리드 복합개발 부지에 들어서는 현대건설 힐스테이트 오피스텔입니다. 지하 4층~지상 16층, 10개 동 총 1,393실 규모입니다.",
     "highlights": [
       [
-        "규모",
-        "현대건설 공식 분양안내는 총 1,393실을 안내합니다."
+        "트리플 역세권",
+        "8호선·수인분당선 복정역 · 위례신사선(예정) · 위례선 트램"
       ],
       [
-        "교통",
-        "복정역세권의 교통·생활환경을 공식 입지자료에서 확인할 수 있습니다."
+        "첨단 업무지구",
+        "HMG 퓨처 콤플렉스 · 강남·판교 연결"
       ],
       [
-        "공간·커뮤니티",
-        "다양한 타입과 커뮤니티 계획은 공급계약 및 승인도서 기준으로 확인하세요."
+        "힐스테이트",
+        "현대건설 브랜드 · CLUB HILLS 커뮤니티"
       ]
     ],
-    "location": "사업 현장은 송파구 위례중앙로34입니다. 공식 사이트의 견본주택 주소는 강남구 자곡동666으로 현장과 구분됩니다.",
+    "location": "서울 송파구 장지동 909(위례중앙로 34) · 복정역세권",
     "typesNote": "타입이 다양하므로 공식 평면안내에서 동호수별 면적과 구조를 확인하세요.",
     "sources": [
       [
@@ -2215,6 +2220,222 @@ window.PORTAL_PROPERTIES=[
     "x": 82,
     "y": 65,
     "sort": 12,
-    "recommended": false
+    "recommended": false,
+    "lotAddress": "서울특별시 송파구 장지동 909",
+    "modelHouse": "서울특별시 강남구 자곡동 666",
+    "siteArea": "31,596.20㎡ (약 9,557.85평)",
+    "totalFloorArea": "241,284.21㎡ (약 72,988.47평)",
+    "coverage": "58.40% / 492.76%",
+    "parking": "총 1,771대 (오피스텔 1,670대 · 호실당 1.19대)",
+    "contractTerms": "1차 계약금 1,000만원 정액제 · 중도금 무이자(1군 34A/34B/36)",
+    "heroImg": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/summary.jpg",
+    "site": {
+      "summary": {
+        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/summary.jpg",
+        "width": 1342,
+        "height": 1152
+      },
+      "overview": {
+        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/overview.jpg",
+        "width": 1342,
+        "height": 3229
+      },
+      "premium": {
+        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/premium.jpg",
+        "width": 1200,
+        "height": 704
+      },
+      "location": {
+        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/location.jpg",
+        "width": 1200,
+        "height": 770
+      },
+      "environment": {
+        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/environment.jpg",
+        "width": 1342,
+        "height": 6909
+      },
+      "community": {
+        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/community.jpg",
+        "width": 1342,
+        "height": 1936
+      },
+      "schedule": {
+        "file": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/schedule.jpg",
+        "width": 1342,
+        "height": 786
+      }
+    },
+    "promotion": "선착순 동·호 지정 계약 중",
+    "promotionLabel": "선착순 계약 중",
+    "plans": [
+      {
+        "id": "34a",
+        "label": "34A",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_34a.jpg",
+        "width": 1342,
+        "height": 2511
+      },
+      {
+        "id": "34b",
+        "label": "34B",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_34b.jpg",
+        "width": 1342,
+        "height": 1110
+      },
+      {
+        "id": "36",
+        "label": "36",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_36.jpg",
+        "width": 1342,
+        "height": 1179
+      },
+      {
+        "id": "42a",
+        "label": "42A",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42a.jpg",
+        "width": 1342,
+        "height": 1179
+      },
+      {
+        "id": "42b1",
+        "label": "42B1",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42b1.jpg",
+        "width": 1342,
+        "height": 1179
+      },
+      {
+        "id": "42b2",
+        "label": "42B2",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42b2.jpg",
+        "width": 1342,
+        "height": 1179
+      },
+      {
+        "id": "42c1",
+        "label": "42C1",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42c1.jpg",
+        "width": 1342,
+        "height": 1179
+      },
+      {
+        "id": "42c2",
+        "label": "42C2",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_42c2.jpg",
+        "width": 1342,
+        "height": 1179
+      },
+      {
+        "id": "48",
+        "label": "48",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_48.jpg",
+        "width": 1342,
+        "height": 1223
+      },
+      {
+        "id": "50a",
+        "label": "50A",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_50a.jpg",
+        "width": 1342,
+        "height": 1223
+      },
+      {
+        "id": "50b",
+        "label": "50B",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_50b.jpg",
+        "width": 1342,
+        "height": 1300
+      },
+      {
+        "id": "50c",
+        "label": "50C",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_50c.jpg",
+        "width": 1342,
+        "height": 1300
+      },
+      {
+        "id": "52",
+        "label": "52",
+        "src": "https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/assets/images/sub/unit_52.jpg",
+        "width": 1342,
+        "height": 1300
+      }
+    ],
+    "popup": {
+      "cards": [
+        {
+          "title": [
+            "선착순",
+            "동·호 지정",
+            "계약 중"
+          ],
+          "items": [
+            [
+              "1차 계약금 1,000만원 정액제",
+              ""
+            ],
+            [
+              "중도금 무이자 혜택",
+              "1군 34A · 34B · 36"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "계약조건 안내"
+          ],
+          "items": [
+            [
+              "1,000만원 정액제",
+              "1차 계약 시"
+            ],
+            [
+              "중도금 무이자",
+              "1군(34A/34B/36)"
+            ],
+            [
+              "2031년 1월 입주 예정",
+              "복정역세권 오피스텔 1,393실"
+            ]
+          ]
+        }
+      ]
+    },
+    "seo": {
+      "summary": [
+        "서울 송파구 장지동 909(위례중앙로 34) · 복정역세권 오피스텔",
+        "지하 4층~지상 16층 · 10개 동 · 오피스텔 1,393실 · 현대건설 힐스테이트",
+        "전용 34~52㎡ 13개 타입 · 2031년 1월 입주 예정",
+        "1차 계약금 1,000만원 정액제 · 중도금 무이자(1군 34A/34B/36) · 선착순 동·호 지정"
+      ],
+      "points": [
+        [
+          "트리플 역세권",
+          "8호선·수인분당선 복정역 · 위례신사선(예비타당성 통과) · 위례선 트램"
+        ],
+        [
+          "첨단 비즈니스",
+          "HMG 퓨처 콤플렉스 · 강남·판교를 잇는 업무지구 · 송파·위례 더그리드"
+        ],
+        [
+          "완성형 라이프",
+          "스타필드 위례 · 가든파이브 · 위례 생활권 상업·문화시설"
+        ],
+        [
+          "힐스테이트 브랜드",
+          "현대건설 시공 · 커뮤니티 CLUB HILLS(피트니스·골프) · 작은도서관 · 게스트하우스"
+        ],
+        [
+          "자족형 스마트시티",
+          "복정역세권 복합개발로 주거·업무·상업이 한곳에"
+        ],
+        [
+          "우수 학군",
+          "송파·위례 교육 인프라 인접"
+        ]
+      ],
+      "types": null,
+      "typesHead": null
+    }
   }
 ];

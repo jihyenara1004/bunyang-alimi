@@ -138,7 +138,7 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .detail-popup-actions{display:flex;gap:18px}.detail-popup-actions button{background:none;border:0;color:#fff;font-size:14px;font-weight:700;cursor:pointer;text-decoration:underline}
 .sp-detail .sp-wordmark>span{color:#1c2c48;letter-spacing:3px}
 .sp-detail .sp-wordmark>small{color:#9a7b55;letter-spacing:1px;font-size:12px}
-.sp-detail .sp-hero>img{object-position:center 40%}
+.sp-detail .sp-hero>img{object-position:center 6%}
 .sp-detail .sp-hero::after{background:linear-gradient(90deg,#141c2a00 35%,#141c2a35 52%,#141c2ac0 100%)}
 .sp-detail .sp-hero .gd-hero-copy{right:3%;left:auto}
 .sp-detail .sp-hero h1{line-height:1.2}
