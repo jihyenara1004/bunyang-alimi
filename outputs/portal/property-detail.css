@@ -143,3 +143,4 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .sp-detail .sp-hero .gd-hero-copy{right:3%;left:auto}
 .sp-detail .sp-hero h1{line-height:1.2}
 @media(max-width:650px){.sp-detail .sp-hero::after{background:linear-gradient(180deg,#141c2a00 5%,#141c2a55 40%,#141c2acc 100%)}.sp-detail .sp-hero .gd-hero-copy{left:5%;right:5%}.detail-popup-card{width:100%}.detail-popup-card h3{font-size:24px}.detail-popup-cards{flex-direction:column;align-items:center;max-height:80vh;overflow:auto}}
+.sp-detail .sp-hero{overflow:hidden}.sp-detail .sp-hero>img{inset:0 0 auto 0;height:170%;object-position:center top}
