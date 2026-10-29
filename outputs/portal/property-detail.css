@@ -105,3 +105,9 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .seo-facts li:first-child{font-weight:800;color:#1f2f4f}
 .seo-points p{text-align:left}
 @media(max-width:650px){.seo-facts li{font-size:14px}}
+
+/* 사진 아래 안내 문구 숨김 + 평면도 크게 (Claude 2026-10-29) */
+.property-detail figcaption,.property-detail .gd-material-note,.property-detail .gd-cg,.property-detail .source-note{display:none!important}
+.luca-plans .luca-plan-view .gd-reference-figure{max-width:1100px;margin:10px auto 0;border:0;padding:0;background:#fff}
+.luca-plans .luca-plan-view .gd-reference-figure img{width:100%;height:auto}
+.rf-price-note{max-width:1100px;margin:14px auto 0;font-size:14px;color:#5a6577;text-align:left}

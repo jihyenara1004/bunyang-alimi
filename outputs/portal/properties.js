@@ -1042,9 +1042,9 @@ window.PORTAL_PROPERTIES=[
         "area": "59.70㎡",
         "contractArea": "149.57㎡",
         "note": "84세대 · 2Room 가변형",
-        "src": "assets/ph1603-education-49.jpg",
-        "width": 1800,
-        "height": 878
+        "src": "assets/ph1603-plan-59a.jpg",
+        "width": 1400,
+        "height": 984
       },
       {
         "id": "59b",
@@ -1052,9 +1052,9 @@ window.PORTAL_PROPERTIES=[
         "area": "59.79㎡",
         "contractArea": "149.30㎡",
         "note": "29세대 · 2Room 분리형",
-        "src": "assets/ph1603-education-50.jpg",
-        "width": 1800,
-        "height": 878
+        "src": "assets/ph1603-plan-59b.jpg",
+        "width": 1400,
+        "height": 1080
       },
       {
         "id": "59ga",
@@ -1062,19 +1062,29 @@ window.PORTAL_PROPERTIES=[
         "area": "59.57㎡",
         "contractArea": "149.40㎡",
         "note": "4세대 · 1층 가든형",
-        "src": "assets/ph1603-education-51.jpg",
-        "width": 1800,
-        "height": 878
+        "src": "assets/ph1603-plan-59ga.jpg",
+        "width": 1400,
+        "height": 1087
       },
       {
-        "id": "59c-127p",
-        "label": "59C · 127P",
-        "area": "59.97㎡ / 127.16㎡",
-        "contractArea": "152.32㎡ / 316.09㎡",
-        "note": "복층 · 최상층 펜트하우스",
-        "src": "assets/ph1603-education-52.jpg",
-        "width": 1800,
-        "height": 878
+        "id": "59c",
+        "label": "59C",
+        "area": "59.97㎡",
+        "contractArea": "152.32㎡",
+        "note": "1세대 · 15~16층 복층",
+        "src": "assets/ph1603-plan-59c.jpg",
+        "width": 1400,
+        "height": 938
+      },
+      {
+        "id": "127p",
+        "label": "127P",
+        "area": "127.16㎡",
+        "contractArea": "316.09㎡",
+        "note": "1세대 · 최상층 펜트하우스",
+        "src": "assets/ph1603-plan-127p.jpg",
+        "width": 1400,
+        "height": 884
       }
     ],
     "promotion": "프로모션 진행중",
@@ -1385,9 +1395,9 @@ window.PORTAL_PROPERTIES=[
         "area": "84.74㎡",
         "contractArea": "113.02㎡",
         "note": "888세대",
-        "src": "assets/rf-dist1-14.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-14.jpg",
+        "width": 1848,
+        "height": 873
       },
       {
         "id": "84b",
@@ -1395,9 +1405,9 @@ window.PORTAL_PROPERTIES=[
         "area": "84.56㎡",
         "contractArea": "113.28㎡",
         "note": "68세대",
-        "src": "assets/rf-dist1-17.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-17.jpg",
+        "width": 1841,
+        "height": 845
       },
       {
         "id": "84c",
@@ -1405,9 +1415,9 @@ window.PORTAL_PROPERTIES=[
         "area": "84.92㎡",
         "contractArea": "112.55㎡",
         "note": "537세대",
-        "src": "assets/rf-dist1-15.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-15.jpg",
+        "width": 1841,
+        "height": 764
       },
       {
         "id": "84d",
@@ -1415,9 +1425,9 @@ window.PORTAL_PROPERTIES=[
         "area": "84.82㎡",
         "contractArea": "113.94㎡",
         "note": "148세대",
-        "src": "assets/rf-dist1-18.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-18.jpg",
+        "width": 1839,
+        "height": 873
       },
       {
         "id": "84e",
@@ -1425,9 +1435,9 @@ window.PORTAL_PROPERTIES=[
         "area": "84.71㎡",
         "contractArea": "112.97㎡",
         "note": "98세대",
-        "src": "assets/rf-dist1-19.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-19.jpg",
+        "width": 1843,
+        "height": 847
       },
       {
         "id": "84f",
@@ -1435,9 +1445,9 @@ window.PORTAL_PROPERTIES=[
         "area": "84.90㎡",
         "contractArea": "112.63㎡",
         "note": "36세대",
-        "src": "assets/rf-dist1-20.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-20.jpg",
+        "width": 1838,
+        "height": 785
       },
       {
         "id": "106a",
@@ -1445,9 +1455,9 @@ window.PORTAL_PROPERTIES=[
         "area": "106.87㎡",
         "contractArea": "141.60㎡",
         "note": "288세대",
-        "src": "assets/rf-dist1-21.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-21.jpg",
+        "width": 1843,
+        "height": 873
       },
       {
         "id": "106b",
@@ -1455,9 +1465,9 @@ window.PORTAL_PROPERTIES=[
         "area": "106.98㎡",
         "contractArea": "141.55㎡",
         "note": "144세대",
-        "src": "assets/rf-dist1-22.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-22.jpg",
+        "width": 1759,
+        "height": 871
       },
       {
         "id": "122",
@@ -1465,9 +1475,9 @@ window.PORTAL_PROPERTIES=[
         "area": "122.75㎡",
         "contractArea": "163.08㎡",
         "note": "216세대",
-        "src": "assets/rf-dist1-16.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-16.jpg",
+        "width": 1988,
+        "height": 873
       },
       {
         "id": "180a",
@@ -1475,9 +1485,9 @@ window.PORTAL_PROPERTIES=[
         "area": "180.26㎡",
         "contractArea": "237.38㎡",
         "note": "4세대",
-        "src": "assets/rf-dist1-23.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-23.jpg",
+        "width": 1845,
+        "height": 765
       },
       {
         "id": "180b",
@@ -1485,9 +1495,9 @@ window.PORTAL_PROPERTIES=[
         "area": "180.94㎡",
         "contractArea": "238.71㎡",
         "note": "2세대",
-        "src": "assets/rf-dist1-24.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-24.jpg",
+        "width": 2007,
+        "height": 873
       },
       {
         "id": "180c",
@@ -1495,9 +1505,9 @@ window.PORTAL_PROPERTIES=[
         "area": "180.93㎡",
         "contractArea": "237.63㎡",
         "note": "3세대",
-        "src": "assets/rf-dist1-25.jpg",
-        "width": 1800,
-        "height": 1185
+        "src": "assets/rf-plan-25.jpg",
+        "width": 1880,
+        "height": 952
       }
     ],
     "seo": {
