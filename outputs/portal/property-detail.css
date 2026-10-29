@@ -100,3 +100,8 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .rf-detail .rf-hero h1{line-height:1.2}
 @media(max-width:900px){.seo-points{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.seo-points{grid-template-columns:1fr}.rf-pair{grid-template-columns:1fr}.rf-detail .rf-hero>img{object-position:65% center}.rf-detail .rf-hero::after{background:linear-gradient(180deg,#0f2a2600 5%,#0f2a2655 40%,#0f2a26cc 100%)}.rf-detail .rf-hero .gd-hero-copy{left:5%;right:5%}.seo-summary .seo-lead{font-size:15px}}
+.seo-facts{list-style:none;margin:0 auto 6px;padding:0;max-width:900px;text-align:center}
+.seo-facts li{font-size:16px;line-height:1.6;color:#2d3a50;padding:9px 0;border-bottom:1px solid #eceef2;word-break:keep-all}
+.seo-facts li:first-child{font-weight:800;color:#1f2f4f}
+.seo-points p{text-align:left}
+@media(max-width:650px){.seo-facts li{font-size:14px}}
