@@ -166,3 +166,15 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .br-detail .luca-plan-view .gd-reference-figure img{width:100%;max-width:1000px;max-height:78vh;object-fit:contain;margin:0 auto;display:block}
 @media(max-width:650px){.br-gallery{grid-template-columns:repeat(2,1fr)}.br-gallery img{height:140px}.br-services{grid-template-columns:repeat(2,1fr)}.br-services img{height:110px}.br-detail .br-hero::after{background:linear-gradient(180deg,#1a141200 5%,#1a141255 40%,#1a1412cc 100%)}.br-detail .br-hero .gd-hero-copy{left:5%;right:5%}}
 .br-detail .br-brand-fig{max-width:640px;margin-left:auto;margin-right:auto}
+/* 고촌센트럴자이 */
+.gc-detail .gc-wordmark>span{color:#0d6b80;letter-spacing:2px;font-style:italic}
+.gc-detail .gc-wordmark>small{color:#444;font-size:12px}
+.gc-detail .gc-hero{overflow:hidden}.gc-detail .gc-hero>img{inset:0;height:100%;object-position:center 55%}
+.gc-detail .gc-hero::after{background:linear-gradient(90deg,#0b1a2400 35%,#0b1a2440 55%,#0b1a24c4 100%)}
+.gc-detail .gc-hero .gd-hero-copy{right:3%;left:auto}
+.gc-detail .gc-hero h1{line-height:1.2}
+.gc-detail .luca-promotion{background:#0d6b80;border-color:#0d6b80}
+.gc-detail .luca-plan-view .gd-reference-figure img{width:auto;max-width:100%;max-height:78vh;margin:0 auto;display:block}
+.gc-detail .gc-reference{max-width:1000px;margin-left:auto;margin-right:auto}
+@media(max-width:650px){.gc-detail .gc-hero::after{background:linear-gradient(180deg,#0b1a2400 5%,#0b1a2455 40%,#0b1a24cc 100%)}.gc-detail .gc-hero .gd-hero-copy{left:5%;right:5%}}
+.gc-detail .gc-hero>img{object-position:center 60%}

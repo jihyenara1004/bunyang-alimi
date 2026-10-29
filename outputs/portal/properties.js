@@ -1655,16 +1655,16 @@ window.PORTAL_PROPERTIES=[
   },
   {
     "price": "상담문의",
-    "moveIn": "상담 시 확인",
-    "checked": "2026.10.28",
-    "status": "현장 안내",
+    "moveIn": "준공 완료 · 1억원대 실입주 가능",
+    "checked": "2026.10.29",
+    "status": "선착순 분양",
     "id": "gochon",
     "name": "고촌센트럴자이",
     "region": "경기",
     "area": "경기 · 김포시 고촌읍",
     "type": "아파트",
-    "tag": "17개 동 · 1,297세대",
-    "address": "경기도 김포시 고촌읍 김포신곡6지구 A3블록",
+    "tag": "1,297세대 자이 브랜드 대단지",
+    "address": "경기도 김포시 고촌읍 신곡리 김포신곡6지구 A3BL",
     "mapAddress": "경기도 김포시 고촌읍 수기로 137",
     "scale": "지하 2층 ~ 지상 16층 · 17개 동",
     "count": "총 1,297세대",
@@ -1677,26 +1677,30 @@ window.PORTAL_PROPERTIES=[
       "105㎡"
     ],
     "builder": "GS건설",
-    "img": "https://www.xi.co.kr/Files/cmsPage/20230921_134955_702001.jpg",
-    "planImg": "https://www.xi.co.kr/Files/apt_area_kind/20231026_153939_331001.jpg",
-    "intro": "김포신곡6지구 A3블록에 자리한 자이 브랜드 아파트입니다. 공식 사업개요와 주택형을 바탕으로 안내합니다.",
+    "img": "assets/gochon-overview.jpg",
+    "planImg": "assets/gochon-plan-84a.jpg",
+    "intro": "김포신곡6지구 A3블록, 고촌을 새롭게 대표하는 1,297세대 자이 브랜드 대단지. 잔여세대 선착순 동·호 지정 계약 중입니다.",
     "highlights": [
       [
-        "단지 구성",
-        "17개 동, 총 1,297세대로 구성됩니다."
+        "신축 대단지",
+        "고촌을 새롭게 대표하는 1,297세대 자이 브랜드 대단지"
       ],
       [
-        "주택형",
-        "63·76·84·105㎡의 주택형이 공식 사이트에 안내되어 있습니다."
+        "쾌속 교통",
+        "김포IC · 올림픽대로 · 강변북로 · 고촌역 골드라인(김포공항역 1정거장)"
       ],
       [
-        "자료 확인",
-        "동호수배치도·CLUB XIAN·평면정보는 GS건설 자이 자료로 확인할 수 있습니다."
+        "파격 조건",
+        "1억원대 실입주 · 500만원 정계약서 · 회사대출 최대 30%"
       ]
     ],
-    "location": "김포시 고촌읍 김포신곡6지구 A3블록입니다. 고촌역 등 교통시설까지의 실제 이동 동선을 확인해 주세요.",
-    "typesNote": "표시된 이미지 평면은 84A 자료입니다. 공급 가능 주택형과 동호수는 현재 기준 상담이 필요합니다.",
+    "location": "경기도 김포시 고촌읍 신곡리 김포신곡6지구 A3BL. 고촌역 골드라인 이용 시 김포공항역까지 1정거장.",
+    "typesNote": "63·76A·76B·84A·84B·105㎡ 6개 타입(확장 기본형). 잔여 동·호는 대표번호로 문의하세요.",
     "sources": [
+      [
+        "고촌센트럴자이 홍보 홈페이지",
+        "https://xn--gs-xz8jsd.com/"
+      ],
       [
         "GS건설 자이 공식 사업개요",
         "https://www.xi.co.kr/kps/view?cmsMenuSeq=18254"
@@ -1711,7 +1715,279 @@ window.PORTAL_PROPERTIES=[
     "x": 29,
     "y": 25,
     "sort": 8,
-    "recommended": false
+    "recommended": true,
+    "promotion": true,
+    "promotionLabel": "1억원대 실입주",
+    "lotAddress": "김포신곡6지구 도시개발사업구역 A3블록",
+    "developer": "한국투자부동산신탁 (위탁사 일레븐건설)",
+    "contractTerms": "잔여세대 선착순 동·호 지정 · 500만원 정계약서 발행 · 회사대출(최대 30%)",
+    "heroImg": "assets/gochon-overview.jpg",
+    "gallery": [
+      "assets/gochon-siteplan.jpg",
+      "assets/gochon-clubxian.jpg"
+    ],
+    "plans": [
+      {
+        "id": "63",
+        "label": "63㎡",
+        "area": "전용 63.96㎡",
+        "supply": "공급 84.86㎡",
+        "contractArea": "계약 123.06㎡",
+        "units": "79세대",
+        "src": "assets/gochon-plan-63.jpg",
+        "width": 901,
+        "height": 603
+      },
+      {
+        "id": "76a",
+        "label": "76A㎡",
+        "area": "전용 76.99㎡",
+        "supply": "공급 101.45㎡",
+        "contractArea": "계약 147.42㎡",
+        "units": "32세대",
+        "src": "assets/gochon-plan-76a.jpg",
+        "width": 902,
+        "height": 619
+      },
+      {
+        "id": "76b",
+        "label": "76B㎡",
+        "area": "전용 76.96㎡",
+        "supply": "공급 102.98㎡",
+        "contractArea": "계약 148.94㎡",
+        "units": "117세대",
+        "src": "assets/gochon-plan-76b.jpg",
+        "width": 592,
+        "height": 782
+      },
+      {
+        "id": "84a",
+        "label": "84A㎡",
+        "area": "전용 84.91㎡",
+        "supply": "공급 111.26㎡",
+        "contractArea": "계약 161.96㎡",
+        "units": "522세대",
+        "src": "assets/gochon-plan-84a.jpg",
+        "width": 902,
+        "height": 607
+      },
+      {
+        "id": "84b",
+        "label": "84B㎡",
+        "area": "전용 84.35㎡",
+        "supply": "공급 111.56㎡",
+        "contractArea": "계약 161.93㎡",
+        "units": "386세대",
+        "src": "assets/gochon-plan-84b.jpg",
+        "width": 610,
+        "height": 781
+      },
+      {
+        "id": "105",
+        "label": "105㎡",
+        "area": "전용 105.99㎡",
+        "supply": "공급 137.58㎡",
+        "contractArea": "계약 200.87㎡",
+        "units": "161세대",
+        "src": "assets/gochon-plan-105.jpg",
+        "width": 906,
+        "height": 629
+      }
+    ],
+    "seo": {
+      "summary": [
+        "경기도 김포시 고촌읍 신곡리 김포신곡6지구 A3BL · 자이 브랜드 대단지",
+        "지하 2층~지상 16층 · 17개 동 · 총 1,297세대 · GS건설 시공",
+        "전용 63·76·84·105㎡ 6개 타입 · 준공 완료 · 1억원대 실입주",
+        "잔여세대 선착순 동·호 지정 · 500만원 정계약서 발행 · 회사대출 최대 30%"
+      ],
+      "points": [
+        [
+          "신축 대단지",
+          "고촌을 새롭게 대표하는 1,297세대 브랜드 대단지"
+        ],
+        [
+          "쾌속 교통",
+          "김포IC · 올림픽대로 · 강변북로 · 고촌역 골드라인 김포공항역 1정거장"
+        ],
+        [
+          "안심 교육",
+          "보름초 · 신곡중 등 우수학군 · 단지 앞 학원가 · 대학입시 특별전형 수혜지역"
+        ],
+        [
+          "직주근접",
+          "마곡 일반산업단지 · LG사이언스파크 · 김포터미널 물류단지"
+        ],
+        [
+          "생활 인프라",
+          "현대프리미엄아울렛 · 롯데몰 등 쇼핑·문화 인프라"
+        ],
+        [
+          "자이 브랜드",
+          "커뮤니티 CLUB XIAN · 스마트 안전·에너지·편의 시스템"
+        ]
+      ],
+      "typesHead": [
+        "타입",
+        "전용면적",
+        "공급면적",
+        "세대수"
+      ],
+      "types": [
+        [
+          "63",
+          "63.96㎡",
+          "84.86㎡",
+          "79세대"
+        ],
+        [
+          "76A",
+          "76.99㎡",
+          "101.45㎡",
+          "32세대"
+        ],
+        [
+          "76B",
+          "76.96㎡",
+          "102.98㎡",
+          "117세대"
+        ],
+        [
+          "84A",
+          "84.91㎡",
+          "111.26㎡",
+          "522세대"
+        ],
+        [
+          "84B",
+          "84.35㎡",
+          "111.56㎡",
+          "386세대"
+        ],
+        [
+          "105",
+          "105.99㎡",
+          "137.58㎡",
+          "161세대"
+        ]
+      ]
+    },
+    "popup": {
+      "cards": [
+        {
+          "title": [
+            "파격조건",
+            "선착순 분양 중"
+          ],
+          "items": [
+            [
+              "1억원대 실입주 가능",
+              ""
+            ],
+            [
+              "500만원 정계약서 발행",
+              ""
+            ],
+            [
+              "회사대출",
+              "최대 30%"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "잔여세대",
+            "정계약 혜택"
+          ],
+          "items": [
+            [
+              "정계약 고객 상품권 증정",
+              "잔여세대 정계약 시"
+            ],
+            [
+              "대학입시 특별전형",
+              "수혜지역"
+            ],
+            [
+              "선착순 동·호 지정",
+              "1,297세대 자이 대단지"
+            ]
+          ]
+        }
+      ]
+    },
+    "site": {
+      "overview": {
+        "file": "assets/gochon-overview.jpg",
+        "width": 1100,
+        "height": 586
+      },
+      "brand": {
+        "file": "assets/gochon-brand.jpg",
+        "width": 1209,
+        "height": 901
+      },
+      "location": {
+        "file": "assets/gochon-location.jpg",
+        "width": 1100,
+        "height": 1175
+      },
+      "siteplan": {
+        "file": "assets/gochon-siteplan.jpg",
+        "width": 1100,
+        "height": 984
+      },
+      "design": {
+        "file": "assets/gochon-design.jpg",
+        "width": 1100,
+        "height": 1226
+      },
+      "dongho": {
+        "file": "assets/gochon-dongho.jpg",
+        "width": 1100,
+        "height": 1392
+      },
+      "clubxian": {
+        "file": "assets/gochon-clubxian.jpg",
+        "width": 1100,
+        "height": 1449
+      },
+      "premium7": {
+        "file": "assets/gochon-premium7.jpg",
+        "width": 1100,
+        "height": 2050
+      },
+      "facility": {
+        "file": "assets/gochon-facility.jpg",
+        "width": 1100,
+        "height": 1061
+      },
+      "safety": {
+        "file": "assets/gochon-sys-safety.jpg",
+        "width": 1066,
+        "height": 2560
+      },
+      "energy": {
+        "file": "assets/gochon-sys-energy.jpg",
+        "width": 1100,
+        "height": 1311
+      },
+      "convenience": {
+        "file": "assets/gochon-sys-convenience.jpg",
+        "width": 1100,
+        "height": 1288
+      },
+      "options": {
+        "file": "assets/gochon-options.jpg",
+        "width": 1100,
+        "height": 1106
+      },
+      "supply": {
+        "file": "assets/gochon-supply.jpg",
+        "width": 1100,
+        "height": 1040
+      }
+    }
   },
   {
     "price": "상담문의",
