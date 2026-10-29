@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bunyang-alimi.com/sitemap.xml
