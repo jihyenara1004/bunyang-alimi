@@ -2102,63 +2102,306 @@ window.PORTAL_PROPERTIES=[
   },
   {
     "price": "상담문의",
-    "moveIn": "상담 시 확인",
-    "checked": "2026.10.28",
-    "status": "현장 안내",
+    "moveIn": "즉시 입주 가능 (2023년 9월 준공)",
+    "checked": "2026.10.29",
+    "status": "즉시 입주",
     "id": "brighton",
-    "name": "브라이튼 여의도 아파트",
+    "name": "브라이튼 여의도",
     "region": "서울",
     "area": "서울 · 영등포구 여의도",
     "type": "아파트",
-    "tag": "여의도 중심에서 만나는 주거",
-    "address": "서울특별시 영등포구 국제금융로39",
-    "scale": "세부 사업개요 자료 확인",
-    "count": "아파트 공급자료 확인",
+    "tag": "여의도 MBC 부지 · 49층 한강뷰 랜드마크",
+    "address": "서울특별시 영등포구 국제금융로 39",
+    "scale": "지하 6층 ~ 지상 49층",
+    "count": "아파트 454세대",
     "sizes": [
-      "84㎡대",
-      "113㎡대",
-      "132㎡대"
+      "84㎡",
+      "101㎡",
+      "113㎡",
+      "132㎡"
     ],
     "builder": "GS건설",
-    "img": "assets/brighton.jpg",
+    "img": "assets/brighton-hero.jpg",
     "gallery": [
-      "assets/brighton-interior.jpg",
-      "assets/brighton-location.jpg"
+      "assets/brighton-int-84-1.jpg",
+      "assets/brighton-int-132-1.jpg",
+      "assets/brighton-int-comm.jpg"
     ],
-    "planImg": "assets/brighton-plan84.png",
-    "intro": "사용자가 지정한 브라이튼 여의도 아파트 상품을 기준으로 구성했습니다. 오피스텔 자료와 구분해 기존 아파트 홈카드의 타입을 연결했습니다.",
+    "planImg": "assets/brighton-plan-84.jpg",
+    "intro": "여의도 MBC 부지에 들어선 지상 49층 랜드마크 아파트. 도심 한강뷰와 하이엔드 라이프 서비스를 갖춘 즉시 입주 단지입니다.",
     "highlights": [
       [
-        "여의도 입지",
-        "옛 MBC 부지에 자리한 여의도 주거·업무 생활권입니다."
+        "파노라마 한강뷰",
+        "49층 스카이라인 · 도심에서 누리는 탁 트인 한강 조망"
       ],
       [
-        "아파트 타입",
-        "기존 아파트 홈카드의 84·113·132㎡대 타입을 기준으로 추가 자료를 정리하고 있습니다."
+        "여의도 중심 입지",
+        "5·9호선 여의도역 · 여의나루역 · GTX-B(예정) · 더현대·IFC몰 도보"
       ],
       [
-        "브랜드 자료",
-        "사업주체 홈페이지의 공간·입지·서비스 소개와 기존 사용자 자료를 함께 참고했습니다."
+        "하이엔드 서비스",
+        "조·중식 서비스 · 하우스키핑 · 리무진 · 프리미엄 세차"
       ]
     ],
-    "location": "서울 영등포구 국제금융로39 일원입니다. 아파트와 오피스텔의 출입·상담 위치를 구분해 확인하세요.",
-    "typesNote": "표시된 평면은 기존 아파트 홈카드의 84㎡ 타입입니다. 정확한 면적과 계약 가능 호수는 공급 안내자료를 확인하세요.",
+    "location": "서울 영등포구 국제금융로 39(여의도동 31). 더현대 서울·IFC몰 맞은편, 여의도공원·한강공원 인접.",
+    "typesNote": "84·101·113A1·132A1 타입 평면도. 잔여 호실과 조건은 대표번호로 문의하세요.",
     "sources": [
       [
         "사업주체 홈페이지",
         "https://yyd.brighten-life.co.kr/"
       ]
     ],
-    "links": [
-      [
-        "공간 안내",
-        "https://yyd.brighten-life.co.kr/space/cont01_n02.asp"
-      ]
-    ],
+    "links": [],
     "x": 27,
     "y": 53,
     "sort": 11,
-    "recommended": false
+    "recommended": true,
+    "promotion": true,
+    "promotionLabel": "즉시 입주 가능",
+    "lotAddress": "서울특별시 영등포구 여의도동 31",
+    "developer": "(주)신영브라이튼여의도 · AMC (주)신영",
+    "siteArea": "17,795.00㎡",
+    "buildingArea": "7,748.09㎡",
+    "totalFloorArea": "246,322.01㎡",
+    "heroImg": "assets/brighton-hero.jpg",
+    "plans": [
+      {
+        "id": "84",
+        "label": "84 type",
+        "area": "전용 84.13㎡",
+        "supply": "공급 117.27㎡",
+        "contractArea": "계약 168.70㎡",
+        "units": "91세대",
+        "src": "assets/brighton-plan-84.jpg",
+        "width": 1038,
+        "height": 697
+      },
+      {
+        "id": "101",
+        "label": "101 type",
+        "area": "전용 101.95㎡",
+        "supply": "공급 140.59㎡",
+        "contractArea": "계약 202.92㎡",
+        "units": "91세대",
+        "src": "assets/brighton-plan-101.jpg",
+        "width": 1127,
+        "height": 750
+      },
+      {
+        "id": "113",
+        "label": "113A1 type",
+        "area": "전용 113.97㎡",
+        "supply": "공급 155.09㎡",
+        "contractArea": "계약 224.76㎡",
+        "units": "114세대",
+        "src": "assets/brighton-plan-113.jpg",
+        "width": 1065,
+        "height": 681
+      },
+      {
+        "id": "132",
+        "label": "132A1 type",
+        "area": "전용 132.60㎡",
+        "supply": "공급 179.30㎡",
+        "contractArea": "계약 260.37㎡",
+        "units": "57세대",
+        "src": "assets/brighton-plan-132.jpg",
+        "width": 1043,
+        "height": 648
+      }
+    ],
+    "seo": {
+      "summary": [
+        "서울 영등포구 여의도동 31(국제금융로 39) · 옛 여의도 MBC 부지",
+        "지하 6층~지상 49층 · 아파트 454세대 · GS건설 시공 · 신영 개발",
+        "전용 84·101·113·132㎡ · 2023년 9월 준공 · 즉시 입주 가능",
+        "48층 한강뷰 현장 관람 예약 · 대출 가능(임대보증금 잔금) · 조·중식 서비스 운영"
+      ],
+      "points": [
+        [
+          "파노라마 한강뷰",
+          "49층 스카이라인 · 한강과 도심 야경을 담는 와이드 조망"
+        ],
+        [
+          "6개 철도노선",
+          "5·9호선 여의도역 · 5호선 여의나루역 · GTX-B(예정) · 올림픽대로·강변북로"
+        ],
+        [
+          "원스텝 라이프",
+          "더현대 서울 · IFC몰 · 쇼핑·문화 인프라 도보 이용"
+        ],
+        [
+          "한강·공원 힐링",
+          "여의도공원 · 한강시민공원 · 도심 속 파크라이프"
+        ],
+        [
+          "하이엔드 서비스",
+          "조·중식 · 하우스키핑 · 리무진 · 프리미엄 세차"
+        ],
+        [
+          "여의도 개발비전",
+          "일대 7,591세대 재건축 추진 · 2040 서울도시기본계획 수혜"
+        ]
+      ],
+      "typesHead": [
+        "타입",
+        "전용면적",
+        "공급면적",
+        "세대수"
+      ],
+      "types": [
+        [
+          "84",
+          "84.13㎡",
+          "117.27㎡",
+          "91세대"
+        ],
+        [
+          "101",
+          "101.95㎡",
+          "140.59㎡",
+          "91세대"
+        ],
+        [
+          "113A1",
+          "113.97㎡",
+          "155.09㎡",
+          "114세대"
+        ],
+        [
+          "132A1",
+          "132.60㎡",
+          "179.30㎡",
+          "57세대"
+        ]
+      ]
+    },
+    "popup": {
+      "cards": [
+        {
+          "title": [
+            "즉시 입주",
+            "가능"
+          ],
+          "items": [
+            [
+              "48층 한강뷰 관람 예약",
+              "현장 방문 예약제"
+            ],
+            [
+              "대출 가능",
+              "임대보증금 잔금"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "라이프 서비스"
+          ],
+          "items": [
+            [
+              "조·중식 서비스 운영 개시",
+              ""
+            ],
+            [
+              "하우스키핑 · 리무진",
+              "하이엔드 컨시어지"
+            ],
+            [
+              "상담 대표번호",
+              "1688-5650"
+            ]
+          ]
+        }
+      ]
+    },
+    "site": {
+      "about": {
+        "file": "assets/brighton-about.jpg",
+        "width": 1400,
+        "height": 666
+      },
+      "aerial": {
+        "file": "assets/brighton-aerial.jpg",
+        "width": 1600,
+        "height": 652
+      },
+      "map": {
+        "file": "assets/brighton-map.jpg",
+        "width": 1600,
+        "height": 1006
+      },
+      "river": {
+        "file": "assets/brighton-river.jpg",
+        "width": 1600,
+        "height": 711
+      },
+      "brand": {
+        "file": "assets/brighton-brand.jpg",
+        "width": 1000,
+        "height": 670
+      },
+      "interiors": [
+        [
+          "assets/brighton-int-84-1.jpg",
+          1400,
+          1124,
+          "84 type 침실"
+        ],
+        [
+          "assets/brighton-int-101-2.jpg",
+          1400,
+          990,
+          "101 type 주방"
+        ],
+        [
+          "assets/brighton-int-113-1.jpg",
+          1400,
+          605,
+          "113 type 침실"
+        ],
+        [
+          "assets/brighton-int-132-1.jpg",
+          1400,
+          778,
+          "132 type 다이닝"
+        ],
+        [
+          "assets/brighton-int-84-2.jpg",
+          1400,
+          1546,
+          "84 type 드레스룸"
+        ],
+        [
+          "assets/brighton-int-comm.jpg",
+          1400,
+          829,
+          "커뮤니티 라운지"
+        ]
+      ],
+      "services": [
+        [
+          "assets/brighton-svc-01cont01.jpg",
+          "BREAKFAST SERVICE",
+          "조·중식 서비스"
+        ],
+        [
+          "assets/brighton-svc-01cont04.jpg",
+          "HOUSE KEEPING",
+          "하우스키핑"
+        ],
+        [
+          "assets/brighton-svc-01cont03.jpg",
+          "LIMOUSINE SERVICE",
+          "리무진 서비스"
+        ],
+        [
+          "assets/brighton-svc-02cont09.jpg",
+          "PREMIUM CAR WASH",
+          "프리미엄 세차"
+        ]
+      ]
+    }
   },
   {
     "price": "계약금 1,000만원 정액제",
