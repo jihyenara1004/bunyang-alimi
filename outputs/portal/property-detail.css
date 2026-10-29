@@ -217,3 +217,25 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .property-page-dialog .detail-window-actions button.close:hover{background:#c42b1c;color:#fff}
 .property-page-dialog.detail-minimized .detail-window-actions button{color:#fff}
 @media(max-width:650px){.property-page-dialog .detail-window-bar{padding:0 0 0 10px}.property-page-dialog .detail-window-actions button{width:42px}}
+
+/* 상세페이지 현장명·목차 가독성 개선 */
+.property-detail.gd-detail .gd-header{gap:28px;padding:24px 3%;min-height:104px}
+.property-detail.gd-detail .gd-header .gd-wordmark{font-size:28px;line-height:1.4}
+.property-detail.gd-detail .gd-header .gd-wordmark>span{font-size:26px}
+.property-detail.gd-detail .gd-header .gd-wordmark>small{font-size:17px;margin-top:5px}
+.property-detail.gd-detail .gd-header nav{gap:32px}
+.property-detail.gd-detail .gd-header nav button{font-size:18px;line-height:1.5;padding:12px 0;white-space:nowrap}
+@media(max-width:1150px){
+ .property-detail.gd-detail .gd-header{flex-wrap:wrap;gap:14px;padding:20px 4% 12px}
+ .property-detail.gd-detail .gd-header .gd-wordmark{max-width:65%;font-size:25px}
+ .property-detail.gd-detail .gd-header nav{order:3;width:100%;justify-content:center;gap:30px}
+ .property-detail.gd-detail .gd-header nav button{font-size:17px}
+}
+@media(max-width:650px){
+ .property-detail.gd-detail .gd-header{padding:16px 4% 6px;gap:12px}
+ .property-detail.gd-detail .gd-header .gd-wordmark{font-size:23px;max-width:60%}
+ .property-detail.gd-detail .gd-header .gd-wordmark>span{font-size:22px}
+ .property-detail.gd-detail .gd-header .gd-wordmark>small{font-size:15px}
+ .property-detail.gd-detail .gd-header nav{justify-content:space-between;gap:14px;overflow-x:auto}
+ .property-detail.gd-detail .gd-header nav button{font-size:15px;flex-shrink:0;padding:14px 0}
+}
