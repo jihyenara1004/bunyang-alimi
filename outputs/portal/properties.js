@@ -1,4 +1,4 @@
-window.PORTAL_PROPERTIES=[
+window.PORTAL_PROPERTIES = [
   {
     "price": "분양가: 32,475만원대~",
     "moveIn": "상담 시 확인",
@@ -515,7 +515,7 @@ window.PORTAL_PROPERTIES=[
     "name": "루카831",
     "price": "분양가: 14억대부터",
     "priceSource": "사용자 제공",
-    "promotion": "프로모션 진행중",
+    "promotion": "분양가할인혜택",
     "promotionSource": "사용자 제공",
     "moveIn": "상담 시 확인",
     "checked": "2026.10.28",
@@ -833,7 +833,8 @@ window.PORTAL_PROPERTIES=[
     "x": 65,
     "y": 39,
     "recommended": true,
-    "sort": 4
+    "sort": 4,
+    "promotionLabel": "분양가할인혜택"
   },
   {
     "price": "상담문의",
@@ -1223,7 +1224,9 @@ window.PORTAL_PROPERTIES=[
     "x": 37,
     "y": 40,
     "recommended": true,
-    "sort": 6
+    "sort": 6,
+    "promotion": "특별혜택",
+    "promotionLabel": "특별혜택"
   },
   {
     "price": "분양가: 6억대부터",
@@ -1651,7 +1654,9 @@ window.PORTAL_PROPERTIES=[
         "6~7억대 한강 프리미엄",
         "84㎡ 6억대부터 · 한강뷰·한강공원 인접"
       ]
-    ]
+    ],
+    "promotion": "분양가 상한제 단지",
+    "promotionLabel": "분양가 상한제 단지"
   },
   {
     "price": "상담문의",
@@ -2946,8 +2951,8 @@ window.PORTAL_PROPERTIES=[
     "y": 53,
     "sort": 11,
     "recommended": true,
-    "promotion": true,
-    "promotionLabel": "즉시 입주 가능",
+    "promotion": "한시적 할인혜택",
+    "promotionLabel": "한시적 할인혜택",
     "lotAddress": "서울특별시 영등포구 여의도동 31",
     "developer": "(주)신영브라이튼여의도 · AMC (주)신영",
     "siteArea": "17,795.00㎡",
