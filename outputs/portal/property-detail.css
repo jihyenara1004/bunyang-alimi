@@ -207,3 +207,13 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 #sd-plan-sd-113b{--sd-w:565;--sd-h:585;--sd-top:220}
 #sd-plan-sd-121{--sd-w:539;--sd-h:601;--sd-top:270}
 #sd-plan-sd-113b .sd-plan a:after{content:"";position:absolute;top:0;left:0;width:45%;height:8%;background:#fff;pointer-events:none}
+
+/* 상세창 조작 버튼: 브라우저 창과 같은 간결한 아이콘 */
+.property-page-dialog .detail-window-bar{background:#dfe5ec;padding:0 0 0 14px}
+.property-page-dialog .detail-window-actions{gap:0;align-self:stretch;align-items:center}
+.property-page-dialog .detail-window-actions button{width:48px;height:46px;border:0;border-radius:0;background:transparent;color:#30363d;font-size:18px}
+.property-page-dialog .detail-window-actions button svg{display:block;width:18px;height:18px;pointer-events:none}
+.property-page-dialog .detail-window-actions button:hover{background:#cbd3dd;border:0}
+.property-page-dialog .detail-window-actions button.close:hover{background:#c42b1c;color:#fff}
+.property-page-dialog.detail-minimized .detail-window-actions button{color:#fff}
+@media(max-width:650px){.property-page-dialog .detail-window-bar{padding:0 0 0 10px}.property-page-dialog .detail-window-actions button{width:42px}}
