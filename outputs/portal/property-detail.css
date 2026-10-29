@@ -111,3 +111,16 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .luca-plans .luca-plan-view .gd-reference-figure{max-width:1100px;margin:10px auto 0;border:0;padding:0;background:#fff}
 .luca-plans .luca-plan-view .gd-reference-figure img{width:100%;height:auto}
 .rf-price-note{max-width:1100px;margin:14px auto 0;font-size:14px;color:#5a6577;text-align:left}
+
+/* 과천 한양수자인 + 셀링포인트 (Claude) */
+.gwb-detail .gwb-wordmark>span{color:#1d3b6e;letter-spacing:3px}
+.gwb-detail .gwb-wordmark>small{color:#8a7a62;letter-spacing:0;font-size:12px}
+.gwb-detail .gwb-hero>img{object-position:center 45%}
+.gwb-detail .gwb-hero::after{background:linear-gradient(90deg,#10203a00 35%,#10203a35 52%,#10203abf 100%)}
+.gwb-detail .gwb-hero .gd-hero-copy{right:3%;left:auto}
+.gwb-detail .gwb-hero h1{line-height:1.2}
+.sell-points>div{position:relative;background:#fff;border-color:#d9e6e2}
+.sell-points .sell-no{display:inline-block;font-size:12px;font-weight:800;color:#fff;background:#1d5a52;border-radius:3px;padding:2px 7px;margin-bottom:8px}
+.sell-points h3{color:#1d5a52}
+@media(max-width:650px){.gwb-detail .gwb-hero::after{background:linear-gradient(180deg,#10203a00 5%,#10203a55 40%,#10203acc 100%)}.gwb-detail .gwb-hero .gd-hero-copy{left:5%;right:5%}}
+.sell-points>div,.seo-points>div{text-align:left}
