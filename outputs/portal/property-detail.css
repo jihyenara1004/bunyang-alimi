@@ -124,3 +124,22 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .sell-points h3{color:#1d5a52}
 @media(max-width:650px){.gwb-detail .gwb-hero::after{background:linear-gradient(180deg,#10203a00 5%,#10203a55 40%,#10203acc 100%)}.gwb-detail .gwb-hero .gd-hero-copy{left:5%;right:5%}}
 .sell-points>div,.seo-points>div{text-align:left}
+
+/* 상세 팝업 + 송파더그리드 (Claude) */
+.detail-popup-layer{position:fixed;inset:0;z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#0b142580;padding:16px;box-sizing:border-box}
+.detail-popup-cards{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;max-width:760px}
+.detail-popup-card{width:300px;max-width:88vw;background:linear-gradient(180deg,#f7f1ea,#fff 55%);border-radius:10px;padding:24px 22px 20px;box-sizing:border-box;text-align:center;box-shadow:0 18px 50px #0005;border-top:6px solid #842b3c}
+.detail-popup-card small{display:block;color:#9a6a3a;font-weight:800;font-size:12px;letter-spacing:1px}
+.detail-popup-card h3{font-size:30px;line-height:1.35;color:#842b3c;margin:12px 0 14px;font-weight:900}
+.popup-item{border:1px solid #d9b8a6;border-radius:6px;padding:12px 10px;margin:8px 0;background:#fff}
+.popup-item b{display:block;font-size:20px;color:#7a2333}.popup-item span{display:block;font-size:13px;color:#5d4a42;margin-top:3px}
+.popup-call{display:block;margin:14px 0 8px;font-size:20px;font-weight:900;color:#1f2f4f;text-decoration:none}
+.popup-cta{width:100%;background:#842b3c;color:#fff;border:0;border-radius:6px;padding:12px;font-size:15px;font-weight:800;cursor:pointer}
+.detail-popup-actions{display:flex;gap:18px}.detail-popup-actions button{background:none;border:0;color:#fff;font-size:14px;font-weight:700;cursor:pointer;text-decoration:underline}
+.sp-detail .sp-wordmark>span{color:#1c2c48;letter-spacing:3px}
+.sp-detail .sp-wordmark>small{color:#9a7b55;letter-spacing:1px;font-size:12px}
+.sp-detail .sp-hero>img{object-position:center 40%}
+.sp-detail .sp-hero::after{background:linear-gradient(90deg,#141c2a00 35%,#141c2a35 52%,#141c2ac0 100%)}
+.sp-detail .sp-hero .gd-hero-copy{right:3%;left:auto}
+.sp-detail .sp-hero h1{line-height:1.2}
+@media(max-width:650px){.sp-detail .sp-hero::after{background:linear-gradient(180deg,#141c2a00 5%,#141c2a55 40%,#141c2acc 100%)}.sp-detail .sp-hero .gd-hero-copy{left:5%;right:5%}.detail-popup-card{width:100%}.detail-popup-card h3{font-size:24px}.detail-popup-cards{flex-direction:column;align-items:center;max-height:80vh;overflow:auto}}
