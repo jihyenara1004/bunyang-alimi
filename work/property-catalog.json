@@ -843,9 +843,9 @@
     "region": "서울",
     "area": "서울 · 서초구 서초동",
     "type": "도시형생활주택",
-    "tag": "59㎡대 · 127P · 총 124세대",
+    "tag": "남부터미널역 생활권 · 준공 후 분양",
     "address": "서울특별시 서초구 서초동 1603-56 외 5필지",
-    "scale": "지하 5층 ~ 지상 16층",
+    "scale": "지하 5층 ~ 지상 16층 · 1개 동",
     "count": "도시형생활주택 124세대",
     "sizes": [
       "59A · 59.70㎡",
@@ -856,24 +856,23 @@
       "59C · 59.97㎡",
       "127P · 127.16㎡"
     ],
-    "builder": "자료 확인 중",
-    "img": "http://www.xn--ph1603-v05zv11e.com/img_up/shop_pds/ph1603tb/build/option/sub01-011777884631.jpg",
-    "intro": "서초동에 자리한 도시형생활주택으로, 제공받은 사업개요의 124세대와 일곱 가지 타입을 기준으로 소개합니다.",
+    "builder": "효성중공업㈜",
+    "intro": "서초동 1603-56 일원에 준공된 도시형생활주택입니다. 지하 5층부터 지상 16층, 1개 동 총 124세대로 구성되며 전용 59㎡ 중심에 복층·펜트하우스 타입을 더했습니다.",
     "highlights": [
       [
-        "규모",
-        "주거 124세대와 근린생활시설을 포함한 지하 5층~지상 16층 건물입니다."
+        "교통",
+        "3호선 남부터미널역과 2·3호선 교대역, 2호선 서초역을 함께 이용할 수 있는 생활권입니다."
       ],
       [
-        "타입",
-        "59㎡대 타입부터 127.16㎡ 펜트하우스까지 구성됩니다."
+        "준공 후 분양",
+        "2025년 8월 사용승인을 받은 건물로, 실물을 확인한 뒤 결정할 수 있습니다."
       ],
       [
-        "특화 공간",
-        "홈페이지의 상품컨셉·갤러리·실사진 자료를 함께 살펴볼 수 있습니다."
+        "공간",
+        "전 세대 2.8m 천장고와 지하 커뮤니티·2층 갤러리를 갖춘 하이엔드 주거입니다."
       ]
     ],
-    "location": "서울 서초구 서초동에 위치합니다. 제공받은 입지안내에서 주변 교통·생활시설을 확인할 수 있습니다.",
+    "location": "서울 서초구 서초동 1603-56 일원입니다. 남부터미널역·교대역·서초역과 예술의전당, 우면산 생활권을 교육자료 입지도에서 확인할 수 있습니다.",
     "typesNote": "59C는 복층, 59PA·59PB와 127P는 최상층 특화 타입으로 안내됩니다. 실제 잔여 호실은 별도 확인하세요.",
     "sources": [
       [
@@ -898,7 +897,184 @@
     "x": 61,
     "y": 65,
     "recommended": true,
-    "sort": 5
+    "sort": 5,
+    "img": "assets/ph1603-building.jpg",
+    "heroImg": "assets/ph1603-hero.jpg",
+    "siteArea": "4,763.20㎡ (1,440.87평)",
+    "totalFloorArea": "28,347.86㎡ (8,575.23평)",
+    "parking": "226대 (100% 자주식)",
+    "approval": "2025년 8월 14일 사용승인 · 준공 후 분양",
+    "educationSource": "PH1603 프로젝트 엑시트플랜 교육자료",
+    "educationPages": {
+      "4": {
+        "page": 4,
+        "file": "assets/ph1603-education-4.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "5": {
+        "page": 5,
+        "file": "assets/ph1603-education-5.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "7": {
+        "page": 7,
+        "file": "assets/ph1603-education-7.jpg",
+        "width": 1345,
+        "height": 775
+      },
+      "10": {
+        "page": 10,
+        "file": "assets/ph1603-education-10.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "33": {
+        "page": 33,
+        "file": "assets/ph1603-education-33.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "35": {
+        "page": 35,
+        "file": "assets/ph1603-education-35.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "36": {
+        "page": 36,
+        "file": "assets/ph1603-education-36.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "37": {
+        "page": 37,
+        "file": "assets/ph1603-education-37.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "38": {
+        "page": 38,
+        "file": "assets/ph1603-education-38.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "40": {
+        "page": 40,
+        "file": "assets/ph1603-education-40.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "48": {
+        "page": 48,
+        "file": "assets/ph1603-education-48.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "49": {
+        "page": 49,
+        "file": "assets/ph1603-education-49.jpg",
+        "width": 1800,
+        "height": 878
+      },
+      "50": {
+        "page": 50,
+        "file": "assets/ph1603-education-50.jpg",
+        "width": 1800,
+        "height": 878
+      },
+      "51": {
+        "page": 51,
+        "file": "assets/ph1603-education-51.jpg",
+        "width": 1800,
+        "height": 878
+      },
+      "52": {
+        "page": 52,
+        "file": "assets/ph1603-education-52.jpg",
+        "width": 1800,
+        "height": 878
+      },
+      "53": {
+        "page": 53,
+        "file": "assets/ph1603-education-53.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "54": {
+        "page": 54,
+        "file": "assets/ph1603-education-54.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "55": {
+        "page": 55,
+        "file": "assets/ph1603-education-55.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "56": {
+        "page": 56,
+        "file": "assets/ph1603-education-56.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "57": {
+        "page": 57,
+        "file": "assets/ph1603-education-57.jpg",
+        "width": 1800,
+        "height": 1013
+      },
+      "58": {
+        "page": 58,
+        "file": "assets/ph1603-education-58.jpg",
+        "width": 1800,
+        "height": 1013
+      }
+    },
+    "plans": [
+      {
+        "id": "59a",
+        "label": "59A",
+        "area": "59.70㎡",
+        "contractArea": "149.57㎡",
+        "note": "84세대 · 2Room 가변형",
+        "src": "assets/ph1603-education-49.jpg",
+        "width": 1800,
+        "height": 878
+      },
+      {
+        "id": "59b",
+        "label": "59B",
+        "area": "59.79㎡",
+        "contractArea": "149.30㎡",
+        "note": "29세대 · 2Room 분리형",
+        "src": "assets/ph1603-education-50.jpg",
+        "width": 1800,
+        "height": 878
+      },
+      {
+        "id": "59ga",
+        "label": "59GA",
+        "area": "59.57㎡",
+        "contractArea": "149.40㎡",
+        "note": "4세대 · 1층 가든형",
+        "src": "assets/ph1603-education-51.jpg",
+        "width": 1800,
+        "height": 878
+      },
+      {
+        "id": "59c-127p",
+        "label": "59C · 127P",
+        "area": "59.97㎡ / 127.16㎡",
+        "contractArea": "152.32㎡ / 316.09㎡",
+        "note": "복층 · 최상층 펜트하우스",
+        "src": "assets/ph1603-education-52.jpg",
+        "width": 1800,
+        "height": 878
+      }
+    ]
   },
   {
     "price": "상담문의",
