@@ -178,3 +178,14 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .gc-detail .gc-reference{max-width:1000px;margin-left:auto;margin-right:auto}
 @media(max-width:650px){.gc-detail .gc-hero::after{background:linear-gradient(180deg,#0b1a2400 5%,#0b1a2455 40%,#0b1a24cc 100%)}.gc-detail .gc-hero .gd-hero-copy{left:5%;right:5%}}
 .gc-detail .gc-hero>img{object-position:center 60%}
+/* 범용 공식사이트형 상세 (p.page) */
+.pg-detail .pg-wordmark>span{color:var(--pg-accent);letter-spacing:2px}
+.pg-detail .pg-wordmark>small{color:#444;font-size:12px}
+.pg-detail .pg-hero{overflow:hidden}.pg-detail .pg-hero>img{inset:0;height:100%}
+.pg-detail .pg-hero::after{background:linear-gradient(90deg,#10141c00 35%,#10141c40 55%,#10141cc4 100%)}
+.pg-detail .pg-hero .gd-hero-copy{right:3%;left:auto}
+.pg-detail .pg-hero h1{line-height:1.2}
+.pg-detail .luca-promotion{background:var(--pg-accent);border-color:var(--pg-accent);color:#fff}
+.pg-detail .pg-reference{max-width:1000px;margin-left:auto;margin-right:auto}
+.pg-detail .luca-plan-view .gd-reference-figure img{width:auto;max-width:100%;max-height:78vh;margin:0 auto;display:block}
+@media(max-width:650px){.pg-detail .pg-hero::after{background:linear-gradient(180deg,#10141c00 5%,#10141c55 40%,#10141ccc 100%)}.pg-detail .pg-hero .gd-hero-copy{left:5%;right:5%}}
