@@ -1021,6 +1021,7 @@ window.PORTAL_PROPERTIES=[
     "type": "아파트",
     "tag": "17개 동 · 1,297세대",
     "address": "경기도 김포시 고촌읍 김포신곡6지구 A3블록",
+    "mapAddress": "경기도 김포시 고촌읍 수기로 137",
     "scale": "지하 2층 ~ 지상 16층 · 17개 동",
     "count": "총 1,297세대",
     "sizes": [
