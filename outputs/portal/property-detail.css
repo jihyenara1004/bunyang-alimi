@@ -192,3 +192,18 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 
 /* 상동역 롯데캐슬 · 기존 상세 구조 유지 */
 .sd-detail .sd-wordmark{color:#6b2434}.sd-detail .sd-wordmark span{font-size:21px;letter-spacing:1px}.sd-detail .sd-wordmark small{font-size:14px}.sd-detail .sd-hero{min-height:560px}.sd-detail .sd-hero:after{background:linear-gradient(90deg,#141a2bbf,transparent 85%)}.sd-detail .sd-hero .gd-hero-copy{z-index:2}.sd-detail .sd-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.sd-detail .sd-gallery figure{margin:0}.sd-detail .sd-gallery img{width:100%;height:auto}.sd-detail .sd-plan img{width:auto;max-width:100%;max-height:620px;object-fit:contain;margin:auto;display:block}.sd-detail .sd-plan a{display:block}.sd-detail .sd-notice{font-size:12px;line-height:1.8;color:#758092}.sd-detail .sd-plan-panel[hidden]{display:none!important}.sd-detail .sd-floor-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.sd-detail .sd-floor-grid figure{margin:10px 0}.sd-detail .sd-floor-grid img{max-height:440px;object-fit:contain}.sd-detail .sd-floor-grid h3{font-size:18px}.sd-detail .sd-floor-grid p{font-size:13px;line-height:1.8;color:#748093}@media(max-width:650px){.sd-detail .sd-gallery,.sd-detail .sd-floor-grid{grid-template-columns:1fr}.sd-detail .sd-hero{min-height:520px}.sd-detail .sd-hero:after{background:linear-gradient(180deg,#10192b22,#10192bd9)}.sd-detail .sd-hero .gd-hero-copy{left:5%;right:5%}.sd-detail .sd-plan img{max-height:490px}}
+
+/* 상동 평면 확대: 상단 키맵·여백을 화면에서 제외하고 원본 도면 보존 */
+.sd-detail .luca-plan-view .sd-plan{max-width:960px;margin:20px auto}
+.sd-detail .sd-plan a{position:relative;overflow:hidden;aspect-ratio:var(--sd-w) / calc(var(--sd-h) - var(--sd-top));background:#fff}
+.sd-detail .luca-plan-view .sd-plan img{display:block;width:100%;max-width:none;height:auto;max-height:none;margin:0;transform:translateY(calc(-100% * var(--sd-top) / var(--sd-h)))}
+#sd-plan-sd-84a{--sd-w:517;--sd-h:570;--sd-top:300}
+#sd-plan-sd-84b{--sd-w:526;--sd-h:656;--sd-top:270}
+#sd-plan-sd-84c{--sd-w:545;--sd-h:581;--sd-top:270}
+#sd-plan-sd-84d{--sd-w:540;--sd-h:598;--sd-top:300}
+#sd-plan-sd-84e{--sd-w:544;--sd-h:597;--sd-top:300}
+#sd-plan-sd-84f{--sd-w:517;--sd-h:624;--sd-top:310}
+#sd-plan-sd-113a{--sd-w:581;--sd-h:577;--sd-top:310}
+#sd-plan-sd-113b{--sd-w:565;--sd-h:585;--sd-top:220}
+#sd-plan-sd-121{--sd-w:539;--sd-h:601;--sd-top:270}
+#sd-plan-sd-113b .sd-plan a:after{content:"";position:absolute;top:0;left:0;width:45%;height:8%;background:#fff;pointer-events:none}
