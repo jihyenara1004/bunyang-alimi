@@ -16,7 +16,7 @@ function kakaoUrl(){const u=window.PORTAL_MAP_CONFIG?.kakaoChannelUrl||'';return
 function showSelectedProperty(p){const chat=kakaoUrl();$('#map-list').hidden=true;$('#map-selection').hidden=false;$('#map-selection').innerHTML=`<button type="button" class="selection-back" data-map-back>‹ 전체 현장 목록</button><div class="selected-property-image">${thumb(p)}</div><div class="selected-property-heading"><span class="selection-label">${esc(p.region)} · ${esc(p.type)}</span><h3>${esc(p.name)}</h3>${promotion(p)}${p.buildingName?' <p>건물명 '+esc(p.buildingName)+'</p>':''}<p>${esc(p.tag)}</p><strong>${esc(p.price==='상담문의'?'분양가 확인 중':p.price)}</strong>${p.priceNote?'<p class="selected-price-note">'+esc(p.priceNote)+'</p>':''}</div><div class="selected-property-actions"><button type="button" data-detail="${p.id}">홈페이지 바로가기</button><a href="tel:16885650" aria-label="1688-5650 전화하기">전화하기</a></div><dl class="selected-property-facts">${[['현장 위치',p.address],['건축 규모',p.scale],['공급 규모',p.count],['시공',p.builder],['대표전화','1688-5650']].map(([k,v])=>'<div><dt>'+esc(k)+'</dt><dd>'+esc(v||'확인 중')+'</dd></div>').join('')}</dl><div class="selected-property-alert"><h4>분양정보 알림받기</h4><p>태양디앤씨 카카오톡에서<br>분양정보와 상담을 받아보세요.</p>${chat?'<a class="kakao-alert-link" href="'+esc(chat)+'" target="_blank" rel="noopener">분양정보 알림받기</a>':'<button type="button" class="kakao-alert-link" disabled>분양정보 알림받기</button><small>태양디앤씨 카카오톡 연결 준비 중</small>'}</div>`;$('#map-selection').scrollTop=0}
 function clearMapSelection(){selected=null;$('#map-selection').hidden=true;$('#map-list').hidden=false;renderMap()}
 function selectProperty(id){const p=properties.find(p=>p.id===id);if(!p)return;selected=id;renderMap();showSelectedProperty(p);const coord=(window.PORTAL_MAP_CONFIG.locations||{})[id];if(liveMap&&validCoord(coord))liveMap.panTo(new naver.maps.LatLng(coord.lat,coord.lng))}
-function openDetail(id){const p=properties.find(p=>p.id===id);if(!p||$('#detail').open)return;$('#detail-body').innerHTML=window.renderProperty(p);$('#detail').classList.remove('detail-compact','detail-expanded');$('#detail').showModal();$('#detail').scrollTop=0}
+function openDetail(id){const p=properties.find(p=>p.id===id);if(!p)return;if($('#detail').open){if(!$('#detail').classList.contains('detail-minimized'))return;$('#detail').close()}$('#detail-body').innerHTML=window.renderProperty(p);$('#detail').classList.remove('detail-compact','detail-expanded','detail-minimized');{const t=$('#detail .detail-window-bar>span');if(t)t.textContent='현장 상세 · '+p.name}$('#detail').showModal();$('#detail').scrollTop=0}
 function register(id){clearTimeout(hoverTimer);$('#detail').close();if(id)$('#property').value=id;$('#form-status').textContent='';location.hash='register';$('#register').scrollIntoView({behavior:'smooth',block:'start'});setTimeout(()=>$('#registration input[name=name]').focus({preventScroll:true}),300)}
 function applySearch(q,r=''){mapQuery=q;mapRegion=r;$('#map-query').value=q;$('#map-region').value=r;renderMap();location.hash='map'}
 document.addEventListener('pointerover',e=>{const b=e.target.closest('.property-name');if(b&&!b.closest('#map-selection')&&e.pointerType==='mouse'){clearTimeout(hoverTimer);hoverTimer=setTimeout(()=>openDetail(b.dataset.detail),550)}});
@@ -38,11 +38,9 @@ renderMap();if(window.PORTAL_MAP_CONFIG?.clientId){window.navermap_authFailure=(
 
 (()=>{const params=new URLSearchParams(location.search);const id=params.get('property');if(id&&properties.some(p=>p.id===id)){if(location.hash==='#register')register(id);else openDetail(id)}})();
 
-document.addEventListener('click',e=>{
- const b=e.target.closest('[data-detail-size]');if(!b)return;
- const d=b.closest('dialog');const expand=b.dataset.detailSize==='expand';
- const restore=expand&&d.classList.contains('detail-expanded');
- d.classList.toggle('detail-expanded',expand&&!restore);
- d.classList.toggle('detail-compact',!expand);
- d.querySelector('[data-detail-size="expand"]').setAttribute('aria-pressed',String(expand&&!restore));
-});
+document.addEventListener('click',e=>{const d=e.target.closest('dialog.property-page-dialog');if(!d)return;const b=e.target.closest('[data-detail-size]');
+ /* 최소화(아래로 내리기) 상태: 막대를 누르면 원래 창으로 복원. 닫기(×)는 그대로 닫힘 */
+ if(d.classList.contains('detail-minimized')){if(e.target.closest('.close'))return;e.preventDefault();d.classList.remove('detail-minimized');d.close();d.showModal();d.style.scrollBehavior='auto';d.scrollTop=+d.dataset.keepScroll||0;d.style.scrollBehavior='';return}
+ if(!b)return;
+ if(b.dataset.detailSize==='compact'){d.classList.remove('detail-expanded');d.querySelector('[data-detail-size="expand"]').setAttribute('aria-pressed','false');d.dataset.keepScroll=d.scrollTop;d.close();d.classList.add('detail-minimized');d.show();return}
+ const restore=d.classList.contains('detail-expanded');d.classList.toggle('detail-expanded',!restore);b.setAttribute('aria-pressed',String(!restore));});

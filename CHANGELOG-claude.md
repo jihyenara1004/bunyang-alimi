@@ -18,3 +18,15 @@
   - `outputs/portal/properties/ph1603.html` 재생성 (`node work/generate-property-pages.cjs`)
   - `outputs/portal/assets/ph1603-*.jpg` 이미지 23개 추가
 - 확인: PC·모바일 화면, 이미지 로딩, 평면 버튼 전환, 홈 카드·지도 목록 표시
+
+## 2026-10-29 · 상세페이지 헤더 고정 + 아래로 내리기 버튼
+- 브랜치: `claude/detail-sticky-minimize`
+- 12개 현장 상세페이지 모두: 아래로 스크롤해도 현장명·메뉴·대표번호 줄이 위에 고정
+  - 원인: 상세 본문의 `overflow:hidden`이 고정(sticky)을 막고 있었음 → `overflow:clip`
+  - 상세창 안에서는 창 조작 막대(48px) 바로 아래에 고정
+- 상세창 오른쪽 위 "−" 버튼을 "아래로 내리기(최소화)"로 변경
+  - 누르면 창이 화면 오른쪽 아래 막대로 내려가고, 뒤 홈페이지를 그대로 볼 수 있음
+  - 막대를 누르면 보던 위치 그대로 다시 열림, ×는 닫기
+  - 내려둔 상태에서 다른 현장을 누르면 그 현장 상세가 열림
+  - 창 제목에 현장명 표시 (예: 현장 상세 · DK밸리뷰 용산)
+- 변경 파일: `outputs/portal/app.js`, `outputs/portal/property-detail.css`, `index.html`, `outputs/portal/index.html`(캐시 버전·버튼 이름)

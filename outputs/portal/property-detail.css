@@ -61,3 +61,16 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .ph-detail .ph-hero::after{background:linear-gradient(270deg,#14192400 38%,#14192430 55%,#141924b8 100%)}
 .ph-detail .ph-hero .gd-hero-copy{left:3%;right:auto}
 @media(max-width:650px){.ph-detail .ph-hero>img{object-position:70% center}.ph-detail .ph-hero::after{background:linear-gradient(180deg,#14192400 5%,#14192455 40%,#141924cc 100%)}.ph-detail .ph-hero .gd-hero-copy{left:5%;right:5%}}
+
+/* 상세 헤더 고정 + 아래로 내리기(최소화) — Claude 2026-10-29 */
+.property-detail{overflow:clip}
+.property-page-dialog .gd-header{top:48px}
+.standalone-property .gd-header{top:0}
+.property-page-dialog .gd-header{box-shadow:0 4px 10px #0000000d}
+.property-page-dialog.detail-minimized{position:fixed;inset:auto 18px 18px auto;margin:0;width:min(420px,calc(100vw - 36px));height:auto;max-height:none;overflow:hidden;border-radius:10px;box-shadow:0 10px 34px #0004;z-index:1000}
+.property-page-dialog.detail-minimized #detail-body{display:none}
+.property-page-dialog.detail-minimized .detail-window-bar{position:static;border-bottom:0;cursor:pointer;background:#1f2f4f}
+.property-page-dialog.detail-minimized .detail-window-bar>span{color:#fff;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:8px}
+.property-page-dialog.detail-minimized .detail-window-bar>span::after{content:" · 눌러서 다시 보기";color:#d9c39a;font-weight:600}
+.property-page-dialog.detail-minimized [data-detail-size="expand"]{display:none}
+@media(max-width:650px){.property-page-dialog.detail-minimized{inset:auto 10px 10px 10px;width:auto}}
