@@ -198,3 +198,9 @@
 
 ## 2026-10-30 · "확인하세요" 안내 문구 5곳 교체
 - GD메트로타워 교통 문구, GD메트로타워·서초 PH1603·힐스테이트 송파더그리드·계양신도시 카이브 유보라의 평면 안내 문구를 "대표번호 1688-5650으로 상담해 주세요"로 교체. 캐시 `20261030-popup2`.
+
+## 2026-10-30 · 파비콘·사이트 이름·짧은 주소
+- 파비콘(찐핑크 #e6007e 바탕 + 흰색 건물/A): favicon.svg·favicon.ico·favicon-48.png·apple-touch-icon.png·icon-192.png (루트). 모든 페이지 head에 연결.
+- 구조화 데이터(JSON-LD): 메인 WebSite(이름 '분양알리미'), 현장 페이지 WebSite+BreadcrumbList(분양알리미 > 현장명). theme-color 추가.
+- 짧은 주소: `/<id>/` (예: /gdmetro/) 현장 26곳 생성(루트 폴더, work/generate-property-pages.cjs가 자동 생성 — 직접 수정 금지). 기존 /outputs/portal/properties/<id>.html도 유지, 두 페이지 모두 canonical·og:url은 짧은 주소.
+- sitemap.xml은 짧은 주소 26개 + 메인으로 교체.
