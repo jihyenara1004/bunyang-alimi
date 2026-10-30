@@ -4,7 +4,13 @@ const promotion=p=>p.promotion?`<button type="button" class="property-promotion"
 const nameButton=p=>`<button class="property-name" data-detail="${p.id}">${esc(p.name)}</button>`;
 function thumb(p){return `<button type="button" class="property-thumb" data-detail="${p.id}" aria-label="${esc(p.name)} 상세페이지 열기">${p.img?`<img src="${p.img}" alt="${esc(p.name)} 기존 현장 이미지" loading="lazy">`:'<div class="photo-pending"><span>⌂</span><small>현장 이미지 준비 중</small></div>'}<span class="property-status">${p.status}</span></button>`}
 function summary(p){return `<div class="compact-content">${nameButton(p)}${promotion(p)}<p class="feature-text">${esc(p.tag)}</p><p class="spec-text">${esc(p.type)} · ${esc(p.area)}</p><p class="spec-text">${esc(p.sizes?.join(' · ')||'타입 안내 확인')}</p><div class="price-line"><strong>${esc(p.price==='상담문의'?'분양가 확인 중':p.price)}</strong><span>${p.priceNote?'부가세 별도':'현재 조건 확인'}</span></div></div>`}
-$('#featured-cards').innerHTML=properties.filter(p=>p.recommended).map(p=>`<article class="compact-property">${thumb(p)}${summary(p)}</article>`).join('');
+const card=p=>`<article class="compact-property">${thumb(p)}${summary(p)}</article>`;
+$('#featured-cards').innerHTML=properties.slice().sort((a,b)=>(a.sort??99)-(b.sort??99)).map(card).join('');if($('#all-count'))$('#all-count').textContent=`분양알리미가 안내하는 전체 ${properties.length}개 현장입니다.`;
+/* 이번 주 추천현장: 매주 월요일(한국시간) 4곳씩 자동 교체. p.pinned=true인 현장은 항상 먼저 고정 노출 */
+(function(){const box=$('#pick-cards');if(!box)return;const N=4,pinned=properties.filter(p=>p.pinned).slice(0,N),pool=properties.filter(p=>!p.pinned).sort((a,b)=>(a.sort??99)-(b.sort??99)),need=N-pinned.length;
+const week=Math.floor((Date.now()+9*36e5-Date.UTC(2026,0,5))/(7*864e5));const picks=[...pinned];
+if(pool.length&&need>0){const start=((week*need)%pool.length+pool.length)%pool.length;for(let i=0;i<Math.min(need,pool.length);i++)picks.push(pool[(start+i)%pool.length])}
+box.innerHTML=picks.map(card).join('')})();
 $('#property').innerHTML='<option value="">관심 현장을 선택해 주세요</option>'+properties.map(p=>`<option value="${p.id}">${esc(p.name)}</option>`).join('');
 let mapRegion='',mapQuery='',mapSort='recommended',selected=null,hoverTimer=null,liveMap=null,liveMarkers=[];
 function filtered(){let out=properties.filter(p=>(!mapRegion||p.region===mapRegion)&&(!mapQuery||(p.name+p.region+p.area+p.type).replace(/\s/g,'').toLowerCase().includes(mapQuery.replace(/\s/g,'').toLowerCase())));return out.sort((a,b)=>mapSort==='name'?a.name.localeCompare(b.name,'ko'):mapSort==='region'?a.region.localeCompare(b.region,'ko')||a.sort-b.sort:a.sort-b.sort)}
@@ -68,3 +74,5 @@ document.addEventListener('click',e=>{const d=e.target.closest('dialog.property-
  if(!b)return;
  if(b.dataset.detailSize==='compact'){d.classList.remove('detail-expanded');d.querySelector('[data-detail-size="expand"]').setAttribute('aria-pressed','false');d.dataset.keepScroll=d.scrollTop;d.close();d.classList.add('detail-minimized');d.show();return}
  const restore=d.classList.contains('detail-expanded');d.classList.toggle('detail-expanded',!restore);b.setAttribute('aria-pressed',String(!restore));});
+
+(function(){const h=document.querySelector('.portal-header');if(!h)return;const f=()=>h.classList.toggle('is-scrolled',scrollY>10);addEventListener('scroll',f,{passive:true});f()})();

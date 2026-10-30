@@ -120,3 +120,28 @@ footer .company-info p{width:auto;margin:4px 0}footer .company-name{font-size:17
   .map-region-overlay button.active{background:#1f3350;color:#fff}
 }
 .region-tabs button{white-space:nowrap}
+/* 상단 헤더 고정 + 이번 주 추천현장 — 2026-10-30 */
+.portal-header{position:sticky!important;top:0;z-index:60;background:#fff;transition:box-shadow .2s}
+.portal-header.is-scrolled{box-shadow:0 4px 18px #17263d1f}
+html{scroll-padding-top:100px}
+.picks-section{background:#fff;padding-bottom:40px}
+.picks-section .section-heading h2:before{content:'';display:block;width:30px;height:4px;background:#1f3350;margin-bottom:15px;border-radius:2px}
+.pick-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.pick-cards>.compact-property{border-right:1px solid #dce4ed!important;border-bottom:1px solid #dce4ed!important}
+.pick-cards>.compact-property:nth-child(2n){border-right:0!important}
+.pick-cards>.compact-property:nth-last-child(-n+2){border-bottom:0!important}
+.pick-cards .property-thumb{height:150px}
+.pick-cards>.compact-property{grid-template-columns:150px minmax(0,1fr)}
+@media(max-width:760px){
+  html{scroll-padding-top:120px}
+  .portal-header.is-scrolled{padding-top:6px}
+  .portal-header.is-scrolled .brand svg{width:30px;height:36px}
+  .portal-header.is-scrolled .brand-type b{font-size:21px}
+  .portal-header.is-scrolled .brand-type small{display:none}
+  .portal-header.is-scrolled .header-phone strong{font-size:19px}
+  .portal-header.is-scrolled nav{padding:9px 0 10px}
+  .pick-cards{grid-template-columns:1fr!important}
+  .pick-cards>.compact-property{border-right:0!important;border-bottom:1px solid #dce4ed!important;grid-template-columns:112px minmax(0,1fr)}
+  .pick-cards>.compact-property:last-child{border-bottom:0!important}
+  .pick-cards .property-thumb{height:124px}
+}
