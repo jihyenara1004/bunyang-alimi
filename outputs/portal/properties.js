@@ -164,7 +164,8 @@ window.PORTAL_PROPERTIES=[
     ],
     "supplyImage": "assets/gd-supply-price.jpg",
     "promotion": "청약 시작",
-    "promotionLabel": "청약 시작"
+    "promotionLabel": "청약 시작",
+    "pinned": 3
   },
   {
     "price": "분양가: 6억대~",
@@ -269,7 +270,8 @@ window.PORTAL_PROPERTIES=[
         "width": 1100,
         "height": 594
       }
-    ]
+    ],
+    "pinned": 1
   },
   {
     "price": "분양가: 15억대~",
@@ -1226,7 +1228,8 @@ window.PORTAL_PROPERTIES=[
     "recommended": true,
     "sort": 6,
     "promotion": "특별혜택",
-    "promotionLabel": "특별혜택"
+    "promotionLabel": "특별혜택",
+    "pinned": 2
   },
   {
     "price": "분양가: 6억대부터",
@@ -3474,7 +3477,8 @@ window.PORTAL_PROPERTIES=[
       ],
       "types": null,
       "typesHead": null
-    }
+    },
+    "pinned": 4
   },
   {
     "id": "sangdong",

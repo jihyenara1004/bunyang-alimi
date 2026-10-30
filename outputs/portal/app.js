@@ -7,7 +7,7 @@ function summary(p){return `<div class="compact-content">${nameButton(p)}${promo
 const card=p=>`<article class="compact-property">${thumb(p)}${summary(p)}</article>`;
 $('#featured-cards').innerHTML=properties.slice().sort((a,b)=>(a.sort??99)-(b.sort??99)).map(card).join('');if($('#all-count'))$('#all-count').textContent=`분양알리미가 안내하는 전체 ${properties.length}개 현장입니다.`;
 /* 이번 주 추천현장: 매주 월요일(한국시간) 4곳씩 자동 교체. p.pinned=true인 현장은 항상 먼저 고정 노출 */
-(function(){const box=$('#pick-cards');if(!box)return;const N=4,pinned=properties.filter(p=>p.pinned).slice(0,N),pool=properties.filter(p=>!p.pinned).sort((a,b)=>(a.sort??99)-(b.sort??99)),need=N-pinned.length;
+(function(){const box=$('#pick-cards');if(!box)return;const N=4,pinned=properties.filter(p=>p.pinned).sort((a,b)=>(+a.pinned||99)-(+b.pinned||99)).slice(0,N),pool=properties.filter(p=>!p.pinned).sort((a,b)=>(a.sort??99)-(b.sort??99)),need=N-pinned.length;
 const week=Math.floor((Date.now()+9*36e5-Date.UTC(2026,0,5))/(7*864e5));const picks=[...pinned];
 if(pool.length&&need>0){const start=((week*need)%pool.length+pool.length)%pool.length;for(let i=0;i<Math.min(need,pool.length);i++)picks.push(pool[(start+i)%pool.length])}
 box.innerHTML=picks.map(card).join('')})();
