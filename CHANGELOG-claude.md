@@ -208,3 +208,7 @@
 ## 2026-10-30 · 브라이튼 여의도 주소 id 변경
 - id `brighton` → `brighten` (영문 BRIGHTEN 표기). 짧은 주소 `/brighten/`. 이미지 파일명(brighton-*.jpg)은 그대로.
 - 옛 주소 `/brighton/`, `/outputs/portal/properties/brighton.html`은 새 주소로 자동 이동(리다이렉트 페이지, noindex).
+
+## 2026-10-30 · 주소 id 변경 2건
+- 힐스테이트 송파더그리드: `songpa` → `thegrid` (/thegrid/), 씨엘스톤 더 써밋 구로구청: `clestone` → `celstone` (/celstone/). 이미지 파일명은 그대로.
+- 옛 주소(/songpa/, /clestone/ 및 properties/*.html)는 새 주소로 자동 이동(noindex 리다이렉트 페이지).

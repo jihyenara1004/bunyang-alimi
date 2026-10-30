@@ -3305,7 +3305,7 @@ window.PORTAL_PROPERTIES=[
     "moveIn": "2031년 1월 입주 예정",
     "checked": "2026.10.28",
     "status": "현장 안내",
-    "id": "songpa",
+    "id": "thegrid",
     "name": "힐스테이트 송파더그리드",
     "region": "서울",
     "area": "서울 · 송파구 장지동",
@@ -6158,7 +6158,7 @@ window.PORTAL_PROPERTIES=[
     ]
   },
   {
-    "id": "clestone",
+    "id": "celstone",
     "name": "씨엘스톤 더 써밋 구로구청",
     "region": "서울",
     "area": "서울 · 구로구 구로동",
