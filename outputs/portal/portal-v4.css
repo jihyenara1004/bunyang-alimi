@@ -101,3 +101,10 @@ footer .company-info p{width:auto;margin:4px 0}footer .company-name{font-size:17
 .map-loading[data-state=fail] .map-spinner{display:none}
 .map-loading button{background:#842b3c;color:#fff;border-radius:6px;padding:11px 18px;font-size:13px;font-weight:700}
 @keyframes mapspin{to{transform:rotate(360deg)}}
+/* 묶음 원: 남색 + 축소 — 2026-10-30 */
+#naver-map .map-cluster{width:42px;height:42px;background:#1f3350;border-width:2px;box-shadow:0 0 0 5px #1f335038,0 3px 9px #0b162a40}
+#naver-map .map-cluster.big{width:50px;height:50px}
+#naver-map .map-cluster b{font-size:15px}
+#naver-map .map-cluster span{font-size:9px;margin-top:1px}
+#naver-map .map-cluster:hover{background:#17263d}
+@media(max-width:760px){#naver-map .map-cluster{width:36px;height:36px;box-shadow:0 0 0 4px #1f335038,0 2px 8px #0b162a40}#naver-map .map-cluster.big{width:42px;height:42px}#naver-map .map-cluster b{font-size:13px}#naver-map .map-cluster span{font-size:8px}}
