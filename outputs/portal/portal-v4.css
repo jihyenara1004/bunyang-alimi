@@ -108,3 +108,15 @@ footer .company-info p{width:auto;margin:4px 0}footer .company-name{font-size:17
 #naver-map .map-cluster span{font-size:9px;margin-top:1px}
 #naver-map .map-cluster:hover{background:#17263d}
 @media(max-width:760px){#naver-map .map-cluster{width:36px;height:36px;box-shadow:0 0 0 4px #1f335038,0 2px 8px #0b162a40}#naver-map .map-cluster.big{width:42px;height:42px}#naver-map .map-cluster b{font-size:13px}#naver-map .map-cluster span{font-size:8px}}
+/* 지역 버튼(서울/경기/그 외) — 2026-10-30 */
+.region-tabs{display:grid!important;grid-template-columns:1fr 1fr 1.25fr;gap:7px;margin:10px 0!important}
+.region-tabs button{padding:11px 6px;border:1px solid #cfd9e3;border-radius:7px;background:#fff;color:#253c55;font-size:13px;font-weight:700;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.region-tabs button:hover{border-color:#1f3350;color:#1f3350}
+.region-tabs button.active{background:#1f3350;border-color:#1f3350;color:#fff}
+.map-region-overlay{display:none!important}
+@media(max-width:760px){
+  .map-region-overlay{display:grid!important;position:absolute;z-index:7;top:10px;left:50%;transform:translateX(-50%);width:auto;grid-template-columns:auto auto auto;gap:5px;margin:0!important;background:#ffffffe6;padding:4px;border-radius:999px;box-shadow:0 2px 10px #17263d26}
+  .map-region-overlay button{padding:7px 13px;border-radius:999px;font-size:12px;border:0;background:transparent}
+  .map-region-overlay button.active{background:#1f3350;color:#fff}
+}
+.region-tabs button{white-space:nowrap}
