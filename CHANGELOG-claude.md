@@ -212,3 +212,7 @@
 ## 2026-10-30 · 주소 id 변경 2건
 - 힐스테이트 송파더그리드: `songpa` → `thegrid` (/thegrid/), 씨엘스톤 더 써밋 구로구청: `clestone` → `celstone` (/celstone/). 이미지 파일명은 그대로.
 - 옛 주소(/songpa/, /clestone/ 및 properties/*.html)는 새 주소로 자동 이동(noindex 리다이렉트 페이지).
+
+## 2026-10-30 · 옛 검색 주소(/properties/<id>) 복구
+- 구글이 옛 주소 `/properties/<id>`(404)를 색인한 것을 확인 → `properties/<id>.html` 이동 페이지 26개 + `properties/index.html` + 사이트 전용 `404.html` 추가. 이동 대상은 짧은 주소 `/<id>/`.
+- 주의: 루트 `properties/` 폴더는 이동 전용(생성기가 만드는 `outputs/portal/properties/`와 별개). 지우지 말 것.
