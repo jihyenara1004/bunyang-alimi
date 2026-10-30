@@ -165,7 +165,20 @@ window.PORTAL_PROPERTIES=[
     "supplyImage": "assets/gd-supply-price.jpg",
     "promotion": "청약 시작",
     "promotionLabel": "청약 시작",
-    "pinned": 3
+    "pinned": 3,
+    "keywords": [
+      "지디메트로",
+      "지디메트로타워",
+      "GD메트로",
+      "gd메트로",
+      "GD메트로타워 오피스텔",
+      "BYC 건물",
+      "비와이씨 건물",
+      "BYC 부지 오피스텔",
+      "구로디지털단지역 오피스텔",
+      "구디 오피스텔",
+      "대림역 오피스텔"
+    ]
   },
   {
     "price": "분양가: 6억대~",
@@ -271,7 +284,13 @@ window.PORTAL_PROPERTIES=[
         "height": 594
       }
     ],
-    "pinned": 1
+    "pinned": 1,
+    "keywords": [
+      "별내자이",
+      "별내자이 더스타",
+      "별내 자이 오피스텔",
+      "별내역 오피스텔"
+    ]
   },
   {
     "price": "분양가: 15억대~",
@@ -510,7 +529,13 @@ window.PORTAL_PROPERTIES=[
       }
     },
     "educationSource": "(260729)사평대로12 오피스텔 · 상업시설 교육자료 Rev1.pdf",
-    "heroImg": "assets/ins-hero-river-aerial.jpg"
+    "heroImg": "assets/ins-hero-river-aerial.jpg",
+    "keywords": [
+      "인시그니아 반포",
+      "인시그니아반포",
+      "반포 오피스텔",
+      "사평대로 12"
+    ]
   },
   {
     "id": "luca831",
@@ -836,7 +861,13 @@ window.PORTAL_PROPERTIES=[
     "y": 39,
     "recommended": true,
     "sort": 4,
-    "promotionLabel": "분양가할인혜택"
+    "promotionLabel": "분양가할인혜택",
+    "keywords": [
+      "루카 831",
+      "LUCA831",
+      "역삼동 하이엔드 오피스텔",
+      "강남 오피스텔 분양"
+    ]
   },
   {
     "price": "상담문의",
@@ -1169,7 +1200,13 @@ window.PORTAL_PROPERTIES=[
           "1세대"
         ]
       ]
-    }
+    },
+    "keywords": [
+      "PH1603",
+      "서초 PH 1603",
+      "남부터미널역 도시형생활주택",
+      "서초동 도시형생활주택"
+    ]
   },
   {
     "price": "상담문의",
@@ -1229,7 +1266,13 @@ window.PORTAL_PROPERTIES=[
     "sort": 6,
     "promotion": "특별혜택",
     "promotionLabel": "특별혜택",
-    "pinned": 2
+    "pinned": 2,
+    "keywords": [
+      "디케이밸리뷰",
+      "DK밸리뷰",
+      "디케이 밸리뷰 용산",
+      "용산 투룸 오피스텔"
+    ]
   },
   {
     "price": "분양가: 6억대부터",
@@ -1659,7 +1702,13 @@ window.PORTAL_PROPERTIES=[
       ]
     ],
     "promotion": "분양가 상한제 단지",
-    "promotionLabel": "분양가 상한제 단지"
+    "promotionLabel": "분양가 상한제 단지",
+    "keywords": [
+      "한강푸르지오리버프론트",
+      "고촌 푸르지오",
+      "김포 한강 푸르지오",
+      "고촌 아파트 분양"
+    ]
   },
   {
     "price": "상담문의",
@@ -1994,7 +2043,12 @@ window.PORTAL_PROPERTIES=[
         "width": 1100,
         "height": 1040
       }
-    }
+    },
+    "keywords": [
+      "고촌 센트럴자이",
+      "고촌자이",
+      "김포 고촌 자이"
+    ]
   },
   {
     "price": "상담문의",
@@ -2584,7 +2638,13 @@ window.PORTAL_PROPERTIES=[
           "총 876실 10개 타입 구성, 타입별 발코니 약 3~8평"
         ]
       ]
-    }
+    },
+    "keywords": [
+      "르웨스트",
+      "마곡 르웨스트",
+      "롯데캐슬 르웨스트",
+      "마곡 오피스텔"
+    ]
   },
   {
     "price": "분양가: 7억대부터",
@@ -2896,7 +2956,12 @@ window.PORTAL_PROPERTIES=[
         "계약면적",
         "일반분양"
       ]
-    }
+    },
+    "keywords": [
+      "과천 한양수자인",
+      "정부과천청사역 오피스텔",
+      "과천 오피스텔 분양"
+    ]
   },
   {
     "price": "상담문의",
@@ -3199,7 +3264,13 @@ window.PORTAL_PROPERTIES=[
           "프리미엄 세차"
         ]
       ]
-    }
+    },
+    "keywords": [
+      "여의도 브라이튼",
+      "브라이튼여의도",
+      "여의도 MBC 부지 아파트",
+      "여의도 한강뷰 아파트"
+    ]
   },
   {
     "price": "계약금 1,000만원 정액제",
@@ -3478,7 +3549,14 @@ window.PORTAL_PROPERTIES=[
       "types": null,
       "typesHead": null
     },
-    "pinned": 4
+    "pinned": 4,
+    "keywords": [
+      "송파더그리드",
+      "힐스테이트 송파 더 그리드",
+      "복정역 오피스텔",
+      "위례 오피스텔",
+      "장지동 오피스텔"
+    ]
   },
   {
     "id": "sangdong",
@@ -3767,7 +3845,12 @@ window.PORTAL_PROPERTIES=[
           ]
         }
       ]
-    }
+    },
+    "keywords": [
+      "상동 롯데캐슬",
+      "상동역 롯데캐슬",
+      "부천 상동 아파트 분양"
+    ]
   },
   {
     "id": "hanam",
@@ -4156,7 +4239,13 @@ window.PORTAL_PROPERTIES=[
       }
     },
     "sources": [],
-    "links": []
+    "links": [],
+    "keywords": [
+      "하남 성원상떼빌",
+      "성원상떼빌 하남",
+      "하남시청역 아파트",
+      "하남 복층 오피스텔"
+    ]
   },
   {
     "id": "unjeong",
@@ -4911,7 +5000,12 @@ window.PORTAL_PROPERTIES=[
         "https://unjeongiparkforest.co.kr/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "운정 아이파크",
+      "아이파크 포레스트 운정",
+      "파주 메디컬클러스터 아파트"
+    ]
   },
   {
     "id": "onam",
@@ -5351,7 +5445,12 @@ window.PORTAL_PROPERTIES=[
         "https://xn--q20bm8bu3u2oba751c7ky3ghsh55u4lhgnc03jwqerpa.com/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "오남 서희스타힐스",
+      "서희스타힐스 여의재",
+      "오남역 아파트"
+    ]
   },
   {
     "id": "wonjong",
@@ -6035,7 +6134,12 @@ window.PORTAL_PROPERTIES=[
         "https://xn--2e5bpkuw5ts6bbyac3xm4o.com/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "원종 중앙하이츠",
+      "원종역 아파트",
+      "부천 원종동 아파트"
+    ]
   },
   {
     "id": "clestone",
@@ -6478,7 +6582,13 @@ window.PORTAL_PROPERTIES=[
         "https://wooamcielstone.co.kr/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "씨엘스톤",
+      "씨엘스톤 구로",
+      "구로구청 오피스텔",
+      "대림역 복층 오피스텔"
+    ]
   },
   {
     "id": "starsella",
@@ -6961,7 +7071,13 @@ window.PORTAL_PROPERTIES=[
         "https://prugiostarsella49.qshop.ai/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "스타셀라49",
+      "청라 스타셀라",
+      "청라 푸르지오 오피스텔",
+      "스타필드 청라 오피스텔"
+    ]
   },
   {
     "id": "kaive",
@@ -7551,7 +7667,13 @@ window.PORTAL_PROPERTIES=[
         "https://www.gy-bando.com/apt/index.html"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "카이브 유보라",
+      "계양 유보라",
+      "계양테크노밸리 아파트",
+      "계양신도시 아파트"
+    ]
   },
   {
     "id": "hwaseo",
@@ -8147,7 +8269,12 @@ window.PORTAL_PROPERTIES=[
         "https://hwaseo-honorsville.netlify.app/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "화서 아너스빌",
+      "서호공원 아파트",
+      "화서역 아파트"
+    ]
   },
   {
     "id": "zienheim",
@@ -8646,7 +8773,12 @@ window.PORTAL_PROPERTIES=[
         "https://xn----zv6es58b50esdt4cr4by0iqz2agid.com/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "지엔하임",
+      "사우 지엔하임",
+      "김포 사우동 아파트"
+    ]
   },
   {
     "id": "clav60",
@@ -9090,7 +9222,12 @@ window.PORTAL_PROPERTIES=[
         "https://theclav60.com/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "더클라브60",
+      "클라브60",
+      "여의도 하이엔드 오피스텔"
+    ]
   },
   {
     "id": "roche",
@@ -9392,7 +9529,12 @@ window.PORTAL_PROPERTIES=[
         "https://seouloneparkroche.sscp.kr/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "파크로쉬",
+      "서울원 시니어 레지던스",
+      "노원 시니어 레지던스"
+    ]
   },
   {
     "id": "bluming",
@@ -9815,7 +9957,12 @@ window.PORTAL_PROPERTIES=[
         "https://buyhou5e.co.kr/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "천안 벽산블루밍",
+      "삼룡동 민간임대",
+      "천안 민간임대 아파트"
+    ]
   },
   {
     "id": "raon",
@@ -10123,6 +10270,12 @@ window.PORTAL_PROPERTIES=[
         "https://jh-raon.com/"
       ]
     ],
-    "links": []
+    "links": [],
+    "keywords": [
+      "라온프라이빗 센트로",
+      "중화역 라온프라이빗",
+      "중화역 아파트",
+      "중화동 오피스텔"
+    ]
   }
 ];

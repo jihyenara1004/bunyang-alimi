@@ -63,3 +63,16 @@ document.addEventListener('click',e=>{const t=e.target.closest('[data-popup-toda
  };
 })();
 
+
+/* 검색 키워드(관련 검색어) — 2026-10-30 Claude. p.keywords(직접 입력) + 현장명·역·동네·유형으로 자동 생성 */
+window.propertyKeywords=function(p){const out=[],add=s=>{s=String(s||'').replace(/\s+/g,' ').trim();if(s&&!out.some(x=>x.replace(/\s/g,'').toLowerCase()===s.replace(/\s/g,'').toLowerCase()))out.push(s)};
+const name=p.name||'';add(name);add(name.replace(/\s+/g,''));(p.keywords||[]).forEach(add);if(p.buildingName)add(p.buildingName);
+const types=String(p.type||'').split(/\s*·\s*/).map(t=>t.replace(/^민간임대\s*/,'')).filter(Boolean);
+const text=[name,p.tag].join(' ');const stations=[...new Set((text.match(/[가-힣0-9]{1,8}역(?=세권|[^가-힣]|$)/g)||[]).filter(s=>!/^(초|더블|초더블|역)역?$/.test(s)&&!/^(초|더블|환승|더블역|역세)/.test(s)))].slice(0,2);
+const parts=String(p.area||'').split(/\s*·\s*/);const loc=(parts[1]||'').split(/\s+/);const gu=loc.find(x=>/(구|시|군)$/.test(x))||'';const dong=loc.length>1?loc[loc.length-1]:'';
+for(const t of types.slice(0,2)){stations.forEach(s=>add(s+' '+t));if(dong&&dong!==gu)add(dong+' '+t);if(gu)add(gu+' '+t+' 분양')}
+add(name+' 분양가');add(name+' 모델하우스');add(name+' 평면도');return out.slice(0,18)};
+(function(){const prev=window.renderProperty;if(!prev)return;const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+window.renderProperty=function(p,opts={}){const h=prev(p,opts);const k=window.propertyKeywords(p);if(!k.length)return h;
+const block=`<section class="property-keywords" aria-label="${E(p.name)} 관련 검색어"><h2>${E(p.name)} 관련 검색어</h2><ul>${k.map(x=>`<li>${E(x)}</li>`).join('')}</ul><p>${E(p.name)} 분양 상담 · 대표번호 1688-5650</p></section>`;
+const i=h.lastIndexOf('</article>');return i>=0?h.slice(0,i)+block+h.slice(i):h+block}})();
