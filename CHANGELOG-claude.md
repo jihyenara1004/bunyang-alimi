@@ -204,3 +204,7 @@
 - 구조화 데이터(JSON-LD): 메인 WebSite(이름 '분양알리미'), 현장 페이지 WebSite+BreadcrumbList(분양알리미 > 현장명). theme-color 추가.
 - 짧은 주소: `/<id>/` (예: /gdmetro/) 현장 26곳 생성(루트 폴더, work/generate-property-pages.cjs가 자동 생성 — 직접 수정 금지). 기존 /outputs/portal/properties/<id>.html도 유지, 두 페이지 모두 canonical·og:url은 짧은 주소.
 - sitemap.xml은 짧은 주소 26개 + 메인으로 교체.
+
+## 2026-10-30 · 브라이튼 여의도 주소 id 변경
+- id `brighton` → `brighten` (영문 BRIGHTEN 표기). 짧은 주소 `/brighten/`. 이미지 파일명(brighton-*.jpg)은 그대로.
+- 옛 주소 `/brighton/`, `/outputs/portal/properties/brighton.html`은 새 주소로 자동 이동(리다이렉트 페이지, noindex).
