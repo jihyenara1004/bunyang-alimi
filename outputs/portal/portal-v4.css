@@ -90,3 +90,7 @@ footer .company-info p{width:auto;margin:4px 0}footer .company-name{font-size:17
   #naver-map .map-cluster.big{width:54px;height:54px}
   #naver-map .map-cluster b{font-size:17px}
 }
+/* 집 모양 마커 축소 — 2026-10-30 */
+#naver-map .house-marker{gap:3px}
+#naver-map .house-shape{width:34px;height:38px;font-size:10px;padding-top:9px}
+@media(max-width:760px){#naver-map .house-shape{width:24px;height:27px;font-size:8px;padding-top:7px}}
