@@ -126,3 +126,11 @@ footer small{font-size:12px!important;color:#3a434f!important}
  .map-explorer .heading-region-tabs button{border-color:#0b3d91!important;color:#0b3d91!important}
  .map-explorer .heading-region-tabs button.active{background:#0b3d91!important;color:#fff!important}
 }
+
+/* 일반/위성 전환: 지도 위쪽 공간, 작은 글씨 */
+.explorer-heading{position:relative}
+.map-type-toggle{position:absolute;right:0;top:0;display:inline-flex;border:1px solid #c9d3df;border-radius:6px;overflow:hidden;background:#fff}
+.map-type-toggle[hidden]{display:none}
+.map-type-toggle button{border:0;background:#fff;color:#2a333f;font-size:12px;font-weight:700;padding:5px 11px;cursor:pointer;line-height:1.2}
+.map-type-toggle button+button{border-left:1px solid #c9d3df}
+.map-type-toggle button.active{background:#0b3d91;color:#fff}
