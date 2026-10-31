@@ -245,3 +245,15 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .property-keywords ul{display:flex;flex-wrap:wrap;gap:7px;list-style:none;margin:0;padding:0}
 .property-keywords li{font-size:12px;color:#5f6d7d;background:#f3f5f8;border:1px solid #e3e7ed;border-radius:999px;padding:5px 11px}
 .property-keywords p{font-size:11px;color:#9aa5b2;margin:12px 0 0}
+
+/* 상세 상단 제목을 두 줄로 나눠 표시 (nameLines 지정 현장) */
+.gd-header .gd-wordmark.name-lines{white-space:normal;text-align:left;line-height:1.25;max-width:none;letter-spacing:-1px}
+.gd-header .gd-wordmark.name-lines>span{display:block;white-space:nowrap;font-size:inherit}
+@media(max-width:480px){.gd-header .gd-wordmark.name-lines{font-size:22px}}
+@media(max-width:340px){.gd-header .gd-wordmark.name-lines{font-size:19px}}
+
+/* 모바일 상세 상단 메뉴: 화면 폭에 맞춰 글씨를 키우고 간격을 좁혀 '관심고객'이 잘리지 않게 */
+@media(max-width:760px){
+ .gd-detail .gd-header nav{justify-content:space-between!important;gap:4px!important;width:100%!important;max-width:100%!important;overflow:hidden}
+ .gd-detail .gd-header nav button{font-size:clamp(12px,3.7vw,16px)!important;letter-spacing:-.5px!important;white-space:nowrap!important;padding:13px 0!important;flex:0 1 auto;min-width:0}
+}
