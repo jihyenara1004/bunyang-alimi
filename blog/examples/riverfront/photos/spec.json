@@ -1,0 +1,12 @@
+[
+{"src":["outputs/portal/assets/rf-hero.jpg"],"crop":[0.12,0.05,0.88,1],"title":"한강을 품은 2,432세대","sub":"한강 푸르지오 리버프론트"},
+{"src":["outputs/portal/assets/rf-aerial.jpg"],"crop":[0.05,0,0.85,1],"title":"한강변 초대형 단지","sub":"지하 4층~지상 38층 · 12개 동"},
+{"src":["outputs/portal/assets/rf-night.jpg"],"crop":[0.12,0,0.95,1],"title":"1군 브랜드 푸르지오","sub":"대우건설 시공"},
+{"src":["outputs/portal/assets/rf-dist2-4.jpg"],"crop":[0.08,0.2,0.92,0.95],"fit":"contain","title":"마곡·서울과 가까운 고촌","sub":"김포한강로 · 48번 국도 · 풍곡IC(예정)"},
+{"src":["outputs/portal/assets/rf-dist2-7.jpg"],"crop":[0.04,0.22,0.37,0.62],"fit":"contain","title":"서울 5호선 김포 연장","sub":"2026년 3월 예비타당성조사 통과"},
+{"src":["outputs/portal/assets/rf-artpolis.jpg"],"crop":[0,0,0.85,1],"title":"단지 중앙 대형 광장","sub":"약 5,950㎡ 규모 계획"},
+{"src":["outputs/portal/assets/rf-playground.jpg","outputs/portal/assets/rf-plaza.jpg"],"title":"아이 키우기 좋은 단지","sub":"놀이터 · 물놀이 광장"},
+{"src":["outputs/portal/assets/rf-community.jpg","outputs/portal/assets/rf-community-b1.jpg"],"fit":"contain","title":"약 3,000평 커뮤니티","sub":"실내체육관 · 피트니스 · 골프연습장"},
+{"src":["outputs/portal/assets/rf-dist1-7.jpg"],"crop":[0.12,0.2,0.88,0.97],"fit":"contain","title":"단지배치도","sub":"84·106·122·180㎡ 구성"},
+{"src":["outputs/portal/assets/rf-plan-14.jpg"],"fit":"contain","title":"84A 평면","sub":"전용 84㎡ · 주력 타입"}
+]
