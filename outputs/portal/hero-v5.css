@@ -1,0 +1,33 @@
+/* 메인 히어로 개편 (2026-10-31): 손글씨 문구 + 분양알리미 + 한 줄 검색창 + 지역 버튼 */
+.portal-hero{display:flex!important;flex-direction:column;justify-content:center;align-items:center;height:auto!important;min-height:520px;padding:56px 6% 64px!important;overflow:hidden!important;text-align:left}
+.portal-hero .hero-shade{background:linear-gradient(90deg,rgba(8,26,56,.66),rgba(8,26,56,.30) 70%,rgba(8,26,56,.12))!important}
+.portal-hero .portal-hero-content{flex:none!important;position:relative!important;z-index:2;order:1;width:min(720px,100%)!important;max-width:none!important;margin:0!important;padding:0!important;text-align:left}
+.portal-hero .hero-kicker.hero-hand{font-family:'Nanum Pen Script','Gaegu','Hi Melody','Malgun Gothic',cursive;font-size:48px;line-height:1.1;letter-spacing:0;font-weight:400;color:#ffd84a;text-shadow:0 2px 10px rgba(0,0,0,.35);margin:0 0 6px}
+.portal-hero h1{font-size:clamp(50px,7vw,80px)!important;letter-spacing:-2px!important;margin:0 0 14px!important;text-align:left}
+.portal-hero .hero-subtitle{font-size:clamp(17px,2.3vw,24px)!important;margin:0!important;text-align:left}
+.portal-hero .hero-description{display:none}
+.portal-hero>.search-panel{flex:none!important;position:relative!important;z-index:3;order:2;top:0!important;width:min(720px,100%)!important;max-width:none!important;min-height:0!important;margin:26px 0 0!important;padding:0!important;background:none!important;border:0!important;box-shadow:none!important;display:block!important;text-align:left}
+.portal-hero>.search-panel #search{display:flex!important;flex-direction:row!important;align-items:center;gap:8px;background:#fff!important;border:0!important;border-radius:14px!important;padding:6px 6px 6px 20px!important;min-height:64px;box-shadow:0 10px 30px rgba(5,22,58,.35)!important;position:relative}
+.portal-hero>.search-panel #search>span{display:none!important}
+.portal-hero>.search-panel #search input{flex:1 1 auto;width:auto!important;min-width:0;border:0!important;background:transparent!important;outline:none;padding:14px 4px!important;min-height:0!important;font-size:17px!important;color:#17263d;box-sizing:border-box}
+.portal-hero>.search-panel #search button{flex:none;width:auto!important;min-height:52px!important;padding:0 28px!important;border-radius:10px!important;background:#842b3c!important;color:#fff;font-size:17px!important;font-weight:700}
+.portal-hero .search-suggestions{top:calc(100% + 6px)}
+.portal-hero>.search-panel .quick{display:flex!important;flex-wrap:wrap;gap:10px!important;margin:16px 0 0!important}
+.portal-hero>.search-panel .quick>span{display:none!important}
+.portal-hero>.search-panel .quick button{background:#fff!important;color:#17263d!important;border:0;border-radius:999px;padding:10px 24px!important;font-size:15px!important;font-weight:700;box-shadow:0 3px 12px rgba(5,22,58,.28);transition:background .15s,color .15s,transform .15s}
+.portal-hero>.search-panel .quick button:hover,.portal-hero>.search-panel .quick button:focus-visible{background:#842b3c!important;color:#fff!important;transform:translateY(-1px)}
+.portal-hero>.search-panel .quick button.active{background:#842b3c!important;color:#fff!important}
+.portal-hero .hero-image-note{z-index:2}
+@media(max-width:760px){
+ .portal-hero{min-height:0;padding:40px 5% 52px!important}
+ .portal-hero .hero-shade{background:linear-gradient(180deg,rgba(8,26,56,.55),rgba(8,26,56,.35))!important}
+ .portal-hero .hero-kicker.hero-hand{font-size:38px}
+ .portal-hero h1{font-size:50px!important;letter-spacing:-1.5px!important;margin-bottom:10px!important}
+ .portal-hero>.search-panel{margin-top:20px!important}
+ .portal-hero>.search-panel #search{min-height:56px;padding:5px 5px 5px 14px!important}
+ .portal-hero>.search-panel #search input{font-size:15px!important}
+ .portal-hero>.search-panel #search button{min-height:46px!important;padding:0 20px!important;font-size:15px!important}
+ .portal-hero>.search-panel .quick{margin-top:14px!important;gap:8px!important}
+ .portal-hero>.search-panel .quick button{padding:9px 20px!important;font-size:14px!important}
+ .portal-hero .hero-image-note{bottom:8px;right:10px}
+}
