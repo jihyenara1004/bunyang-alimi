@@ -70,3 +70,21 @@
 .map-info-card .mic-size{margin:0 0 8px;color:#6b7684;font-size:12px}
 .map-info-card .mic-more{border:0;background:none;padding:0;color:#1f4e9e;font-weight:700;font-size:13px;cursor:pointer}
 .map-info-card .mic-more:hover{text-decoration:underline}
+
+/* 메인 화면 회색 작은 글씨 → 조금 크게, 검은색으로 (2026-10-31) */
+#picks-note,#all-count,.section-heading .muted{font-size:14px!important;color:#1f2733!important}
+.compact-property .spec-text,.sidebar-property .spec-text,.spec-text{font-size:12.5px!important;color:#2a333f!important}
+.compact-property .feature-text{color:#842b3c}
+.price-line span{font-size:11.5px!important;color:#3a434f!important}
+.unavailable-message{font-size:11px!important;color:#3a434f!important}
+.demo-label{font-size:12.5px!important;color:#1f2733!important}
+.map-filters>p{font-size:12.5px!important;color:#2a333f!important}
+#map-caption{font-size:11.5px!important;color:#1f2733!important}
+.seo-site-list span{font-size:13px!important;color:#3a434f!important}
+.registration-heading p{font-size:14.5px!important;color:#1f2733!important}
+.privacy-details summary{font-size:14px!important;color:#1f2733!important}
+.privacy-details p{font-size:13.5px!important;color:#2a333f!important;line-height:1.7}
+.contact-note{font-size:13px!important;color:#2a333f!important}
+footer .business-number,footer .footer-note{font-size:13.5px!important;color:#1f2733!important}
+footer .footer-contact span{font-size:12.5px!important;color:#2a333f!important}
+footer small{font-size:12px!important;color:#3a434f!important}
