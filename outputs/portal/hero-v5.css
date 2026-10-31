@@ -134,3 +134,9 @@ footer small{font-size:12px!important;color:#3a434f!important}
 .map-type-toggle button{border:0;background:#fff;color:#2a333f;font-size:12px;font-weight:700;padding:5px 11px;cursor:pointer;line-height:1.2}
 .map-type-toggle button+button{border-left:1px solid #c9d3df}
 .map-type-toggle button.active{background:#0b3d91;color:#fff}
+
+/* 추천현장 설명 문구 숨김, 카드를 위로 (2026-10-31) */
+#picks-note{display:none!important}
+.picks-section .section-heading{margin-bottom:12px!important}
+.picks-section .section-heading h2{margin-bottom:0!important}
+.picks-section .pick-cards{margin-top:0!important}
