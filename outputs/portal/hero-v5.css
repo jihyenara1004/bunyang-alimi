@@ -59,3 +59,14 @@
  .picks-section{padding-top:22px!important}
  .picks-section .section-heading h2:before{margin-bottom:10px}
 }
+
+/* 지도 마커 안내창 */
+.map-info-card{position:relative;min-width:210px;max-width:250px;background:#fff;border-radius:12px;padding:14px 16px 12px;box-shadow:0 8px 24px rgba(10,30,60,.28);font-family:inherit;color:#17263d;text-align:left;transform:translateY(-6px)}
+.map-info-card:after{content:'';position:absolute;left:50%;bottom:-8px;margin-left:-8px;border:8px solid transparent;border-bottom:0;border-top-color:#fff}
+.map-info-card .mic-close{position:absolute;top:8px;right:8px;width:24px;height:24px;border-radius:50%;border:0;background:#9aa3ae;color:#fff;font-size:15px;line-height:24px;padding:0;cursor:pointer}
+.map-info-card .mic-badge{display:inline-block;background:#1f4e9e;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;margin-bottom:7px}
+.map-info-card .mic-name{display:block;font-size:16px;font-weight:800;line-height:1.35;margin:0 26px 6px 0;letter-spacing:-.4px}
+.map-info-card .mic-price{margin:0 0 3px;color:#842b3c;font-weight:800;font-size:14px}
+.map-info-card .mic-size{margin:0 0 8px;color:#6b7684;font-size:12px}
+.map-info-card .mic-more{border:0;background:none;padding:0;color:#1f4e9e;font-weight:700;font-size:13px;cursor:pointer}
+.map-info-card .mic-more:hover{text-decoration:underline}
