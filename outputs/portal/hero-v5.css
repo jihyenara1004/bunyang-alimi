@@ -88,3 +88,23 @@
 footer .business-number,footer .footer-note{font-size:13.5px!important;color:#1f2733!important}
 footer .footer-contact span{font-size:12.5px!important;color:#2a333f!important}
 footer small{font-size:12px!important;color:#3a434f!important}
+
+/* 모바일: 검색창을 더 작게, 첫 화면에 추천현장 카드 1~2개가 바로 보이게 (2026-10-31) */
+@media(max-width:760px){
+ .portal-hero{padding:16px 5% 16px!important}
+ .portal-hero .hero-kicker.hero-hand{font-size:30px!important;margin:0 0 2px!important}
+ .portal-hero .hero-subtitle{font-size:15px!important}
+ .portal-hero>.search-panel{margin-top:12px!important}
+ .portal-hero>.search-panel #search{min-height:46px!important;padding:4px 4px 4px 12px!important;border-radius:11px!important}
+ .portal-hero>.search-panel #search input{font-size:14px!important;padding:9px 2px!important}
+ .portal-hero>.search-panel #search button{min-height:38px!important;padding:0 16px!important;font-size:14px!important;border-radius:8px!important}
+ .portal-hero>.search-panel .quick{margin-top:10px!important;gap:6px!important}
+ .portal-hero>.search-panel .quick button{padding:6px 16px!important;font-size:13px!important}
+ .portal-hero .hero-image-note{display:none}
+ .picks-section{padding-top:16px!important}
+ .picks-section .eyebrow,.picks-section .section-heading h2:before{display:none!important}
+ .picks-section .section-heading{margin-bottom:10px!important}
+ .picks-section .section-heading h2{font-size:22px!important;margin:0 0 4px!important}
+ .picks-section #picks-note{font-size:13px!important;margin:0!important}
+ .picks-section .pick-cards{margin-top:8px!important}
+}
