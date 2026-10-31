@@ -9,6 +9,7 @@ Bd = '/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc'
 F = lambda p, s: ImageFont.truetype(p, s, index=0)
 GOLD = (214, 170, 90); NAVY = (16, 34, 70)
 W, IH, BAND = 1000, 800, 200
+WM = '리치메이커'  # 블로그 사진 워터마크는 리치메이커
 
 def load(path, crop):
     im = Image.open(path).convert('RGB')
@@ -27,12 +28,12 @@ def place(im, w, h, fit):
 
 def watermark(im):
     lay = Image.new('RGBA', im.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
-    t = Image.new('RGBA', (700, 120), (0, 0, 0, 0)); ImageDraw.Draw(t).text((10, 10), '분양알리미', font=F(B, 90), fill=(255, 255, 255, 46))
+    t = Image.new('RGBA', (700, 120), (0, 0, 0, 0)); ImageDraw.Draw(t).text((10, 10), WM, font=F(B, 90), fill=(255, 255, 255, 46))
     t = t.rotate(30, expand=True); lay.alpha_composite(t, ((im.width-t.width)//2, (im.height-t.height)//2))
-    f = F(Bd, 30); bb = d.textbbox((0, 0), '분양알리미', font=f)
+    f = F(Bd, 30); bb = d.textbbox((0, 0), WM, font=f)
     x, y = im.width-bb[2]-24, im.height-bb[3]-20
     d.rounded_rectangle([x-12, y-6, x+bb[2]+12, y+bb[3]+10], 8, fill=(0, 0, 0, 110))
-    d.text((x, y), '분양알리미', font=f, fill=(255, 255, 255, 235))
+    d.text((x, y), WM, font=f, fill=(255, 255, 255, 235))
     return Image.alpha_composite(im.convert('RGBA'), lay).convert('RGB')
 
 for n, s in enumerate(spec, 1):
