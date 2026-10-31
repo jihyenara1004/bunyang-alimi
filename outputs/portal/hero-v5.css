@@ -117,3 +117,12 @@ footer small{font-size:12px!important;color:#3a434f!important}
  .map-explorer .heading-region-tabs button{border:2px solid #1d5fc4!important;border-radius:999px!important;background:#fff!important;color:#1d5fc4!important;font-size:17px!important;font-weight:800!important;padding:8px 22px!important;line-height:1.2}
  .map-explorer .heading-region-tabs button.active{background:#1d5fc4!important;color:#fff!important}
 }
+
+/* 지도 목록 위 지역 버튼(서울/경기/그 외 지역): 글씨 크게, 진한 파랑 (2026-10-31) */
+.map-filters .region-tabs button{font-size:17px!important;font-weight:800!important;color:#0b3d91!important;border:2px solid #0b3d91!important;background:#fff!important}
+.map-filters .region-tabs button:hover{background:#eef3fb!important}
+.map-filters .region-tabs button.active{background:#0b3d91!important;color:#fff!important}
+@media(max-width:760px){
+ .map-explorer .heading-region-tabs button{border-color:#0b3d91!important;color:#0b3d91!important}
+ .map-explorer .heading-region-tabs button.active{background:#0b3d91!important;color:#fff!important}
+}
