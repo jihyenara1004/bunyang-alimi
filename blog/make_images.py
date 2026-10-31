@@ -21,7 +21,9 @@ W=1000; im=Image.new('RGB',(W,W)); d=bg(im,W,W)
 d.rectangle([60,60,W-60,W-60],outline=GOLD,width=4)
 def ctr(t,y,f,fill):
     b=d.textbbox((0,0),t,font=f); d.text(((W-(b[2]-b[0]))/2-b[0],y),t,font=f,fill=fill)
-ctr(l1,210,F(B,100),'white'); ctr(l2,335,F(B,150),PINK)
+ctr(l1,210,F(B,100),'white'); hs=150
+while hs>90 and d.textbbox((0,0),l2,font=F(B,hs))[2]>720: hs-=4
+ctr(l2,335+(150-hs)//2,F(B,hs),PINK)
 ns=84
 while ns>48 and d.textbbox((0,0),name,font=F(B,ns))[2]>760: ns-=2
 ctr(name,530+(84-ns)//2,F(B,ns),'white')
