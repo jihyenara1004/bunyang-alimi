@@ -48,3 +48,14 @@
 .seo-site-list a{font-weight:700;color:#17263d;text-decoration:none;font-size:15px}
 .seo-site-list a:hover{color:#842b3c;text-decoration:underline}
 .seo-site-list span{font-size:12px;color:#7b8796}
+
+/* 큰 제목 '분양알리미'는 화면에서 숨김(검색엔진·스크린리더용으로만 유지), 히어로를 낮춰 추천현장이 바로 보이게 (2026-10-31) */
+.portal-hero h1#hero-title{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+.portal-hero .hero-kicker.hero-hand{margin-bottom:10px}
+.portal-hero{min-height:0!important;padding-top:44px!important;padding-bottom:40px!important}
+.picks-section{padding-top:28px!important}
+@media(max-width:760px){
+ .portal-hero{padding-top:28px!important;padding-bottom:26px!important}
+ .picks-section{padding-top:22px!important}
+ .picks-section .section-heading h2:before{margin-bottom:10px}
+}
