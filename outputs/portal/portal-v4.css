@@ -145,3 +145,10 @@ html{scroll-padding-top:100px}
   .pick-cards>.compact-property:last-child{border-bottom:0!important}
   .pick-cards .property-thumb{height:124px}
 }
+
+/* 빠른 지역 찾기 버튼: 진하고 잘 보이게 (2026-10-31) */
+.search-panel .quick>span{color:#17263d;font-weight:700;font-size:13px}
+.search-panel .quick button{position:relative;z-index:2;cursor:pointer;background:#17263d;color:#fff;border:0;border-radius:999px;padding:11px 26px;font-size:15px;font-weight:700;letter-spacing:-.2px;box-shadow:0 3px 10px rgba(23,38,61,.22);transition:background .15s,transform .15s}
+.search-panel .quick button:hover,.search-panel .quick button:focus-visible{background:#842b3c;transform:translateY(-1px)}
+.search-panel .quick button.active{background:#842b3c;box-shadow:0 0 0 3px rgba(132,43,60,.25)}
+@media(max-width:760px){.search-panel .quick button{padding:10px 22px;font-size:14px}}
