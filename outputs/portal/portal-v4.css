@@ -152,3 +152,6 @@ html{scroll-padding-top:100px}
 .search-panel .quick button:hover,.search-panel .quick button:focus-visible{background:#842b3c;transform:translateY(-1px)}
 .search-panel .quick button.active{background:#842b3c;box-shadow:0 0 0 3px rgba(132,43,60,.25)}
 @media(max-width:760px){.search-panel .quick button{padding:10px 22px;font-size:14px}}
+
+/* 모바일: '찾는 현장이 있으신가요?' 검색 박스를 숨기고 분양정보를 바로 노출 (2026-10-31) */
+@media(max-width:760px){.search-section,.portal-hero>.search-panel{display:none!important}.portal-hero{height:auto!important;min-height:0!important;padding-bottom:0!important}.portal-hero .portal-hero-content{position:relative;padding:44px 6% 56px}.hero-image-note{bottom:10px}}
