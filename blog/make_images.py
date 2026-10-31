@@ -22,7 +22,9 @@ d.rectangle([60,60,W-60,W-60],outline=GOLD,width=4)
 def ctr(t,y,f,fill):
     b=d.textbbox((0,0),t,font=f); d.text(((W-(b[2]-b[0]))/2-b[0],y),t,font=f,fill=fill)
 ctr(l1,210,F(B,100),'white'); ctr(l2,335,F(B,150),PINK)
-ctr(name,530,F(B,84 if len(name)<=8 else 70),'white')
+ns=84
+while ns>48 and d.textbbox((0,0),name,font=F(B,ns))[2]>760: ns-=2
+ctr(name,530+(84-ns)//2,F(B,ns),'white')
 d.line([(300,660),(700,660)],fill=GOLD,width=3)
 ctr(sub,690,F(Bd,36),(220,225,240)); ctr('대표번호 '+PHONE,800,F(B,52),GOLD)
 im.save(f'{out}/썸네일.jpg',quality=95)
@@ -30,7 +32,9 @@ im.save(f'{out}/썸네일.jpg',quality=95)
 W,H=1200,315; bn=Image.new('RGB',(W,H)); d=bg(bn,W,H,True)
 d.rectangle([14,14,W-14,H-14],outline=GOLD,width=2)
 d.text((60,52),eng,font=F(Bd,24),fill=GOLD)
-d.text((60,92),name,font=F(B,64),fill='white')
+ns=64
+while ns>40 and d.textbbox((0,0),name,font=F(B,ns))[2]>600: ns-=2
+d.text((60,92+(64-ns)//2),name,font=F(B,ns),fill='white')
 d.text((60,184),'24시간 문의 환영',font=F(Bd,40),fill=(255,110,160))
 d.text((60,242),'현장 방문 · 호실별 가격 상담',font=F(R,26),fill=(200,208,230))
 d.line([(690,60),(690,255)],fill=GOLD,width=2)
