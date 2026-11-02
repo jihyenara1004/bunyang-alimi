@@ -26,7 +26,7 @@ const order=(a,b)=>(parse(a.applyStart)||0)-(parse(b.applyStart)||0);
 function pageMode(d,list){
  const today=kst(),items=(d.items||[]).slice();
  const st={region:'전체',type:'전체',period:'upcoming'};
- const upd=document.getElementById('cy-updated');if(upd)upd.textContent=d.updated?`마지막 수정 ${d.updated.replace(/-/g,'.')} · 청약홈 공고 기준`:'청약일정 준비 중 · 청약홈 공고 기준';
+ const upd=document.getElementById('cy-updated');if(upd)upd.textContent=d.updated?`마지막 수정 ${d.updated.replace(/-/g,'.')} · 최종 일정은 청약홈 공고로 확인해 주세요`:'청약일정 준비 중';
  const box=document.getElementById('cy-alert-btn');if(box)box.innerHTML=kakao(d,'청약일정·당첨발표 카카오톡으로 알림받기');
  const count=document.getElementById('cy-count');
  function match(it){const s=status(it,today).key;
@@ -50,7 +50,7 @@ function homeMode(d){
  const rows=(d.items||[]).filter(it=>['soon','open','wait'].includes(status(it,today).key)).sort(order).slice(0,4);
  if(!rows.length)return;
  const s=document.createElement('section');s.id='cy-home';s.className='section cy-home';
- s.innerHTML=`<div class="section-heading"><div><h2>이번 주 청약일정</h2><p class="muted">청약홈 공고 기준으로 정리했어요.</p></div><a href="/cheongyak/" class="all-sites">전체 일정 보기</a></div><div class="cy-home-body"><ul class="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
+ s.innerHTML=`<div class="section-heading"><div><h2>이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/" class="all-sites">전체 일정 보기</a></div><div class="cy-home-body"><ul class="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
  after.insertAdjacentElement('afterend',s)}
 
 const list=document.getElementById('cy-list');
