@@ -77,3 +77,16 @@
 .cy-alert-bottom{margin-top:28px}
 .cy-calc-link{font-weight:800;color:#0b3d91}
 @media(max-width:760px){.cc-box{grid-template-columns:1fr;padding:16px}.cc-total b{font-size:56px}}
+/* 청약일정 페이지 안의 가점 계산기, 단독 계산기 페이지의 돌아가기 링크 */
+.cc-embed{margin-top:36px;padding-top:8px;scroll-margin-top:20px}.cc-embed h2{margin:0 0 6px;font-size:24px}.cc-embed-lead{margin:0;color:#3d4651}
+.cc-embed .cc-box{margin:16px 0 10px}
+.cc-back{display:inline-block;margin:0 0 14px;font-weight:800;color:#0b3d91;text-decoration:none}
+/* 청약일정 페이지: 한 줄 목록 + 오른쪽 카톡 칸 하나 (홈 요약 칸과 같은 모양) */
+.cy-page-body{grid-template-columns:1fr 240px}
+.cy-side-alert{position:sticky;top:110px;align-self:start;min-height:240px}
+.cy-full-list li{display:grid;grid-template-columns:auto 1fr auto auto auto;gap:6px 14px;align-items:center}
+.cy-full-list b{flex:none;font-size:15px}.cy-full-list .cy-r{color:#3d4651}.cy-full-list .cy-d,.cy-full-list .cy-w{font-size:14px;white-space:nowrap}
+.cy-tag{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:6px;background:#fff0d6;color:#8a5200;font-size:11px;font-weight:700;vertical-align:middle}
+@media(max-width:760px){.cy-page-body{grid-template-columns:1fr}.cy-side-alert{order:-1;position:static;min-height:0}.cy-full-list li{grid-template-columns:auto 1fr;gap:4px 10px}.cy-full-list .cy-r{grid-column:2}.cy-full-list .cy-d,.cy-full-list .cy-w{grid-column:2}}
+@media(max-width:760px){.cy-side-alert{order:0;margin-top:4px}.cy-side-alert .cy-kakao{flex-direction:row;min-height:56px;font-size:15px}.cy-side-alert .cy-kakao br{display:none}.cy-side-alert .cy-kakao-ico{width:26px;height:26px}}
+@media(max-width:760px){.cy-full-list li{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;padding:11px 14px}.cy-full-list b{flex:1 1 calc(100% - 90px);font-size:15px}.cy-full-list .cy-r,.cy-full-list .cy-d,.cy-full-list .cy-w{font-size:13px;color:#3d4651}.cy-full-list .cy-r:after,.cy-full-list .cy-d:after{content:" ·";color:#9aa3ad}}
