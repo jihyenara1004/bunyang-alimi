@@ -56,3 +56,24 @@
 .cy-card-kakao{display:flex;width:100%;margin-top:14px;min-height:44px;font-size:14px}
 .cy-src{display:block;margin-top:8px;font-size:12px;font-weight:500;color:#5b6573;text-decoration:underline}
 .cy-card p.cy-src{text-decoration:none;margin-bottom:0}
+/* 청약 가점 계산기 (/cheongyak/calculator/) */
+.cc-box{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;margin:24px 0;padding:22px;border:1px solid #dfe3dd;border-radius:16px;background:#fff}
+.cc-form{display:grid;gap:18px}.cc-form label{display:grid;gap:6px}.cc-form label>span{font-weight:800;font-size:16px}.cc-form small{font-weight:500;color:#3d4651}
+.cc-form select{width:100%;min-height:48px;padding:10px 12px;border:1px solid #c9d1dc;border-radius:10px;background:#fff;font:inherit;font-size:16px;color:#1f2733}
+.cc-form em{font-style:normal;font-size:13px;color:#3d4651}
+.cc-result{display:flex;flex-direction:column;justify-content:center;gap:14px;padding:20px;border-radius:14px;background:#f2f6fd}
+.cc-total{margin:0;text-align:center}.cc-total b{font-size:64px;line-height:1;color:#0b3d91}.cc-total span{margin-left:6px;font-size:20px;font-weight:700;color:#3d4651}
+.cc-bars{margin:0;padding:0;list-style:none;display:grid;gap:10px}.cc-bars li{display:grid;grid-template-columns:76px 1fr 64px;align-items:center;gap:8px;font-size:14px}
+.cc-bars i{height:10px;border-radius:99px;background:#dde4ee;overflow:hidden}.cc-bars i b{display:block;height:100%;width:0;background:#0b3d91;border-radius:99px;transition:width .25s}
+.cc-bars em{font-style:normal;text-align:right;font-weight:700}
+.cc-msg{margin:0;font-size:15px;line-height:1.6;color:#1f2733}
+.cc-low{margin-top:28px}.cc-low h2{margin:0 0 6px;font-size:20px}.cc-low>p{margin:0 0 12px;color:#3d4651}
+.cc-guide{margin-top:36px;line-height:1.75}.cc-guide h2{font-size:20px;margin:28px 0 10px}
+.cc-guide table{width:100%;border-collapse:collapse;font-size:14px}.cc-guide th,.cc-guide td{border:1px solid #dfe3dd;padding:9px 10px;text-align:left;vertical-align:top}.cc-guide th{background:#f6f7f9}
+.cc-guide ol{padding-left:20px}.cc-guide li{margin:6px 0}
+.cc-faq dt{font-weight:800;margin-top:12px}.cc-faq dd{margin:4px 0 0;color:#3d4651}
+.cc-banner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 16px;margin:0 0 18px;padding:16px 20px;border-radius:14px;background:#0b3d91;color:#fff;text-decoration:none}
+.cc-banner b{font-size:17px}.cc-banner span{font-weight:700;color:#ffd84a}
+.cy-alert-bottom{margin-top:28px}
+.cy-calc-link{font-weight:800;color:#0b3d91}
+@media(max-width:760px){.cc-box{grid-template-columns:1fr;padding:16px}.cc-total b{font-size:56px}}
