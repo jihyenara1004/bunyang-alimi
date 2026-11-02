@@ -42,18 +42,33 @@ function pageMode(d,list){
   list.innerHTML=rows.length?rows.map(it=>card(it,today,d)).join(''):`<p class="cy-empty">${items.length?'조건에 맞는 일정이 없습니다.':'청약 일정을 준비하고 있습니다. 최신 공고는 <a href="https://www.applyhome.co.kr" target="_blank" rel="noopener noreferrer">청약홈</a>에서 먼저 확인해 주세요.'}</p>`}
  document.querySelectorAll('[data-cy-filter]').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button[data-v]');if(!b)return;st[g.dataset.cyFilter]=b.dataset.v;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()}));
  draw();
- const mine=document.getElementById('cy-mine');
+ const bottom=document.getElementById('cy-alert-btn2');if(bottom)bottom.innerHTML=kakao(d,'청약일정·당첨발표 카카오톡으로 알림받기');
+ renderMine()}
+
+// 하단 "지금 계약 가능한 추천 분양현장" 카드 (추천 순서 pinned 기준 3곳)
+function renderMine(){const mine=document.getElementById('cy-mine');
  if(mine&&window.PORTAL_PROPERTIES){const P=window.PORTAL_PROPERTIES.slice().sort((a,b)=>(a.pinned||99)-(b.pinned||99)).slice(0,3);
   mine.innerHTML=P.map(p=>`<a class="cy-site" href="/${E(p.id)}/"><b>${E(p.name)}</b><span>${E([p.area,p.type].filter(Boolean).join(' · '))}</span>${p.tag?`<em>${E(p.tag)}</em>`:''}</a>`).join('')}}
+
+// 청약 가점 계산기 (/cheongyak/calculator/): 입력값은 화면 안에서만 계산, 저장·전송 없음
+function calcMode(d,form){
+ const box=document.getElementById('cy-alert-btn');if(box)box.innerHTML=kakao(d,'내 점수에 맞는 단지 소식 카카오톡으로 받기');
+ renderMine();
+ const parts=[['home',32],['family',35],['account',17]];
+ function draw(){let total=0;for(const[k,max]of parts){const v=+document.getElementById('cc-'+k).value;total+=v;document.getElementById('cc-bar-'+k).style.width=(v/max*100)+'%';document.getElementById('cc-v-'+k).textContent=`${v} / ${max}점`}
+  document.getElementById('cc-total').textContent=total;
+  document.getElementById('cc-msg').textContent=total>=60?'가점제 경쟁에 도전해 볼 만한 점수예요. 인기 단지는 단지·면적마다 당첨선이 다르니 지난 당첨 가점을 함께 확인하세요.':total>=40?'중간 점수예요. 추첨제 물량과 특별공급 자격을 함께 확인하면 기회가 넓어져요.':'가점제만으로는 쉽지 않은 점수예요. 특별공급·추첨제·무순위, 그리고 청약통장 없이 계약할 수 있는 선착순 현장을 함께 보세요.'}
+ form.addEventListener('change',draw);draw()}
+
+const list=document.getElementById('cy-list'),calc=document.getElementById('cc-form');
 
 function homeMode(d){
  const after=document.getElementById('featured'),today=kst();if(!after)return;
  const rows=(d.items||[]).filter(it=>['soon','open','wait'].includes(status(it,today).key)).sort(order).slice(0,4);
  if(!rows.length)return;
  const s=document.createElement('section');s.id='cy-home';s.className='section cy-home';
- s.innerHTML=`<div class="section-heading"><div><h2>이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/" class="all-sites">전체 일정 보기</a></div><div class="cy-home-body"><ul class="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
+ s.innerHTML=`<div class="section-heading"><div><h2>이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요. · <a class="cy-calc-link" href="/cheongyak/calculator/">내 청약 가점 확인하기 →</a></p></div><a href="/cheongyak/" class="all-sites">전체 일정 보기</a></div><div class="cy-home-body"><ul class="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
  after.insertAdjacentElement('afterend',s)}
 
-const list=document.getElementById('cy-list');
-fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{list?pageMode(d,list):homeMode(d)});
+fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{calc?calcMode(d,calc):list?pageMode(d,list):homeMode(d)});
 })();
