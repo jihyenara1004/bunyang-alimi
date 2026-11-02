@@ -3,8 +3,8 @@
 @media (max-width:760px){
   .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:150;display:flex;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid #e0e7ef;box-shadow:0 -4px 16px #14213d14;box-sizing:border-box}
   .mobile-cta a,.mobile-cta button{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;height:48px;margin:0;border-radius:10px;font:inherit;font-size:16px;font-weight:700;text-decoration:none;cursor:pointer;box-sizing:border-box}
-  .mobile-cta a{background:#fff;color:#14213d;border:1.5px solid #14213d}
-  .mobile-cta button{background:#14213d;color:#fff;border:0}
+  .mobile-cta a{background:#fff;color:#1f3c88;border:1.5px solid #1f3c88}
+  .mobile-cta button{background:#1f3c88;color:#fff;border:0}
   .mobile-cta svg{width:18px;height:18px;flex:none}
   body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
   .property-page-dialog #detail-body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
