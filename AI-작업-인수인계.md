@@ -117,3 +117,8 @@
 - 관심고객 등록폼·Make·솔라피는 변경하지 않음. 청약일정 페이지에는 접수 전송 없음.
 - 남은 일: `cheongyak/index.html`의 `noindex` 제거 + `work/gen-seo.cjs`에 `/cheongyak/` 사이트맵 추가(대표님 승인 후), 단지별 상세페이지·"이 단지 소식 받기" 버튼, 현장 상세 메뉴에 "분양조건" 추가, 청약홈 공공데이터 API 자동 수집(GitHub Actions + Secrets, 인증키는 코드·채팅에 올리지 않기).
 - 배포 구조: GitHub Pages가 직접 서비스(응답 Server: GitHub.com), Cloudflare는 DNS만. `main`에 병합하면 바로 실제 사이트에 반영됨.
+
+## 2026-11-03 (Claude) 생성 스크립트 실행 환경
+- 집 노트북에는 node가 따로 없음 → Codex 앱 내장 node 사용: `C:\Users\User\AppData\Local\OpenAI\Codex\runtimes\cua_node\5c41f77a7900391c\bin\node.exe` (Codex 업데이트 시 경로가 바뀔 수 있음).
+- 현장 페이지 메타 설명은 `generate-property-pages.cjs`의 `metaDesc()`가 만듦(150자 이내). 사이트맵은 `gen-seo.cjs`가 홈 + `/cheongyak/` + 현장 27곳을 씀.
+- 홈 "전체 분양현장 바로가기"와 현장 카드는 `buildingLabel`이 있으면 "건물명: …"을 함께 표시(현재 인시그니아만).
