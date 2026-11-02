@@ -140,3 +140,8 @@ footer small{font-size:12px!important;color:#3a434f!important}
 .picks-section .section-heading{margin-bottom:12px!important}
 .picks-section .section-heading h2{margin-bottom:0!important}
 .picks-section .pick-cards{margin-top:0!important}
+/* 2026-11-03 검색창 숨김 후 빈 간격 정리: 지역 버튼을 문구 가까이 올리고 첫 화면 높이 축소 */
+.portal-hero{gap:0!important;padding-top:36px!important;padding-bottom:32px!important}
+.portal-hero>.search-panel{margin-top:22px!important}
+.portal-hero>.search-panel .quick{margin-top:0!important}
+@media(max-width:760px){.portal-hero{padding-top:14px!important;padding-bottom:14px!important}.portal-hero>.search-panel{margin-top:12px!important}}
