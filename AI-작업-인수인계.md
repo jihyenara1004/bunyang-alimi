@@ -122,3 +122,6 @@
 - 집 노트북에는 node가 따로 없음 → Codex 앱 내장 node 사용: `C:\Users\User\AppData\Local\OpenAI\Codex\runtimes\cua_node\5c41f77a7900391c\bin\node.exe` (Codex 업데이트 시 경로가 바뀔 수 있음).
 - 현장 페이지 메타 설명은 `generate-property-pages.cjs`의 `metaDesc()`가 만듦(150자 이내). 사이트맵은 `gen-seo.cjs`가 홈 + `/cheongyak/` + 현장 27곳을 씀.
 - 홈 "전체 분양현장 바로가기"와 현장 카드는 `buildingLabel`이 있으면 "건물명: …"을 함께 표시(현재 인시그니아만).
+
+## 할 일 목록
+- 남은 일은 `할일/할일목록.md`에 모아 둠 (끝나면 [x] 표시와 날짜).
