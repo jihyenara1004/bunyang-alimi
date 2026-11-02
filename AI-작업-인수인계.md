@@ -1,12 +1,14 @@
 # 분양알리미 AI 작업 인수인계 (GPT ↔ Claude 공용)
 
 이 문서는 ChatGPT(Codex)와 Claude가 번갈아 작업해도 서로의 작업을 덮어쓰지 않도록 남기는 안내입니다.
-마지막 갱신: 2026-10-29 (Claude)
+마지막 갱신: 2026-11-02 (Claude, 집 노트북)
 
 ## 1. 기준 원본
 - **GitHub `jihyenara1004/bunyang-alimi`의 `main` 브랜치가 유일한 기준 원본**입니다.
 - 실제 사이트 bunyang-alimi.com = `main` (GitHub Pages, 앞단 DNS는 Cloudflare).
-- 사용자 컴퓨터 사본: `C:\Users\User\Documents\Codex\분양알리미_최신\` (Claude가 `main`과 같게 맞춰 둠).
+- 사용자 컴퓨터 사본 (노트북 2대, 둘 다 Git 사용):
+  - 회사 노트북: `C:\Users\User\Documents\Codex\분양알리미_최신\`
+  - 집 노트북: `C:\Users\User\Documents\분양알리미\` (2026-11-02 Git 설치·복제)
   - 작업 전에 반드시 GitHub `main`을 먼저 받아서(또는 이 폴더를 복사해서) 시작하세요.
   - 예전 날짜 폴더(`Codex\2026-10-28\...\outputs\portal`)는 오래된 버전이라 그 파일로 덮어쓰면 최근 수정이 사라집니다.
 - 작업은 별도 브랜치(`claude/...`, `gpt/...`)에서 하고, 확인 후 `main`에 반영합니다.
@@ -19,11 +21,13 @@
 - `outputs/portal/property-detail.css`: 상세페이지 스타일 (맨 아래일수록 우선)
 - `outputs/portal/app.js`: 홈·지도·카드·상세창
 - `outputs/portal/properties/*.html`: 현장별 단독 상세페이지 → `node work/generate-property-pages.cjs`로 자동 생성 (직접 수정 금지)
-- `sitemap.xml`: 홈 + 현장 상세 12개
+- `sitemap.xml`: 홈 + 현장 상세 27개 (`/현장id/` 형식, `node work/gen-seo.cjs`로 갱신)
+- 루트의 `brighton/`, `clestone/`, `songpa/`는 예전 주소용 페이지(canonical이 `brighten`, `celstone`, `thegrid`를 가리킴). 지우지 마세요.
+- `naver2097…html`, `googlef4e9…html`: 네이버 서치어드바이저·구글 서치콘솔 소유확인 파일 (등록 완료, 지우지 마세요)
 
 ## 3. 데이터를 바꾼 뒤 할 일
 1. `properties.js`와 `work/property-catalog.json` 둘 다 수정
-2. `node work/generate-property-pages.cjs` 실행 (상세페이지 12개 재생성)
+2. `node work/generate-property-pages.cjs` 실행 (상세페이지 재생성)
 3. 바꾼 js/css가 있으면 `index.html`, `outputs/portal/index.html`의 `?v=` 캐시 번호 올리기
 4. 수정 내역을 `CHANGELOG-claude.md`(또는 각자 변경기록)에 남기기
 
@@ -69,3 +73,37 @@
 - 관심고객 전송값: propertyName, name, phone, submittedAt, source → Make 웹훅. 알림톡 발송·담당자 배정은 Make 시나리오(외부)에서 처리.
 - 상세 상단 제목을 두 줄로 나누려면 현장 데이터에 `nameLines:['1줄','2줄']`.
 - 2026-10-31 18:53 Make 시나리오 "분양알리미 홈페이지 관심고객 접수 → 대표님 카톡 알림"(ID 8224268, 웹훅 p78rn…) 활성화. 대기열 3건 처리 → 3건 모두 성공(웹훅 → SOLAPI 알림톡). 수신번호는 대표님 번호 1개(Make 안에만 저장). 이전엔 비활성 상태라 접수가 대기열에만 쌓였음.
+
+## 2026-11-02 (Claude) 역할·마케팅 방향 정리
+### 역할
+- 대표님은 GPT·Gemini와 기획을 논의하고, 실행은 Claude에게 맡김 (Claude = 최종 수행비서).
+- 다른 AI의 제안은 실사이트·코드로 사실 확인 후 실행. 이미 확인된 내용은 다시 묻지 않기.
+- 예: GPT가 "현장별 독립 URL 없음"이라고 했으나 실제로는 27개 모두 있음(위 2번 참고).
+
+### 사이트 점검 결과 (2026-11-02)
+- 27개 현장 독립 URL 200 응답, 현장별 title·description·canonical·JSON-LD, 사이트맵·robots 정상.
+- 관심고객 폼: 화면에서는 `lead-form.js`가 정상 폼으로 바꿔 Make로 전송됨.
+  `detail-view.js`의 GD메트로타워 옛 임시 폼 문구("입력 내용은 전송되지 않았습니다")는 화면에 안 보이지만 코드에 남아 있음 → 정리 후보.
+- 메인에서 상세가 팝업으로 열릴 때 주소가 안 바뀌는 경우가 있음 → pushState로 현장 URL 반영 검토(선택).
+- 사평대로12 = 인시그니아 반포 (`/insignia/`).
+
+### 네이버 파워링크 (합의된 방향)
+- `searchad.naver.com`은 Claude 브라우저(내장·Chrome) 모두 안전 정책으로 접속 차단 → Claude가 세팅 시트를 만들고 대표님이 입력.
+- 1도메인 + 현장별 광고그룹, 연결 URL은 각 현장 페이지(`/현장id/`).
+- 1위 고집 금지: 모바일 3위 안, PC 3~5위, 최대 입찰가 상한.
+- 롱테일: 현장명 + 분양가/모델하우스/잔여세대/평면도/방문예약, 띄어쓰기·어순 변형 포함.
+- 예산은 현장 등급별 차등(A 60% / B 30% / C 10%), 성과 지표는 '유효 상담 1건당 광고비'.
+- 제외 키워드: 전세, 월세, 매매, 시세, 실거래가, 채용, 하자, 소송 등.
+- 청약일정 같은 정보성 키워드는 광고 대신 SEO로.
+- 직접 맡지 않은 대장 단지(예: 디에이치 반포124)는 정보 콘텐츠로만 다루고 파워링크 집행 금지. "분양 주체/대행사 아님" 고지, 전화번호 미노출, 공식 모집공고 기준·예정/확정 구분·수정일 표시.
+- 광고비 지출·입찰가 변경은 대표님 승인 후.
+
+### 카카오·인스타 (Gemini 기획 검토 결과)
+- 알림톡은 정보성만 가능. 현장 홍보(크로스셀링)는 친구톡/브랜드 메시지로 분리하고 광고 수신동의, (광고) 표기, 야간 발송 제한을 지킬 것.
+- 고객 대상 발송은 기존 Make 시나리오(대표님 접수 알림, ID 8224268)와 별도로 만들고, 기존 시나리오는 건드리지 않기.
+- 1차: 홈페이지 '지역 선택 + 알림 신청' 폼 → 구글 시트. 챗봇(오픈빌더)은 2차.
+- 네이버 블로그 우선, 인스타그램은 3단계.
+
+### 다음 할 일
+1. 파워링크 세팅 시트 작성 (27개 현장: 광고그룹·키워드·소재·연결 URL·등급별 예산)
+2. (선택) 옛 임시 폼 코드 정리, 팝업 주소 반영
