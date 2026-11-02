@@ -7,6 +7,7 @@
 - 자료 파일 `outputs/portal/cheongyak-data.json`: 지금은 비어 있음(`items: []`). 칸: name, region, type(아파트·오피스텔·무순위), address, units, applyStart, applyEnd, winnerDate, confirmed, rate, source, note. 카카오 채널 주소는 `kakaoUrl`에 넣으면 버튼이 켜짐(비어 있으면 "채널 준비 중").
 - 화면 로직 `outputs/portal/cheongyak.js` (페이지와 홈 공용), 스타일 `cheongyak.css`.
 - 홈: 메뉴를 지시서대로 "추천현장·분양정보·청약일정·분양지도·관심고객 등록"으로 변경(관심고객 등록은 파란 버튼으로 강조, 375px에서 한 줄 유지), 추천현장 아래 "이번 주 청약일정" 요약 칸 — 접수 예정·진행 중인 일정이 있을 때만 나타남. `index.html`·`outputs/portal/index.html` 둘 다 수정.
+- 홈 첫 화면: 검색창을 숨김(대표님 결정 — 현장 27곳이라 지도·지역 버튼으로 충분). 서울·경기·기타 버튼은 유지. 검색 코드(app.js·home-search.js)는 그대로 두고 CSS로만 숨겨서 되돌리기 쉬움(`cheongyak.css` 맨 아래 한 줄 삭제). 홈 칸 순서: 추천현장 → 분양정보 → 이번 주 청약일정 → 지도 → 관심고객 등록 → 전체 현장 목록.
 - 지시서(2026-11-02) 반영: 자료 칸에 price(분양가)·updated(최종 수정일) 추가, 접수 끝난 단지는 "접수마감" 표시, 하단 제목 "지금 계약 가능한 추천 분양현장". 관심고객 등록폼·Make·솔라피는 변경 없음.
 - 확인: 가짜 테스트 4건으로 필터(지역·유형·이번 주/다음 주/발표 대기/지난 일정)·상태 표시·홈 요약·375px 가로 넘침 없음·콘솔 오류 없음·페이지에 전화번호 없음 확인 후 테스트 자료는 삭제(저장소에는 빈 자료만 있음). 실제 일정 자료는 아직 없음.
 - 반영 전 할 일: ① 실제 단지 자료 10~20곳 입력 ② 카카오 채널 주소 입력 ③ `cheongyak/index.html`의 `noindex` 제거 + `work/gen-seo.cjs`에 사이트맵 `/cheongyak/` 추가 ④ API 자동 수집(GitHub Actions)은 별도 작업. 기존 Make·솔라피는 변경 없음.

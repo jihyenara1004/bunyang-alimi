@@ -46,12 +46,12 @@ function pageMode(d,list){
   mine.innerHTML=P.map(p=>`<a class="cy-site" href="/${E(p.id)}/"><b>${E(p.name)}</b><span>${E([p.area,p.type].filter(Boolean).join(' · '))}</span>${p.tag?`<em>${E(p.tag)}</em>`:''}</a>`).join('')}}
 
 function homeMode(d){
- const picks=document.getElementById('picks'),today=kst();if(!picks)return;
+ const after=document.getElementById('featured'),today=kst();if(!after)return;
  const rows=(d.items||[]).filter(it=>['soon','open','wait'].includes(status(it,today).key)).sort(order).slice(0,4);
  if(!rows.length)return;
  const s=document.createElement('section');s.id='cy-home';s.className='section cy-home';
  s.innerHTML=`<div class="section-heading"><div><h2>이번 주 청약일정</h2><p class="muted">청약홈 공고 기준으로 정리했어요.</p></div><a href="/cheongyak/" class="all-sites">전체 일정 보기</a></div><div class="cy-home-body"><ul class="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
- picks.insertAdjacentElement('afterend',s)}
+ after.insertAdjacentElement('afterend',s)}
 
 const list=document.getElementById('cy-list');
 fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{list?pageMode(d,list):homeMode(d)});
