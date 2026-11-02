@@ -1,5 +1,13 @@
 # 분양알리미 수정 내역 (Claude)
 
+## 2026-11-03 · 남은 SEO 작업 마무리
+- 브랜치: `claude/seo-finish`
+- 이 노트북에는 node가 없어서 Codex 앱에 들어 있는 node(`C:\Users\User\AppData\Local\OpenAI\Codex\runtimes\cua_node\5c41f77a7900391c\bin\node.exe`, v24)로 생성 스크립트 실행. 바꾸기 전 생성기를 그대로 돌려 기존 파일과 완전히 같음을 먼저 확인.
+- 현장 27곳 메타 설명 짧게: `work/generate-property-pages.cjs`에 `metaDesc()` 추가 → "현장명(대표 별칭) 분양정보 · 핵심 소개 · 상담 1688-5650", 최대 147자(이전 최대 약 200자, 현장명 중복·키워드 나열 제거). 바뀐 건 description 한 줄뿐임을 비교로 확인.
+- 청약일정 검색 노출: `cheongyak/index.html`의 noindex 제거, `work/gen-seo.cjs`가 사이트맵에 `/cheongyak/`를 넣도록 수정 후 실행(사이트맵 29개 주소). 홈 "전체 분양현장 바로가기" 목록은 재생성 결과가 기존과 같음.
+- 접수폼·Make·솔라피 변경 없음. 접수폼 안 Make·솔라피 문구 정리는 대표님 결정 대기.
+
+
 ## 2026-11-03 · 첫 화면 정리·사업자 정보·인시그니아 건물명
 - 브랜치: `claude/hero-and-business-info`
 - 첫 화면: 검색창을 숨긴 뒤 남아 있던 빈 간격(home-search.css의 gap 64px)을 없애고 위아래 여백을 줄여, 서울·경기·기타 버튼을 문구 바로 아래로 올림. 높이 PC 329→229px, 휴대폰 141→127px (`hero-v5.css` 맨 아래, 캐시 `20261103-h1`).
