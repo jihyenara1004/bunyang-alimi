@@ -45,3 +45,5 @@
 .cy-upd{margin:8px 0 0;font-size:12px;color:#3d4651}
 @media(max-width:760px){.portal-header nav{gap:6px 7px!important;font-size:13px!important;letter-spacing:-.4px;flex-wrap:wrap}.portal-header nav button[data-register],.portal-header nav a.cy-reg{padding:6px 10px}}
 .portal-hero > .search-panel #search{display:none!important}
+/* 현장명 아래 건물명 (예: 사평대로12 → 건물명: 인시그니아 반포) */
+.property-name .building-label{display:block;margin-top:3px;font-size:13px;font-weight:600;color:#3d4651;letter-spacing:0}
