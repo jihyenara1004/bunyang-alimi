@@ -90,3 +90,9 @@
 @media(max-width:760px){.cy-page-body{grid-template-columns:1fr}.cy-side-alert{order:-1;position:static;min-height:0}.cy-full-list li{grid-template-columns:auto 1fr;gap:4px 10px}.cy-full-list .cy-r{grid-column:2}.cy-full-list .cy-d,.cy-full-list .cy-w{grid-column:2}}
 @media(max-width:760px){.cy-side-alert{order:0;margin-top:4px}.cy-side-alert .cy-kakao{flex-direction:row;min-height:56px;font-size:15px}.cy-side-alert .cy-kakao br{display:none}.cy-side-alert .cy-kakao-ico{width:26px;height:26px}}
 @media(max-width:760px){.cy-full-list li{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;padding:11px 14px}.cy-full-list b{flex:1 1 calc(100% - 90px);font-size:15px}.cy-full-list .cy-r,.cy-full-list .cy-d,.cy-full-list .cy-w{font-size:13px;color:#3d4651}.cy-full-list .cy-r:after,.cy-full-list .cy-d:after{content:" ·";color:#9aa3ad}}
+/* 홈 "이번 주 청약일정": 4곳만 보이다가 펼치면 전체, 카톡 칸은 따라 내려옴 */
+.cy-home-list li.cy-extra{display:none}
+.cy-home.is-expanded .cy-home-list li.cy-extra{display:flex}
+.cy-home.is-expanded .cy-home-alert{align-self:start;position:sticky;top:110px;min-height:220px}
+button.cy-expand{cursor:pointer;border:0;font:inherit}
+@media(max-width:760px){.cy-home.is-expanded .cy-home-alert{position:static;min-height:0}}
