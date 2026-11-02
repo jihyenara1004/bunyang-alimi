@@ -47,3 +47,8 @@
 .portal-hero > .search-panel #search{display:none!important}
 /* 현장명 아래 건물명 (예: 사평대로12 → 건물명: 인시그니아 반포) */
 .property-name .building-label{display:block;margin-top:3px;font-size:13px;font-weight:600;color:#3d4651;letter-spacing:0}
+/* 카카오톡 말풍선 아이콘 */
+.cy-kakao{gap:8px}
+.cy-kakao-ico{width:22px;height:22px;flex:none;color:#191919}
+.cy-home-alert .cy-kakao{flex-direction:column;gap:10px;font-size:16px}
+.cy-home-alert .cy-kakao-ico{width:44px;height:44px}
