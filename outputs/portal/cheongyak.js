@@ -13,14 +13,14 @@ function status(it,today){const a=parse(it.applyStart),b=parse(it.applyEnd||it.a
  if(today<a)return{key:'soon',label:'접수예정'};
  if(today<=b)return{key:'open',label:'접수중'};
  if(w&&today>w)return{key:'done',label:'발표완료'};
- return{key:'wait',label:w&&+today===+w?'오늘 발표':'발표대기'}}
+ return{key:'wait',label:w&&+today===+w?'오늘 발표':'접수마감'}}
 const regionOf=it=>['서울','경기','인천'].includes(it.region)?it.region:'기타';
 const overlap=(it,from,to)=>{const a=parse(it.applyStart),b=parse(it.applyEnd||it.applyStart);return !!a&&a<=to&&b>=from};
 function weekRange(today,offset){const mon=new Date(+today-((today.getUTCDay()+6)%7)*DAY+offset*7*DAY);return[mon,new Date(+mon+6*DAY)]}
 function kakao(d,label){const u=safeUrl(d.kakaoUrl);return u?`<a class="cy-kakao" href="${E(u)}" target="_blank" rel="noopener">${label}</a>`:`<span class="cy-kakao is-off">카카오톡 채널 준비 중</span>`}
-const dates=it=>{const a=fmt(it.applyStart),b=it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+fmt(it.applyEnd):'';return`<div><dt>접수</dt><dd>${a?E(a+b):'확인 중'}</dd></div><div><dt>당첨발표</dt><dd>${it.winnerDate?E(fmt(it.winnerDate)):'확인 중'}</dd></div>`};
+const dates=it=>{const pr=it.price?`<div><dt>분양가</dt><dd>${E(it.price)}</dd></div>`:"";const a=fmt(it.applyStart),b=it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+fmt(it.applyEnd):'';return pr+`<div><dt>접수</dt><dd>${a?E(a+b):'확인 중'}</dd></div><div><dt>당첨발표</dt><dd>${it.winnerDate?E(fmt(it.winnerDate)):'확인 중'}</dd></div>`};
 function card(it,today){const s=status(it,today);const src=safeUrl(it.source);
- return`<article class="cy-card cy-${s.key}"><div class="cy-top"><span class="cy-badge">${s.label}</span><span class="cy-confirm ${it.confirmed?'yes':'no'}">${it.confirmed?'공고 확인':'예정'}</span></div><h3>${E(it.name)}</h3><p class="cy-meta">${E([regionOf(it),it.type,it.units?it.units+(/^\d+$/.test(String(it.units))?'세대':''):''].filter(Boolean).join(' · '))}${it.address?'<br>'+E(it.address):''}</p><dl class="cy-dates">${dates(it)}${it.rate?`<div><dt>경쟁률</dt><dd>${E(it.rate)} <small>청약홈 기준 · 변동 가능</small></dd></div>`:''}</dl>${it.note?`<p class="cy-note">${E(it.note)}</p>`:''}${src?`<a class="cy-src" href="${E(src)}" target="_blank" rel="noopener noreferrer">청약홈 공고 보기</a>`:''}</article>`}
+ return`<article class="cy-card cy-${s.key}"><div class="cy-top"><span class="cy-badge">${s.label}</span><span class="cy-confirm ${it.confirmed?'yes':'no'}">${it.confirmed?'공고 확인':'예정'}</span></div><h3>${E(it.name)}</h3><p class="cy-meta">${E([regionOf(it),it.type,it.units?it.units+(/^\d+$/.test(String(it.units))?'세대':''):''].filter(Boolean).join(' · '))}${it.address?'<br>'+E(it.address):''}</p><dl class="cy-dates">${dates(it)}${it.rate?`<div><dt>경쟁률</dt><dd>${E(it.rate)} <small>청약홈 기준 · 변동 가능</small></dd></div>`:''}</dl>${it.note?`<p class="cy-note">${E(it.note)}</p>`:''}${it.updated?`<p class="cy-upd">최종 수정 ${E(it.updated.replace(/-/g,'.'))}</p>`:''}${src?`<a class="cy-src" href="${E(src)}" target="_blank" rel="noopener noreferrer">청약홈 공고 보기</a>`:''}</article>`}
 const order=(a,b)=>(parse(a.applyStart)||0)-(parse(b.applyStart)||0);
 
 function pageMode(d,list){
