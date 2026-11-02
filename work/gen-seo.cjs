@@ -7,7 +7,7 @@ const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt
 let sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://bunyang-alimi.com/</loc><lastmod>'+today+'</lastmod></url>\n';
 for(const p of P)sm+='  <url><loc>https://bunyang-alimi.com/'+p.id+'/</loc><lastmod>'+today+'</lastmod></url>\n';
 fs.writeFileSync('sitemap.xml',sm+'</urlset>\n');
-const list='<!--SITE-LIST-START--><section id="all-sites" class="seo-site-list" aria-labelledby="all-sites-title"><h2 id="all-sites-title">전체 분양현장 바로가기</h2><ul>'+P.map(p=>'<li><a href="/'+p.id+'/">'+E(p.name)+'</a><span>'+E([p.area,p.type].filter(Boolean).join(' · '))+'</span></li>').join('')+'</ul></section><!--SITE-LIST-END-->';
+const list='<!--SITE-LIST-START--><section id="all-sites" class="seo-site-list" aria-labelledby="all-sites-title"><h2 id="all-sites-title">전체 분양현장 바로가기</h2><ul>'+P.map(p=>'<li><a href="/'+p.id+'/">'+E(p.name)+(p.buildingLabel?' <small>건물명: '+E(p.buildingLabel)+'</small>':'')+'</a><span>'+E([p.area,p.type].filter(Boolean).join(' · '))+'</span></li>').join('')+'</ul></section><!--SITE-LIST-END-->';
 for(const f of ['index.html','outputs/portal/index.html']){let h=fs.readFileSync(f,'utf8');
  if(h.includes('<!--SITE-LIST-START-->'))h=h.replace(/<!--SITE-LIST-START-->[\s\S]*?<!--SITE-LIST-END-->/,list);
  else h=h.replace('<section id="register"',list+'<section id="register"');

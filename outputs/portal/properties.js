@@ -303,6 +303,7 @@ window.PORTAL_PROPERTIES=[
     "status": "현장 안내",
     "id": "insignia",
     "name": "사평대로12",
+    "buildingLabel": "인시그니아 반포",
     "buildingName": "인시그니아반포",
     "region": "서울",
     "area": "서울 · 서초구 사평대로",

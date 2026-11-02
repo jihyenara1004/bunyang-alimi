@@ -17,10 +17,11 @@ function status(it,today){const a=parse(it.applyStart),b=parse(it.applyEnd||it.a
 const regionOf=it=>['서울','경기','인천'].includes(it.region)?it.region:'기타';
 const overlap=(it,from,to)=>{const a=parse(it.applyStart),b=parse(it.applyEnd||it.applyStart);return !!a&&a<=to&&b>=from};
 function weekRange(today,offset){const mon=new Date(+today-((today.getUTCDay()+6)%7)*DAY+offset*7*DAY);return[mon,new Date(+mon+6*DAY)]}
-function kakao(d,label){const u=safeUrl(d.kakaoUrl);return u?`<a class="cy-kakao" href="${E(u)}" target="_blank" rel="noopener">${label}</a>`:`<span class="cy-kakao is-off">카카오톡 채널 준비 중</span>`}
+const KAKAO_ICON=`<svg class="cy-kakao-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.48 3 2 6.58 2 11c0 2.85 1.86 5.35 4.67 6.77-.2.75-.74 2.7-.85 3.12-.13.52.19.51.4.37.17-.11 2.62-1.78 3.68-2.5.69.1 1.39.15 2.1.15 5.52 0 10-3.58 10-8S17.52 3 12 3z"/></svg>`;
+function kakao(d,label){const u=safeUrl(d.kakaoUrl);return u?`<a class="cy-kakao" href="${E(u)}" target="_blank" rel="noopener">${KAKAO_ICON}<span>${label}</span></a>`:`<span class="cy-kakao is-off">카카오톡 채널 준비 중</span>`}
 const dates=it=>{const pr=it.price?`<div><dt>분양가</dt><dd>${E(it.price)}</dd></div>`:"";const a=fmt(it.applyStart),b=it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+fmt(it.applyEnd):'';return pr+`<div><dt>접수</dt><dd>${a?E(a+b):'확인 중'}</dd></div><div><dt>당첨발표</dt><dd>${it.winnerDate?E(fmt(it.winnerDate)):'확인 중'}</dd></div>`};
-function card(it,today){const s=status(it,today);const src=safeUrl(it.source);
- return`<article class="cy-card cy-${s.key}"><div class="cy-top"><span class="cy-badge">${s.label}</span><span class="cy-confirm ${it.confirmed?'yes':'no'}">${it.confirmed?'공고 확인':'예정'}</span></div><h3>${E(it.name)}</h3><p class="cy-meta">${E([regionOf(it),it.type,it.units?it.units+(/^\d+$/.test(String(it.units))?'세대':''):''].filter(Boolean).join(' · '))}${it.address?'<br>'+E(it.address):''}</p><dl class="cy-dates">${dates(it)}${it.rate?`<div><dt>경쟁률</dt><dd>${E(it.rate)} <small>청약홈 기준 · 변동 가능</small></dd></div>`:''}</dl>${it.note?`<p class="cy-note">${E(it.note)}</p>`:''}${it.updated?`<p class="cy-upd">최종 수정 ${E(it.updated.replace(/-/g,'.'))}</p>`:''}${src?`<a class="cy-src" href="${E(src)}" target="_blank" rel="noopener noreferrer">청약홈 공고 보기</a>`:''}</article>`}
+function card(it,today,d){const s=status(it,today);const src=safeUrl(it.source);
+ return`<article class="cy-card cy-${s.key}"><div class="cy-top"><span class="cy-badge">${s.label}</span><span class="cy-confirm ${it.confirmed?'yes':'no'}">${it.confirmed?'공고 확인':'예정'}</span></div><h3>${E(it.name)}</h3><p class="cy-meta">${E([regionOf(it),it.type,it.units?it.units+(/^\d+$/.test(String(it.units))?'세대':''):''].filter(Boolean).join(' · '))}${it.address?'<br>'+E(it.address):''}</p><dl class="cy-dates">${dates(it)}${it.rate?`<div><dt>경쟁률</dt><dd>${E(it.rate)} <small>청약홈 기준 · 변동 가능</small></dd></div>`:''}</dl>${it.note?`<p class="cy-note">${E(it.note)}</p>`:''}${it.updated?`<p class="cy-upd">최종 수정 ${E(it.updated.replace(/-/g,'.'))}</p>`:''}${safeUrl(d&&d.kakaoUrl)?`<a class="cy-kakao cy-card-kakao" href="${E(d.kakaoUrl)}" target="_blank" rel="noopener">${KAKAO_ICON}<span>이 단지 청약·당첨발표 소식 받기</span></a>`:''}${src?`<a class="cy-src" href="${E(src)}" target="_blank" rel="noopener noreferrer">출처: 청약홈 공고</a>`:''}</article>`}
 const order=(a,b)=>(parse(a.applyStart)||0)-(parse(b.applyStart)||0);
 
 function pageMode(d,list){
@@ -38,7 +39,7 @@ function pageMode(d,list){
   const[f,t]=weekRange(today,st.period==='next'?1:0);return overlap(it,f,t)}
  function draw(){const rows=items.filter(match).sort(st.period==='done'?(a,b)=>order(b,a):order);
   count.textContent=rows.length?`${rows.length}건`:'';
-  list.innerHTML=rows.length?rows.map(it=>card(it,today)).join(''):`<p class="cy-empty">${items.length?'조건에 맞는 일정이 없습니다.':'청약 일정을 준비하고 있습니다. 최신 공고는 <a href="https://www.applyhome.co.kr" target="_blank" rel="noopener noreferrer">청약홈</a>에서 먼저 확인해 주세요.'}</p>`}
+  list.innerHTML=rows.length?rows.map(it=>card(it,today,d)).join(''):`<p class="cy-empty">${items.length?'조건에 맞는 일정이 없습니다.':'청약 일정을 준비하고 있습니다. 최신 공고는 <a href="https://www.applyhome.co.kr" target="_blank" rel="noopener noreferrer">청약홈</a>에서 먼저 확인해 주세요.'}</p>`}
  document.querySelectorAll('[data-cy-filter]').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button[data-v]');if(!b)return;st[g.dataset.cyFilter]=b.dataset.v;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()}));
  draw();
  const mine=document.getElementById('cy-mine');
