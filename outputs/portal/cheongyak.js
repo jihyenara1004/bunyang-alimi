@@ -68,11 +68,16 @@ const list=document.getElementById('cy-list'),calc=document.getElementById('cc-f
 
 function homeMode(d){
  const after=document.getElementById('featured'),today=kst();if(!after)return;
- const rows=(d.items||[]).filter(it=>['soon','open','wait'].includes(status(it,today).key)).sort(order).slice(0,4);
+ // 처음엔 4곳만, "전체 일정 보기"를 누르면 같은 자리에서 나머지가 펼쳐짐
+ const SHOW=4;
+ const rows=(d.items||[]).filter(it=>['soon','open','wait'].includes(status(it,today).key)).sort(order);
  if(!rows.length)return;
+ const more=rows.length>SHOW;
  const s=document.createElement('section');s.id='cy-home';s.className='section cy-home';
- s.innerHTML=`<div class="section-heading"><div><h2>이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요. · <a class="cy-calc-link" href="/cheongyak/calculator/">내 청약 가점 확인하기 →</a></p></div><a href="/cheongyak/" class="all-sites">전체 일정 보기</a></div><div class="cy-home-body"><ul class="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
- after.insertAdjacentElement('afterend',s)}
+ s.innerHTML=`<div class="section-heading"><div><h2>이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요. · <a class="cy-calc-link" href="/cheongyak/calculator/">내 청약 가점 확인하기 →</a></p></div>${more?`<button type="button" class="all-sites cy-expand" aria-controls="cy-home-list" aria-expanded="false">전체 일정 보기 (${rows.length})</button>`:`<a href="/cheongyak/" class="all-sites">전체 일정 보기</a>`}</div><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map((it,i)=>{const k=status(it,today);return`<li${i>=SHOW?' class="cy-extra"':''}><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
+ after.insertAdjacentElement('afterend',s);
+ const btn=s.querySelector('.cy-expand');
+ if(btn)btn.addEventListener('click',()=>{const open=s.classList.toggle('is-expanded');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'접기':`전체 일정 보기 (${rows.length})`;if(!open)s.scrollIntoView({block:'start'})})}
 
 fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{if(list){pageMode(d,list);if(calc)initCalc(calc)}else if(calc)calcMode(d,calc);else homeMode(d)});
 })();
