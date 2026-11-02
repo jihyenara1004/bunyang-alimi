@@ -109,3 +109,11 @@
 ### 다음 할 일
 1. 파워링크 세팅 시트 작성 (27개 현장: 광고그룹·키워드·소재·연결 URL·등급별 예산)
 2. (선택) 옛 임시 폼 코드 정리, 팝업 주소 반영
+
+## 2026-11-03 (Claude) 청약일정 페이지·홈 메뉴 개편
+- 새 페이지 `/cheongyak/` (유입용): `cheongyak/index.html` + `outputs/portal/cheongyak.js`·`cheongyak.css`. 대표번호·상담폼 없음(분양 주체 아님 고지). 지역·유형·시기 필터는 브라우저에서 처리(서버 없음).
+- 자료는 `outputs/portal/cheongyak-data.json` 한 파일: `items[]`(name, region, type[아파트·오피스텔·무순위], address, units, price, applyStart, applyEnd, winnerDate, confirmed, note, source, updated)와 `kakaoUrl`(카카오 채널 `https://pf.kakao.com/_ERxkFX`). `confirmed:true`는 청약홈 공고로 확인한 일정만. 날짜는 청약홈 목록(applyhome.co.kr 분양정보·무순위/잔여세대)으로 대조할 것(뉴스와 다른 경우 있었음).
+- 홈: 메뉴 `추천현장·분양정보·청약일정·분양지도·관심고객 등록`, 칸 순서 추천현장 → 분양정보 → 이번 주 청약일정(접수예정·진행 중 일정이 있을 때만) → 지도 → 관심고객 등록. 홈 검색창은 CSS로 숨김(코드는 그대로, `cheongyak.css` 맨 아래 한 줄 삭제로 복구).
+- 관심고객 등록폼·Make·솔라피는 변경하지 않음. 청약일정 페이지에는 접수 전송 없음.
+- 남은 일: `cheongyak/index.html`의 `noindex` 제거 + `work/gen-seo.cjs`에 `/cheongyak/` 사이트맵 추가(대표님 승인 후), 단지별 상세페이지·"이 단지 소식 받기" 버튼, 현장 상세 메뉴에 "분양조건" 추가, 청약홈 공공데이터 API 자동 수집(GitHub Actions + Secrets, 인증키는 코드·채팅에 올리지 않기).
+- 배포 구조: GitHub Pages가 직접 서비스(응답 Server: GitHub.com), Cloudflare는 DNS만. `main`에 병합하면 바로 실제 사이트에 반영됨.

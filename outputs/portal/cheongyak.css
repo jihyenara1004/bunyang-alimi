@@ -1,0 +1,47 @@
+.cy-main{max-width:1100px;margin:0 auto;padding:36px 20px 64px;color:#1f2733}
+.cy-intro h1{margin:6px 0 8px;font-size:34px;letter-spacing:-1px}
+.cy-lead{margin:0;font-size:17px;color:#1f2733}
+.cy-updated{margin:8px 0 0;font-size:14px;color:#3d4651}
+.cy-alert{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:24px 0;padding:18px 22px;border-radius:14px;background:#fff8d6;border:1px solid #f0dc7a}
+.cy-alert b{display:block;font-size:17px}.cy-alert span{font-size:14px;color:#3d4651}
+.cy-kakao{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 20px;border-radius:10px;background:#fee500;color:#191919;font-weight:800;font-size:15px;text-align:center;text-decoration:none;line-height:1.35}
+.cy-kakao.is-off{background:#ececec;color:#666}
+.cy-filters{display:grid;gap:10px;margin-bottom:18px}
+.cy-group{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.cy-group>span{min-width:38px;font-weight:800;font-size:14px;color:#1f2733}
+.cy-group button{padding:8px 14px;border:1px solid #c9d1dc;border-radius:999px;background:#fff;font:inherit;font-size:14px;color:#1f2733;cursor:pointer}
+.cy-group button[aria-pressed=true]{background:#0b3d91;border-color:#0b3d91;color:#fff;font-weight:800}
+.cy-count{margin:0;font-size:14px;color:#3d4651;min-height:18px}
+.cy-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.cy-card{padding:18px;border:1px solid #dfe3dd;border-radius:14px;background:#fff}
+.cy-card h3{margin:10px 0 6px;font-size:19px;letter-spacing:-.5px}
+.cy-top{display:flex;justify-content:space-between;align-items:center}
+.cy-badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:13px;font-weight:800;background:#e8eefb;color:#0b3d91}
+.cy-open .cy-badge,.cy-badge.cy-open{background:#e0f4e8;color:#14683a}
+.cy-wait .cy-badge,.cy-badge.cy-wait{background:#fff0d6;color:#8a5200}
+.cy-done .cy-badge{background:#eceef1;color:#555}
+.cy-confirm{font-size:12px;font-weight:700}.cy-confirm.yes{color:#14683a}.cy-confirm.no{color:#8a5200}
+.cy-meta{margin:0 0 12px;font-size:14px;color:#3d4651;line-height:1.5}
+.cy-dates{margin:0;display:grid;gap:6px}.cy-dates div{display:flex;gap:10px;font-size:15px}
+.cy-dates dt{min-width:56px;font-weight:800;color:#1f2733}.cy-dates dd{margin:0}.cy-dates small{color:#3d4651}
+.cy-note{margin:10px 0 0;font-size:14px;color:#3d4651}
+.cy-src{display:inline-block;margin-top:12px;font-size:14px;font-weight:700;color:#0b3d91}
+.cy-empty{grid-column:1/-1;margin:0;padding:36px 16px;text-align:center;background:#f6f7f9;border-radius:14px;color:#3d4651}
+.cy-notice{margin-top:32px;padding:18px 22px;border-radius:14px;background:#f6f7f9}
+.cy-notice h2,.cy-mine h2{margin:0 0 10px;font-size:18px}.cy-notice ul{margin:0;padding-left:18px;font-size:14px;line-height:1.7;color:#3d4651}
+.cy-mine{margin-top:36px}.cy-mine-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.cy-site{display:block;padding:16px;border:1px solid #dfe3dd;border-radius:14px;background:#fff;color:inherit;text-decoration:none}
+.cy-site b{display:block;font-size:17px}.cy-site span{display:block;margin-top:4px;font-size:14px;color:#3d4651}.cy-site em{display:block;margin-top:6px;font-size:14px;font-style:normal;color:#1f2733}
+.cy-more{display:inline-block;margin-top:14px;font-weight:800;color:#0b3d91}
+.cy-home-body{display:grid;grid-template-columns:1fr 230px;gap:16px;align-items:stretch}
+.cy-home-list{margin:0;padding:0;list-style:none;border:1px solid #dfe3dd;border-radius:14px;background:#fff}
+.cy-home-list li{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:13px 16px;border-top:1px solid #eef0f3;font-size:15px}
+.cy-home-list li:first-child{border-top:0}.cy-home-list b{flex:1 1 140px}
+.cy-home-alert{display:flex;background:#fff8d6;border:1px solid #f0dc7a;border-radius:14px;padding:12px}.cy-home-alert .cy-kakao{width:100%}
+.portal-header nav a[aria-current=page]{color:#0b3d91}
+@media(max-width:760px){.cy-main{padding:24px 16px 48px}.cy-intro h1{font-size:28px}.cy-alert{flex-direction:column;align-items:stretch}.cy-home-body{grid-template-columns:1fr}.cy-list{grid-template-columns:1fr}}
+.portal-header nav button[data-register],.portal-header nav a.cy-reg{padding:8px 16px;border-radius:999px;background:#0b3d91;color:#fff;font-weight:800;text-decoration:none}
+.portal-header nav button[data-register]:hover,.portal-header nav a.cy-reg:hover{color:#fff;background:#1f5bc4}
+.cy-upd{margin:8px 0 0;font-size:12px;color:#3d4651}
+@media(max-width:760px){.portal-header nav{gap:6px 7px!important;font-size:13px!important;letter-spacing:-.4px;flex-wrap:wrap}.portal-header nav button[data-register],.portal-header nav a.cy-reg{padding:6px 10px}}
+.portal-hero > .search-panel #search{display:none!important}
