@@ -1,5 +1,16 @@
 # 분양알리미 수정 내역 (Claude)
 
+## 2026-11-03 · 청약일정 페이지 뼈대 (자료 입력 전)
+- 브랜치: `claude/cheongyak-calendar` (main 반영 전 — 아래 "반영 전 할 일" 확인)
+- 새 페이지 `/cheongyak/` (`cheongyak/index.html`): 지역·유형·시기 버튼으로 걸러보는 청약일정 목록, 카카오톡 알림 칸, 이용 안내(분양 주체 아님·청약홈 기준·예정/공고확인 구분), 하단 "지금 계약 상담 가능한 분양 현장" 3곳(`p.pinned` 순).
+- 청약일정 페이지에는 대표번호·상담 폼을 넣지 않음 (유입용). 머리말 오른쪽 버튼은 관심고객 대신 "알림받기".
+- 자료 파일 `outputs/portal/cheongyak-data.json`: 지금은 비어 있음(`items: []`). 칸: name, region, type(아파트·오피스텔·무순위), address, units, applyStart, applyEnd, winnerDate, confirmed, rate, source, note. 카카오 채널 주소는 `kakaoUrl`에 넣으면 버튼이 켜짐(비어 있으면 "채널 준비 중").
+- 화면 로직 `outputs/portal/cheongyak.js` (페이지와 홈 공용), 스타일 `cheongyak.css`.
+- 홈: 메뉴에 "청약일정" 추가(추천현장·분양정보·청약일정·지도·관심고객), 추천현장 아래 "이번 주 청약일정" 요약 칸 — 접수 예정·진행 중인 일정이 있을 때만 나타남. `index.html`·`outputs/portal/index.html` 둘 다 수정.
+- 확인: 가짜 테스트 4건으로 필터(지역·유형·이번 주/다음 주/발표 대기/지난 일정)·상태 표시·홈 요약·375px 가로 넘침 없음·콘솔 오류 없음·페이지에 전화번호 없음 확인 후 테스트 자료는 삭제(저장소에는 빈 자료만 있음). 실제 일정 자료는 아직 없음.
+- 반영 전 할 일: ① 실제 단지 자료 10~20곳 입력 ② 카카오 채널 주소 입력 ③ `cheongyak/index.html`의 `noindex` 제거 + `work/gen-seo.cjs`에 사이트맵 `/cheongyak/` 추가 ④ API 자동 수집(GitHub Actions)은 별도 작업. 기존 Make·솔라피는 변경 없음.
+
+
 ## 2026-11-02 · 휴대폰 하단 고정 버튼(전화하기·문의하기)
 - 브랜치: `claude/mobile-cta`
 - 휴대폰 화면(폭 760px 이하)에서 화면 아래에 항상 보이는 버튼 2개 추가
