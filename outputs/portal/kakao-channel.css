@@ -1,7 +1,7 @@
-.kakao-channel-shortcut{position:fixed;right:16px;bottom:28vh;z-index:90;display:grid;place-items:center;width:164px;aspect-ratio:1;border-radius:50%;background:#fee500;color:#fff;text-decoration:none;box-shadow:0 3px 12px #0002}
-.kakao-channel-shortcut:focus-visible{outline:2px solid #442b21;outline-offset:3px}
+.kakao-channel-shortcut{position:fixed;right:16px;bottom:28vh;z-index:90;display:grid;justify-items:center;gap:5px;color:#392216;text-decoration:none;text-align:center}
 .kakao-channel-shortcut svg{display:none}
-.kakao-channel-shortcut span{position:relative;display:grid;place-items:center;width:84%;height:55%;border-radius:50%;background:#442b21;font-size:0;text-align:center}
-.kakao-channel-shortcut span::before{content:"친구 추가하고\A 분양정보 받기";white-space:pre-line;font:800 15px/1.45 system-ui,sans-serif}
-.kakao-channel-shortcut span::after{content:"";position:absolute;left:20%;bottom:-11px;border-top:18px solid #442b21;border-right:15px solid transparent;transform:skewX(-18deg)}
-@media(max-width:760px){.kakao-channel-shortcut{right:12px;bottom:calc(108px + env(safe-area-inset-bottom));width:128px}.kakao-channel-shortcut span::before{font-size:12px}}
+.kakao-channel-shortcut::before{content:"TALK";display:grid;place-items:center;width:72px;height:72px;border-radius:24px;background:#fee500 radial-gradient(ellipse at center,#392216 51%,transparent 53%);color:#fee500;font:900 16px system-ui;box-shadow:0 3px 10px #0002}
+.kakao-channel-shortcut span{font-size:0}
+.kakao-channel-shortcut span::after{content:"친구 추가하고\A 분양정보 받기";display:block;white-space:pre-line;padding:4px 7px;background:#fff;border-radius:7px;font:800 12px/1.4 system-ui}
+.kakao-channel-shortcut:focus-visible{outline:2px solid #392216;outline-offset:4px}
+@media(max-width:760px){.kakao-channel-shortcut{right:12px;bottom:calc(76px + env(safe-area-inset-bottom))}.kakao-channel-shortcut::before{width:56px;height:56px;border-radius:18px;font-size:13px}}
