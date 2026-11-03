@@ -10,11 +10,15 @@
 .kakao-channel-shortcut svg{width:28px;height:28px}
 .kakao-channel-shortcut span{font-size:0}
 .kakao-channel-shortcut span::after{
-  content:"카카오톡 친구추가하고\A 청약정보 받기";
-  white-space:pre-line; font-size:16px; line-height:1.45; font-weight:800;
+  content:"카카오톡 친구추가하고";
+  display:block; font-size:16px; line-height:1.45; font-weight:800;
 }
 @media(max-width:760px){
   .kakao-channel-shortcut{bottom:calc(108px + env(safe-area-inset-bottom));width:156px;height:156px;padding:9px 8px;gap:4px}
   .kakao-channel-shortcut svg{width:22px;height:22px}
   .kakao-channel-shortcut span::after{font-size:13px}
 }
+
+.kakao-channel-shortcut span::before{content:"분양정보 받기";display:block;color:#124baf;font-size:inherit;font-weight:800;order:2}
+.kakao-channel-shortcut span{display:flex;flex-direction:column;font-size:16px;line-height:1.45}
+@media(max-width:760px){.kakao-channel-shortcut span{font-size:13px}}
