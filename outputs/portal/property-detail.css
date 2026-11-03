@@ -283,7 +283,7 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .property-section[id^="overview-"] { --section-icon: "🏢"; }
 .property-section[id^="premium-"] { --section-icon: "✨"; }
 .property-section[id^="location-"] { --section-icon: "📍"; }
-.property-section[id^="types-"] { --section-icon: "📐"; }
+.property-section[id^="types-"] { --section-icon: "🏠"; }
 .property-section[id^="interest-"] { --section-icon: "💬"; }
 
 /* 고르는 이유 6칸 카드 (범용 렌더러 cards 블록) 2026-11-03 */
@@ -338,3 +338,14 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .property-name .building-main{display:block;font-size:1.25em;font-weight:900;letter-spacing:-.6px;line-height:1.3;color:#14243a}
 .insignia-detail .ins-header-brand>span{font-size:28px!important;font-weight:900!important;letter-spacing:-1px}
 @media(max-width:650px){.insignia-detail .ins-header-brand>span{font-size:24px!important}}
+
+/* 접기 버튼 대신 나열식: 안내 상자는 항상 펼쳐 두고 제목만 보여줌 */
+.ins-system-details>summary{cursor:default;pointer-events:none;list-style:none;padding:20px 25px 6px;font-size:20px;font-weight:850;color:#842b3c}
+.ins-system-details>summary::-webkit-details-marker{display:none}
+.ins-system-details>summary::marker{content:""}
+.ins-system-details{border:0;background:transparent;margin-top:42px}
+.ins-system-details>:not(summary){margin-top:12px}
+@media(max-width:650px){.ins-system-details>summary{font-size:17px;padding:14px 4px 4px}.ins-system-details{margin-top:28px}}
+
+/* 백운호수: 도면 그림 안에 타입·면적이 이미 있어서 위쪽 제목·안내 줄은 화면에서만 숨김(검색용 글자는 유지) */
+.bw-detail .luca-plan-panel>h3,.bw-detail .luca-plan-panel>.br-plan-info{display:none}

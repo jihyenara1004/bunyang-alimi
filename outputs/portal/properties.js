@@ -907,7 +907,7 @@ window.PORTAL_PROPERTIES=[
     ]
   },
   {
-    "price": "상담문의",
+    "price": "분양가: 15억대~",
     "moveIn": "상담 시 확인",
     "checked": "2026.10.28",
     "status": "현장 안내",
@@ -1246,7 +1246,7 @@ window.PORTAL_PROPERTIES=[
     ]
   },
   {
-    "price": "상담문의",
+    "price": "분양가: 59,000만원~",
     "moveIn": "준공 완료(2023.01 사용승인) · 입주 상담",
     "checked": "2026.10.28",
     "status": "현장 안내",
@@ -1756,7 +1756,7 @@ window.PORTAL_PROPERTIES=[
     ]
   },
   {
-    "price": "상담문의",
+    "price": "분양가: 7억대~",
     "moveIn": "준공 완료 · 1억원대 실입주 가능",
     "checked": "2026.10.29",
     "status": "선착순 분양",
@@ -2097,7 +2097,7 @@ window.PORTAL_PROPERTIES=[
     "mapAddress": "경기도 김포시 고촌읍 신곡리"
   },
   {
-    "price": "상담문의",
+    "price": "분양가: 7억대~",
     "moveIn": "상담 시 확인",
     "checked": "2026.10.29",
     "status": "마감임박",
@@ -3006,7 +3006,7 @@ window.PORTAL_PROPERTIES=[
     ]
   },
   {
-    "price": "상담문의",
+    "price": "분양가: 30억대~",
     "moveIn": "즉시 입주 가능 (2023년 9월 준공)",
     "checked": "2026.10.29",
     "status": "즉시 입주",
@@ -3907,7 +3907,7 @@ window.PORTAL_PROPERTIES=[
       "45B"
     ],
     "builder": "성원상떼빌",
-    "price": "상담문의",
+    "price": "분양가: 7억 8천만원~",
     "moveIn": "상담 시 확인",
     "status": "잔여세대 분양",
     "recommended": true,
@@ -12120,8 +12120,7 @@ window.PORTAL_PROPERTIES=[
         },
         {
           "title": [
-            "백운호수",
-            "푸르지오",
+            "백운호수 푸르지오",
             "숲속의 아침"
           ],
           "items": [
@@ -12147,7 +12146,8 @@ window.PORTAL_PROPERTIES=[
         "pos": "center 50%",
         "en": "BAEKUN LAKE PRUGIO",
         "title": [
-          "백운호수 푸르지오",
+          "백운호수",
+          "푸르지오",
           "숲속의 아침"
         ],
         "name": "오피스텔 842실 · 스위트(노인복지주택) 536세대",
@@ -12318,58 +12318,62 @@ window.PORTAL_PROPERTIES=[
             ]
           },
           {
-            "details": [
+            "h3": "클럽 포시즌 배치 · 안내",
+            "lead": [
+              "백운호수 푸르지오 숲속의 아침 클럽 포시즌 배치도와 커뮤니티 안내",
+              "3,500여 평 규모 커뮤니티 · 라이프케어 프로그램"
+            ],
+            "figs": [
               [
-                "클럽 포시즌 배치 · 안내 보기",
-                [
-                  [
-                    "https://baekwoonlakeprugio.com/theme/grape/img/view-map-2-2.jpg",
-                    770,
-                    620,
-                    "클럽 포시즌 배치"
-                  ],
-                  [
-                    "https://baekwoonlakeprugio.com/theme/grape/img/comp1.jpg",
-                    2008,
-                    927,
-                    "커뮤니티 안내 1"
-                  ],
-                  [
-                    "https://baekwoonlakeprugio.com/theme/grape/img/comp2.jpg",
-                    2008,
-                    926,
-                    "커뮤니티 안내 2"
-                  ]
-                ]
+                "https://baekwoonlakeprugio.com/theme/grape/img/view-map-2-2.jpg",
+                770,
+                620,
+                "백운호수 푸르지오 숲속의 아침 클럽 포시즌 배치도"
               ],
               [
-                "클럽 포시즌 4계절 프로그램 보기",
-                [
-                  [
-                    "https://baekwoonlakeprugio.com/theme/grape/img/four1.jpg",
-                    1617,
-                    1380,
-                    "클럽 포시즌 1"
-                  ],
-                  [
-                    "https://baekwoonlakeprugio.com/theme/grape/img/four2.jpg",
-                    1617,
-                    1079,
-                    "클럽 포시즌 2"
-                  ],
-                  [
-                    "https://baekwoonlakeprugio.com/theme/grape/img/four3.jpg",
-                    1617,
-                    986,
-                    "클럽 포시즌 3"
-                  ],
-                  [
-                    "https://baekwoonlakeprugio.com/theme/grape/img/four4.jpg",
-                    1617,
-                    1869,
-                    "클럽 포시즌 4"
-                  ]
-                ]
+                "https://baekwoonlakeprugio.com/theme/grape/img/comp1.jpg",
+                2008,
+                927,
+                "백운호수 푸르지오 숲속의 아침 클럽 포시즌 커뮤니티 안내 1"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/comp2.jpg",
+                2008,
+                926,
+                "백운호수 푸르지오 숲속의 아침 클럽 포시즌 커뮤니티 안내 2"
+              ]
+            ]
+          },
+          {
+            "h3": "클럽 포시즌 4계절 프로그램",
+            "lead": [
+              "봄·여름·가을·겨울 사계절 클럽 포시즌 프로그램",
+              "올데이클래스 · 액티비티 · 클럽라운지 등 라이프케어 서비스"
+            ],
+            "figs": [
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/four1.jpg",
+                1617,
+                1380,
+                "백운호수 푸르지오 숲속의 아침 클럽 포시즌 프로그램 1"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/four2.jpg",
+                1617,
+                1079,
+                "백운호수 푸르지오 숲속의 아침 클럽 포시즌 프로그램 2"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/four3.jpg",
+                1617,
+                986,
+                "백운호수 푸르지오 숲속의 아침 클럽 포시즌 프로그램 3"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/four4.jpg",
+                1617,
+                1869,
+                "백운호수 푸르지오 숲속의 아침 클럽 포시즌 프로그램 4"
               ]
             ]
           }
