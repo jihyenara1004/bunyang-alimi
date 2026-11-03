@@ -103,3 +103,8 @@ button.cy-expand{cursor:pointer;border:0;font:inherit}
 .featured-region-tabs button:hover{background:#eef3fb}
 .featured-region-tabs button.active{background:#0b3d91;color:#fff}
 @media(max-width:760px){.featured-region-tabs{gap:8px}.featured-region-tabs button{flex:1;min-width:0;padding:11px 10px;font-size:16px}}
+
+/* 홈 청약일정·가점계산 코너: ■ 카테고리 제목 (2026-11-03) */
+.cy-home h2,.cy-score h2{font-weight:900}.cy-sq{color:#0b3d91;margin-right:4px;font-size:.8em;vertical-align:.08em}
+.cy-score{padding-top:0}.cy-score .section-heading{padding:18px 22px;border:2px solid #0b3d91;border-radius:14px;background:#f3f7ff;margin:0}
+.cy-score .cy-score-btn{background:#0b3d91!important;color:#fff!important}

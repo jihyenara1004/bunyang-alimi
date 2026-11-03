@@ -396,3 +396,8 @@
 ## 2026-11-03 · 홈 분양정보에 지역 버튼(서울·경기·기타)
 - 홈 "분양정보" 제목 아래에 서울/경기/기타 버튼 추가. 누르면 아래 현장 카드가 그 지역만 보이고(서울 13·경기 12·기타 3), 같은 버튼을 한 번 더 누르면 전체 28개로 복귀. 안내 문구(전체 N개)도 함께 바뀜.
 - 수정: `index.html`, `outputs/portal/index.html`(마크업), `app.js`(renderFeatured), `cheongyak.css`(버튼 스타일, 진한 파랑 알약형). 캐시 번호 app.js rg3, cheongyak.css 16.
+
+## 2026-11-03 · 홈 청약일정 6곳 + 전체보기 + 청약 가점 계산 코너
+- 홈 "이번 주 청약일정": 6곳만 표시, "전체보기 (20)" 버튼은 `/cheongyak/`(전체 일정 페이지)로 이동(기존 펼치기 방식 제거). 제목 앞에 굵은 ■ 표시.
+- 그 아래 "■ 청약 가점 계산" 코너(파란 테두리 박스) 신규 → 버튼 "내 가점 계산하기"는 `/cheongyak/calculator/`로 이동. 입력값은 저장·전송 없음, 비용 0원.
+- 수정: `cheongyak.js`(homeMode), `cheongyak.css`, `index.html`·`outputs/portal/index.html` 캐시 번호(cheongyak.js 12, cheongyak.css 17).
