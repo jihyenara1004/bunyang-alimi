@@ -401,3 +401,8 @@
 - 홈 "이번 주 청약일정": 6곳만 표시, "전체보기 (20)" 버튼은 `/cheongyak/`(전체 일정 페이지)로 이동(기존 펼치기 방식 제거). 제목 앞에 굵은 ■ 표시.
 - 그 아래 "■ 청약 가점 계산" 코너(파란 테두리 박스) 신규 → 버튼 "내 가점 계산하기"는 `/cheongyak/calculator/`로 이동. 입력값은 저장·전송 없음, 비용 0원.
 - 수정: `cheongyak.js`(homeMode), `cheongyak.css`, `index.html`·`outputs/portal/index.html` 캐시 번호(cheongyak.js 12, cheongyak.css 17).
+
+## 2026-11-03 · 청약일정 페이지 6건 + 전체보기, 가점 배너 제거
+- `/cheongyak/`: 일정 목록은 처음 6건만("20건 중 6건"), 오른쪽 "전체보기 (20)" 버튼을 누르면 전체, 다시 누르면 "접기". 지역 필터 결과가 6건 이하면 버튼 숨김.
+- 파란 배너 "내 청약 가점은 몇 점일까?" 삭제 → 목록이 짧아져 바로 아래 가점 계산기가 곧바로 보임. 배너용 스크롤 코드도 정리.
+- 수정: `cheongyak/index.html`, `cheongyak.js`(pageMode), `cheongyak.css`, 캐시 번호 js 12·css 17.

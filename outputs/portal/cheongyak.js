@@ -36,15 +36,18 @@ function pageMode(d,list){
   if(st.period==='done')return s==='done';
   if(st.period==='wait')return s==='wait';
   const[f,t]=weekRange(today,st.period==='next'?1:0);return overlap(it,f,t)}
- function draw(){const rows=items.filter(match).sort(st.period==='done'?(a,b)=>order(b,a):order);
-  count.textContent=rows.length?`${rows.length}건`:'';
+ // 처음엔 6건만, 오른쪽 "전체보기"를 누르면 전체 목록
+ const SHOW=6,allBtn=document.getElementById('cy-all');let expanded=false;
+ if(allBtn)allBtn.addEventListener('click',()=>{expanded=!expanded;draw();if(!expanded)list.scrollIntoView({block:'nearest'})});
+ function draw(){const all=items.filter(match).sort(st.period==='done'?(a,b)=>order(b,a):order);
+  const rows=expanded?all:all.slice(0,SHOW);
+  count.textContent=all.length?(all.length>SHOW&&!expanded?`${all.length}건 중 ${SHOW}건`:`${all.length}건`):'';
+  if(allBtn){allBtn.hidden=all.length<=SHOW;allBtn.textContent=expanded?'접기':`전체보기 (${all.length})`;allBtn.setAttribute('aria-expanded',String(expanded))}
   list.innerHTML=rows.length?`<ul class="cy-home-list cy-full-list">${rows.map(it=>row(it,today)).join('')}</ul>`:`<p class="cy-empty">${items.length?'조건에 맞는 일정이 없습니다.':'청약 일정을 준비하고 있습니다. 최신 공고는 <a href="https://www.applyhome.co.kr" target="_blank" rel="noopener noreferrer">청약홈</a>에서 먼저 확인해 주세요.'}</p>`}
  document.querySelectorAll('[data-cy-filter]').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button[data-v]');if(!b)return;st[g.dataset.cyFilter]=b.dataset.v;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()}));
  draw();
  renderMine();
- // 계산기 배너: 아래쪽 계산기로 즉시 이동 (부드러운 스크롤은 거리가 길어 느림)
- const ban=document.querySelector('.cc-banner[href="#calc"]'),calcSec=document.getElementById('calc');
- if(ban&&calcSec)ban.addEventListener('click',e=>{e.preventDefault();const h=document.documentElement,b=h.style.scrollBehavior;h.style.scrollBehavior='auto';calcSec.scrollIntoView({block:'start'});h.style.scrollBehavior=b;try{history.replaceState(null,'',location.pathname+location.search+'#calc')}catch(err){}})}
+}
 
 // 하단 "지금 계약 가능한 추천 분양현장" 카드 (추천 순서 pinned 기준 3곳)
 function renderMine(){const mine=document.getElementById('cy-mine');

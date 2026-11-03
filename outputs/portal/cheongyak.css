@@ -108,3 +108,8 @@ button.cy-expand{cursor:pointer;border:0;font:inherit}
 .cy-home h2,.cy-score h2{font-weight:900}.cy-sq{color:#0b3d91;margin-right:4px;font-size:.8em;vertical-align:.08em}
 .cy-score{padding-top:0}.cy-score .section-heading{padding:18px 22px;border:2px solid #0b3d91;border-radius:14px;background:#f3f7ff;margin:0}
 .cy-score .cy-score-btn{background:#0b3d91!important;color:#fff!important}
+
+/* 청약일정 페이지: 6건 + 전체보기 버튼 (2026-11-03) */
+.cy-count-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px}
+.cy-all-btn{cursor:pointer;border:0;font:inherit;min-width:150px}
+.cy-all-btn[hidden]{display:none!important}
