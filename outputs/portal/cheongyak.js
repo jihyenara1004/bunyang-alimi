@@ -82,10 +82,15 @@ function homeMode(d){
  const SHOW=6;
  const all=(d.items||[]).filter(it=>['soon','open','wait'].includes(status(it,today).key)).sort(order);
  if(!all.length)return;
+ const homeRow=it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`};
  const rows=all.slice(0,SHOW);
  const s=document.createElement('section');s.id='cy-home';s.className='section cy-home';
- s.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/?view=all" class="all-sites">전체보기</a></div><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'카카오톡 채널 추가<br>신규 분양현장 소식 보기')}</div></div>`;
+ s.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/?view=all" class="all-sites">전체보기</a></div><label class="listing-search cy-home-search" for="cy-home-search">단지 이름으로 검색<input id="cy-home-search" type="search" placeholder="예: 운정, 고덕" autocomplete="off"></label><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map(homeRow).join('')}</ul><div class="cy-home-alert">${kakao(d,'카카오톡 채널 추가<br>신규 분양현장 소식 보기')}</div></div>`;
  after.insertAdjacentElement('afterend',s);
+ // 이름으로 검색: 입력하면 6곳 제한 없이 일치하는 일정을 모두 표시, 지우면 처음 6곳
+ const hs=s.querySelector('#cy-home-search'),hl=s.querySelector('#cy-home-list');
+ const norm=v=>String(v??'').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
+ hs.addEventListener('input',()=>{const q=norm(hs.value);const found=q?all.filter(it=>norm(it.name).includes(q)||norm(regionOf(it)).includes(q)):rows;hl.innerHTML=found.length?found.map(homeRow).join(''):'<li class="cy-empty">일치하는 일정이 없습니다.</li>'});
 }
 
 fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{if(list){pageMode(d,list);if(calc)initCalc(calc)}else if(calc)calcMode(d,calc);else homeMode(d)});

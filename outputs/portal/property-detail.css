@@ -328,3 +328,13 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .kakao-channel-shortcut span::after{font-size:10.5px!important}
 
 .property-page-dialog.detail-minimized .kakao-channel-shortcut{display:none}
+
+/* 더샵 분당하이스트: 대표 이미지 아래쪽 표를 가리고 위쪽 사진만 보이게 */
+.sh-detail .pg-hero img{height:230%;width:100%;object-fit:cover;object-position:center top}
+
+/* 건물명이 있는 현장: 도로명(사평대로12)은 작게, 건물명(인시그니아 반포)은 굵고 크게 */
+.property-name.has-building{display:block}
+.property-name .street-label{display:block;font-size:12px;font-weight:600;color:#6c7a8d;letter-spacing:0;line-height:1.4}
+.property-name .building-main{display:block;font-size:1.25em;font-weight:900;letter-spacing:-.6px;line-height:1.3;color:#14243a}
+.insignia-detail .ins-header-brand>span{font-size:28px!important;font-weight:900!important;letter-spacing:-1px}
+@media(max-width:650px){.insignia-detail .ins-header-brand>span{font-size:24px!important}}
