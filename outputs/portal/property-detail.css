@@ -285,3 +285,18 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .property-section[id^="location-"] { --section-icon: "📍"; }
 .property-section[id^="types-"] { --section-icon: "📐"; }
 .property-section[id^="interest-"] { --section-icon: "💬"; }
+
+/* 고르는 이유 6칸 카드 (범용 렌더러 cards 블록) 2026-11-03 */
+.rc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1140px;margin:22px auto 6px;text-align:left}
+.rc-card{position:relative;padding:24px 24px 26px;border-radius:20px;border:1px solid var(--rc,#d7e1f0);background:linear-gradient(145deg,var(--rcb,#f3f7fd),#fff);box-shadow:0 6px 18px rgba(30,40,70,.05)}
+.rc-n{display:block;font:800 13px/1 inherit;letter-spacing:2px;color:var(--rcc,#6aa2e0)}
+.rc-ico{display:inline-flex;width:54px;height:54px;margin:16px 0 14px;border-radius:15px;align-items:center;justify-content:center;border:1px solid var(--rc,#d7e1f0);background:var(--rcb,#eaf1fb);color:var(--rcc,#4d8fe0)}
+.rc-l{display:block;font:800 11px/1 inherit;letter-spacing:2px;color:var(--rcc,#6aa2e0);margin-bottom:8px}
+.rc-card h3{margin:0 0 8px;font-size:19px;font-weight:800;color:#1c2430}.rc-card p{margin:0;font-size:14.5px;line-height:1.6;color:#3d4651}
+.rc-c0{--rc:#cfe0f5;--rcb:#eef4fc;--rcc:#4d8fe0}.rc-c1{--rc:#f3cddb;--rcb:#fdf0f5;--rcc:#e0709a}.rc-c2{--rc:#c6e8e3;--rcb:#eefaf8;--rcc:#3fb3a5}
+.rc-c3{--rc:#d9d3f3;--rcb:#f4f2fd;--rcc:#8a78e0}.rc-c4{--rc:#f3e3bd;--rcb:#fdf8ec;--rcc:#d9a63a}.rc-c5{--rc:#d9d3f3;--rcb:#f4f2fd;--rcc:#7a68d8}
+.rc-note{max-width:1140px;margin:12px auto 0;font-size:12.5px;color:#5b6577;text-align:left}
+@media(max-width:900px){.rc-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.rc-grid{grid-template-columns:1fr}}
+
+.ins-subtitle:has(+ .gd-rich-lead + .rc-grid){font-size:40px;font-weight:900;letter-spacing:-1px;margin-bottom:8px}
+@media(max-width:600px){.ins-subtitle:has(+ .gd-rich-lead + .rc-grid){font-size:28px}}
