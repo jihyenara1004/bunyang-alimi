@@ -11,7 +11,7 @@ const normalizeFeaturedName=value=>String(value??'').normalize('NFKC').toLowerCa
 featuredSearch?.addEventListener('input',()=>renderFeatured());
 function renderFeatured(){
  const query=normalizeFeaturedName(featuredSearch?.value);
- const list=properties.filter(p=>(!featuredRegion||p.region===featuredRegion)&&normalizeFeaturedName(p.name).includes(query)).sort((a,b)=>(a.sort??99)-(b.sort??99));
+ const list=properties.filter(p=>(!featuredRegion||p.region===featuredRegion)&&[p.name,p.buildingLabel].some(name=>normalizeFeaturedName(name).includes(query))).sort((a,b)=>(a.sort??99)-(b.sort??99));
  $('#featured-cards').innerHTML=list.length?list.map(card).join(''):'<p role="status">일치하는 단지가 없습니다.</p>';
  document.querySelectorAll('[data-featured-region]').forEach(b=>{const on=b.dataset.featuredRegion===featuredRegion;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)})}
 renderFeatured();document.addEventListener('click',e=>{const b=e.target.closest('[data-featured-region]');if(!b)return;featuredRegion=featuredRegion===b.dataset.featuredRegion?'':b.dataset.featuredRegion;renderFeatured()});
