@@ -27,7 +27,7 @@ function pageMode(d,list){
  const today=kst(),items=(d.items||[]).slice();
  const st={region:'전체',type:'전체',period:'upcoming'};
  const upd=document.getElementById('cy-updated');if(upd)upd.textContent=d.updated?`마지막 수정 ${d.updated.replace(/-/g,'.')} · 최종 일정은 청약홈 공고로 확인해 주세요`:'청약일정 준비 중';
- const side=document.getElementById('cy-alert-side');if(side)side.innerHTML=kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기');
+ const side=document.getElementById('cy-alert-side');if(side)side.innerHTML=kakao(d,'카카오톡 채널 추가<br>신규 분양현장 소식 보기');
  const count=document.getElementById('cy-count');
  const search=document.getElementById('cy-search');
  const normalizeName=value=>String(value??'').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
@@ -84,7 +84,7 @@ function homeMode(d){
  if(!all.length)return;
  const rows=all.slice(0,SHOW);
  const s=document.createElement('section');s.id='cy-home';s.className='section cy-home';
- s.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/?view=all" class="all-sites">전체보기</a></div><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
+ s.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/?view=all" class="all-sites">전체보기</a></div><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'카카오톡 채널 추가<br>신규 분양현장 소식 보기')}</div></div>`;
  after.insertAdjacentElement('afterend',s);
 }
 
