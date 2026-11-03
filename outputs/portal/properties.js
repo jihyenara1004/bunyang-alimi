@@ -13046,5 +13046,535 @@ window.PORTAL_PROPERTIES=[
       },
       "plansBefore": []
     }
+  },
+  {
+    "price": "분양가: 10.3억~",
+    "moveIn": "준공 완료 · 입주 상담",
+    "checked": "2026.11.03",
+    "status": "현장 안내",
+    "id": "theraum",
+    "name": "건대 더 라움 펜트하우스",
+    "region": "서울",
+    "area": "서울 · 광진구 자양동",
+    "type": "오피스텔",
+    "tag": "건대입구역 더블 역세권 · 전 세대 복층 펜트하우스 · 층고 4.5m · 357세대",
+    "address": "서울특별시 광진구 능동로 81 (자양동 2-3)",
+    "scale": "지하 6층 ~ 지상 25층 · 2개 동",
+    "count": "오피스텔 총 357세대 (전 세대 복층)",
+    "sizes": [
+      "58㎡",
+      "61㎡",
+      "67㎡",
+      "69㎡",
+      "72㎡",
+      "74㎡"
+    ],
+    "builder": "상담 시 안내",
+    "img": "https://lh3.googleusercontent.com/0kK6uhWliBn1kXKcfIkZ9m4tZIe2VSV1wAulp3lZhXMvsv4cLyL1wf65F-tKrhCsyelBBSLoeQyBhrEsGI4GC8_3ggkbb87NF4xMbDQO1Jzv_DbyxxcIxw=w1920-h953-n",
+    "intro": "2·7호선 건대입구역 더블 역세권 도보 약 2분 · 전 세대 복층 펜트하우스 · 층고 4.5m · 총 357세대 · 인피니티 풀·건식 사우나·피트니스 커뮤니티",
+    "highlights": [
+      [
+        "전 세대 복층 펜트하우스",
+        "층고 4.5m(상층부 1.8m) 복층 구조 · 6개 타입 · 실사용 약 91.68~113.64㎡"
+      ],
+      [
+        "건대입구역 더블 역세권",
+        "지하철 2·7호선 도보 약 2분 · 강남까지 2정거장(차량 10분대) · 롯데백화점·스타시티몰·이마트"
+      ],
+      [
+        "프리미엄 커뮤니티",
+        "인피니티 풀 · 건식 사우나 · 피트니스센터 · 다이닝 · 초미세먼지 차단 시스템"
+      ]
+    ],
+    "location": "서울특별시 광진구 능동로 81(자양동 2-3). 2·7호선 건대입구역 도보 약 2분, 롯데백화점·스타시티몰·이마트·건국대학교병원 인접, 성수초 배정(성수전략정비구역·자양4동 A구역 개발은 예정 사항).",
+    "typesNote": "58·61·67·69·72·74 6개 타입 평면도 · 상담 1688-5650",
+    "sources": [
+      [
+        "더라움 펜트하우스 홈페이지",
+        "https://xn--zb0br3ywuafxi62a2xa464f.com/"
+      ]
+    ],
+    "links": [],
+    "x": 64,
+    "y": 46,
+    "sort": 34,
+    "recommended": false,
+    "heroImg": "https://lh3.googleusercontent.com/0kK6uhWliBn1kXKcfIkZ9m4tZIe2VSV1wAulp3lZhXMvsv4cLyL1wf65F-tKrhCsyelBBSLoeQyBhrEsGI4GC8_3ggkbb87NF4xMbDQO1Jzv_DbyxxcIxw=w1920-h953-n",
+    "planImg": "https://lh3.googleusercontent.com/B-lJid7IzMTZUCkdqh8LIsh2bCEtyWhJMsIcp13qmG6ZPZuW9qCWzAtw2tz2dY65zlgmrBqWKepDDCmBvmnKeWA4pC5kBqYwiHYKvmqy9CqQ8IX66RrE=w1920-h1123-n",
+    "gallery": [
+      "https://lh3.googleusercontent.com/nH4KmC06PSnDWedOQAJ9X1OT4EkerKLHfBItimwaJE1VAdQAQd3MSHK0Z6EAOl5ikabbO-frDh6O2T3N50uujptAN99XUTxMPq95bKgjx-2AV5jADCane8Q=w1920-h1118-n",
+      "https://lh3.googleusercontent.com/HAAJLm5Lw9qu8t7wN2W0xdndWUved_udJmB1GiTLwJtdiJbgSi2fQeZwj-13SMqp3I3euXXQtj_7R6IgJFD5VF7lUdS7GXTkX2KmlcumbBP98W4HJXEKkw=w1920-h1061-n"
+    ],
+    "plans": [
+      {
+        "id": "58",
+        "label": "58㎡",
+        "info": [
+          "231세대",
+          "전용 27평(상층부 10평 포함)",
+          "남향·동향·서향"
+        ],
+        "src": "https://lh3.googleusercontent.com/B-lJid7IzMTZUCkdqh8LIsh2bCEtyWhJMsIcp13qmG6ZPZuW9qCWzAtw2tz2dY65zlgmrBqWKepDDCmBvmnKeWA4pC5kBqYwiHYKvmqy9CqQ8IX66RrE=w1920-h1123-n",
+        "width": 1920,
+        "height": 1123
+      },
+      {
+        "id": "61",
+        "label": "61㎡",
+        "info": [
+          "21세대",
+          "전용 29평(상층부 10평 포함)",
+          "남향"
+        ],
+        "src": "https://lh3.googleusercontent.com/YjbYRP_vB-Qo3WCvGOJ-yOwCLWo0uKpku7IEMW_lWqw9-aKZTYC8NVmsTjdUGsjNM2EJU7lBSBlD8dJmIYyVZ3hEOrv8SViYlXJpEaIpbmcHKKkg7_m3=w1920-h1124-n",
+        "width": 1920,
+        "height": 1124
+      },
+      {
+        "id": "67",
+        "label": "67㎡",
+        "info": [
+          "21세대",
+          "전용 32평(상층부 11평 포함)",
+          "남서향"
+        ],
+        "src": "https://lh3.googleusercontent.com/8v_wU81x31W-lXHhN9hseE6I3RFCF-GiMqmcriEJoDpLRs-G60g22EW5atfg2BjTP0fW_O6jMADU561Tzu6xck7C5NY6zWW7gc8q0fgEAawtHbmpq-TJ=w1920-h1119-n",
+        "width": 1920,
+        "height": 1119
+      },
+      {
+        "id": "69",
+        "label": "69㎡",
+        "info": [
+          "21세대",
+          "전용 34평(상층부 12평 포함)",
+          "남동향"
+        ],
+        "src": "https://lh3.googleusercontent.com/0j8bEgfHgPgwRbMYjjNDBk_UgvpjFetot1QnPR_RqM_HfFuopiMU2UjbZV4miTw6mljx96SWy_SM7jA7V1LNHtNfFwReIb8oEKOnejXtG5NgtP2ibP_YLQ=w1920-h1123-n",
+        "width": 1920,
+        "height": 1123
+      },
+      {
+        "id": "72",
+        "label": "72㎡",
+        "info": [
+          "42세대",
+          "전용 34평(상층부 12평 포함)",
+          "남동·남서향"
+        ],
+        "src": "https://lh3.googleusercontent.com/c7KsJ-LfuD6kchzahZXA9d-1O4DPZYY4HIv7aos_owxQBfMAsCRZJymkbVOHAF-GiB73XmEBV_3d_bjK2h4QRcL2dX5E4nMznx2XFVo6rhHsWbMpU7LI=w1920-h1116-n",
+        "width": 1920,
+        "height": 1116
+      },
+      {
+        "id": "74",
+        "label": "74㎡",
+        "info": [
+          "21세대",
+          "전용 34평(상층부 12평 포함)",
+          "남서향"
+        ],
+        "src": "https://lh3.googleusercontent.com/Jx-MDZhB9aXXdcM-VZmH_YwJOelkd63Udg07Iqmi5d1R2YwoWJYeL2UazjxFvK5nvCUcwzs1qNWORm_UVIIyOD50SZPWWNyT3aOqjajUF7j4Xc6_CvokTg=w1920-h1117-n",
+        "width": 1920,
+        "height": 1117
+      }
+    ],
+    "seo": {
+      "summary": [
+        "서울특별시 광진구 능동로 81(자양동 2-3) · 2·7호선 건대입구역 도보 약 2분",
+        "지하 6층~지상 25층 · 2개 동 · 총 357세대 · 전 세대 복층 펜트하우스(층고 4.5m)",
+        "6개 타입(58·61·67·69·72·74) · 실사용 91.68~113.64㎡ · 전 세대 100% 자주식 주차(456대)",
+        "인피니티 풀 · 건식 사우나 · 피트니스 · 상담 1688-5650"
+      ],
+      "points": [
+        [
+          "건대입구역 더블 역세권",
+          "2호선·7호선 도보 약 2분"
+        ],
+        [
+          "복층 펜트하우스",
+          "전 세대 층고 4.5m 복층 구조"
+        ],
+        [
+          "한강·도심 조망",
+          "일부 호실 롯데월드 타워·한강·관악산 조망(101동 2505호 기준)"
+        ],
+        [
+          "프리미엄 커뮤니티",
+          "인피니티 풀·사우나·피트니스·다이닝"
+        ],
+        [
+          "쾌적한 공기",
+          "실내 초미세먼지 차단 시스템 · 고순도 산소수"
+        ],
+        [
+          "대형 상권",
+          "롯데백화점·스타시티몰·이마트 도보권"
+        ]
+      ],
+      "typesHead": [
+        "타입",
+        "세대수",
+        "방향"
+      ],
+      "types": [
+        [
+          "58",
+          "231세대",
+          "남향·동향·서향"
+        ],
+        [
+          "61",
+          "21세대",
+          "남향"
+        ],
+        [
+          "67",
+          "21세대",
+          "남서향"
+        ],
+        [
+          "69",
+          "21세대",
+          "남동향"
+        ],
+        [
+          "72",
+          "42세대",
+          "남동·남서향"
+        ],
+        [
+          "74",
+          "21세대",
+          "남서향"
+        ]
+      ]
+    },
+    "keywords": [
+      "더라움 펜트하우스",
+      "건대 더 라움",
+      "건대 복층 오피스텔",
+      "건대입구역 오피스텔",
+      "광진구 복층 오피스텔",
+      "자양동 오피스텔"
+    ],
+    "popup": {
+      "cards": [
+        {
+          "title": [
+            "건대 더 라움",
+            "펜트하우스"
+          ],
+          "items": [
+            [
+              "전 세대 복층 · 층고 4.5m",
+              "건대입구역 더블 역세권"
+            ],
+            [
+              "총 357세대 · 6개 타입",
+              "상담 1688-5650"
+            ]
+          ]
+        }
+      ]
+    },
+    "page": {
+      "cls": "tr",
+      "accent": "#8a6a3a",
+      "brand": "THE RAUM",
+      "brandSmall": "건대 펜트하우스",
+      "hero": {
+        "img": "https://lh3.googleusercontent.com/0kK6uhWliBn1kXKcfIkZ9m4tZIe2VSV1wAulp3lZhXMvsv4cLyL1wf65F-tKrhCsyelBBSLoeQyBhrEsGI4GC8_3ggkbb87NF4xMbDQO1Jzv_DbyxxcIxw=w1920-h953-n",
+        "pos": "center 50%",
+        "en": "THE RAUM PENTHOUSE",
+        "title": [
+          "건대 더 라움",
+          "펜트하우스"
+        ],
+        "name": "건대입구역 더블 역세권 · 357세대 복층",
+        "tagline": [
+          "층고 4.5m 복층 구조의",
+          "프리미엄 펜트하우스"
+        ],
+        "badge": "전 세대 복층 · 즉시 상담",
+        "cta": "분양 문의하기"
+      },
+      "stats": [
+        [
+          "규모",
+          "지하 6층 ~ 지상 25층"
+        ],
+        [
+          "세대수",
+          "총 357세대"
+        ],
+        [
+          "타입",
+          "6개 타입"
+        ],
+        [
+          "층고",
+          "4.5m 복층"
+        ]
+      ],
+      "overviewRows": [
+        [
+          "사업명",
+          "건대 더 라움 펜트하우스"
+        ],
+        [
+          "대지위치",
+          "서울특별시 광진구 능동로 81 (자양동 2-3)"
+        ],
+        [
+          "규모",
+          "지하 6층 ~ 지상 25층 · 2개 동"
+        ],
+        [
+          "공급",
+          "오피스텔 총 357세대 · 전 세대 펜트하우스 복층 구조"
+        ],
+        [
+          "층고",
+          "4.5m (상층부 1.8m)"
+        ],
+        [
+          "실사용면적",
+          "91.68㎡(27.7평) ~ 113.64㎡(34.4평) · 6개 타입"
+        ],
+        [
+          "주차",
+          "100% 자주식 · 456대(판매시설 포함)"
+        ],
+        [
+          "준공",
+          "2022년 5월"
+        ],
+        [
+          "상담",
+          "대표번호 1688-5650"
+        ]
+      ],
+      "overview": {
+        "before": [
+          [
+            "https://lh3.googleusercontent.com/oT1ba609PQLpdlc_c7piOFbbo8UzsO_t4IYAD7GUAdYOrjp1w7fU11y9uXWbAasQBCUc1fQ6qXaWzOQpV8t-3avGmDkbv3X1DIHPlyKt17gTeHLapVGJFg=s0",
+            3747,
+            2178,
+            "건대 더 라움 펜트하우스 사업개요"
+          ],
+          [
+            "https://lh3.googleusercontent.com/IQQb6JWGyEILg3WgYXmNexEoqQpkFjcyoCv41FSN4ujaMgWig95PqhnrZeOeiZX2ijHh23eYfNjfIZH4kw_IV05KUOrQtIUg6DqYQtO3wcxPy_7F_-vs=s0",
+            3755,
+            2193,
+            "건대 더 라움 펜트하우스 사업개요 상세"
+          ]
+        ],
+        "after": [
+          {
+            "h3": "단지 조감",
+            "gallery": [
+              [
+                "https://lh3.googleusercontent.com/0kK6uhWliBn1kXKcfIkZ9m4tZIe2VSV1wAulp3lZhXMvsv4cLyL1wf65F-tKrhCsyelBBSLoeQyBhrEsGI4GC8_3ggkbb87NF4xMbDQO1Jzv_DbyxxcIxw=w1920-h953-n",
+                1920,
+                953,
+                "건대 더 라움 펜트하우스 조감도"
+              ]
+            ]
+          }
+        ]
+      },
+      "premiumNav": "프리미엄",
+      "premium": {
+        "eyebrow": "PREMIUM",
+        "title": "복층 펜트하우스 프리미엄",
+        "blocks": [
+          {
+            "points": [
+              [
+                "전 세대 복층 펜트하우스",
+                "층고 4.5m · 상층부 1.8m 복층 구조로 일반 오피스텔과 다른 공간감"
+              ],
+              [
+                "조망",
+                "일부 호실에서 롯데월드 타워(시그니엘)·한강·청담대교·영동대교·관악산 조망(101동 2505호 정남향 거실 기준)"
+              ],
+              [
+                "쾌적한 공기",
+                "실내 초미세먼지 차단 시스템 · 고순도 산소수 공급"
+              ],
+              [
+                "고급 마감",
+                "그리스·오만산 천연 대리석 · 100년 벽지(샘플하우스 기준)"
+              ]
+            ],
+            "gallery": [
+              [
+                "https://lh3.googleusercontent.com/Bg11sAy2hhP5qsnfPC2A-7WU9a__JAaIFCFzF9c61ldmGf4q5MWHaXy_dKdW2fyjILEuGprz4yf1T894Ml142LC2kb43Lz374je2vuPahhKbW8XlabLx=w1920-h1146-n",
+                1920,
+                1146,
+                "건대 더 라움 펜트하우스 관악산 조망"
+              ],
+              [
+                "https://lh3.googleusercontent.com/ql62EQlXlGVRvjxFOWhHp6ikyUEx5Zt7IQtFZVH4QaFDafLAoumYiYSVRhPn8O_9fuoyJ_cP8QZ4Dh0WARsiT4wSkzLBi5fMPdlqbGZjDi3Dz7LfZkBYlg=w1920-h1062-n",
+                1920,
+                1062,
+                "건대 더 라움 펜트하우스 롯데월드 타워 조망"
+              ]
+            ]
+          },
+          {
+            "h3": "특화설계",
+            "figs": [
+              [
+                "https://lh3.googleusercontent.com/zxzThex6OzRyAP_2wUMTm5nmCWumiAvyUzGyzIlB83yXEI_OpSzSw7D8cOxxJDyaifo_b6yHRoIuZs3MK8ETrMQ7UR4KbvAR0wwa-AtPcGWM4BCDWZTub7I=w1920-h1125-n",
+                1920,
+                1125,
+                "건대 더 라움 펜트하우스 특화설계 1"
+              ],
+              [
+                "https://lh3.googleusercontent.com/FeBwuASkggGTRGfIOAiad1fUiOyn_zSmcYuVQvDeRJa6-PKrX-CJl8Sxa2dq5UfF5JCHO22ZSvaNKYqk55NVXTDq7JltLfuCHL2LxttW_R2BHBkz1nbZ=w1920-h1120-n",
+                1920,
+                1120,
+                "건대 더 라움 펜트하우스 특화설계 2"
+              ]
+            ]
+          },
+          {
+            "h3": "인테리어",
+            "gallery": [
+              [
+                "https://lh3.googleusercontent.com/nH4KmC06PSnDWedOQAJ9X1OT4EkerKLHfBItimwaJE1VAdQAQd3MSHK0Z6EAOl5ikabbO-frDh6O2T3N50uujptAN99XUTxMPq95bKgjx-2AV5jADCane8Q=w1920-h1118-n",
+                1920,
+                1118,
+                "58타입 인테리어"
+              ],
+              [
+                "https://lh3.googleusercontent.com/ivAW0JhUOS40Dk6arh2KuLOcLJEuue2rxXixEpPNeR_BOfIv-sUoPM14UQ5eqjMyMpdbMZMYFVVrFWiASVwz6aspH5JB6hfa9e_7t0iwNnHjYxGPKwwV73c=w1920-h1118-n",
+                1920,
+                1118,
+                "67타입 인테리어"
+              ],
+              [
+                "https://lh3.googleusercontent.com/ZwsIWt5giPclDoG6t06wkXtYlFYTq9YTvcTdqdXw2afgqLKPtYT2mBzpyJ7MQKEzm7Fcyq6wIbxcXfbvULCofIKHyJcmsjMMllPNKFzPqjzmZrjaJvnn=w1920-h1116-n",
+                1920,
+                1116,
+                "74타입 인테리어"
+              ]
+            ]
+          },
+          {
+            "h3": "커뮤니티",
+            "lead": [
+              "인피니티 풀 · 건식 사우나 · 피트니스센터 · 다이닝"
+            ],
+            "gallery": [
+              [
+                "https://lh3.googleusercontent.com/HAAJLm5Lw9qu8t7wN2W0xdndWUved_udJmB1GiTLwJtdiJbgSi2fQeZwj-13SMqp3I3euXXQtj_7R6IgJFD5VF7lUdS7GXTkX2KmlcumbBP98W4HJXEKkw=w1920-h1061-n",
+                1920,
+                1061,
+                "건대 더 라움 펜트하우스 인피니티 풀"
+              ],
+              [
+                "https://lh3.googleusercontent.com/iTOdKbeC6q6uBl0-tCutPQboZ9I8PLm0N_hw-dKFn_Z5F3axR47mX4cIAZcKk-P-X-dnaajwIP_6nA6XIb8r6s2ELKqRyIJg-xaWvfRG3KrM9ws4yFssIF4=w1920-h1069-n",
+                1920,
+                1069,
+                "건대 더 라움 펜트하우스 수영장"
+              ],
+              [
+                "https://lh3.googleusercontent.com/Bca9kv_7M9htMln-qnPpGAo8JbwFnmvUSuunpkpeoPcjSuaGoHgtlVbBY7mo8gSF-XTHRbTqF5XrUamauSlHJ5dGeuplXwM93TM6PIeI73iTV9MsfgBu=w1920-h1078-n",
+                1920,
+                1078,
+                "건대 더 라움 펜트하우스 건식 사우나"
+              ],
+              [
+                "https://lh3.googleusercontent.com/HTo-6BiIC9CyPY6gW0hnMKEvi_Tcx6U_DSn3PFgwNE3XIo-F8DO8p4xhKzGEX6baEZZAB6_rMOXulz_crH13En0X819pUF8cW7KMQp8FSCDJ4R-MVcec=w1920-h1119-n",
+                1920,
+                1119,
+                "건대 더 라움 펜트하우스 커뮤니티 1"
+              ],
+              [
+                "https://lh3.googleusercontent.com/ehY__02KTz92-NtbAf60ppq7AdnG7cPGU2vrvSESecKyGPANhhnZDjjbk8-8Fj_hVUuZ7uhjaMBBQ3WjXV1vquWg1kQL2MWzltMZSYXqoZh78NQZhV6owQA=w1920-h1116-n",
+                1920,
+                1116,
+                "건대 더 라움 펜트하우스 커뮤니티 2"
+              ],
+              [
+                "https://lh3.googleusercontent.com/EeywfIpgN23FAaeKJyUCoSSiPnUL_wE2SHnY6o0ZMEwvxgmmz68sr3YUaw_6EPOh7_OtFgzgUhN0rFvK7vDp7HZiTtrmZt0iewlneuHkDWfQRHxTJKEPiA=w1920-h1119-n",
+                1920,
+                1119,
+                "건대 더 라움 펜트하우스 커뮤니티 3"
+              ],
+              [
+                "https://lh3.googleusercontent.com/1fg0w1OQ7-vI1VwCNuXKz61_k0RC8X3MgtdXimTrI8_Gcm80f_V6ySiHNsx_VJRopeJZ-zm_V4VP8jqV-sDeCyalg8Lk3DuIUZ8XtRSWJEQtHHkVuuzBiQ=w1920-h1121-n",
+                1920,
+                1121,
+                "건대 더 라움 펜트하우스 커뮤니티 4"
+              ]
+            ]
+          },
+          {
+            "h3": "단지배치도",
+            "figs": [
+              [
+                "https://lh3.googleusercontent.com/RaKMMenfzgQpA8rhCgNnGRYXJexqspc2HF3lDkokIN3XgNLli8w4PKRCaN69vCDQB2diI0iS2IFvXCkrnMNn64QCArh-G-3cpmwUllNjOkBsHyBrH8PevQ=s0",
+                1583,
+                2217,
+                "건대 더 라움 펜트하우스 단지배치도"
+              ]
+            ]
+          }
+        ]
+      },
+      "location": {
+        "title": "건대입구역 더블 역세권, 한강 주거벨트",
+        "blocks": [
+          {
+            "points": [
+              [
+                "교통",
+                "2호선·7호선 건대입구역 더블 역세권 도보 약 2분 · 강남까지 2정거장, 차량 10분대 · 동서울터미널 차량 약 10분"
+              ],
+              [
+                "생활",
+                "롯데백화점 · 스타시티몰 · 이마트 등 도보권 대형 상업시설"
+              ],
+              [
+                "의료·문화",
+                "건국대학교병원 · 광진구 문화예술센터"
+              ],
+              [
+                "교육",
+                "성수초 배정 · 자양중 배정 가능 · 광장동 학원가(차량 10분) · 대치동 학원가(차량 20분)"
+              ],
+              [
+                "개발",
+                "성수전략정비구역(예정)·자양4동 A구역(예정) 개발로 한강 주거벨트 수혜 기대(계획은 지연·변경될 수 있음)"
+              ]
+            ],
+            "figs": [
+              [
+                "https://lh3.googleusercontent.com/16iglHWp_jc9O5Z1I0P0ji-YNUy_Sj4vnHsKRZT0n7avpFjgHrG8FaDZlPZ_VjFUmMoZcOn_E_YT33XbvIMQoGgDWjga239SqTu3x7YZX9INszbO8UNUaw=w1920-h1117-n",
+                1920,
+                1117,
+                "건대 더 라움 펜트하우스 입지환경"
+              ]
+            ]
+          },
+          {
+            "h3": "미래가치",
+            "figs": [
+              [
+                "https://lh3.googleusercontent.com/Ftu0eXHgsPmxFSK94Wcn4aCz7zF8_ob_Lw_yeI_fGGPYJm5tCXdSfDN39oQQ8Z7r5hMQD47e5lM-mQSMjWXJ6STOHjt0hCuxzQFNPJyM0hicADFN9XAkXw=w1920-h1116-n",
+                1920,
+                1116,
+                "건대 더 라움 펜트하우스 미래가치"
+              ]
+            ]
+          }
+        ]
+      },
+      "plansBefore": []
+    }
   }
 ];
