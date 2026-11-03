@@ -9241,13 +9241,15 @@ window.PORTAL_PROPERTIES=[
     "area": "서울 · 노원구 월계동",
     "type": "시니어 레지던스",
     "tag": "서울원 웰니스 레지던스 · 최고 49층 768세대",
-    "address": "서울특별시 노원구 월계동 85-7번지 일원 (서울원)",
-    "scale": "지하 4층 ~ 지상 49층 · 2개 동",
+    "address": "서울특별시 노원구 화랑로45길 145 일원 (서울원)",
+    "scale": "지하 3층 ~ 지상 49층 · 2개동",
     "count": "총 768세대",
     "sizes": [
-      "상담 시 안내"
+      "70",
+      "73",
+      "80"
     ],
-    "builder": "HDC현대산업개발",
+    "builder": "아이파크현대산업개발",
     "price": "상담문의",
     "moveIn": "상담 시 확인",
     "status": "분양 중",
@@ -9259,8 +9261,8 @@ window.PORTAL_PROPERTIES=[
     "heroImg": "assets/roche-hero.jpg",
     "promotion": true,
     "promotionLabel": "웰니스 레지던스",
-    "checked": "2026.10.29",
-    "intro": "서울원 복합개발 속 웰니스 라이프 · HDC현대산업개발 768세대 프리미엄 복합 주거 · 메디컬·멤버십·컨시어지 서비스",
+    "checked": "2026.11.03",
+    "intro": "서울원 복합개발 속 웰니스 레지던스 · 최고 49층 768세대 · 전용 70·73·80㎡ · 메디컬·컨시어지·멤버십 서비스",
     "highlights": [
       [
         "서울원 중심",
@@ -9275,18 +9277,18 @@ window.PORTAL_PROPERTIES=[
         "IPARK 리조트 · 호텔 · 아이파크몰 프리미엄 멤버십"
       ]
     ],
-    "location": "서울특별시 노원구 월계동 85-7번지 일원. 1호선 광운대역 · 동부간선도로 · GTX-C(예정).",
-    "typesNote": "타입별 평면·잔여 호실 상담 1688-5650",
+    "location": "서울특별시 노원구 화랑로45길 145 일원. 서울원 복합개발(2,264세대 아이파크·메리어트·아이파크몰·프라임 오피스) 안.",
+    "typesNote": "전용 70·73·80㎡ · 타입별 평면·잔여 호실 상담 1688-5650",
     "siteArea": "4,842평",
     "totalFloorArea": "35,946평",
     "coverage": "건폐율 59.99% / 용적률 499.71%",
     "plans": [],
     "seo": {
       "summary": [
-        "서울 노원구 월계동 85-7번지 일원 · 서울원 복합개발 내 웰니스 레지던스",
-        "지하 4층~지상 49층 · 2개 동 · 총 768세대 · HDC현대산업개발",
-        "대지면적 4,842평 · 연면적 35,946평 · 용적률 499.71%",
-        "메디컬 · 멤버십 · 스마트 · 커뮤니티 · 컨시어지 서비스"
+        "서울 노원구 화랑로45길 145 일원 · 서울원 복합개발 내 웰니스 레지던스",
+        "지하 3층~지상 49층 · 2개 동 · 총 768세대 · 전용 70·73·80㎡ · 아이파크현대산업개발",
+        "서울원 15만㎡ 복합타운: 서울원 아이파크 2,264세대 · 메리어트 호텔 · 아이파크몰 · 프라임 오피스",
+        "메디컬(서울아산병원 협업) · 컨시어지 · 멤버십 · 스마트 · 커뮤니티 서비스"
       ],
       "points": [
         [
@@ -9313,6 +9315,24 @@ window.PORTAL_PROPERTIES=[
           "웰니스",
           "메디컬 서비스 · 글로벌 웰니스 파트너"
         ]
+      ],
+      "types": [
+        [
+          "70㎡",
+          "전용 70㎡"
+        ],
+        [
+          "73㎡",
+          "전용 73㎡"
+        ],
+        [
+          "80㎡",
+          "전용 80㎡"
+        ]
+      ],
+      "typesHead": [
+        "타입",
+        "전용면적"
       ]
     },
     "popup": {
@@ -9363,7 +9383,7 @@ window.PORTAL_PROPERTIES=[
           "서울원",
           "파크로쉬"
         ],
-        "name": "노원구 월계동 · 최고 49층 768세대",
+        "name": "노원구 서울원 · 최고 49층 768세대",
         "tagline": [
           "서울의 중심에서 만나는",
           "프리미엄 복합 주거문화"
@@ -9374,19 +9394,19 @@ window.PORTAL_PROPERTIES=[
       "stats": [
         [
           "규모",
-          "지하 4층 ~ 지상 49층"
+          "지하 3층 ~ 지상 49층"
         ],
         [
           "세대수",
-          "총 768세대"
+          "총 768세대 · 2개동"
         ],
         [
-          "연면적",
-          "35,946평"
+          "전용면적",
+          "70 · 73 · 80㎡"
         ],
         [
-          "시공",
-          "HDC현대산업개발"
+          "시행·시공",
+          "아이파크현대산업개발"
         ]
       ],
       "overviewRows": [
@@ -9396,7 +9416,23 @@ window.PORTAL_PROPERTIES=[
         ],
         [
           "대지위치",
-          "서울특별시 노원구 월계동 85-7번지 일원"
+          "서울특별시 노원구 화랑로45길 145 일원"
+        ],
+        [
+          "건축규모",
+          "지하 3층 ~ 지상 49층 · 2개동"
+        ],
+        [
+          "세대수",
+          "총 768세대"
+        ],
+        [
+          "전용면적",
+          "70 · 73 · 80㎡"
+        ],
+        [
+          "시행·시공",
+          "아이파크현대산업개발(주)"
         ],
         [
           "대지면적",
@@ -9411,16 +9447,8 @@ window.PORTAL_PROPERTIES=[
           "59.99% / 499.71%"
         ],
         [
-          "공급규모",
-          "2개 동"
-        ],
-        [
-          "층수",
-          "B4F ~ 49F"
-        ],
-        [
-          "세대수",
-          "총 768세대"
+          "갤러리",
+          "서울특별시 노원구 마들로1길 45"
         ]
       ],
       "overview": {
@@ -9505,6 +9533,53 @@ window.PORTAL_PROPERTIES=[
                 "IPARK 리조트·호텔·아이파크몰 프리미엄 멤버십"
               ]
             ]
+          },
+          {
+            "h3": "커뮤니티 배치",
+            "figs": [
+              [
+                "https://parkroche-seoulone.com/images/sub-floor-img1.png?ver=3",
+                1340,
+                740,
+                "지상 커뮤니티 배치"
+              ],
+              [
+                "https://parkroche-seoulone.com/images/sub-floor-img2.png?ver=3",
+                1340,
+                820,
+                "커뮤니티 시설 배치 1F"
+              ],
+              [
+                "https://parkroche-seoulone.com/images/sub-floor-img3.png?ver=4",
+                1340,
+                820,
+                "커뮤니티 시설 배치 B1F"
+              ]
+            ]
+          },
+          {
+            "h3": "단지배치도",
+            "figs": [
+              [
+                "https://parkroche-seoulone.com/images/unit1-img1.jpg?ver=5",
+                1340,
+                2003,
+                "서울원 파크로쉬 단지배치도"
+              ]
+            ],
+            "details": [
+              [
+                "동·호 배치도 보기",
+                [
+                  [
+                    "https://parkroche-seoulone.com/images/unit2-img1.jpg",
+                    1339,
+                    1740,
+                    "서울원 파크로쉬 동·호 배치도"
+                  ]
+                ]
+              ]
+            ]
           }
         ]
       },
@@ -9520,11 +9595,56 @@ window.PORTAL_PROPERTIES=[
                 "서울원 파크로쉬 입지와 단지 배치"
               ]
             ]
+          },
+          {
+            "figs": [
+              [
+                "https://parkroche-seoulone.com/images/complex-map-new.jpg",
+                1340,
+                650,
+                "서울원 복합개발 단지 위치"
+              ]
+            ]
           }
         ]
-      }
+      },
+      "plansAfter": [
+        {
+          "h3": "인테리어",
+          "gallery": [
+            [
+              "https://parkroche-seoulone.com/images/unit-livingroom-img01.jpg",
+              1340,
+              834,
+              "거실"
+            ],
+            [
+              "https://parkroche-seoulone.com/images/unit-diningroom-img01.jpg",
+              1340,
+              834,
+              "다이닝"
+            ],
+            [
+              "https://parkroche-seoulone.com/images/unit-bedroom-img01.jpg",
+              1340,
+              834,
+              "침실"
+            ],
+            [
+              "https://parkroche-seoulone.com/images/unit-bathroom-img01.jpg",
+              655,
+              940,
+              "욕실"
+            ]
+          ]
+        }
+      ]
     },
     "sources": [
+      [
+        "파크로쉬 서울원 공식 홈페이지",
+        "https://parkroche-seoulone.com/"
+      ],
       [
         "서울원 파크로쉬",
         "https://seouloneparkroche.sscp.kr/"
@@ -9535,7 +9655,9 @@ window.PORTAL_PROPERTIES=[
       "파크로쉬",
       "서울원 시니어 레지던스",
       "노원 시니어 레지던스"
-    ]
+    ],
+    "modelHouse": "서울특별시 노원구 마들로1길 45 (갤러리)",
+    "mapAddress": "서울특별시 노원구 화랑로45길 145"
   },
   {
     "id": "bluming",
