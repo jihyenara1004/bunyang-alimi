@@ -29,6 +29,9 @@ function pageMode(d,list){
  const upd=document.getElementById('cy-updated');if(upd)upd.textContent=d.updated?`마지막 수정 ${d.updated.replace(/-/g,'.')} · 최종 일정은 청약홈 공고로 확인해 주세요`:'청약일정 준비 중';
  const side=document.getElementById('cy-alert-side');if(side)side.innerHTML=kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기');
  const count=document.getElementById('cy-count');
+ const search=document.getElementById('cy-search');
+ const normalizeName=value=>String(value??'').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
+ search?.addEventListener('input',draw);
  function match(it){const s=status(it,today).key;
   if(st.region!=='전체'&&regionOf(it)!==st.region)return false;
   if(st.type!=='전체'&&it.type!==st.type)return false;
@@ -40,9 +43,11 @@ function pageMode(d,list){
  const SHOW=6,allBtn=document.getElementById('cy-all');const score=document.getElementById('calc');
  let expanded=new URLSearchParams(window.location.search).get('view')==='all';
  if(allBtn)allBtn.addEventListener('click',()=>{expanded=!expanded;draw();if(!expanded)list.scrollIntoView({block:'nearest'})});
- function draw(){const all=items.filter(match).sort(st.period==='done'?(a,b)=>order(b,a):order);
-  const rows=expanded?all:all.slice(0,SHOW);
-  count.textContent=all.length?(all.length>SHOW&&!expanded?`${all.length}건 중 ${SHOW}건`:`${all.length}건`):'';
+ function draw(){
+  const query=normalizeName(search?.value);
+  const all=items.filter(it=>match(it)&&(!query||(['open','soon'].includes(status(it,today).key)&&normalizeName(it.name).includes(query)))).sort(query?(a,b)=>Number(status(b,today).key==='open')-Number(status(a,today).key==='open')||order(a,b):st.period==='done'?(a,b)=>order(b,a):order);
+  const rows=expanded||query?all:all.slice(0,SHOW);
+  count.textContent=all.length?(all.length>SHOW&&!expanded&&!query?`${all.length}건 중 ${SHOW}건`:`${all.length}건`):'';
   if(allBtn){allBtn.hidden=!expanded&&all.length<=SHOW&&!score;allBtn.textContent=expanded?'접기':'전체보기';allBtn.setAttribute('aria-expanded',String(expanded))}
   if(score)score.hidden=!expanded;
   list.innerHTML=rows.length?`<ul class="cy-home-list cy-full-list">${rows.map(it=>row(it,today)).join('')}</ul>`:`<p class="cy-empty">${items.length?'조건에 맞는 일정이 없습니다.':'청약 일정을 준비하고 있습니다. 최신 공고는 <a href="https://www.applyhome.co.kr" target="_blank" rel="noopener noreferrer">청약홈</a>에서 먼저 확인해 주세요.'}</p>`}

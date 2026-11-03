@@ -5,7 +5,15 @@ const nameButton=p=>`<button class="property-name" data-detail="${p.id}">${esc(p
 function thumb(p){return `<button type="button" class="property-thumb" data-detail="${p.id}" aria-label="${esc(p.name)} 상세페이지 열기">${p.img?`<img src="${p.img}" alt="${esc(p.name)} 기존 현장 이미지" loading="lazy">`:'<div class="photo-pending"><span>⌂</span><small>현장 이미지 준비 중</small></div>'}<span class="property-status">${p.status}</span></button>`}
 function summary(p){return `<div class="compact-content">${nameButton(p)}${promotion(p)}<p class="feature-text">${esc(p.tag)}</p><p class="spec-text">${esc(p.type)} · ${esc(p.area)}</p><p class="spec-text">${esc(p.sizes?.join(' · ')||'타입 안내 확인')}</p><div class="price-line"><strong>${esc(p.price==='상담문의'?'분양가 확인 중':p.price)}</strong><span>${p.priceNote?'부가세 별도':'현재 조건 확인'}</span></div></div>`}
 const card=p=>`<article class="compact-property">${thumb(p)}${summary(p)}</article>`;
-let featuredRegion='';function renderFeatured(){const all=properties.slice().sort((a,b)=>(a.sort??99)-(b.sort??99)),list=featuredRegion?all.filter(p=>p.region===featuredRegion):all;$('#featured-cards').innerHTML=list.map(card).join('');if($('#all-count'))$('#all-count').textContent=featuredRegion?`${featuredRegion==='기타'?'그 외 지역':featuredRegion} ${list.length}개 현장 · 한 번 더 누르면 전체 ${all.length}개 현장`:`분양알리미가 안내하는 전체 ${all.length}개 현장입니다.`;document.querySelectorAll('[data-featured-region]').forEach(b=>{const on=b.dataset.featuredRegion===featuredRegion;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)})}
+let featuredRegion='';
+const featuredSearch=$('#featured-search');
+const normalizeFeaturedName=value=>String(value??'').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
+featuredSearch?.addEventListener('input',()=>renderFeatured());
+function renderFeatured(){
+ const query=normalizeFeaturedName(featuredSearch?.value);
+ const list=properties.filter(p=>(!featuredRegion||p.region===featuredRegion)&&normalizeFeaturedName(p.name).includes(query)).sort((a,b)=>(a.sort??99)-(b.sort??99));
+ $('#featured-cards').innerHTML=list.length?list.map(card).join(''):'<p role="status">일치하는 단지가 없습니다.</p>';
+ document.querySelectorAll('[data-featured-region]').forEach(b=>{const on=b.dataset.featuredRegion===featuredRegion;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)})}
 renderFeatured();document.addEventListener('click',e=>{const b=e.target.closest('[data-featured-region]');if(!b)return;featuredRegion=featuredRegion===b.dataset.featuredRegion?'':b.dataset.featuredRegion;renderFeatured()});
 /* 이번 주 추천현장: 매주 월요일(한국시간) 4곳씩 자동 교체. p.pinned=true인 현장은 항상 먼저 고정 노출 */
 (function(){const box=$('#pick-cards');if(!box)return;const N=4,pinned=properties.filter(p=>p.pinned).sort((a,b)=>(+a.pinned||99)-(+b.pinned||99)).slice(0,N),pool=properties.filter(p=>!p.pinned).sort((a,b)=>(a.sort??99)-(b.sort??99)),need=N-pinned.length;
