@@ -20,7 +20,8 @@
   });
 
   const normalize = value => String(value || '').normalize('NFKC').toLowerCase().replace(/[\s·/\-_.(),]+/g, '');
-  const fields = p => [p.name, p.region, p.area, p.type, p.tag, p.address, p.buildingName, p.builder, p.intro, p.location, p.keywords].flat().join(' ');
+  const fullName = p => [p.name, p.buildingLabel].filter(Boolean).join(' ');
+  const fields = p => [fullName(p), p.region, p.area, p.type, p.tag, p.address, p.buildingName, p.builder, p.intro, p.location, p.keywords].flat().join(' ');
   function setupSuggest(input, container, listId, onChoose) {
     const list = document.createElement('ul');
     list.id = listId;
@@ -45,7 +46,7 @@
       if (!p) return;
       choosing = true;
       setTimeout(() => { choosing = false; }, 400);
-      input.value = p.name;
+      input.value = fullName(p);
       close();
       onChoose();
     }
@@ -67,7 +68,7 @@
         item.id = listId + '-option-' + index;
         item.setAttribute('role', 'option');
         item.setAttribute('aria-selected', 'false');
-        item.textContent = p.name;
+        item.textContent = fullName(p);
         const area = document.createElement('small');
         area.textContent = p.area || p.region || '';
         item.append(area);
