@@ -37,12 +37,14 @@ function pageMode(d,list){
   if(st.period==='wait')return s==='wait';
   const[f,t]=weekRange(today,st.period==='next'?1:0);return overlap(it,f,t)}
  // 처음엔 6건만, 오른쪽 "전체보기"를 누르면 전체 목록
- const SHOW=6,allBtn=document.getElementById('cy-all');let expanded=false;
+ const SHOW=6,allBtn=document.getElementById('cy-all');const score=document.getElementById('calc');
+ let expanded=new URLSearchParams(window.location.search).get('view')==='all';
  if(allBtn)allBtn.addEventListener('click',()=>{expanded=!expanded;draw();if(!expanded)list.scrollIntoView({block:'nearest'})});
  function draw(){const all=items.filter(match).sort(st.period==='done'?(a,b)=>order(b,a):order);
   const rows=expanded?all:all.slice(0,SHOW);
   count.textContent=all.length?(all.length>SHOW&&!expanded?`${all.length}건 중 ${SHOW}건`:`${all.length}건`):'';
-  if(allBtn){allBtn.hidden=all.length<=SHOW;allBtn.textContent=expanded?'접기':`전체보기 (${all.length})`;allBtn.setAttribute('aria-expanded',String(expanded))}
+  if(allBtn){allBtn.hidden=!expanded&&all.length<=SHOW&&!score;allBtn.textContent=expanded?'접기':`전체보기 (${all.length})`;allBtn.setAttribute('aria-expanded',String(expanded))}
+  if(score)score.hidden=!expanded;
   list.innerHTML=rows.length?`<ul class="cy-home-list cy-full-list">${rows.map(it=>row(it,today)).join('')}</ul>`:`<p class="cy-empty">${items.length?'조건에 맞는 일정이 없습니다.':'청약 일정을 준비하고 있습니다. 최신 공고는 <a href="https://www.applyhome.co.kr" target="_blank" rel="noopener noreferrer">청약홈</a>에서 먼저 확인해 주세요.'}</p>`}
  document.querySelectorAll('[data-cy-filter]').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button[data-v]');if(!b)return;st[g.dataset.cyFilter]=b.dataset.v;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()}));
  draw();
@@ -77,11 +79,9 @@ function homeMode(d){
  if(!all.length)return;
  const rows=all.slice(0,SHOW);
  const s=document.createElement('section');s.id='cy-home';s.className='section cy-home';
- s.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/" class="all-sites">전체보기${all.length>SHOW?` (${all.length})`:''}</a></div><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
+ s.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/?view=all" class="all-sites">전체보기${all.length>SHOW?` (${all.length})`:''}</a></div><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
  after.insertAdjacentElement('afterend',s);
- const c=document.createElement('section');c.id='cy-score';c.className='section cy-score';
- c.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 청약 가점 계산</h2><p class="muted">무주택 기간 · 부양가족 수 · 통장 가입 기간만 고르면 84점 만점 중 내 점수를 바로 확인</p></div><a href="/cheongyak/calculator/" class="all-sites cy-score-btn">내 가점 계산하기 →</a></div>`;
- s.insertAdjacentElement('afterend',c)}
+}
 
 fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{if(list){pageMode(d,list);if(calc)initCalc(calc)}else if(calc)calcMode(d,calc);else homeMode(d)});
 })();
