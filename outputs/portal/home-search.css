@@ -25,6 +25,6 @@
  #featured-cards:not(.is-expanded)>.compact-property:nth-child(n+3):nth-child(-n+4){border-bottom:0}
 }
 @media(max-width:540px){
- #featured-cards:not(.is-expanded)>.compact-property:nth-child(n+3){display:none}
- #featured-cards:not(.is-expanded)>.compact-property:nth-child(2){border-bottom:0!important}
+ #featured-cards:not(.is-expanded)>.compact-property:nth-child(n+5){display:none}
+ #featured-cards:not(.is-expanded)>.compact-property:nth-child(4){border-bottom:0!important}
 }

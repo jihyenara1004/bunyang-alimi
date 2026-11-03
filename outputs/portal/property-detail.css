@@ -326,3 +326,5 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 
 /* 카톡 문구는 작게 */
 .kakao-channel-shortcut span::after{font-size:10.5px!important}
+
+.property-page-dialog.detail-minimized .kakao-channel-shortcut{display:none}
