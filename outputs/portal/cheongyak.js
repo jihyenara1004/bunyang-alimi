@@ -43,7 +43,7 @@ function pageMode(d,list){
  function draw(){const all=items.filter(match).sort(st.period==='done'?(a,b)=>order(b,a):order);
   const rows=expanded?all:all.slice(0,SHOW);
   count.textContent=all.length?(all.length>SHOW&&!expanded?`${all.length}건 중 ${SHOW}건`:`${all.length}건`):'';
-  if(allBtn){allBtn.hidden=!expanded&&all.length<=SHOW&&!score;allBtn.textContent=expanded?'접기':`전체보기 (${all.length})`;allBtn.setAttribute('aria-expanded',String(expanded))}
+  if(allBtn){allBtn.hidden=!expanded&&all.length<=SHOW&&!score;allBtn.textContent=expanded?'접기':'전체보기';allBtn.setAttribute('aria-expanded',String(expanded))}
   if(score)score.hidden=!expanded;
   list.innerHTML=rows.length?`<ul class="cy-home-list cy-full-list">${rows.map(it=>row(it,today)).join('')}</ul>`:`<p class="cy-empty">${items.length?'조건에 맞는 일정이 없습니다.':'청약 일정을 준비하고 있습니다. 최신 공고는 <a href="https://www.applyhome.co.kr" target="_blank" rel="noopener noreferrer">청약홈</a>에서 먼저 확인해 주세요.'}</p>`}
  document.querySelectorAll('[data-cy-filter]').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button[data-v]');if(!b)return;st[g.dataset.cyFilter]=b.dataset.v;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));draw()}));
@@ -79,7 +79,7 @@ function homeMode(d){
  if(!all.length)return;
  const rows=all.slice(0,SHOW);
  const s=document.createElement('section');s.id='cy-home';s.className='section cy-home';
- s.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/?view=all" class="all-sites">전체보기${all.length>SHOW?` (${all.length})`:''}</a></div><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
+ s.innerHTML=`<div class="section-heading"><div><h2><span class="cy-sq" aria-hidden="true">■</span> 이번 주 청약일정</h2><p class="muted">최종 일정은 청약홈 공고로 확인해 주세요.</p></div><a href="/cheongyak/?view=all" class="all-sites">전체보기</a></div><div class="cy-home-body"><ul class="cy-home-list" id="cy-home-list">${rows.map(it=>{const k=status(it,today);return`<li><span class="cy-badge cy-${k.key}">${k.label}</span><b>${E(it.name)}</b><span>${E(regionOf(it))}</span><span>${E(fmt(it.applyStart))}${it.applyEnd&&it.applyEnd!==it.applyStart?' ~ '+E(fmt(it.applyEnd)):''}</span></li>`}).join('')}</ul><div class="cy-home-alert">${kakao(d,'청약일정·당첨발표<br>카카오톡으로 알림받기')}</div></div>`;
  after.insertAdjacentElement('afterend',s);
 }
 
