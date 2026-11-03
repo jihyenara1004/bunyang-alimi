@@ -10782,5 +10782,554 @@ window.PORTAL_PROPERTIES=[
       ]
     ],
     "links": []
+  },
+  {
+    "price": "5.6억~13.2억",
+    "moveIn": "2027년 1월 예정",
+    "checked": "2026.11.03",
+    "status": "선착순 분양",
+    "id": "brownstone",
+    "name": "브라운스톤 목동",
+    "region": "서울",
+    "area": "서울 · 양천구 목동",
+    "type": "아파트",
+    "tag": "9호선 염창역 역세권 · 85세대",
+    "address": "서울특별시 양천구 목동 557번지 일원",
+    "scale": "지하 2층 ~ 지상 5~10층 · 2개동",
+    "count": "총 85세대 (일반분양 29세대)",
+    "sizes": [
+      "38",
+      "39",
+      "44",
+      "49",
+      "59",
+      "70",
+      "81",
+      "84B"
+    ],
+    "builder": "이수건설",
+    "img": "https://brownstone-mokdong.vercel.app/images/bs/hero.jpg",
+    "intro": "9호선 급행 염창역 역세권 · 85세대 소규모 단지 · 청약통장·전매제한·거주의무 없음 · 일반분양 29세대 선착순",
+    "highlights": [
+      [
+        "염창역 급행 역세권",
+        "9호선 급행 여의도 약 8분 · 신논현 약 23분"
+      ],
+      [
+        "목동 학원가 학세권",
+        "교육특구 목동 생활권"
+      ],
+      [
+        "용왕산 공세권",
+        "용왕산·달마을공원 인접"
+      ]
+    ],
+    "location": "서울 양천구 목동 557번지 일원. 9호선 염창역·신목동역, 5호선 목동역·오목교역 생활권.",
+    "typesNote": "38~84B㎡ 8개 타입 · 잔여 세대 상담 1688-5650",
+    "sources": [
+      [
+        "브라운스톤 목동 공식 홈페이지",
+        "https://brownstone-mokdong.vercel.app/"
+      ]
+    ],
+    "links": [],
+    "x": 26,
+    "y": 42,
+    "sort": 28,
+    "recommended": false,
+    "promotion": true,
+    "promotionLabel": "선착순 분양",
+    "heroImg": "https://brownstone-mokdong.vercel.app/images/bs/hero.jpg",
+    "planImg": "https://brownstone-mokdong.vercel.app/images/bs/plan-84B.jpg",
+    "gallery": [],
+    "mapAddress": "서울특별시 양천구 목동 557",
+    "plans": [
+      {
+        "id": "38",
+        "label": "38㎡",
+        "info": [
+          "전용 38.0151㎡",
+          "공급 49.9026㎡",
+          "계약 76.8166㎡",
+          "일반분양 2세대",
+          "6.28억~6.34억"
+        ],
+        "src": "https://brownstone-mokdong.vercel.app/images/bs/plan-38.jpg",
+        "width": 441,
+        "height": 500
+      },
+      {
+        "id": "39",
+        "label": "39㎡",
+        "info": [
+          "전용 39.4007㎡",
+          "공급 51.8170㎡",
+          "계약 79.7120㎡",
+          "일반분양 3세대",
+          "5.60억~6.11억"
+        ],
+        "src": "https://brownstone-mokdong.vercel.app/images/bs/plan-39.jpg",
+        "width": 441,
+        "height": 500
+      },
+      {
+        "id": "44",
+        "label": "44㎡",
+        "info": [
+          "전용 44.1911㎡",
+          "공급 57.6552㎡",
+          "계약 88.9417㎡",
+          "일반분양 6세대",
+          "6.26억~6.58억"
+        ],
+        "src": "https://brownstone-mokdong.vercel.app/images/bs/plan-44.jpg",
+        "width": 441,
+        "height": 500
+      },
+      {
+        "id": "49",
+        "label": "49㎡",
+        "info": [
+          "전용 49.4829㎡",
+          "공급 64.7134㎡",
+          "계약 99.7464㎡",
+          "일반분양 1세대",
+          "7.96억"
+        ],
+        "src": "https://brownstone-mokdong.vercel.app/images/bs/plan-49B.jpg",
+        "width": 441,
+        "height": 500
+      },
+      {
+        "id": "59",
+        "label": "59㎡",
+        "info": [
+          "전용 59.1925㎡",
+          "공급 77.9674㎡",
+          "계약 119.8746㎡",
+          "일반분양 1세대",
+          "9.96억"
+        ],
+        "src": "https://brownstone-mokdong.vercel.app/images/bs/plan-59.jpg",
+        "width": 441,
+        "height": 500
+      },
+      {
+        "id": "70",
+        "label": "70㎡",
+        "info": [
+          "전용 70.7954㎡",
+          "공급 93.6920㎡",
+          "계약 143.8139㎡",
+          "일반분양 2세대",
+          "10.72억~10.83억"
+        ],
+        "src": "https://brownstone-mokdong.vercel.app/images/bs/plan-70.jpg",
+        "width": 441,
+        "height": 500
+      },
+      {
+        "id": "81",
+        "label": "81㎡",
+        "info": [
+          "전용 81.0566㎡",
+          "공급 105.1575㎡",
+          "계약 162.5441㎡",
+          "일반분양 8세대",
+          "12.31억~13.21억"
+        ],
+        "src": "https://brownstone-mokdong.vercel.app/images/bs/plan-81.jpg",
+        "width": 441,
+        "height": 500
+      },
+      {
+        "id": "84b",
+        "label": "84B㎡",
+        "info": [
+          "전용 84.9830㎡",
+          "공급 109.9443㎡",
+          "계약 170.110㎡",
+          "일반분양 6세대",
+          "12.77억~13.04억"
+        ],
+        "src": "https://brownstone-mokdong.vercel.app/images/bs/plan-84B.jpg",
+        "width": 441,
+        "height": 500
+      }
+    ],
+    "seo": {
+      "summary": [
+        "서울특별시 양천구 목동 557번지 일원 · 서울목동 LH참여형 가로주택정비사업 · 9호선 염창역 역세권",
+        "지하 2층~지상 5~10층 · 2개동 · 총 85세대(일반분양 29세대) · 이수건설 시공",
+        "전용 38~84㎡ 8개 타입 · 일반분양 공급금액 5.6억~13.2억 · 2027년 1월 입주 예정",
+        "청약통장·전매제한·거주의무 없음 · 잔여 세대 선착순 계약 상담 1688-5650"
+      ],
+      "points": [
+        [
+          "염창역 급행 역세권",
+          "9호선 급행 여의도 약 8분 · 신논현 약 23분"
+        ],
+        [
+          "목동 학원가",
+          "교육특구 목동 학원가 생활권"
+        ],
+        [
+          "용왕산 근린 공세권",
+          "용왕산 · 달마을공원 인접"
+        ],
+        [
+          "생활 인프라",
+          "이대목동병원 · 이마트 · 현대백화점 · 목동종합운동장"
+        ],
+        [
+          "광역 교통",
+          "9호선 염창역·신목동역 · 5호선 목동역·오목교역"
+        ],
+        [
+          "소규모 신축",
+          "2개동 85세대 · 2027년 1월 입주 예정"
+        ]
+      ],
+      "typesHead": [
+        "타입",
+        "전용면적",
+        "계약면적",
+        "일반분양"
+      ],
+      "types": [
+        [
+          "38㎡",
+          "38.0151㎡",
+          "76.8166㎡",
+          "2세대"
+        ],
+        [
+          "39㎡",
+          "39.4007㎡",
+          "79.7120㎡",
+          "3세대"
+        ],
+        [
+          "44㎡",
+          "44.1911㎡",
+          "88.9417㎡",
+          "6세대"
+        ],
+        [
+          "49㎡",
+          "49.4829㎡",
+          "99.7464㎡",
+          "1세대"
+        ],
+        [
+          "59㎡",
+          "59.1925㎡",
+          "119.8746㎡",
+          "1세대"
+        ],
+        [
+          "70㎡",
+          "70.7954㎡",
+          "143.8139㎡",
+          "2세대"
+        ],
+        [
+          "81㎡",
+          "81.0566㎡",
+          "162.5441㎡",
+          "8세대"
+        ],
+        [
+          "84B㎡",
+          "84.9830㎡",
+          "170.110㎡",
+          "6세대"
+        ]
+      ]
+    },
+    "popup": {
+      "cards": [
+        {
+          "title": [
+            "선착순",
+            "잔여 세대 계약"
+          ],
+          "items": [
+            [
+              "청약통장 필요 없음",
+              "전매제한·거주의무 없음"
+            ],
+            [
+              "일반분양 29세대",
+              "38~84B㎡ 8개 타입"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "브라운스톤 목동"
+          ],
+          "items": [
+            [
+              "9호선 급행 염창역",
+              "여의도 약 8분"
+            ],
+            [
+              "2027년 1월 입주 예정",
+              "2개동 총 85세대"
+            ]
+          ]
+        }
+      ]
+    },
+    "keywords": [
+      "브라운스톤목동",
+      "목동 브라운스톤",
+      "염창역 아파트",
+      "목동 557",
+      "서울목동 LH참여형 가로주택정비사업"
+    ],
+    "page": {
+      "cls": "bs",
+      "accent": "#6b4a2f",
+      "brand": "BROWNSTONE",
+      "brandSmall": "브라운스톤 목동",
+      "hero": {
+        "img": "https://brownstone-mokdong.vercel.app/images/bs/hero.jpg",
+        "pos": "center 50%",
+        "en": "YANGCHEON-GU · MOKDONG 557",
+        "title": [
+          "브라운스톤",
+          "목동"
+        ],
+        "name": "9호선 염창역 역세권 · 85세대",
+        "tagline": [
+          "목동에서 내 집 마련",
+          "아직 늦지 않았습니다"
+        ],
+        "badge": "청약통장 없이 선착순 · 2027년 1월 입주 예정",
+        "cta": "잔여 세대 문의하기"
+      },
+      "stats": [
+        [
+          "건축규모",
+          "지하 2층 ~ 지상 10층"
+        ],
+        [
+          "세대수",
+          "2개동 총 85세대"
+        ],
+        [
+          "일반분양",
+          "29세대"
+        ],
+        [
+          "입주",
+          "2027년 1월 예정"
+        ]
+      ],
+      "overviewRows": [
+        [
+          "단지명",
+          "브라운스톤 목동"
+        ],
+        [
+          "공급위치",
+          "서울특별시 양천구 목동 557번지 일원"
+        ],
+        [
+          "사업방식",
+          "LH참여형 가로주택정비사업"
+        ],
+        [
+          "건축규모",
+          "지하 2층 ~ 지상 5~10층"
+        ],
+        [
+          "세대수",
+          "2개동 총 85세대 (일반분양 29세대)"
+        ],
+        [
+          "공급금액",
+          "5.6억 ~ 13.2억 (일반분양 29세대)"
+        ],
+        [
+          "계약조건",
+          "계약금 10% · 잔금 90%"
+        ],
+        [
+          "입주시기",
+          "2027년 1월 예정"
+        ],
+        [
+          "시행",
+          "서울목동엘에이치참여형 가로주택정비사업조합"
+        ],
+        [
+          "시공",
+          "이수건설(주)"
+        ]
+      ],
+      "overview": {
+        "before": [
+          [
+            "https://brownstone-mokdong.vercel.app/images/bs/hero.jpg",
+            1600,
+            683,
+            "브라운스톤 목동 조감도"
+          ]
+        ],
+        "after": []
+      },
+      "premium": {
+        "eyebrow": "PREMIUM",
+        "title": "세 가지가 겹치는 자리",
+        "blocks": [
+          {
+            "lead": [
+              "역세권 · 학세권 · 공세권",
+              "9호선 염창역, 목동 학원가, 용왕산 근린공원"
+            ],
+            "points": [
+              [
+                "청약통장 필요 없음",
+                "잔여 세대 선착순 계약"
+              ],
+              [
+                "전매제한 · 거주의무 없음",
+                "향후 법령·규제지역 변경에 따라 달라질 수 있음"
+              ]
+            ]
+          },
+          {
+            "figs": [
+              [
+                "https://brownstone-mokdong.vercel.app/images/bs/prem-loc.jpg",
+                900,
+                563,
+                "입지 이미지컷"
+              ],
+              [
+                "https://brownstone-mokdong.vercel.app/images/bs/prem-traffic.jpg",
+                900,
+                563,
+                "교통 이미지컷"
+              ],
+              [
+                "https://brownstone-mokdong.vercel.app/images/bs/prem-edu.jpg",
+                900,
+                562,
+                "교육 이미지컷"
+              ],
+              [
+                "https://brownstone-mokdong.vercel.app/images/bs/prem-price.jpg",
+                900,
+                563,
+                "가치 이미지컷"
+              ]
+            ]
+          },
+          {
+            "h3": "단지배치도",
+            "figs": [
+              [
+                "https://brownstone-mokdong.vercel.app/images/bs/site-plan.jpg",
+                980,
+                694,
+                "브라운스톤 목동 단지배치도 101동 102동"
+              ]
+            ]
+          }
+        ]
+      },
+      "location": {
+        "title": "염창역에서 여의도·강남까지",
+        "blocks": [
+          {
+            "points": [
+              [
+                "교통",
+                "9호선 급행 염창역 · 여의도 약 8분 · 신논현 약 23분"
+              ],
+              [
+                "교육",
+                "목동 학원가 생활권"
+              ],
+              [
+                "자연",
+                "용왕산 · 달마을공원"
+              ],
+              [
+                "생활",
+                "이대목동병원 · 이마트 · 현대백화점 · 목동종합운동장"
+              ]
+            ],
+            "figs": [
+              [
+                "https://brownstone-mokdong.vercel.app/images/bs/map-area.jpg",
+                980,
+                978,
+                "브라운스톤 목동 주변 안내도"
+              ]
+            ]
+          }
+        ]
+      },
+      "plansAfter": [
+        {
+          "h3": "타입별 투시도",
+          "gallery": [
+            [
+              "https://brownstone-mokdong.vercel.app/images/bs/iso-38.jpg",
+              620,
+              700,
+              "38㎡ 투시도"
+            ],
+            [
+              "https://brownstone-mokdong.vercel.app/images/bs/iso-39.jpg",
+              620,
+              700,
+              "39㎡ 투시도"
+            ],
+            [
+              "https://brownstone-mokdong.vercel.app/images/bs/iso-44.jpg",
+              620,
+              700,
+              "44㎡ 투시도"
+            ],
+            [
+              "https://brownstone-mokdong.vercel.app/images/bs/iso-49B.jpg",
+              620,
+              700,
+              "49㎡ 투시도"
+            ],
+            [
+              "https://brownstone-mokdong.vercel.app/images/bs/iso-59.jpg",
+              620,
+              700,
+              "59㎡ 투시도"
+            ],
+            [
+              "https://brownstone-mokdong.vercel.app/images/bs/iso-70.jpg",
+              620,
+              700,
+              "70㎡ 투시도"
+            ],
+            [
+              "https://brownstone-mokdong.vercel.app/images/bs/iso-81.jpg",
+              620,
+              700,
+              "81㎡ 투시도"
+            ],
+            [
+              "https://brownstone-mokdong.vercel.app/images/bs/iso-84B.jpg",
+              620,
+              700,
+              "84B㎡ 투시도"
+            ]
+          ]
+        }
+      ]
+    }
   }
 ];
