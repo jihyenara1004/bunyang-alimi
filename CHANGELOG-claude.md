@@ -392,3 +392,7 @@
 - 범용 렌더러(`p.page`)로 추가: `properties.js`·`work/property-catalog.json`에 id `brownstone` 추가(sort 28, mapAddress 있음) → `generate-property-pages.cjs`, `gen-seo.cjs` 실행(사이트맵 29곳).
 - 이미지는 공식 사이트 주소를 그대로 불러오는 방식(핫링크): `https://brownstone-mokdong.vercel.app/images/bs/*.jpg`. 이 환경에서 파일을 내려받을 수 없어서임. 공식 사이트가 이미지를 지우면 깨지므로, 가능하면 `outputs/portal/assets/`로 복사 후 경로 교체 필요.
 - 대표번호는 1688-5650 사용(공식 번호·납부계좌·방문예약 폼·홍보관 주소는 쓰지 않음). 확장비·유상옵션 무상제공 문구는 조건이 계약 시 안내라 뺌.
+
+## 2026-11-03 · 홈 분양정보에 지역 버튼(서울·경기·기타)
+- 홈 "분양정보" 제목 아래에 서울/경기/기타 버튼 추가. 누르면 아래 현장 카드가 그 지역만 보이고(서울 13·경기 12·기타 3), 같은 버튼을 한 번 더 누르면 전체 28개로 복귀. 안내 문구(전체 N개)도 함께 바뀜.
+- 수정: `index.html`, `outputs/portal/index.html`(마크업), `app.js`(renderFeatured), `cheongyak.css`(버튼 스타일, 진한 파랑 알약형). 캐시 번호 app.js rg3, cheongyak.css 16.

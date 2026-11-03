@@ -96,3 +96,10 @@
 .cy-home.is-expanded .cy-home-alert{align-self:start;position:sticky;top:110px;min-height:220px}
 button.cy-expand{cursor:pointer;border:0;font:inherit}
 @media(max-width:760px){.cy-home.is-expanded .cy-home-alert{position:static;min-height:0}}
+
+/* 홈 분양정보: 지역 바로가기 버튼 (2026-11-03) */
+.featured-region-tabs{display:flex;gap:10px;margin:18px 0 4px;flex-wrap:wrap}
+.featured-region-tabs button{min-width:92px;padding:11px 26px;border-radius:999px;border:2px solid #0b3d91;background:#fff;color:#0b3d91;font:800 17px/1 inherit;cursor:pointer;transition:background .15s,color .15s}
+.featured-region-tabs button:hover{background:#eef3fb}
+.featured-region-tabs button.active{background:#0b3d91;color:#fff}
+@media(max-width:760px){.featured-region-tabs{gap:8px}.featured-region-tabs button{flex:1;min-width:0;padding:11px 10px;font-size:16px}}
