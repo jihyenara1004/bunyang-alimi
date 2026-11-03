@@ -5,3 +5,7 @@
 .kakao-channel-shortcut span::after{content:"친구 추가하고\A 분양정보 받기";display:block;white-space:pre-line;padding:4px 7px;background:#fff;border-radius:7px;font:800 12px/1.4 system-ui}
 .kakao-channel-shortcut:focus-visible{outline:2px solid #392216;outline-offset:4px}
 @media(max-width:760px){.kakao-channel-shortcut{right:12px;bottom:calc(76px + env(safe-area-inset-bottom))}.kakao-channel-shortcut::before{width:56px;height:56px;border-radius:18px;font-size:13px}}
+
+/* Keep the compact fixed shortcut as the schedule's channel entry. */
+.cy-home-body{grid-template-columns:minmax(0,1fr)!important}
+.cy-home-body > .cy-home-alert{display:none!important}
