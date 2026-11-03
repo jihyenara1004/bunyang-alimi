@@ -113,3 +113,6 @@ button.cy-expand{cursor:pointer;border:0;font:inherit}
 .cy-count-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px}
 .cy-all-btn{cursor:pointer;border:0;font:inherit;min-width:150px}
 .cy-all-btn[hidden]{display:none!important}
+
+/* 건수 표시 숨김 (2026-11-03 대표님 요청) */
+.cy-count{display:none!important}.cy-count-row{justify-content:flex-end}
