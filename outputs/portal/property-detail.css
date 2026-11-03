@@ -300,3 +300,29 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 
 .ins-subtitle:has(+ .gd-rich-lead + .rc-grid){font-size:40px;font-weight:900;letter-spacing:-1px;margin-bottom:8px}
 @media(max-width:600px){.ins-subtitle:has(+ .gd-rich-lead + .rc-grid){font-size:28px}}
+
+/* 대표번호 글자 대신 전화기 아이콘 */
+.header-phone{flex-direction:row;align-items:center;gap:7px}
+.header-phone .ph-ico,.gd-phone .ph-ico{width:.8em;height:.8em;flex:none;color:#842b3c}
+.header-phone .ph-ico{width:22px;height:22px}
+.gd-phone{display:inline-flex;align-items:center;gap:6px}
+@media(max-width:760px){.header-phone .ph-ico{width:18px;height:18px}}
+
+/* 휴대폰 상세창 맨 위: 분양알리미(홈으로) / PC 전용 창 버튼은 숨김 */
+.detail-window-bar .detail-home{display:none}
+@media(max-width:760px){
+  .detail-window-bar>.detail-bar-title,.detail-window-actions{display:none!important}
+  .property-page-dialog .detail-window-bar{padding:0 14px}
+  .detail-window-bar .detail-home{display:flex;align-items:center;flex:1;min-height:48px;font-size:24px;font-weight:900;letter-spacing:-.5px;color:#842b3c;text-decoration:none}
+}
+
+/* 인시그니아 반포 평면안내: 제목 삭제, 버튼 4개 한 줄, 평면도 위로 */
+.ins-plans .ins-plan-title{display:none!important}
+.ins-plans .bns-plan-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-width:520px;margin:0 auto 12px}
+.ins-plans .bns-plan-buttons button{min-width:0;padding:12px 0;font-size:15px}
+.ins-plans .ins-plan-facts{margin-bottom:10px}
+.ins-plans .ins-plan-panel .ins-reference{margin-top:0}
+@media(max-width:650px){.ins-plans .bns-plan-buttons{gap:6px}.ins-plans .bns-plan-buttons button{padding:11px 0;font-size:14px}}
+
+/* 카톡 문구는 작게 */
+.kakao-channel-shortcut span::after{font-size:10.5px!important}

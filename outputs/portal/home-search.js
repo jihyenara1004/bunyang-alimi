@@ -56,7 +56,7 @@
   }
   function suggest() {
     const query = normalize(input.value);
-    matches = query ? (window.PORTAL_PROPERTIES || []).filter(p => normalize([p.name, p.region, p.area, p.address, p.buildingName].join(' ')).includes(query)).slice(0, 8) : [];
+    matches = query ? (window.PORTAL_PROPERTIES || []).filter(p => normalize([p.name, p.region, p.area, p.type, p.tag, p.address, p.buildingName, p.builder, p.intro, p.location, p.keywords].flat().join(' ')).includes(query)).slice(0, 8) : [];
     active = -1;
     list.replaceChildren();
     for (const [index, p] of matches.entries()) {
@@ -75,7 +75,7 @@
     input.setAttribute('aria-expanded', String(!list.hidden));
     input.removeAttribute('aria-activedescendant');
   }
-  input.addEventListener('input', e => { if (!e.isComposing) suggest(); });
+  input.addEventListener('input', suggest);
   input.addEventListener('compositionend', suggest);
   input.addEventListener('focus', suggest);
   input.addEventListener('keydown', e => {
