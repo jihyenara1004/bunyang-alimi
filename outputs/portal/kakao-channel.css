@@ -1,24 +1,7 @@
-.kakao-channel-shortcut{position:fixed;right:16px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:90;display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border-radius:999px;background:#fee500;color:#241b11;font:700 14px/1.4 system-ui,sans-serif;text-decoration:none;box-shadow:0 3px 12px #0002}
-.kakao-channel-shortcut:focus-visible{outline:2px solid #241b11;outline-offset:3px}
-@media(max-width:760px){.kakao-channel-shortcut{right:12px;bottom:calc(76px + env(safe-area-inset-bottom));font-size:13px}}
-
-.kakao-channel-shortcut{
-  bottom:28vh; width:194px; height:194px; box-sizing:border-box;
-  flex-direction:column; justify-content:center; gap:8px; padding:14px 10px;
-  border-radius:16px; text-align:center;
-}
-.kakao-channel-shortcut svg{width:28px;height:28px}
-.kakao-channel-shortcut span{font-size:0}
-.kakao-channel-shortcut span::after{
-  content:"카카오톡 친구추가하고";
-  display:block; font-size:16px; line-height:1.45; font-weight:800;
-}
-@media(max-width:760px){
-  .kakao-channel-shortcut{bottom:calc(108px + env(safe-area-inset-bottom));width:156px;height:156px;padding:9px 8px;gap:4px}
-  .kakao-channel-shortcut svg{width:22px;height:22px}
-  .kakao-channel-shortcut span::after{font-size:13px}
-}
-
-.kakao-channel-shortcut span::before{content:"분양정보 받기";display:block;color:#124baf;font-size:16px;font-weight:800;order:2}
-.kakao-channel-shortcut span{display:flex;flex-direction:column;font-size:0;line-height:1.45}
-@media(max-width:760px){.kakao-channel-shortcut span::before{font-size:13px}}
+.kakao-channel-shortcut{position:fixed;right:16px;bottom:28vh;z-index:90;display:grid;place-items:center;width:164px;aspect-ratio:1;border-radius:50%;background:#fee500;color:#fff;text-decoration:none;box-shadow:0 3px 12px #0002}
+.kakao-channel-shortcut:focus-visible{outline:2px solid #442b21;outline-offset:3px}
+.kakao-channel-shortcut svg{display:none}
+.kakao-channel-shortcut span{position:relative;display:grid;place-items:center;width:84%;height:55%;border-radius:50%;background:#442b21;font-size:0;text-align:center}
+.kakao-channel-shortcut span::before{content:"친구 추가하고\A 분양정보 받기";white-space:pre-line;font:800 15px/1.45 system-ui,sans-serif}
+.kakao-channel-shortcut span::after{content:"";position:absolute;left:20%;bottom:-11px;border-top:18px solid #442b21;border-right:15px solid transparent;transform:skewX(-18deg)}
+@media(max-width:760px){.kakao-channel-shortcut{right:12px;bottom:calc(108px + env(safe-area-inset-bottom));width:128px}.kakao-channel-shortcut span::before{font-size:12px}}
