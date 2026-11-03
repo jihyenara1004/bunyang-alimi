@@ -404,9 +404,10 @@ window.PORTAL_PROPERTIES=[
         "area": "59.86㎡",
         "contractArea": "144.13㎡",
         "rooms": "2Room · 1Bath",
-        "src": "assets/ins-education-41.jpg",
-        "width": 1950,
-        "height": 1350
+        "units": "36실",
+        "src": "assets/ins-plan-59a.jpg",
+        "width": 988,
+        "height": 816
       },
       {
         "id": "84a",
@@ -414,9 +415,10 @@ window.PORTAL_PROPERTIES=[
         "area": "84.94㎡",
         "contractArea": "202.52㎡",
         "rooms": "3Room · 2Bath",
-        "src": "assets/ins-education-42.jpg",
-        "width": 1950,
-        "height": 1350
+        "units": "36실",
+        "src": "assets/ins-plan-84a.jpg",
+        "width": 1094,
+        "height": 780
       },
       {
         "id": "84b",
@@ -424,9 +426,10 @@ window.PORTAL_PROPERTIES=[
         "area": "84.97㎡",
         "contractArea": "202.51㎡",
         "rooms": "3Room · 2Bath",
-        "src": "assets/ins-education-43.jpg",
-        "width": 1950,
-        "height": 1350
+        "units": "36실",
+        "src": "assets/ins-plan-84b.jpg",
+        "width": 1110,
+        "height": 768
       },
       {
         "id": "84c",
@@ -434,9 +437,10 @@ window.PORTAL_PROPERTIES=[
         "area": "84.99㎡",
         "contractArea": "202.43㎡",
         "rooms": "3Room · 2Bath",
-        "src": "assets/ins-education-44.jpg",
-        "width": 1950,
-        "height": 1350
+        "units": "36실",
+        "src": "assets/ins-plan-84c.jpg",
+        "width": 1105,
+        "height": 770
       }
     ],
     "priceSource": "사용자 제공",

@@ -264,3 +264,10 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .property-detail p:not([class]){color:#3d4651}
 .property-detail [class*="hero"] p:not([class]){color:inherit}
 .property-detail .privacy-details summary,.property-detail .privacy-details p,.property-detail .gd-form-status{color:#3d4651!important;font-size:13.5px}
+
+/* 인시그니아반포 평면도: 도면만 크게 + 타입·호실수 굵게 (2026-11-03) */
+.ins-plans .ins-plan-panel h3.ins-plan-title{display:flex;justify-content:center;align-items:baseline;gap:14px;margin:0 0 18px;font-size:34px;font-weight:900;color:#1c2430;letter-spacing:-.5px}
+.ins-plans .ins-plan-title b{font-weight:900}.ins-plans .ins-plan-title b+b{color:#e6007e}
+.ins-plans .ins-plan-panel .ins-reference{max-width:1240px;width:100%;background:#001322}
+.ins-plans .ins-plan-panel .ins-reference img{width:100%;height:auto}
+@media(max-width:760px){.ins-plans .ins-plan-panel h3.ins-plan-title{font-size:26px;gap:10px}}
