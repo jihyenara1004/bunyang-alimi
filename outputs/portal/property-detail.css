@@ -271,3 +271,17 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .ins-plans .ins-plan-panel .ins-reference{max-width:1240px;width:100%;background:#001322}
 .ins-plans .ins-plan-panel .ins-reference img{width:100%;height:auto}
 @media(max-width:760px){.ins-plans .ins-plan-panel h3.ins-plan-title{font-size:26px;gap:10px}}
+
+/* Section icons help readers scan property details. */
+.property-section:is([id^="overview-"],[id^="premium-"],[id^="location-"],[id^="types-"],[id^="interest-"]) > h2::before {
+  content: var(--section-icon) / "";
+  display: inline-block;
+  margin-inline-end: .45em;
+  font-size: .8em;
+  vertical-align: .06em;
+}
+.property-section[id^="overview-"] { --section-icon: "🏢"; }
+.property-section[id^="premium-"] { --section-icon: "✨"; }
+.property-section[id^="location-"] { --section-icon: "📍"; }
+.property-section[id^="types-"] { --section-icon: "📐"; }
+.property-section[id^="interest-"] { --section-icon: "💬"; }
