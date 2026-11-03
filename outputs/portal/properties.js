@@ -11900,5 +11900,857 @@ window.PORTAL_PROPERTIES=[
         ]
       }
     }
+  },
+  {
+    "price": "분양가: 상담 시 안내",
+    "moveIn": "즉시 입주 가능",
+    "checked": "2026.11.03",
+    "status": "즉시입주",
+    "id": "baekwoon",
+    "name": "백운호수 푸르지오 숲속의 아침",
+    "region": "경기",
+    "area": "경기 · 의왕시 학의동",
+    "type": "오피스텔 · 노인복지주택",
+    "tag": "백운호수 자연 · 청계IC 인접 · 오피스텔 842실 + 스위트 536세대",
+    "address": "경기도 의왕시 학의동 1195번지 일대(1단지) · 1193번지 일대(2단지)",
+    "mapAddress": "경기도 의왕시 학의동 1195",
+    "scale": "1단지 지하 5층~지상 16층 · 2단지 지하 6층~지상 16층",
+    "count": "총 1,378세대 (오피스텔 842실 · 스위트 노인복지주택 536세대)",
+    "sizes": [
+      "99㎡",
+      "119㎡A·B·C·D·E"
+    ],
+    "builder": "대우건설",
+    "img": "https://baekwoonlakeprugio.com/theme/grape/img/behavior0.jpg",
+    "intro": "의왕 백운밸리 · 백운호수 3km 둘레길 · 오피스텔과 스위트(노인복지주택)를 한 단지에서 · 클럽 포시즌 커뮤니티 · 즉시 입주 가능 · 임대 문의 환영",
+    "highlights": [
+      [
+        "한 단지 두 가지 상품",
+        "오피스텔 842실 + 스위트(노인복지주택) 536세대 · 1·2단지 총 1,378세대"
+      ],
+      [
+        "백운호수 자연환경",
+        "백운산·바라산·모락산에 둘러싸인 입지 · 호수 3km 둘레길 · 바라산 자연휴양림 약 5분"
+      ],
+      [
+        "클럽 포시즌",
+        "3,500여 평 규모 커뮤니티 · 라이프케어 프로그램 · 즉시 입주 가능"
+      ]
+    ],
+    "location": "경기도 의왕시 학의동 의왕백운밸리 업무복합시설용지(1단지 2-2BL · 2단지 2-1BL). 과천봉담도시고속화도로 청계IC 바로 앞, 강남까지 자동차 20분대(네이버 지도 자동차 기준, 교통상황에 따라 다름).",
+    "typesNote": "99㎡ · 119㎡ A~E 평면도 · 도면의 표에서 단지별 면적·실수 확인 · 상담 1688-5650",
+    "sources": [
+      [
+        "백운호수 푸르지오 숲속의 아침 홈페이지",
+        "https://baekwoonlakeprugio.com/index.php"
+      ],
+      [
+        "숲속의 아침 스위트 홈페이지",
+        "https://baekwoonlakeprugio.com/complex/"
+      ]
+    ],
+    "links": [],
+    "x": 44,
+    "y": 62,
+    "sort": 31,
+    "recommended": false,
+    "promotion": true,
+    "promotionLabel": "임대문의 환영",
+    "heroImg": "https://baekwoonlakeprugio.com/theme/grape/img/behavior0.jpg",
+    "planImg": "https://baekwoonlakeprugio.com/theme/grape/img/floor1.jpg",
+    "gallery": [
+      "https://baekwoonlakeprugio.com/theme/grape/img/behavior.jpg",
+      "https://baekwoonlakeprugio.com/theme/grape/img/0304-3.jpg"
+    ],
+    "plans": [
+      {
+        "id": "99",
+        "label": "99㎡",
+        "info": [
+          "전용 99.8168㎡",
+          "공급 131.0297㎡",
+          "계약 210.1989㎡",
+          "1단지 46실"
+        ],
+        "src": "https://baekwoonlakeprugio.com/theme/grape/img/floor1.jpg",
+        "width": 2153,
+        "height": 1312
+      },
+      {
+        "id": "119a",
+        "label": "119㎡A",
+        "info": [
+          "1단지 395실",
+          "2단지 119실",
+          "면적은 도면 표 참고"
+        ],
+        "src": "https://baekwoonlakeprugio.com/theme/grape/img/floor3.jpg",
+        "width": 2153,
+        "height": 1601
+      },
+      {
+        "id": "119b",
+        "label": "119㎡B",
+        "info": [
+          "2단지 121실",
+          "면적은 도면 표 참고"
+        ],
+        "src": "https://baekwoonlakeprugio.com/theme/grape/img/floor2.jpg",
+        "width": 2153,
+        "height": 1312
+      },
+      {
+        "id": "119c",
+        "label": "119㎡C",
+        "info": [
+          "면적·실수는 도면 표 참고"
+        ],
+        "src": "https://baekwoonlakeprugio.com/theme/grape/img/floor4.jpg",
+        "width": 2153,
+        "height": 1580
+      },
+      {
+        "id": "119d",
+        "label": "119㎡D",
+        "info": [
+          "면적·실수는 도면 표 참고"
+        ],
+        "src": "https://baekwoonlakeprugio.com/theme/grape/img/floor5.jpg",
+        "width": 2156,
+        "height": 1507
+      },
+      {
+        "id": "119e",
+        "label": "119㎡E",
+        "info": [
+          "면적·실수는 도면 표 참고"
+        ],
+        "src": "https://baekwoonlakeprugio.com/theme/grape/img/floor6.jpg",
+        "width": 2163,
+        "height": 1401
+      }
+    ],
+    "seo": {
+      "summary": [
+        "경기도 의왕시 학의동 백운밸리 · 오피스텔 842실 + 스위트(노인복지주택) 536세대",
+        "1단지 837세대(오피스텔 512·스위트 325) · 2단지 541세대(오피스텔 330·스위트 211)",
+        "지하 5~6층~지상 16층 · 시공 대우건설 · 시행 엠디엠플러스 · 즉시 입주 가능",
+        "임대 문의 환영 · 상담 1688-5650"
+      ],
+      "points": [
+        [
+          "한 단지 두 상품",
+          "오피스텔과 스위트(노인복지주택)를 함께 안내"
+        ],
+        [
+          "백운호수 자연",
+          "호수 3km 둘레길 · 백운산·바라산·모락산"
+        ],
+        [
+          "청계IC 인접",
+          "강남까지 자동차 20분대(네이버 지도 기준)"
+        ],
+        [
+          "클럽 포시즌",
+          "3,500여 평 규모 대형 커뮤니티"
+        ],
+        [
+          "롯데 프리미엄 아울렛",
+          "도보권 생활 인프라"
+        ],
+        [
+          "즉시 입주",
+          "일부 세대 즉시 입주 가능(문의)"
+        ]
+      ],
+      "typesHead": [
+        "타입",
+        "구분",
+        "비고"
+      ],
+      "types": [
+        [
+          "99㎡",
+          "1단지 46실",
+          "전용 99.8168㎡"
+        ],
+        [
+          "119㎡A",
+          "1단지 395실 · 2단지 119실",
+          "도면 표 참고"
+        ],
+        [
+          "119㎡B",
+          "2단지 121실",
+          "도면 표 참고"
+        ],
+        [
+          "119㎡C",
+          "-",
+          "도면 표 참고"
+        ],
+        [
+          "119㎡D",
+          "-",
+          "도면 표 참고"
+        ],
+        [
+          "119㎡E",
+          "-",
+          "도면 표 참고"
+        ]
+      ]
+    },
+    "popup": {
+      "cards": [
+        {
+          "title": [
+            "임대문의 환영"
+          ],
+          "items": [
+            [
+              "오피스텔 · 스위트",
+              "임대 문의 환영"
+            ],
+            [
+              "즉시 입주 가능",
+              "상담 1688-5650"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "백운호수",
+            "푸르지오",
+            "숲속의 아침"
+          ],
+          "items": [
+            [
+              "총 1,378세대",
+              "오피스텔 842실 · 스위트 536세대"
+            ],
+            [
+              "백운호수 3km 둘레길",
+              "청계IC 인접 · 강남 20분대"
+            ]
+          ]
+        }
+      ]
+    },
+    "page": {
+      "cls": "bw",
+      "accent": "#2f6b4f",
+      "brand": "PRUGIO",
+      "brandSmall": "백운호수 숲속의 아침",
+      "hero": {
+        "img": "https://baekwoonlakeprugio.com/theme/grape/img/behavior0.jpg",
+        "pos": "center 50%",
+        "en": "BAEKUN LAKE PRUGIO",
+        "title": [
+          "백운호수 푸르지오",
+          "숲속의 아침"
+        ],
+        "name": "오피스텔 842실 · 스위트(노인복지주택) 536세대",
+        "tagline": [
+          "백운호수 숲속에서 누리는",
+          "오피스텔 · 스위트 한 단지 라이프"
+        ],
+        "badge": "즉시 입주 가능 · 임대 문의 환영",
+        "cta": "임대 문의하기"
+      },
+      "stats": [
+        [
+          "건축규모",
+          "지하 5~6층 ~ 지상 16층"
+        ],
+        [
+          "공급규모",
+          "총 1,378세대"
+        ],
+        [
+          "구성",
+          "오피스텔 842실 · 스위트 536세대"
+        ],
+        [
+          "시공",
+          "대우건설"
+        ]
+      ],
+      "overviewRows": [
+        [
+          "사업명",
+          "백운호수 푸르지오 숲속의 아침 1·2단지"
+        ],
+        [
+          "대지위치",
+          "1단지 의왕백운밸리 업무복합시설용지 2-2BL(경기도 의왕시 학의동 1195번지 일대) · 2단지 2-1BL(학의동 1193번지 일대)"
+        ],
+        [
+          "1단지",
+          "총 837세대 · 오피스텔 512실 + 스위트(노인복지주택) 325세대 · 지하 5층~지상 16층"
+        ],
+        [
+          "2단지",
+          "총 541세대 · 오피스텔 330실 + 스위트(노인복지주택) 211세대 · 지하 6층~지상 16층"
+        ],
+        [
+          "대지면적",
+          "1단지 25,252㎡ · 2단지 14,994㎡"
+        ],
+        [
+          "연면적",
+          "1단지 178,079.94㎡ · 2단지 124,720㎡"
+        ],
+        [
+          "용도",
+          "오피스텔, 노인복지주택, 근린생활시설"
+        ],
+        [
+          "주차대수",
+          "1단지 1,236대 · 2단지 800대"
+        ],
+        [
+          "시행",
+          "㈜엠디엠플러스 (시행수탁 한국자산신탁㈜)"
+        ],
+        [
+          "시공",
+          "㈜대우건설"
+        ],
+        [
+          "입주",
+          "즉시 입주 가능 (세대별 상담)"
+        ]
+      ],
+      "overview": {
+        "before": [
+          [
+            "https://baekwoonlakeprugio.com/theme/grape/img/behavior0.jpg",
+            1400,
+            778,
+            "백운호수 푸르지오 숲속의 아침 조감도"
+          ]
+        ],
+        "after": [
+          {
+            "h3": "단지 조감",
+            "gallery": [
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/behavior.jpg",
+                1200,
+                848,
+                "백운호수와 단지 전경"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/view-map3.jpg",
+                1600,
+                1142,
+                "사업지 위치도"
+              ]
+            ]
+          }
+        ]
+      },
+      "premiumNav": "클럽포시즌",
+      "premium": {
+        "eyebrow": "CLUB FOUR SEASONS",
+        "title": "클럽 포시즌",
+        "blocks": [
+          {
+            "points": [
+              [
+                "커뮤니티",
+                "커뮤니티광장 · 라이브러리 · 맘스카페 · 동호회실 · 스터디카페 · 키즈클럽"
+              ],
+              [
+                "규모",
+                "3,500여 평 대형 커뮤니티"
+              ],
+              [
+                "프로그램",
+                "올데이클래스 · 액티비티 · 클럽라운지 등 라이프케어"
+              ],
+              [
+                "이용 안내",
+                "스위트 전용시설은 오피스텔 입주민이 유상 이용 가능 (운영 시 일부 변경)"
+              ]
+            ]
+          },
+          {
+            "h3": "클럽 포시즌 시설",
+            "gallery": [
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/0304-3.jpg",
+                900,
+                565,
+                "커뮤니티 시설"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/0304-1.jpg",
+                796,
+                500,
+                "클럽 포시즌 시설 1"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/0304-2.jpg",
+                900,
+                565,
+                "클럽 포시즌 시설 2"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/0304-4.jpg",
+                796,
+                500,
+                "클럽 포시즌 시설 4"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/0304-5.jpg",
+                796,
+                500,
+                "클럽 포시즌 시설 5"
+              ],
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/0304-6.jpg",
+                900,
+                565,
+                "클럽 포시즌 시설 6"
+              ]
+            ]
+          },
+          {
+            "details": [
+              [
+                "클럽 포시즌 배치 · 안내 보기",
+                [
+                  [
+                    "https://baekwoonlakeprugio.com/theme/grape/img/view-map-2-2.jpg",
+                    770,
+                    620,
+                    "클럽 포시즌 배치"
+                  ],
+                  [
+                    "https://baekwoonlakeprugio.com/theme/grape/img/comp1.jpg",
+                    2008,
+                    927,
+                    "커뮤니티 안내 1"
+                  ],
+                  [
+                    "https://baekwoonlakeprugio.com/theme/grape/img/comp2.jpg",
+                    2008,
+                    926,
+                    "커뮤니티 안내 2"
+                  ]
+                ]
+              ],
+              [
+                "클럽 포시즌 4계절 프로그램 보기",
+                [
+                  [
+                    "https://baekwoonlakeprugio.com/theme/grape/img/four1.jpg",
+                    1617,
+                    1380,
+                    "클럽 포시즌 1"
+                  ],
+                  [
+                    "https://baekwoonlakeprugio.com/theme/grape/img/four2.jpg",
+                    1617,
+                    1079,
+                    "클럽 포시즌 2"
+                  ],
+                  [
+                    "https://baekwoonlakeprugio.com/theme/grape/img/four3.jpg",
+                    1617,
+                    986,
+                    "클럽 포시즌 3"
+                  ],
+                  [
+                    "https://baekwoonlakeprugio.com/theme/grape/img/four4.jpg",
+                    1617,
+                    1869,
+                    "클럽 포시즌 4"
+                  ]
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      "location": {
+        "title": "백운호수의 자연, 강남 20분대 교통",
+        "blocks": [
+          {
+            "points": [
+              [
+                "교통",
+                "청계IC 바로 앞(과천봉담도시고속화도로) · 강남까지 자동차 20분대(네이버 지도 기준)"
+              ],
+              [
+                "자연",
+                "백운호수 3km 둘레길 · 백운산·바라산·모락산 · 바라산 자연휴양림 약 5분"
+              ],
+              [
+                "인프라",
+                "롯데 프리미엄 아울렛 도보권"
+              ],
+              [
+                "개발계획",
+                "GTX-C(인덕원역 추진)·월곶판교선·동탄인덕원선 등은 계획·예정 사항으로 지연·변경될 수 있음"
+              ]
+            ],
+            "figs": [
+              [
+                "https://baekwoonlakeprugio.com/theme/grape/img/0102.jpg",
+                1500,
+                1223,
+                "백운호수 푸르지오 숲속의 아침 입지환경"
+              ]
+            ]
+          }
+        ]
+      },
+      "plansBefore": []
+    },
+    "keywords": [
+      "백운호수 푸르지오",
+      "숲속의 아침",
+      "백운호수 오피스텔",
+      "의왕 오피스텔",
+      "의왕 노인복지주택",
+      "백운밸리",
+      "숲속의 아침 스위트"
+    ]
+  },
+  {
+    "price": "분양가: 상담 시 안내",
+    "moveIn": "상담 시 확인",
+    "checked": "2026.11.03",
+    "status": "현장 안내",
+    "id": "deokgye",
+    "name": "양주 덕계역 신영 지웰 엘리움",
+    "region": "경기",
+    "area": "경기 · 양주시 회천신도시",
+    "type": "아파트",
+    "tag": "1호선 덕계역 인근 · 회천신도시 · 총 1,595세대",
+    "address": "경기도 양주시 회천신도시 일원 (1호선 덕계역 인근)",
+    "mapAddress": "경기도 양주시 덕계동",
+    "scale": "총 1,595세대 대단지",
+    "count": "아파트 총 1,595세대",
+    "sizes": [
+      "49㎡",
+      "84㎡A·B·C",
+      "122㎡A·B"
+    ],
+    "builder": "신영 · 대방",
+    "img": "https://lh3.googleusercontent.com/98nASiT1WpjU2R7G5xbJKkRA3EHanDgeuiy5yNANGWDuEnRco8QFCSYuZDXsIkTR5nswdC6NhKNd-kZBPj2THmAFhnw4q02fLnqqhmQnwiKsvrJmn3uCPPM=w1920-h960-n",
+    "intro": "1호선 덕계역 역세권 대단지 · 회천신도시 랜드마크 · 49·84·122㎡ · 총 1,595세대 · 20평형 사전접수 문의",
+    "highlights": [
+      [
+        "덕계역 역세권",
+        "1호선 덕계역 인근 · 회천신도시 입지"
+      ],
+      [
+        "대단지 1,595세대",
+        "49㎡ 304세대 · 84㎡ 985세대 · 122㎡ 306세대"
+      ],
+      [
+        "신영 · 대방",
+        "신영 지웰 엘리움 · 단지 배치도·커뮤니티·인테리어 안내"
+      ]
+    ],
+    "location": "경기도 양주시 회천신도시, 1호선 덕계역 인근 (상세 주소는 분양 안내 시 확인).",
+    "typesNote": "49·84A·84B·84C·122A·122B 평면도 · 상담 1688-5650",
+    "sources": [
+      [
+        "분양 안내 페이지",
+        "https://bunyang1555.creatorlink.net/"
+      ]
+    ],
+    "links": [],
+    "x": 52,
+    "y": 30,
+    "sort": 32,
+    "recommended": false,
+    "heroImg": "https://lh3.googleusercontent.com/98nASiT1WpjU2R7G5xbJKkRA3EHanDgeuiy5yNANGWDuEnRco8QFCSYuZDXsIkTR5nswdC6NhKNd-kZBPj2THmAFhnw4q02fLnqqhmQnwiKsvrJmn3uCPPM=w1920-h960-n",
+    "planImg": "https://lh3.googleusercontent.com/_AHRqsIZ87IMEsWSedfDyiAHHqtGyFlrkcTzWWij0YB-7aAWvnrtvfESP0oIQVentGhLOs5M_c64VDfoc_jZdbR75TMTwVhw0xAGjSNpTaPb3mvzcq1pSg=w800",
+    "gallery": [
+      "https://lh3.googleusercontent.com/TK8dQQc0DezU0aqwBmwvqUBviz-gcFnya1MHySBI8PBOwXOSyNJI1Y_A_yAHHWzrKBE_rJjYkjLP_kZIGZvyBNDflR0nPG8k2BZ5IPwzlS_1MxruLhVssA=w800"
+    ],
+    "plans": [
+      {
+        "id": "49",
+        "label": "49㎡",
+        "info": [
+          "304세대",
+          "64 + 240세대"
+        ],
+        "src": "https://lh3.googleusercontent.com/ZQEE5z5fqoTh-FCm7gmUAjfv-vA7ApOBtvmU2yveWV24uKwSpdRUPlkpKFtg0mkdk1u_yqj5diC4OJ_KtsKk2fxoZT8krK16CD3iSG7Ezu6N-qSV43Q1rg=w800",
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "id": "84a",
+        "label": "84A",
+        "info": [
+          "575세대"
+        ],
+        "src": "https://lh3.googleusercontent.com/_AHRqsIZ87IMEsWSedfDyiAHHqtGyFlrkcTzWWij0YB-7aAWvnrtvfESP0oIQVentGhLOs5M_c64VDfoc_jZdbR75TMTwVhw0xAGjSNpTaPb3mvzcq1pSg=w800",
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "id": "84b",
+        "label": "84B",
+        "info": [
+          "300세대"
+        ],
+        "src": "https://lh3.googleusercontent.com/p55ZLtrnCLJ5yiRZ8sGPqc7non7BKjBzwbtRMpH2R10fl1kLV6FiOf4Tg6pUap7W0LHCNen10eybErR1wxhwlQepHv7pCnTGrPuZMgctIaSm1tfkruz-=w800",
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "id": "84c",
+        "label": "84C",
+        "info": [
+          "110세대"
+        ],
+        "src": "https://lh3.googleusercontent.com/ExN_DjE1DOB6ogbiyoGvHJqRd7uagmFsvw9Q6OkSV6t3SXe9C9o6SouJjh7AFeTUMOJL9_Yft_pxo7ulS8mt8XSjda3l6tp9L9VRxjgk4N1sS6EvVvFv=w800",
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "id": "122a",
+        "label": "122A",
+        "info": [
+          "153세대"
+        ],
+        "src": "https://lh3.googleusercontent.com/u2QWhy-jTyi7KCTadDxquLiMV2xn5zcJkkZBX35SLuL3ve-zz2t-kZtoA02YfR-QGW_oSsiyCX-BLkJPoHidl4ZzfNgYxQDD7xnakRZHNjBIayaKZmla4jw=w800",
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "id": "122b",
+        "label": "122B",
+        "info": [
+          "153세대"
+        ],
+        "src": "https://lh3.googleusercontent.com/AAYb-aA1OvyyVfp7jmdKWpSaeIlA4WPu7FymM9MwdfNd01vCZiqBy41RtSHyWv6HI-r6K9d7jV8DKlaqtyPGDPnpnj5cVHSxbZzi4ai4EETmTY5uFOhdXxk=w800",
+        "width": 800,
+        "height": 1000
+      }
+    ],
+    "seo": {
+      "summary": [
+        "경기도 양주시 회천신도시 · 1호선 덕계역 인근 · 아파트 총 1,595세대",
+        "49㎡ 304세대 · 84㎡ A·B·C 985세대 · 122㎡ A·B 306세대",
+        "신영 · 대방 · 20평형 사전접수 문의",
+        "상담 1688-5650"
+      ],
+      "points": [
+        [
+          "덕계역 역세권",
+          "1호선 덕계역 인근"
+        ],
+        [
+          "회천신도시",
+          "신도시 대단지 랜드마크"
+        ],
+        [
+          "1,595세대",
+          "49·84·122㎡ 6개 타입"
+        ]
+      ],
+      "typesHead": [
+        "타입",
+        "세대수"
+      ],
+      "types": [
+        [
+          "49㎡",
+          "304세대"
+        ],
+        [
+          "84A",
+          "575세대"
+        ],
+        [
+          "84B",
+          "300세대"
+        ],
+        [
+          "84C",
+          "110세대"
+        ],
+        [
+          "122A",
+          "153세대"
+        ],
+        [
+          "122B",
+          "153세대"
+        ]
+      ]
+    },
+    "keywords": [
+      "덕계역 지웰 엘리움",
+      "신영 지웰 엘리움",
+      "양주 덕계역",
+      "회천신도시 아파트",
+      "덕계역 아파트"
+    ],
+    "popup": {
+      "cards": [
+        {
+          "title": [
+            "양주 덕계역",
+            "신영 지웰 엘리움"
+          ],
+          "items": [
+            [
+              "1호선 덕계역 인근",
+              "회천신도시 1,595세대"
+            ],
+            [
+              "20평형 사전접수",
+              "상담 1688-5650"
+            ]
+          ]
+        }
+      ]
+    },
+    "page": {
+      "cls": "dg",
+      "accent": "#4b2e83",
+      "brand": "G.WELL",
+      "brandSmall": "덕계역 지웰 엘리움",
+      "hero": {
+        "img": "https://lh3.googleusercontent.com/98nASiT1WpjU2R7G5xbJKkRA3EHanDgeuiy5yNANGWDuEnRco8QFCSYuZDXsIkTR5nswdC6NhKNd-kZBPj2THmAFhnw4q02fLnqqhmQnwiKsvrJmn3uCPPM=w1920-h960-n",
+        "pos": "center 50%",
+        "en": "G.WELL ELIUM",
+        "title": [
+          "양주 덕계역",
+          "신영 지웰 엘리움"
+        ],
+        "name": "1호선 덕계역 인근 · 총 1,595세대",
+        "tagline": [
+          "회천신도시의 중심",
+          "덕계역 역세권 대단지"
+        ],
+        "badge": "20평형 사전접수 문의",
+        "cta": "분양 문의하기"
+      },
+      "stats": [
+        [
+          "규모",
+          "총 1,595세대"
+        ],
+        [
+          "타입",
+          "49 · 84 · 122㎡"
+        ],
+        [
+          "입지",
+          "1호선 덕계역 인근"
+        ],
+        [
+          "시행·시공",
+          "신영 · 대방"
+        ]
+      ],
+      "overviewRows": [
+        [
+          "사업명",
+          "양주 덕계역 신영 지웰 엘리움"
+        ],
+        [
+          "위치",
+          "경기도 양주시 회천신도시 · 1호선 덕계역 인근"
+        ],
+        [
+          "공급규모",
+          "아파트 총 1,595세대"
+        ],
+        [
+          "타입",
+          "49㎡ · 84㎡A·B·C · 122㎡A·B"
+        ],
+        [
+          "세대수",
+          "49㎡ 304세대(64+240) · 84A 575 · 84B 300 · 84C 110 · 122A 153 · 122B 153"
+        ],
+        [
+          "사업",
+          "신영 · 대방"
+        ],
+        [
+          "상담",
+          "1688-5650"
+        ]
+      ],
+      "overview": {
+        "before": [
+          [
+            "https://lh3.googleusercontent.com/98nASiT1WpjU2R7G5xbJKkRA3EHanDgeuiy5yNANGWDuEnRco8QFCSYuZDXsIkTR5nswdC6NhKNd-kZBPj2THmAFhnw4q02fLnqqhmQnwiKsvrJmn3uCPPM=w1920-h960-n",
+            1920,
+            960,
+            "양주 덕계역 신영 지웰 엘리움 조감도"
+          ]
+        ],
+        "after": []
+      },
+      "premiumNav": "프리미엄",
+      "premium": {
+        "eyebrow": "PREMIUM 5",
+        "title": "프리미엄 5",
+        "blocks": [
+          {
+            "figs": [
+              [
+                "https://lh3.googleusercontent.com/fyjEmVcmF3tmtAfOET70vRetK-5Osjb2BR_-fMzdzWypR5gbV7MftJBq0u89JiAunwCZbc5Va4CZiniQHdsf9Dkxq45D5PO1UJK-Pp6cd_o4xhjfOUog_g=s0",
+                1200,
+                1914,
+                "신영 지웰 엘리움 프리미엄 5"
+              ]
+            ]
+          },
+          {
+            "h3": "인테리어",
+            "gallery": [
+              [
+                "https://lh3.googleusercontent.com/TK8dQQc0DezU0aqwBmwvqUBviz-gcFnya1MHySBI8PBOwXOSyNJI1Y_A_yAHHWzrKBE_rJjYkjLP_kZIGZvyBNDflR0nPG8k2BZ5IPwzlS_1MxruLhVssA=w800",
+                800,
+                533,
+                "84타입 인테리어"
+              ]
+            ]
+          }
+        ]
+      },
+      "location": {
+        "title": "덕계역 역세권 · 회천신도시",
+        "blocks": [
+          {
+            "points": [
+              [
+                "교통",
+                "1호선 덕계역 인근"
+              ],
+              [
+                "신도시",
+                "회천신도시 대단지 입지"
+              ]
+            ],
+            "figs": [
+              [
+                "https://lh3.googleusercontent.com/CVOKSkToIXZQtY6QE1o63k-hKf1vBsrcpfoE6c_M4MyrbaVsj56rox8rXYCc3E-voYqGOockPrO4sUeA8vRu0T1QkEN6Ay-mZ3_-3MFcGBE2qdoPyf7z=w1920-h2442-n",
+                1920,
+                2442,
+                "덕계역 신영 지웰 엘리움 입지환경"
+              ]
+            ]
+          }
+        ]
+      },
+      "plansBefore": []
+    }
   }
 ];
