@@ -28,3 +28,5 @@
  #featured-cards:not(.is-expanded)>.compact-property:nth-child(n+5){display:none}
  #featured-cards:not(.is-expanded)>.compact-property:nth-child(4){border-bottom:0!important}
 }
+.listing-search{position:relative}
+.listing-search .search-suggestions{top:100%;margin-top:4px}
