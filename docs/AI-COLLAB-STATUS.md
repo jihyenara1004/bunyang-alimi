@@ -48,3 +48,18 @@
 
 ## Claude 검토 메모 (2026-11-03)
 - 규칙 3(현장 명칭): 기존 인시그니아 반포 페이지 제목·헤더가 일부 '인시그니아 반포' 단독 표기이고 건물명 라벨은 '사평대로12 · 건물명'으로 병기 중. 규칙대로 전면 점검할지 대표님/ChatGPT 판단을 요청합니다(임의 변경하지 않음).
+
+## 2026-11-04 / 청약일정 깨진 링크 복구
+- 목표: 고객이 분양알리미 안의 청약일정으로 바로 이동하도록 유지.
+- 정상 공개 주소: https://bunyang-alimi.com/cheongyak/ (HTTP 200 확인). 홈 메뉴도 /cheongyak/를 가리킴. 계산기 경로는 /cheongyak/calculator/이며 실제 공개 동작은 미확인.
+- 오류: 표시 주소는 정상이나 실제 클릭 경로에는 %29부터 가점 계산기 링크 문구와 주소까지 붙었음. 링크가 합쳐진 시점은 미확인.
+- 수정: 원본 404.html에 해당 깨진 주소만 청약일정으로 보내는 처리 추가. 정확한 오류 주소와 일반 404, 잘못 인코딩된 주소 테스트 통과.
+- 상태: 로컬 수정 완료, 공개 배포 미완료. 별도 작업본 C:\Users\User\Documents\Codex\2026-11-04\dlrj\work\calendar-fix 의 커밋 be4b7e1. GitHub push는 인증 정보 호출 실패. 재개할 때 최신 main과 로컬 변경을 확인하고 이 수정만 반영한 뒤 깨진 공개 주소에서 이동을 검증.
+
+## 2026-11-04 / 브라이튼 여의도 팝업 정리 (Claude)
+- 대표님 요청: 왼쪽 "즉시 입주 가능" 팝업 삭제, 오른쪽 팝업은 [한강뷰 관람 예약 / 조·중식 체험서비스 예약]만 표시(48층·대출 가능·임대보증금 잔금 문구 삭제).
+- 수정: outputs/portal/properties.js, work/property-catalog.json, brighten/index.html, outputs/portal/properties/brighten.html. 캐시 버전 20261104-m18(index.html, outputs/portal/index.html).
+- 주의: 이 PC에 Node가 없어 generate-property-pages.cjs를 못 돌리고 생성 페이지를 같은 내용으로 직접 수정함. Node 있는 환경에서 재생성해 차이 없는지 확인 필요.
+- 상태: GitHub main 커밋 443c7aa로 push 완료. 실제 사이트 화면 확인은 아직 못 함(미확인).
+- 참고: 작업 폴더의 404.html 변경(청약일정 깨진 링크 복구로 보이는 ChatGPT/Codex 작업)은 건드리지 않았고 커밋하지 않음.
+- 사과 기록: Claude가 이 문서를 작업 전에 읽지 않고 시작해 위 기록이 늦었음.
