@@ -3,7 +3,7 @@
   const brokenScheduleLink = '/cheongyak/)\u00a0·\u00a0[청약\u00a0가점\u00a0계산기](https://bunyang-alimi.com/cheongyak/calculator/)';
   try {
     if (decodeURIComponent(location.pathname) === brokenScheduleLink) {
-      location.replace('/cheongyak/');
+      location.replace('/cheongyak/#calc');
     }
   } catch (error) {
     if (!(error instanceof URIError)) throw error;
