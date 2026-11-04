@@ -56,14 +56,14 @@ function pageMode(d,list){
 }
 
 // 하단 "지금 계약 가능한 추천 분양현장" 카드 (추천 순서 pinned 기준 3곳)
-function renderMine(){const mine=document.getElementById('cy-mine');
- if(mine&&window.PORTAL_PROPERTIES){const P=window.PORTAL_PROPERTIES.slice().sort((a,b)=>(a.pinned||99)-(b.pinned||99)).slice(0,3);
+function renderMine(ids){const mine=document.getElementById('cy-mine');
+ if(mine&&window.PORTAL_PROPERTIES){const P=ids?ids.map(id=>window.PORTAL_PROPERTIES.find(p=>p.id===id)).filter(Boolean):window.PORTAL_PROPERTIES.slice().sort((a,b)=>(a.pinned||99)-(b.pinned||99)).slice(0,3);
   mine.innerHTML=P.map(p=>`<a class="cy-site" href="/${E(p.id)}/"><b>${E(p.name)}</b><span>${E([p.area,p.type].filter(Boolean).join(' · '))}</span>${p.tag?`<em>${E(p.tag)}</em>`:''}</a>`).join('')}}
 
 // 청약 가점 계산기 단독 페이지 (/cheongyak/calculator/)
 function calcMode(d,form){
  const box=document.getElementById('cy-alert-btn');if(box)box.innerHTML=kakao(d,'내 점수에 맞는 단지 소식 카카오톡으로 받기');
- renderMine();initCalc(form)}
+ renderMine(['byeolnae','riverfront','brighten']);initCalc(form)}
 
 // 가점 계산 (단독 페이지와 청약일정 페이지 공용): 입력값은 화면 안에서만 계산, 저장·전송 없음
 function initCalc(form){
