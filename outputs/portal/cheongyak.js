@@ -107,17 +107,32 @@ function homeMode(d){
  document.addEventListener('click',e=>{if(!s.querySelector('.cy-home-search').contains(e.target))sg.hidden=true});
 }
 
-fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{if(list){
-  pageMode(d,list);
-  if(calc)initCalc(calc);
-  if(location.hash==='#calc'){
-   const section=document.getElementById('calc');
-   const header=document.querySelector('.portal-header');
-   if(section)requestAnimationFrame(()=>{
-    if(location.hash!=='#calc')return;
-    section.style.scrollMarginTop=(header?.getBoundingClientRect().height+16 || 20)+'px';
-    section.scrollIntoView({block:'start'});
-   });
-  }
- }else if(calc)calcMode(d,calc);else homeMode(d)});
+function alignCalculatorLink(){
+ if(location.hash!=='#calc')return;
+ const section=document.getElementById('calc');
+ if(!section)return;
+ requestAnimationFrame(()=>{
+  if(location.hash!=='#calc')return;
+  const header=document.querySelector('.portal-header');
+  const offset=(header?.getBoundingClientRect().height ?? 0)+16;
+  window.scrollTo({top:Math.max(0,window.scrollY+section.getBoundingClientRect().top-offset),behavior:'instant'});
+ });
+}
+
+if(list){
+ window.addEventListener('pageshow',alignCalculatorLink);
+ window.addEventListener('hashchange',alignCalculatorLink);
+}
+
+fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'})
+ .then(r=>r.ok?r.json():Promise.reject())
+ .catch(()=>({items:[]}))
+ .then(d=>{
+  if(list){
+   pageMode(d,list);
+   if(calc)initCalc(calc);
+   alignCalculatorLink();
+  }else if(calc)calcMode(d,calc);
+  else homeMode(d);
+ });
 })();
