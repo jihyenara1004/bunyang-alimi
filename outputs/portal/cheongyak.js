@@ -107,5 +107,17 @@ function homeMode(d){
  document.addEventListener('click',e=>{if(!s.querySelector('.cy-home-search').contains(e.target))sg.hidden=true});
 }
 
-fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{if(list){pageMode(d,list);if(calc)initCalc(calc)}else if(calc)calcMode(d,calc);else homeMode(d)});
+fetch('/outputs/portal/cheongyak-data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).catch(()=>({items:[]})).then(d=>{if(list){
+  pageMode(d,list);
+  if(calc)initCalc(calc);
+  if(location.hash==='#calc'){
+   const section=document.getElementById('calc');
+   const header=document.querySelector('.portal-header');
+   if(section)requestAnimationFrame(()=>{
+    if(location.hash!=='#calc')return;
+    section.style.scrollMarginTop=(header?.getBoundingClientRect().height+16 || 20)+'px';
+    section.scrollIntoView({block:'start'});
+   });
+  }
+ }else if(calc)calcMode(d,calc);else homeMode(d)});
 })();
