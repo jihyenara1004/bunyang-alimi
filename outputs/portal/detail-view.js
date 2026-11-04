@@ -79,3 +79,35 @@ const hh=h.replace(/<a [^>]*href="https?:\/\/(?:map\.naver\.com|naver\.me)[^"]*"
 
 /* 접기 버튼 없이 나열식: 설명 상자는 항상 펼친 상태 유지 */
 document.addEventListener("toggle",e=>{const t=e.target;if(t&&t.matches&&t.matches("details.ins-system-details")&&!t.open)t.open=true},true);
+
+document.addEventListener('DOMContentLoaded',()=>{
+ if(!document.body.matches('.standalone-property'))return;
+ const phone=document.querySelector('.gd-header .gd-phone');
+ const shortcut=document.querySelector('.kakao-channel-shortcut');
+ if(!phone||!shortcut)return;
+ const contact=phone.closest('.unjeong-header-contact')||document.createElement('div');
+ contact.classList.add('desktop-detail-contact');
+ if(!contact.contains(phone)){
+  phone.before(contact);
+  contact.append(phone);
+  const link=document.createElement('a');
+  link.className='desktop-detail-kakao';
+  link.href=shortcut.href;
+  link.target='_blank';
+  link.rel='noopener';
+  link.textContent='카카오톡 채널';
+  contact.append(link);
+ }
+ shortcut.classList.add('detail-kakao-floating');
+ const style=document.createElement('style');
+ style.textContent=`
+ .desktop-detail-kakao{display:none}
+ @media(max-width:760px){.desktop-detail-contact{display:contents}}
+ @media(min-width:761px){
+  .desktop-detail-contact{display:grid;justify-items:center;gap:6px;flex:none}
+  .desktop-detail-kakao{display:inline-flex;align-items:center;justify-content:center;padding:6px 10px;border-radius:8px;background:#fee500;color:#392216;font-size:13px;font-weight:800;white-space:nowrap;text-decoration:none}
+  .detail-kakao-floating{display:none}
+ }
+ `;
+ document.head.append(style);
+});
