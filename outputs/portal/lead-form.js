@@ -2,22 +2,42 @@
 const sending=new WeakSet();document.addEventListener('submit',async e=>{const f=e.target;if(!f.matches('.gd-interest-form,#registration'))return;e.preventDefault();e.stopImmediatePropagation();if(sending.has(f)||!f.reportValidity())return;const status=f.querySelector('[role=status]');const set=s=>{if(status)status.textContent=s};const field=n=>f.querySelector('[name="'+n+'"]');let propertyName=field('propertyName')?.value||'';const id=f.dataset.leadProperty||field('property')?.value;const p=(window.PORTAL_PROPERTIES||[]).find(x=>x.id===id);if(p)propertyName=p.name;if(!propertyName){set('현장명을 선택해 주세요.');return}const name=(field('name')?.value||'').trim(),phone=(field('phone')?.value||'').replace(/[^0-9]/g,'');if(!name||name.length>30){set('성함을 입력해 주세요.');return}if(!/^0[0-9]{8,10}$/.test(phone)){set('연락처를 확인해 주세요. 예: 010-0000-0000');field('phone')?.focus();return}if(!field('consent')?.checked){set('개인정보 수집·이용에 동의해 주세요.');return}const button=f.querySelector('button[type=submit]');sending.add(f);button.disabled=true;button.textContent='전송 중…';set('접수 요청을 전송하고 있습니다.');try{const response=await fetch(endpoint,{method:'POST',body:new URLSearchParams({propertyName,name,phone,submittedAt:new Date().toLocaleString('ko-KR',{timeZone:'Asia/Seoul'}),source:'분양알리미 홈페이지'}),signal:AbortSignal.timeout(20000),credentials:'omit',referrerPolicy:'no-referrer'});if(!response.ok)throw Error('http');set(awaitingApproval?'접수 요청이 전송되었습니다. 현재 온라인 접수는 시험 운영 중입니다.':'접수 요청이 전송되었습니다. 확인 후 연락드리겠습니다. 급한 문의는 1688-5650으로 연락 주세요.');f.reset();if(field('propertyName'))field('propertyName').value=propertyName;}catch{set('전송 결과를 확인하지 못했습니다. 반복 등록하기 전에 1688-5650으로 문의해 주세요.');}finally{sending.delete(f);button.disabled=false;button.textContent='관심고객등록';}},true);
 
 const viewport=window.visualViewport;
-if(viewport&&matchMedia('(pointer: coarse)').matches){
- let frame;
- const revealLeadField=()=>{
+if(viewport&&matchMedia('(max-width: 760px), (pointer: coarse)').matches){
+ const root=document.documentElement;
+ const style=document.createElement('style');
+ style.textContent='.lead-keyboard-open .mobile-cta,.lead-keyboard-open .kakao-channel-shortcut{visibility:hidden}.lead-keyboard-open .gd-interest-form,.lead-keyboard-open #registration{padding-bottom:max(24px,var(--lead-keyboard-inset))}';
+ document.head.append(style);
+ let frame,restingHeight=viewport.height;
+ const syncLeadField=()=>{
   cancelAnimationFrame(frame);
   frame=requestAnimationFrame(()=>{
    const field=document.activeElement;
-   if(!field?.matches('input:not([readonly]):not([type=checkbox]),textarea')||
-      !field.closest('.gd-interest-form,#registration'))return;
+   const editing=field?.matches('input:not([readonly]):not([type=checkbox]),textarea')&&field.closest('.gd-interest-form,#registration');
+   if(!editing){
+    root.classList.remove('lead-keyboard-open');
+    restingHeight=Math.max(restingHeight,viewport.height);
+    return;
+   }
+   const inset=Math.max(restingHeight,window.innerHeight)-viewport.height;
+   const keyboardOpen=inset>100;
+   root.classList.toggle('lead-keyboard-open',keyboardOpen);
+   root.style.setProperty('--lead-keyboard-inset',Math.max(0,inset)+'px');
+   if(!keyboardOpen)return;
    const bounds=field.getBoundingClientRect();
    const top=viewport.offsetTop;
-   if(bounds.top<top+20||bounds.bottom>top+viewport.height-72){
-    field.scrollIntoView({block:'center',inline:'nearest',behavior:'instant'});
+   const bottom=top+viewport.height;
+   if(bounds.top>=top+24&&bounds.bottom<=bottom-24)return;
+   field.scrollIntoView({block:'center',inline:'nearest',behavior:'instant'});
+   const positioned=field.getBoundingClientRect();
+   if(positioned.top<top+24||positioned.bottom>bottom-24){
+    const delta=positioned.top+positioned.height/2-(top+viewport.height/2);
+    window.scrollBy({top:delta,behavior:'instant'});
    }
   });
  };
- document.addEventListener('focusin',revealLeadField);
- viewport.addEventListener('resize',revealLeadField);
+ document.addEventListener('focusin',syncLeadField);
+ document.addEventListener('focusout',syncLeadField);
+ viewport.addEventListener('resize',syncLeadField);
+ window.addEventListener('orientationchange',()=>{restingHeight=viewport.height;syncLeadField()});
 }
 })();
