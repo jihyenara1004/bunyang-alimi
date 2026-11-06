@@ -349,3 +349,13 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 
 /* 백운호수: 도면 그림 안에 타입·면적이 이미 있어서 위쪽 제목·안내 줄은 화면에서만 숨김(검색용 글자는 유지) */
 .bw-detail .luca-plan-panel>h3,.bw-detail .luca-plan-panel>.br-plan-info{display:none}
+
+/* 표 블록(p.page blocks의 table) — 2026-11-06 */
+.isr-table-wrap{overflow-x:auto;margin:14px 0 8px;-webkit-overflow-scrolling:touch}
+.isr-table{width:100%;min-width:680px;border-collapse:collapse;font-size:15px;background:#fff}
+.isr-table thead th{background:#1d2b46;color:#fff;padding:11px 8px;font-weight:700;white-space:nowrap;text-align:center}
+.isr-table td,.isr-table tbody th{padding:11px 8px;text-align:center;border-bottom:1px solid #e3dccb;white-space:nowrap}
+.isr-table tbody th{color:var(--pg-accent,#7a5c1e);font-weight:800}
+.isr-table tbody tr:nth-child(even){background:#faf7ef}
+.isr-table td:nth-last-child(-n+2){font-weight:700}
+@media(max-width:560px){.isr-table{min-width:0;font-size:11.5px}.isr-table thead th,.isr-table td,.isr-table tbody th{padding:8px 2px;white-space:normal;word-break:keep-all}}
