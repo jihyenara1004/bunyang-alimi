@@ -1,5 +1,7 @@
 const $=s=>document.querySelector(s);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const properties=window.PORTAL_PROPERTIES||[];
+/* 상가: 기본 목록에는 숨기고 '상가' 버튼을 누르거나 검색할 때만 보임 */
+const isRetail=p=>p.category==='상가';
 const promotion=p=>p.promotion?`<button type="button" class="property-promotion" data-detail="${p.id}" aria-label="${esc(p.promotion)} · ${esc(p.name)} 상세페이지 열기" title="${esc(p.promotion)}">${esc(p.promotionLabel||'프로모션 진행 중')}</button>`:'';
 const nameButton=p=>`<button class="property-name${p.buildingLabel?" has-building":""}" data-detail="${p.id}">${p.buildingLabel?`<small class="street-label">${esc(p.name)}</small><span class="building-main">${esc(p.buildingLabel)}</span>`:esc(p.name)}</button>`;
 function thumb(p){return `<button type="button" class="property-thumb" data-detail="${p.id}" aria-label="${esc(p.name)} 상세페이지 열기">${p.img?`<img src="${p.img}" alt="${esc(p.name)} 기존 현장 이미지" loading="lazy">`:'<div class="photo-pending"><span>⌂</span><small>현장 이미지 준비 중</small></div>'}<span class="property-status">${p.status}</span></button>`}
@@ -13,18 +15,18 @@ function renderFeatured(){
  const query=normalizeFeaturedName(featuredSearch?.value);
  const tokens=String(featuredSearch?.value??'').split(/\s+/).map(normalizeFeaturedName).filter(Boolean);
  const hay=p=>normalizeFeaturedName([p.name,p.buildingLabel,p.buildingName,p.region,p.area,p.type,p.tag,p.address,p.builder,p.intro,p.location,p.keywords].flat().join(' '));
- const list=properties.filter(p=>(!featuredRegion||p.region===featuredRegion)&&(!tokens.length||tokens.every(t=>hay(p).includes(t)))).sort((a,b)=>(a.sort??99)-(b.sort??99));
+ const list=properties.filter(p=>(featuredRegion==='상가'?isRetail(p):((tokens.length||!isRetail(p))&&(!featuredRegion||p.region===featuredRegion)))&&(!tokens.length||tokens.every(t=>hay(p).includes(t)))).sort((a,b)=>(a.sort??99)-(b.sort??99));
  $('#featured-cards').innerHTML=list.length?list.map(card).join(''):'<p role="status">일치하는 단지가 없습니다.</p>';
  document.querySelectorAll('[data-featured-region]').forEach(b=>{const on=b.dataset.featuredRegion===featuredRegion;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)})}
 renderFeatured();document.addEventListener('click',e=>{const b=e.target.closest('[data-featured-region]');if(!b)return;featuredRegion=featuredRegion===b.dataset.featuredRegion?'':b.dataset.featuredRegion;renderFeatured()});
 /* 이번 주 추천현장: 매주 월요일(한국시간) 4곳씩 자동 교체. p.pinned=true인 현장은 항상 먼저 고정 노출 */
-(function(){const box=$('#pick-cards');if(!box)return;const N=4,pinned=properties.filter(p=>p.pinned).sort((a,b)=>(+a.pinned||99)-(+b.pinned||99)).slice(0,N),pool=properties.filter(p=>!p.pinned).sort((a,b)=>(a.sort??99)-(b.sort??99)),need=N-pinned.length;
+(function(){const box=$('#pick-cards');if(!box)return;const N=4,pinned=properties.filter(p=>p.pinned).sort((a,b)=>(+a.pinned||99)-(+b.pinned||99)).slice(0,N),pool=properties.filter(p=>!p.pinned&&!isRetail(p)).sort((a,b)=>(a.sort??99)-(b.sort??99)),need=N-pinned.length;
 const week=Math.floor((Date.now()+9*36e5-Date.UTC(2026,0,5))/(7*864e5));const picks=[...pinned];
 if(pool.length&&need>0){const start=((week*need)%pool.length+pool.length)%pool.length;for(let i=0;i<Math.min(need,pool.length);i++)picks.push(pool[(start+i)%pool.length])}
 box.innerHTML=picks.map(card).join('')})();
 $('#property').innerHTML='<option value="">관심 현장을 선택해 주세요</option>'+properties.map(p=>`<option value="${p.id}">${esc(p.name)}</option>`).join('');
 let mapRegion='',mapQuery='',mapSort='recommended',selected=null,hoverTimer=null,liveMap=null,liveMarkers=[];
-function filtered(){let out=properties.filter(p=>(!mapRegion||p.region===mapRegion)&&(!mapQuery||[p.name+" "+(p.buildingLabel||""),p.region,p.area,p.type,p.tag,p.address,p.buildingName,p.builder,p.intro,p.location,p.keywords].flat().join(' ').replace(/[\s·\/\-_.(),]+/g,'').toLowerCase().includes(mapQuery.replace(/[\s·\/\-_.(),]+/g,'').toLowerCase())));return out.sort((a,b)=>mapSort==='name'?a.name.localeCompare(b.name,'ko'):mapSort==='region'?a.region.localeCompare(b.region,'ko')||a.sort-b.sort:a.sort-b.sort)}
+function filtered(){let out=properties.filter(p=>(mapRegion==='상가'?isRetail(p):((mapQuery||!isRetail(p))&&(!mapRegion||p.region===mapRegion)))&&(!mapQuery||[p.name+" "+(p.buildingLabel||""),p.region,p.area,p.type,p.tag,p.address,p.buildingName,p.builder,p.intro,p.location,p.keywords].flat().join(' ').replace(/[\s·\/\-_.(),]+/g,'').toLowerCase().includes(mapQuery.replace(/[\s·\/\-_.(),]+/g,'').toLowerCase())));return out.sort((a,b)=>mapSort==='name'?a.name.localeCompare(b.name,'ko'):mapSort==='region'?a.region.localeCompare(b.region,'ko')||a.sort-b.sort:a.sort-b.sort)}
 function markerContent(p){return `<button class="house-marker ${selected===p.id?'selected':''}" data-map-select="${p.id}" aria-label="분양 ${esc(p.name)}"><span class="house-shape">분양</span><b>${esc(p.name)}</b></button>`}
 function renderMap(){const list=filtered();$('#map-count').textContent=`${mapRegion?({'기타':'그 외 지역'}[mapRegion]||mapRegion)+' ':'전체 '}${list.length}개 현장${mapRegion?' · 한 번 더 누르면 전체':''}`;
 $('#map-list').innerHTML=list.length?list.map(p=>`<article class="sidebar-property ${selected===p.id?'selected':''}" data-property="${p.id}">${thumb(p)}<div>${nameButton(p)}${promotion(p)}<p class="spec-text">${esc(p.type)} · ${esc(p.area)}</p><p class="spec-text">${esc(p.sizes?.join(' · ')||'타입 안내 확인')}</p><div class="price-line"><strong>${esc(p.price==='상담문의'?'분양가 확인 중':p.price)}</strong></div><button class="locate" data-map-select="${p.id}">지도에서 보기</button></div></article>`).join(''):'<p class="empty-results">검색 결과가 없습니다.<br>지역이나 현장명을 다시 확인해 주세요.</p>';

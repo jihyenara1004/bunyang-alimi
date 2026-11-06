@@ -494,3 +494,9 @@
 - 이미지: PDF 페이지를 잘라 `outputs/portal/assets/insretail-*.jpg` 7장(전경·드롭오프존·조감도·입지·상권·층별 배치 2).
 - 생성 스크립트(`generate-property-pages.cjs`)는 전체 현장 페이지를 다시 쓰고 브라이튼 등 손으로 고친 부분을 지우므로, 이번엔 새 페이지(`insignia-retail`)만 커밋하고 나머지 생성 결과는 되돌림. 수정 파일: properties.js, work/property-catalog.json, sitemap.xml, index.html·outputs/portal/index.html(현장 목록 링크).
 - 확인 필요: PDF 기준일 2026.07.30 이후 잔여 호실·가격 변동, 래미안 트리니원(2026.08 예정) 입주 현황.
+
+## 2026-11-06 · 상가 버튼 추가 (브랜치 `claude/sangga-button`, main 병합 대기)
+- 대표님 요청: 홈 상단 지역 버튼(서울·경기·기타)과 "분양정보" 목록 버튼에 "상가" 추가, 상가는 이 버튼을 눌러야만 나오게. 지도 지역 탭 2곳에도 "상가" 추가.
+- 방식: 현장 데이터에 `category:"상가"`(properties.js·property-catalog.json) → `app.js`의 `isRetail`로 기본 목록·지도·이번 주 추천에서 제외, 상가 버튼을 누르거나 검색어를 입력하면 표시. 홈 하단 "전체 분양현장 바로가기" 목록에서도 제외(`gen-seo.cjs`, 사이트맵은 유지). 캐시 `app.js?v=20261106-m1`.
+- 새 상가 현장은 데이터에 `category:"상가"`만 넣으면 같은 방식으로 동작.
+- 검증: 로컬에서 기본 화면 33곳(상가 없음), 3곳 상가 버튼 모두 상가 1곳만 표시, 서울 버튼 15곳(상가 제외), 오류 0건.
