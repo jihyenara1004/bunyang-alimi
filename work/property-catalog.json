@@ -13635,9 +13635,9 @@
       {
         "id": "f1",
         "label": "지상 1층",
-        "src": "assets/insretail-floor-1f.jpg",
-        "width": 633,
-        "height": 588,
+        "src": "assets/insretail-floor-1f-v2.jpg",
+        "width": 1192,
+        "height": 555,
         "info": [
           "101~104호",
           "전용 24.67~32.34평"
