@@ -375,3 +375,4 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 @media(min-width:761px){.gd-header nav button[data-detail-section^="interest-"]{color:#0a3cff!important;font-weight:900!important;font-size:19px!important;letter-spacing:-.3px}.gd-header nav button[data-detail-section^="interest-"]:hover{color:#0029d6!important}}
 .gd-community{background:#fff}.gd-community .gd-community-plan{margin:22px auto 0;max-width:1000px}.gd-community .gd-community-plan img{display:block;width:100%;height:auto;border:1px solid #e4e6eb;border-radius:6px}.gd-community-points{margin-top:22px}
 .gd-community-official{margin-top:20px}.gd-community-official img{display:block;width:100%;height:auto;border-radius:6px}
+.gd-community-official{max-width:760px;margin-left:auto;margin-right:auto}
