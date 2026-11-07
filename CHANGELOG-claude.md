@@ -1,5 +1,9 @@
 # 분양알리미 수정 내역 (Claude)
 
+## 2026-11-07 · GD메트로타워 "커뮤니티" 섹션 신설
+- 프리미엄 아래·조감도 갤러리 위에 제목 "커뮤니티" 섹션 추가: ①공식 홈페이지(gdmetro.com/grand/danji/community.asp) 커뮤니티 CG(PC `community.jpg`/모바일 `community_m.jpg`, 공식 서버 링크) ②교육자료 PDF 41쪽 커뮤니티 시설 배치도(`assets/gd-community-plan.jpg`, 지상 3층: 피트니스·골프연습장/스크린골프룸·북카페/작은도서관·게스트룸·코인세탁실) ③시설 4개 요약 + 안내문. 프리미엄 안에 있던 생활시설 이미지는 이곳으로 대체.
+- 수정: `detail-view.js`, `property-detail.css`, `gdmetro/index.html`, `outputs/portal/properties/gdmetro.html`. 캐시 css `20261107-m11`, js `20261107-m11`.
+
 ## 2026-11-07 · 상세페이지 상단 메뉴 "관심고객" 크게·진한 파랑(#0a3cff)
 - 대표님 요청: 고객 눈에 잘 띄게. PC(761px 이상)만 19px 굵게, 모바일은 그대로. `property-detail.css` 맨 아래, 전 현장 적용. 캐시 css `20261107-m10`.
 
