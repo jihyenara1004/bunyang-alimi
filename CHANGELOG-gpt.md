@@ -45,3 +45,10 @@
 ## 2026-11-02 · 홍보문구 통일
 - 사용자 요청으로 1차 8개 그룹(thegrid, gdmetro, insignia, luca831, byeolnae, unjeong, gochon, onam)에 홍보문구 확장소재 '특별혜택을 만나보세요' 등록. 홍보종류 선택 안 함, 모든 요일 및 시간.
 - 각 그룹 확장소재 목록에 문구 저장 확인. 신규 홍보문구는 네이버 검토중. 이미지 확장소재는 이번 작업에서 변경하지 않음.
+
+## 2026-11-07 · GD메트로타워 모바일 문의 버튼 수정
+- 사용자 요청: 하단 문의하기의 포털 이동 오류 수정, 카카오톡 버튼과 하단 버튼 간격 확대.
+- gdmetro/index.html 및 outputs/portal/properties/gdmetro.html: 문의하기를 data-detail-section="interest-gdmetro"로 변경하여 기존 현장 접수폼으로 이동.
+- GD 모바일 전용 카카오톡 위치를 bottom 76px에서 100px(+safe-area)로 조정, 간격 24px 확대.
+- work/generate-property-pages.cjs에 동일 수정 반영하여 재생성 시 유지.
+- 공개 /gdmetro/에서 수정된 버튼 속성과 간격 스타일 게시 확인. 같은 스크롤 핸들러를 사용하는 관심고객 버튼으로 현장명이 GD메트로타워인 접수폼 이동 확인. 실제 고객 접수/알림톡 테스트 발송 없음. 모바일 실기기 클릭·레이아웃 검증은 미수행.
