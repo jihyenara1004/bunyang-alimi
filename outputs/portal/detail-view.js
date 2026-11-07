@@ -111,3 +111,6 @@ document.addEventListener('DOMContentLoaded',()=>{
  `;
  document.head.append(style);
 });
+
+/* GD메트로: 이미지 및 개발계획 안내 (2026-11-07) */
+(function(){const previous=window.renderProperty;window.renderProperty=function(p,opts={}){const html=previous(p,opts);if(p.id!=="gdmetro")return html;return html.replace('<section class="property-section gd-interest"','<section class="property-section gd-ad-disclosures" aria-label="이미지 및 개발계획 안내" style="display:block!important;font-size:14px;line-height:1.8;color:#555"><p>※ 본 페이지의 조감도·투시도 등 이미지는 소비자의 이해를 돕기 위한 것으로 실제 시공 결과와 차이가 있을 수 있습니다.</p><p>※ 교통망 및 주변 개발계획은 관계기관의 추진 상황에 따라 변경·지연 또는 취소될 수 있습니다. 상세 내용은 해당 기관의 최신 공고를 확인하시기 바랍니다.</p></section><section class="property-section gd-interest"');};})();
