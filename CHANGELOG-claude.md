@@ -1,5 +1,9 @@
 # 분양알리미 수정 내역 (Claude)
 
+## 2026-11-07 · GD메트로타워 PC 히어로를 모바일처럼(야경 조감도 + 아래쪽 글자)
+- PC 대표 이미지를 야경 쌍둥이 타워 조감도(`assets/gd-hero-pc2.jpg`, PDF 1쪽 원본 보정)로 교체, 글자는 모바일처럼 이미지 아래쪽에 겹쳐 표시(어두운 그라데이션). 650px 이하 모바일은 기존 그대로.
+- 수정: `detail-view.js`, `property-detail.css`(맨 아래), `gdmetro/index.html`, `outputs/portal/properties/gdmetro.html`. 캐시 css `20261107-m6`, js `20261107-m7`.
+
 ## 2026-11-07 · 다른 현장 상세페이지에 GD와 같은 구성 적용
 - 대표님 요청("다른 현장도 똑같이"): 전 현장 상세 하단에 "다른 추천 현장도 확인해 보세요" 카드 3개(자기 자신 제외, 별내·DK·송파더그리드·GD 중) + "전체 현장 보기" 추가. 66개 정적 페이지(`*/index.html`, `outputs/portal/properties/*.html`)와 `detail-view.js` 공통 템플릿(`gdMoreCards`)에 반영.
 - 표준 히어로(DK밸리뷰 용산 등): 히어로의 분양가·관심고객등록 버튼 삭제, 소개문구를 `gd-hero-hook`으로 표시, 모바일은 조감도 크게+글자 겹침(`gd-hero-stack`).
