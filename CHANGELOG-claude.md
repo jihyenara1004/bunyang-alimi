@@ -1,5 +1,10 @@
 # 분양알리미 수정 내역 (Claude)
 
+## 2026-11-07 · GD메트로타워 평면안내: 시행사 홈페이지 이미지 → 교육자료 PDF 평면도·아이소로 교체
+- 20개 타입(24A~53D) 탭마다: ①타입별 아이소+면적표(PDF 아이소 페이지 27~40 좌우 분할 `assets/gd-type-*.jpg`) ②평면도(PDF 26·29·32·35·38쪽, 같은 그룹 4타입 면적표 포함 `assets/gd-plan-p*.jpg`). 시행사 서버 링크 제거(이제 평면도는 우리 서버에서 표시).
+- 수정: `properties.js`·`work/property-catalog.json`(plans에 src/plan), `detail-view.js`, `property-detail.css`, `gdmetro/index.html`, `outputs/portal/properties/gdmetro.html`. 캐시 css/js `20261107-m13`, properties.js `20261107-gd1`.
+- ⚠ 남은 시행사 서버 링크: 상단 대표 이미지(`summary_bg.jpg`)·공급가격표·프리미엄 안내 이미지 등. 교육자료 하단에 수정·제3자 배포 금지 문구가 있으니 시행사 사용 허락 확인 권장.
+
 ## 2026-11-07 · GD메트로타워 "커뮤니티" 섹션 신설
 - 프리미엄 아래·조감도 갤러리 위에 제목 "커뮤니티" 섹션 추가: ①공식 홈페이지(gdmetro.com/grand/danji/community.asp) 커뮤니티 안내 이미지(대표님이 저장해 보내주신 파일, `assets/gd-community.jpg`로 우리 서버에 저장) ②교육자료 PDF 41쪽 커뮤니티 시설 배치도(`assets/gd-community-plan.jpg`, 지상 3층: 피트니스·골프연습장/스크린골프룸·북카페/작은도서관·게스트룸·코인세탁실) ③시설 4개 요약 + 안내문. 프리미엄 안에 있던 생활시설 이미지는 이곳으로 대체.
 - 수정: `detail-view.js`, `property-detail.css`, `gdmetro/index.html`, `outputs/portal/properties/gdmetro.html`. 캐시 css `20261107-m11`, js `20261107-m11`.

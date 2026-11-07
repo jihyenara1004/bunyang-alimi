@@ -64,102 +64,102 @@
       {
         "id": "24a",
         "label": "24A",
-        "src": "https://www.gdmetro.com/grand/images/type_24a.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-24a.jpg", "plan": "/outputs/portal/assets/gd-plan-p26.jpg"
       },
       {
         "id": "24b",
         "label": "24B",
-        "src": "https://www.gdmetro.com/grand/images/type_24b.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-24b.jpg", "plan": "/outputs/portal/assets/gd-plan-p26.jpg"
       },
       {
         "id": "24c",
         "label": "24C",
-        "src": "https://www.gdmetro.com/grand/images/type_24c.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-24c.jpg", "plan": "/outputs/portal/assets/gd-plan-p26.jpg"
       },
       {
         "id": "24d",
         "label": "24D",
-        "src": "https://www.gdmetro.com/grand/images/type_24d.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-24d.jpg", "plan": "/outputs/portal/assets/gd-plan-p26.jpg"
       },
       {
         "id": "28a",
         "label": "28A",
-        "src": "https://www.gdmetro.com/grand/images/type_28a.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-28a.jpg", "plan": "/outputs/portal/assets/gd-plan-p32.jpg"
       },
       {
         "id": "28b",
         "label": "28B",
-        "src": "https://www.gdmetro.com/grand/images/type_28b.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-28b.jpg", "plan": "/outputs/portal/assets/gd-plan-p32.jpg"
       },
       {
         "id": "28c",
         "label": "28C",
-        "src": "https://www.gdmetro.com/grand/images/type_28c.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-28c.jpg", "plan": "/outputs/portal/assets/gd-plan-p29.jpg"
       },
       {
         "id": "28d",
         "label": "28D",
-        "src": "https://www.gdmetro.com/grand/images/type_28d.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-28d.jpg", "plan": "/outputs/portal/assets/gd-plan-p29.jpg"
       },
       {
         "id": "28e",
         "label": "28E",
-        "src": "https://www.gdmetro.com/grand/images/type_28e.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-28e.jpg", "plan": "/outputs/portal/assets/gd-plan-p29.jpg"
       },
       {
         "id": "28f",
         "label": "28F",
-        "src": "https://www.gdmetro.com/grand/images/type_28f.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-28f.jpg", "plan": "/outputs/portal/assets/gd-plan-p29.jpg"
       },
       {
         "id": "29a",
         "label": "29A",
-        "src": "https://www.gdmetro.com/grand/images/type_29a.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-29a.jpg", "plan": "/outputs/portal/assets/gd-plan-p32.jpg"
       },
       {
         "id": "29b",
         "label": "29B",
-        "src": "https://www.gdmetro.com/grand/images/type_29b.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-29b.jpg", "plan": "/outputs/portal/assets/gd-plan-p32.jpg"
       },
       {
         "id": "45a",
         "label": "45A",
-        "src": "https://www.gdmetro.com/grand/images/type_45a.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-45a.jpg", "plan": "/outputs/portal/assets/gd-plan-p35.jpg"
       },
       {
         "id": "45b",
         "label": "45B",
-        "src": "https://www.gdmetro.com/grand/images/type_45b.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-45b.jpg", "plan": "/outputs/portal/assets/gd-plan-p35.jpg"
       },
       {
         "id": "46a",
         "label": "46A",
-        "src": "https://www.gdmetro.com/grand/images/type_46a.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-46a.jpg", "plan": "/outputs/portal/assets/gd-plan-p35.jpg"
       },
       {
         "id": "46b",
         "label": "46B",
-        "src": "https://www.gdmetro.com/grand/images/type_46b.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-46b.jpg", "plan": "/outputs/portal/assets/gd-plan-p35.jpg"
       },
       {
         "id": "53a",
         "label": "53A",
-        "src": "https://www.gdmetro.com/grand/images/type_53a.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-53a.jpg", "plan": "/outputs/portal/assets/gd-plan-p38.jpg"
       },
       {
         "id": "53b",
         "label": "53B",
-        "src": "https://www.gdmetro.com/grand/images/type_53b.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-53b.jpg", "plan": "/outputs/portal/assets/gd-plan-p38.jpg"
       },
       {
         "id": "53c",
         "label": "53C",
-        "src": "https://www.gdmetro.com/grand/images/type_53c.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-53c.jpg", "plan": "/outputs/portal/assets/gd-plan-p38.jpg"
       },
       {
         "id": "53d",
         "label": "53D",
-        "src": "https://www.gdmetro.com/grand/images/type_53d.jpg?v=202610281517125503229"
+        "src": "/outputs/portal/assets/gd-type-53d.jpg", "plan": "/outputs/portal/assets/gd-plan-p38.jpg"
       }
     ],
     "supplyImage": "assets/gd-supply-price.jpg",

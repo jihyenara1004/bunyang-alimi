@@ -376,3 +376,4 @@ button.property-promotion{display:block;width:fit-content;max-width:100%;padding
 .gd-community{background:#fff}.gd-community .gd-community-plan{margin:22px auto 0;max-width:1000px}.gd-community .gd-community-plan img{display:block;width:100%;height:auto;border:1px solid #e4e6eb;border-radius:6px}.gd-community-points{margin-top:22px}
 .gd-community-official{margin-top:20px}.gd-community-official img{display:block;width:100%;height:auto;border-radius:6px}
 .gd-community-official{max-width:760px;margin-left:auto;margin-right:auto}
+.gd-plan-display .gd-plan-sub{display:block;margin-top:14px}.gd-plan-display .gd-plan-sub img,.gd-plan-display figure>a:first-of-type img{display:block;width:100%;height:auto;border:1px solid #e4e6eb;border-radius:4px}@media(min-width:900px){.gd-plan-display figure{max-width:900px;margin-left:auto;margin-right:auto}}
