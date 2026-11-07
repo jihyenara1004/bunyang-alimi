@@ -118,3 +118,13 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 /* 카카오 문의 바로가기: 모든 현장 및 상세 팝업 공통 */
 document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('a.kakao-channel-shortcut,a.detail-kakao,a.desktop-detail-kakao').forEach(link=>{link.href='https://pf.kakao.com/_ERxkFX/chat';link.setAttribute('aria-label','카톡 문의하기');const label=link.querySelector('span');if(label)label.textContent='카톡 문의하기';else if(!link.querySelector('svg'))link.textContent='카톡 문의하기';});});
+
+/* 페이지 이동 및 스크롤 바로가기 */
+document.addEventListener('DOMContentLoaded',()=>{
+ if(document.querySelector('.page-scroll-controls'))return;
+ const nav=document.createElement('nav');nav.className='page-scroll-controls';nav.setAttribute('aria-label','페이지 빠른 이동');
+ nav.innerHTML='<button type="button" data-page-edge="top" aria-label="맨 위로" title="맨 위로">↑</button><button type="button" data-page-edge="bottom" aria-label="맨 아래로" title="맨 아래로">↓</button>';
+ nav.addEventListener('click',event=>{const button=event.target.closest('button[data-page-edge]');if(!button)return;const behavior=window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth';window.scrollTo({top:button.dataset.pageEdge==='top'?0:document.documentElement.scrollHeight,behavior});});
+ document.body.append(nav);
+ const style=document.createElement('style');style.textContent='html{scrollbar-gutter:stable}html::-webkit-scrollbar{width:14px}html::-webkit-scrollbar-thumb{background:#9aa4b2;border:3px solid #f4f6f8;border-radius:10px}html::-webkit-scrollbar-track{background:#f4f6f8}.page-scroll-controls{position:fixed;right:24px;bottom:112px;z-index:900;display:grid;gap:6px}.page-scroll-controls button{width:42px;height:42px;border:1px solid #d4dce5;border-radius:50%;background:#fff;color:#24364a;font:700 24px/1 sans-serif;cursor:pointer;box-shadow:0 2px 10px #142a4426}.page-scroll-controls button:hover{background:#edf3f9}.page-scroll-controls button:focus-visible{outline:3px solid #2365e8;outline-offset:3px}@media(max-width:760px){.page-scroll-controls{right:12px;bottom:144px}.page-scroll-controls button{width:38px;height:38px}}';document.head.append(style);
+});
