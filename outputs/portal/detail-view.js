@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded',()=>{
  .desktop-detail-kakao{display:none}
  @media(max-width:760px){.desktop-detail-contact{display:contents}}
  @media(min-width:761px){
-  .desktop-detail-contact{display:grid;justify-items:center;gap:6px;flex:none}
-  .desktop-detail-kakao{display:inline-flex;align-items:center;justify-content:center;padding:6px 10px;border-radius:8px;background:#fee500;color:#392216;font-size:13px;font-weight:800;white-space:nowrap;text-decoration:none}
-  .detail-kakao-floating{display:none}
+  .desktop-detail-contact{display:contents}
+  .desktop-detail-kakao{display:none}
+  .detail-kakao-floating{display:grid;right:24px;bottom:28px}
  }
  `;
  document.head.append(style);
