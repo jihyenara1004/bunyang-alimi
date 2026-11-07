@@ -126,5 +126,30 @@ document.addEventListener('DOMContentLoaded',()=>{
  nav.innerHTML='<button type="button" data-page-edge="top" aria-label="맨 위로" title="맨 위로">↑</button><button type="button" data-page-edge="bottom" aria-label="맨 아래로" title="맨 아래로">↓</button>';
  nav.addEventListener('click',event=>{const button=event.target.closest('button[data-page-edge]');if(!button)return;const behavior=window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth';window.scrollTo({top:button.dataset.pageEdge==='top'?0:document.documentElement.scrollHeight,behavior});});
  document.body.append(nav);
- const style=document.createElement('style');style.textContent='html{scrollbar-gutter:stable}html::-webkit-scrollbar{width:14px}html::-webkit-scrollbar-thumb{background:#9aa4b2;border:3px solid #f4f6f8;border-radius:10px}html::-webkit-scrollbar-track{background:#f4f6f8}.page-scroll-controls{position:fixed;right:24px;bottom:112px;z-index:900;display:grid;gap:6px}.page-scroll-controls button{width:42px;height:42px;border:1px solid #d4dce5;border-radius:50%;background:#fff;color:#24364a;font:700 24px/1 sans-serif;cursor:pointer;box-shadow:0 2px 10px #142a4426}.page-scroll-controls button:hover{background:#edf3f9}.page-scroll-controls button:focus-visible{outline:3px solid #2365e8;outline-offset:3px}@media(max-width:760px){.page-scroll-controls{right:12px;bottom:144px}.page-scroll-controls button{width:38px;height:38px}}';document.head.append(style);
+ const style=document.createElement('style');style.textContent='html{scrollbar-gutter:stable}html::-webkit-scrollbar{width:14px}html::-webkit-scrollbar-thumb{background:#9aa4b2;border:3px solid #f4f6f8;border-radius:10px}html::-webkit-scrollbar-track{background:#f4f6f8}.page-scroll-controls{position:fixed;right:24px;bottom:192px;z-index:900;display:grid;gap:6px}.page-scroll-controls button{width:42px;height:42px;border:1px solid #d4dce5;border-radius:50%;background:#fff;color:#24364a;font:700 24px/1 sans-serif;cursor:pointer;box-shadow:0 2px 10px #142a4426}.page-scroll-controls button:hover{background:#edf3f9}.page-scroll-controls button:focus-visible{outline:3px solid #2365e8;outline-offset:3px}@media(max-width:760px){.page-scroll-controls{right:12px;bottom:220px}.page-scroll-controls button{width:38px;height:38px}}';document.head.append(style);
 });
+
+/* GD메트로 세대안내: 면적 → 세부 타입 2단 선택 */
+(function(){
+ const navigation=plans=>{
+  const groups=new Map();
+  plans.forEach(plan=>{const area=String(plan.label).match(/^\d+/)?.[0];if(!area)return;if(!groups.has(area))groups.set(area,[]);groups.get(area).push(plan);});
+  const areas=[...groups.keys()];
+  return '<div class="gd-plan-grouped"><div class="gd-plan-area-tabs" role="group" aria-label="전용면적 선택">'+areas.map((area,i)=>'<button type="button" data-gd-area="'+area+'" aria-pressed="'+(i===0)+'">'+area+'<span>㎡</span></button>').join('')+'</div>'+areas.map((area,i)=>'<div class="gd-plan-type-tabs" role="group" aria-label="'+area+'㎡ 세부 타입" data-gd-area-panel="'+area+'"'+(i?' hidden':'')+'>'+groups.get(area).map((plan,j)=>'<button type="button" data-gd-plan="'+plan.id+'" aria-pressed="'+(i===0&&j===0)+'">'+area+'㎡ '+String(plan.label).slice(area.length)+'</button>').join('')+'</div>').join('')+'</div>';
+ };
+ const previous=window.renderProperty;
+ window.renderProperty=function(p,opts={}){let html=previous(p,opts);if(p.id!=='gdmetro')return html;return html.replace(/<div class="gd-plan-tabs"[^>]*>[\s\S]*?<\/div>/,navigation(p.plans));};
+ document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('#types-gdmetro .gd-plan-tabs').forEach(tabs=>{const plans=[...tabs.querySelectorAll('[data-gd-plan]')].map(button=>({id:button.dataset.gdPlan,label:button.textContent.trim()}));tabs.outerHTML=navigation(plans);});
+  const style=document.createElement('style');style.textContent='.gd-plan-area-tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));padding:24px;background:#eee;margin-bottom:18px}.gd-plan-area-tabs button{min-width:0;padding:12px 4px 18px;border:0;border-bottom:1px solid #888;background:transparent;color:#666;font-size:20px;line-height:1.4;font-family:inherit;font-weight:400;cursor:pointer}.gd-plan-area-tabs button[aria-pressed=true]{border-bottom:2px solid #222;color:#111;font-weight:700}.gd-plan-area-tabs button span{font-size:.75em}.gd-plan-type-tabs{display:grid;grid-template-columns:repeat(var(--gd-type-count,4),minmax(0,1fr));margin-bottom:28px;border-left:1px solid #ccc}.gd-plan-type-tabs[hidden]{display:none!important}.gd-plan-type-tabs button{min-width:0;padding:13px 5px;border:1px solid #ccc;border-left:0;border-radius:0;background:white;color:#111;font-size:17px;cursor:pointer}.gd-plan-type-tabs button[aria-pressed=true]{background:#820000;border-color:#820000;color:#fff}.gd-plan-grouped button:focus-visible{outline:3px solid #2365e8;outline-offset:-3px}@media(max-width:600px){.gd-plan-area-tabs{padding:12px 8px;gap:0}.gd-plan-area-tabs button{font-size:15px;padding:12px 2px}.gd-plan-type-tabs button{font-size:14px;padding:12px 2px}}.kakao-channel-shortcut span::after{content:"카톡 문의하기"!important}';
+  document.head.append(style);
+  document.querySelectorAll('.gd-plan-type-tabs').forEach(group=>group.style.setProperty('--gd-type-count',group.children.length));
+ });
+ document.addEventListener('click',event=>{
+  const areaButton=event.target.closest('[data-gd-area]');if(!areaButton)return;
+  const box=areaButton.closest('.gd-plans');if(!box)return;
+  box.querySelectorAll('[data-gd-area]').forEach(button=>button.setAttribute('aria-pressed',String(button===areaButton)));
+  box.querySelectorAll('[data-gd-area-panel]').forEach(panel=>{panel.hidden=panel.dataset.gdAreaPanel!==areaButton.dataset.gdArea;panel.style.setProperty('--gd-type-count',panel.children.length);});
+  box.querySelector('[data-gd-area-panel="'+areaButton.dataset.gdArea+'"] [data-gd-plan]')?.click();
+ });
+})();
