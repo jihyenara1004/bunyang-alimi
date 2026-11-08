@@ -16,6 +16,19 @@ const leadSource=id=>id==='gdmetro'&&gdDemandGen?'구글 디맨드젠 광고':'�
 
 const sending=new WeakSet();document.addEventListener('submit',async e=>{const f=e.target;if(!f.matches('.gd-interest-form,#registration'))return;e.preventDefault();e.stopImmediatePropagation();if(sending.has(f)||!f.reportValidity())return;const status=f.querySelector('[role=status]');const set=s=>{if(status)status.textContent=s};const field=n=>f.querySelector('[name="'+n+'"]');let propertyName=field('propertyName')?.value||'';const id=f.dataset.leadProperty||field('property')?.value;const p=(window.PORTAL_PROPERTIES||[]).find(x=>x.id===id);if(p)propertyName=p.name;if(!propertyName){set('현장명을 선택해 주세요.');return}const name=(field('name')?.value||'').trim(),phone=(field('phone')?.value||'').replace(/[^0-9]/g,'');if(!name||name.length>30){set('성함을 입력해 주세요.');return}if(!/^0[0-9]{8,10}$/.test(phone)){set('연락처를 확인해 주세요. 예: 010-0000-0000');field('phone')?.focus();return}if(!field('consent')?.checked){set('개인정보 수집·이용에 동의해 주세요.');return}const button=f.querySelector('button[type=submit]');sending.add(f);button.disabled=true;button.textContent='전송 중…';set('접수 요청을 전송하고 있습니다.');try{const response=await fetch(endpoint,{method:'POST',body:new URLSearchParams({propertyName,name,phone,submittedAt:new Date().toLocaleString('ko-KR',{timeZone:'Asia/Seoul'}),source:leadSource(id)}),signal:AbortSignal.timeout(20000),credentials:'omit',referrerPolicy:'no-referrer'});if(!response.ok)throw Error('http');if(id==='gdmetro'&&typeof window.gtag==='function'){try{window.gtag('event','conversion',{send_to:'AW-11126873407/p82-CNym67MdEL-62rkp'});}catch(trackingError){/* 접수 성공은 측정 오류와 무관하게 유지 */}}set(awaitingApproval?'접수 요청이 전송되었습니다. 현재 온라인 접수는 시험 운영 중입니다.':'접수 요청이 전송되었습니다. 확인 후 연락드리겠습니다. 급한 문의는 1688-5650으로 연락 주세요.');f.reset();if(field('propertyName'))field('propertyName').value=propertyName;}catch{set('전송 결과를 확인하지 못했습니다. 반복 등록하기 전에 1688-5650으로 문의해 주세요.');}finally{sending.delete(f);button.disabled=false;button.textContent='관심고객등록';}},true);
 
+// 개별 현장의 문의 버튼은 해당 페이지의 관심고객 접수로 연결한다.
+document.addEventListener('click',e=>{
+ const button=e.target.closest('[data-register]');
+ if(!button||!document.body.classList.contains('standalone-property'))return;
+ const form=document.querySelector('.gd-interest-form[data-lead-property]');
+ const section=form?.closest('[id]');
+ if(!section)return;
+ e.preventDefault();
+ e.stopImmediatePropagation();
+ if(typeof window.gdScrollToSection==='function')window.gdScrollToSection(section);
+ else section.scrollIntoView({behavior:'smooth',block:'start'});
+},true);
+
 const viewport=window.visualViewport;
 if(viewport&&matchMedia('(max-width: 760px), (pointer: coarse)').matches){
  const root=document.documentElement;
