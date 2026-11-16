@@ -1,0 +1,20 @@
+footer.site-property-footer{display:block;padding:32px 20px;color:#43566a;text-align:left}
+.site-property-footer .site-property-notice,.site-property-footer .site-property-meta{max-width:980px;margin:0 auto}
+.site-property-footer .site-property-notice{padding:0}
+.site-property-notice>strong{display:block;color:#20344a;font-size:18px}
+.site-property-notice dl{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px 24px;margin:14px 0}
+.site-property-notice dl>div{min-width:0}
+.site-property-notice dt{font-size:13px;color:#52667a}
+.site-property-notice dd{margin:2px 0 0;color:#20344a;font-weight:600}
+.site-property-footer p{margin:10px 0 0;line-height:1.6}
+.site-property-meta{padding-top:14px;border-top:1px solid #dce2e8}
+.site-property-notice+.site-property-meta{margin-top:16px}
+.site-property-meta>div{display:flex;flex-wrap:wrap;gap:6px 20px}
+.site-property-footer a{color:#20344a;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:600px){.site-property-notice dl{grid-template-columns:1fr 1fr}.site-property-notice dl>div:first-child{grid-column:1/-1}}.gd-standalone footer.gd-reference-footer{background:#fff;border-top:1px solid #e4e8ed;padding-block:20px}
+.gd-footer-layout{max-width:1120px;margin:auto;display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:start;gap:16px 24px}
+.gd-reference-footer .gd-footer-brand{font-size:20px;font-weight:800;white-space:nowrap;color:#751c38;text-decoration:none}
+.gd-reference-footer .site-property-notice{margin:0}
+.gd-reference-footer .gd-footer-side{display:grid;justify-items:start;gap:5px}
+.gd-reference-footer .gd-footer-top{display:grid;place-items:center;width:44px;height:44px;border:1px solid #dce2e8;text-decoration:none;font-size:20px}
+@media(max-width:850px){.gd-footer-layout{grid-template-columns:minmax(0,1fr) auto;gap:10px 12px}.gd-footer-brand{grid-column:1}.gd-footer-top{grid-column:2;grid-row:1}.gd-reference-footer .site-property-notice,.gd-reference-footer .gd-footer-side{grid-column:1/-1}.gd-reference-footer .gd-footer-side{display:flex;flex-wrap:wrap;gap:4px 12px}}

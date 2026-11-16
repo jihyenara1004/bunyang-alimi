@@ -165,7 +165,6 @@ window.PORTAL_PROPERTIES=[
     "supplyImage": "assets/gd-supply-price.jpg",
     "promotion": "청약 시작",
     "promotionLabel": "청약 시작",
-    "pinned": 3,
     "keywords": [
       "지디메트로",
       "지디메트로타워",
@@ -284,7 +283,7 @@ window.PORTAL_PROPERTIES=[
         "height": 594
       }
     ],
-    "pinned": 1,
+    "pinned": 3,
     "keywords": [
       "별내자이",
       "별내자이 더스타",
@@ -302,6 +301,7 @@ window.PORTAL_PROPERTIES=[
     "checked": "2026.10.28",
     "status": "현장 안내",
     "id": "insignia",
+    "pinned": 1,
     "name": "사평대로12",
     "buildingLabel": "인시그니아 반포",
     "buildingName": "인시그니아반포",
@@ -912,6 +912,7 @@ window.PORTAL_PROPERTIES=[
     "checked": "2026.10.28",
     "status": "현장 안내",
     "id": "ph1603",
+    "pinned": 2,
     "name": "서초 PH1603",
     "region": "서울",
     "area": "서울 · 서초구 서초동",
@@ -1311,7 +1312,7 @@ window.PORTAL_PROPERTIES=[
     "sort": 6,
     "promotion": "특별혜택",
     "promotionLabel": "특별혜택",
-    "pinned": 2,
+    "pinned": 4,
     "keywords": [
       "디케이밸리뷰",
       "DK밸리뷰",
@@ -3571,7 +3572,6 @@ window.PORTAL_PROPERTIES=[
       "types": null,
       "typesHead": null
     },
-    "pinned": 4,
     "keywords": [
       "송파더그리드",
       "힐스테이트 송파 더 그리드",

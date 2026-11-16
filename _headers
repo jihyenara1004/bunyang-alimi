@@ -1,0 +1,12 @@
+/
+  Cache-Control: public, max-age=300, must-revalidate
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+/*/
+  Cache-Control: public, max-age=300, must-revalidate
+/outputs/portal/*.js
+  Cache-Control: public, max-age=3600
+/outputs/portal/*.css
+  Cache-Control: public, max-age=3600
+/outputs/portal/assets/*
+  Cache-Control: public, max-age=604800
