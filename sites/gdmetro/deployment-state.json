@@ -1,0 +1,9 @@
+{
+  "bucket": "gdmetro-site-801178768218",
+  "oac": "E1XJJGEGEVWHI9",
+  "distribution": "E3M5DDZ45DY2F9",
+  "distributionArn": "arn:aws:cloudfront::801178768218:distribution/E3M5DDZ45DY2F9",
+  "cloudfrontDomain": "ddciy3bhc1wbt.cloudfront.net",
+  "certificateStatus": "ISSUED",
+  "customDomain": "gdmetro.bunyang-alimi.com"
+}

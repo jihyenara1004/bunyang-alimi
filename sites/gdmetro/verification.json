@@ -1,0 +1,257 @@
+{
+  "checkedAt": "2026-11-22T14:25:57.681Z",
+  "files": [
+    {
+      "file": "index.html",
+      "url": "https://gdmetro.bunyang-alimi.com/",
+      "status": 200,
+      "sha256": "4c90d5aef05b2efed49ff9cc24705d0164b9a3ec1e861fd9b8623359bd95c180",
+      "matches": true
+    },
+    {
+      "file": "favicon.svg",
+      "url": "https://gdmetro.bunyang-alimi.com/favicon.svg",
+      "status": 200,
+      "sha256": "c138a21f8a021e659c4199b1180ceef5a3900749d30f5dfd8a664ff470871202",
+      "matches": true
+    },
+    {
+      "file": "robots.txt",
+      "url": "https://gdmetro.bunyang-alimi.com/robots.txt",
+      "status": 200,
+      "sha256": "b68eb0ecee3fa172f105f7e744a8c74e9991e702cf54b80be46b5401fd2f8edf",
+      "matches": true
+    },
+    {
+      "file": "sitemap.xml",
+      "url": "https://gdmetro.bunyang-alimi.com/sitemap.xml",
+      "status": 200,
+      "sha256": "ea878b37a2da92fd7fc7f43408fbf7541f1dfbdb381cb304079a9099660695c6",
+      "matches": true
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/style.css?v=20261112-scrollbar",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/portal-v2.css",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/portal-v3.css",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/portal-v4.css",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/property-detail.css?v=20261112-noclick",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/kakao-channel.css?v=95afbec",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/mobile-cta.css?v=20261103-m1",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/property-footer.css?v=20261110-gdwhite",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/gd-interest-controls.css?v=20261112-sway",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/gd-interest-dialog.js?v=gdinline",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-hero-wordmark-20261110.webp",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-metro-logo-20261110.svg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-byc-projects.png",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-byc-projects.webp",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-community.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-community-plan.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-cg-day.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-cg-subway.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-cg-park.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-cg-wide.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-site-plan.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-loc-subway.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-loc-gvalley.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-loc-life.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-loc-plan.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-regional-map.png",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-regional-map.webp",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-24a.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-plan-p26.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-24b.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-24c.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-24d.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-28a.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-plan-p32.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-28b.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-28c.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-plan-p29.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-28d.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-28e.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-28f.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-29a.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-29b.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-45a.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-plan-p35.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-45b.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-46a.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-46b.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-53a.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-plan-p38.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-53b.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-53c.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-type-53d.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-supply-price.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/detail-view.js?v=20261114-webp",
+      "status": 200
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/lead-form.js?v=20261110-footer",
+      "status": 200
+    }
+  ],
+  "originalGdUnchanged": true,
+  "leadSubmission": "Not submitted: no test personal data sent"
+}

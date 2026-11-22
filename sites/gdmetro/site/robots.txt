@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gdmetro.bunyang-alimi.com/sitemap.xml
