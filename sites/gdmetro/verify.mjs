@@ -5,7 +5,7 @@ const files=[];
 for(const file of manifest.files){
  const r=await fetch(file.url,{cache:'no-store'});
  const data=Buffer.from(await r.arrayBuffer());
- const item={url:file.url,status:r.status,sha256:sha256(data),matches:sha256(data)===file.sha256,sameSource:data.toString().includes(`name="gd-source-sha256" content="${manifest.sourceSha256}"`)};
+ const item={url:file.url,kind:file.kind,status:r.status,sha256:sha256(data),matches:sha256(data)===file.sha256,sameSource:file.kind==='image'||data.toString().includes(`name="gd-source-sha256" content="${manifest.sourceSha256}"`)};
  files.push(item);
  if(!r.ok||!item.matches||!item.sameSource)throw Error(JSON.stringify(item));
 }

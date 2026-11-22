@@ -1,25 +1,52 @@
 {
-  "checkedAt": "2026-11-22T15:33:26.579Z",
-  "sourceSha256": "af7046080e199a43d4d8686462f4daa62eded819eac520ab2f473704b178a358",
+  "checkedAt": "2026-11-22T16:24:55.020Z",
+  "sourceSha256": "b1075babe203af07ea39c3f470cd38edc9c0707bc1b486ae60657c5a42482eb8",
   "files": [
     {
-      "url": "https://bunyang-alimi.com/gdmetro/",
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-intro-day-20261123.png",
+      "kind": "image",
       "status": 200,
-      "sha256": "0475ad0326aa045b6ca1f1acf731455bfe8d1b81fc20b9f90274c4235b8307bc",
+      "sha256": "4f3fe523e4dd6da2ea59844a2c095ae283d0e013afdbf80ccd03ffd7d17e85d1",
+      "matches": true,
+      "sameSource": true
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-intro-night-20261123.jpg",
+      "kind": "image",
+      "status": 200,
+      "sha256": "84f42ffcac13c32fceee56fbf3ff5cf99c73ec73310fb06d1dd3a9a36a53371d",
+      "matches": true,
+      "sameSource": true
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-intro-wide-20261123.jpg",
+      "kind": "image",
+      "status": 200,
+      "sha256": "2645d4bcaadf3e55035486a0f14049405396b135c61fb472a06a0410fa11d394",
+      "matches": true,
+      "sameSource": true
+    },
+    {
+      "url": "https://bunyang-alimi.com/gdmetro/",
+      "kind": "html",
+      "status": 200,
+      "sha256": "8c2c051e23a24af86571986c827243f84517b0f488600d5eee64b9293048cd71",
       "matches": true,
       "sameSource": true
     },
     {
       "url": "https://bunyang-alimi.com/outputs/portal/properties/gdmetro.html",
+      "kind": "html",
       "status": 200,
-      "sha256": "0475ad0326aa045b6ca1f1acf731455bfe8d1b81fc20b9f90274c4235b8307bc",
+      "sha256": "8c2c051e23a24af86571986c827243f84517b0f488600d5eee64b9293048cd71",
       "matches": true,
       "sameSource": true
     },
     {
       "url": "https://gdmetro.bunyang-alimi.com/",
+      "kind": "html",
       "status": 200,
-      "sha256": "962e81a5d1de15acb6b5bc0e3d00627e5135473f7da4941f679e5f457d7464d4",
+      "sha256": "e25dffe520f0a79e7951740ef2e516b091eff7d8994486f15c6cb04ef7d1e438",
       "matches": true,
       "sameSource": true
     }
@@ -66,19 +93,15 @@
       "status": 200
     },
     {
-      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-hero-wordmark-20261110.webp",
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-intro-day-20261123.png",
       "status": 200
     },
     {
-      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-metro-logo-20261110.svg",
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-intro-night-20261123.jpg",
       "status": 200
     },
     {
-      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-byc-projects.png",
-      "status": 200
-    },
-    {
-      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-byc-projects.webp",
+      "url": "https://bunyang-alimi.com/outputs/portal/assets/gd-intro-wide-20261123.jpg",
       "status": 200
     },
     {

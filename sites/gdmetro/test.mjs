@@ -3,6 +3,14 @@ import fs from 'node:fs/promises';
 import {renderPages,sha256} from './build.mjs';
 const source=await fs.readFile(new URL('./source.html',import.meta.url),'utf8');
 const original=renderPages(source);
+for(const html of [original.main,original.dedicated]){
+ assert(!/BYC|비와이씨|gd-byc/i.test(html),'Removed constructor content must not return');
+ assert(html.includes('tel:16885650'),'Consultation number preserved');
+ const intro=html.match(/<section class="gd-intro-sequence"[\s\S]*?<\/section>/)?.[0];
+ assert(intro,'Introduction section missing');
+ const photos=[...intro.matchAll(/<img src="([^"]+)"/g)].map(m=>m[1].split('/').pop());
+ assert.deepEqual(photos,['gd-intro-day-20261123.png','gd-intro-night-20261123.jpg','gd-intro-wide-20261123.jpg'],'Approved photo order');
+}
 const probe='동기화 확인용 문구';
 assert(source.includes('</main>'));
 const edited=renderPages(source.replace('</main>',`<p>${probe}</p></main>`));

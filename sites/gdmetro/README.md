@@ -6,7 +6,7 @@
 - 전용 홈페이지: https://gdmetro.bunyang-alimi.com/
 - 기존 내부 상세 URL: https://bunyang-alimi.com/outputs/portal/properties/gdmetro.html
 
-원본을 저장하는 것만으로 운영 서버가 바뀌지는 않는다. 아래의 **한 번의 배포 명령**이 같은 원본으로 세 HTML을 만들고, 두 사이트에 함께 업로드한다. 별도 페이지를 다시 편집할 필요가 없다. 분양알리미 메인과 다른 현장은 배포 대상에서 제외되어 있다.
+원본을 저장하는 것만으로 운영 서버가 바뀌지는 않는다. 아래의 **한 번의 배포 명령**이 같은 원본으로 세 HTML을 만들고, 두 사이트에 함께 업로드한다. 새 GD 소개 사진 3장은 메인 버킷에 한 번만 저장하고 전용 사이트에서도 공유한다. 별도 페이지를 다시 편집할 필요가 없다. 분양알리미 메인과 다른 현장은 배포 대상에서 제외되어 있다.
 
 2026-11-23 실제 운영 배포와 공개 URL 검증 완료. 결과는 `../../docs/deployments/2026-11-23-gd-shared-source.md`와 이 폴더의 JSON 기록을 참고한다. 두 사이트의 캐시 갱신 완료 전에는 잠시 이전 화면이 남을 수 있으므로 두 주소 검증까지 끝난 뒤 완료로 판단한다.
 
@@ -19,7 +19,7 @@
 ```sh
 # 쓰기 없이 대상·원본·운영 해시 검사
 python3 sites/gdmetro/deploy.py
-# 테스트 + 두 사이트 생성 + GD HTML 3개만 일괄 배포
+# 테스트 + 두 사이트 생성 + GD HTML 3개와 지정된 GD 사진 3개만 일괄 배포
 python3 sites/gdmetro/deploy.py --apply
 # 배포 출력의 CloudFront 캐시 갱신 완료 후 공개 URL 검사
 node sites/gdmetro/verify.mjs
@@ -41,7 +41,7 @@ node sites/gdmetro/verify.mjs
 
 ## 다른 현장 보호 및 복구
 
-배포 코드는 지정된 두 버킷의 GD HTML 세 객체만 허용한다. 운영 파일이 마지막 배포 기록과 달라지면 중단하므로 최신 작업을 덮어쓰지 않는다. 업로드 전 원본/메타데이터는 `.deploy-backups/`에 보관하며 업로드 실패 시 시도한 객체를 되돌린다. 캐시 갱신 오류는 재실행해 이어갈 수 있다. 배포 전후 나머지 S3 객체의 ETag·크기·수정시각도 비교한다. 전체 사이트 `sync --delete`나 공용 CloudFront 설정 변경은 하지 않는다.
+배포 코드는 지정된 두 버킷의 GD HTML 세 객체와 이번에 추가한 GD 소개 사진 세 객체만 허용한다. 운영 파일이 마지막 배포 기록과 달라지면 중단하므로 최신 작업을 덮어쓰지 않는다. 업로드 전 원본/메타데이터는 `.deploy-backups/`에 보관하며 업로드 실패 시 시도한 객체를 되돌린다. 캐시 갱신 오류는 재실행해 이어갈 수 있다. 배포 전후 나머지 S3 객체의 ETag·크기·수정시각도 비교한다. 전체 사이트 `sync --delete`나 공용 CloudFront 설정 변경은 하지 않는다.
 
 ## 광고 그룹에 관한 사용자 결정
 
@@ -58,3 +58,12 @@ node sites/gdmetro/verify.mjs
 - https://aws.amazon.com/certificate-manager/pricing/
 - https://docs.aws.amazon.com/acm/latest/userguide/domain-ownership-validation.html
 - https://aws.amazon.com/cloudfront/pricing/pay-as-you-go/
+
+## 2026-11-23 메인 사진 및 BYC 제거
+
+- 첫 화면 순서: 주간 전경(분양문의 1688-5650) → 야간 조감도 → 광역 전경. 사진은 세로로 이어서 표시한다.
+- 원본 첫 사진의 다른 업체 로고·업체명·전화번호는 image_gen으로 제거하고 1688-5650을 넣었다. 나머지 두 사진은 원본 그대로다.
+- 사업개요의 시공 항목, BYC 시공실적 이미지/설명, 프리미엄의 BYC 부지 문구, 하단 시공사, 검색 키워드의 BYC를 제거했다.
+- 편집 원본은 계속 source.html 하나다. 사진 파일은 outputs/portal/assets/gd-intro-*-20261123.* 세 개이며 build.mjs/deploy.py의 명시적 허용 목록에 포함된다. 사진 변경 시 세 파일과 매니페스트를 함께 관리한다.
+- 첫 사진 편집 요청: 건물·전체 구도를 유지하고 왼쪽 아래 태복플래닝 로고/업체명/1666-1691을 제거, 분양문의 1688-5650으로 교체하고 작은 BYC 간판 제거. 기본 내장 image_gen 도구 사용.
+- 기존 자산 파일은 다른 페이지의 참조와 복구를 위해 삭제하지 않는다. GD HTML에서는 BYC 소개 이미지를 참조하지 않는다.

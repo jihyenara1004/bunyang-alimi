@@ -46,7 +46,13 @@ export async function build(){
   {path:'sites/gdmetro/site/index.html',bucket:'gdmetro-site-801178768218',key:'index.html',url:origin+'/',body:pages.dedicated}
  ];
  for(const target of targets){await fs.mkdir(path.dirname(path.join(repo,target.path)),{recursive:true});await fs.writeFile(path.join(repo,target.path),target.body);}
- const manifest={source:'sites/gdmetro/source.html',sourceSha256:pages.sourceSha256,files:targets.map(({body,...t})=>({...t,sha256:sha256(body),bytes:Buffer.byteLength(body)}))};
+ const assets=[];
+ for(const name of ['gd-intro-day-20261123.png','gd-intro-night-20261123.jpg','gd-intro-wide-20261123.jpg']){
+  const assetPath='outputs/portal/assets/'+name;
+  const data=await fs.readFile(path.join(repo,assetPath));
+  assets.push({path:assetPath,bucket:'bunyang-alimi-site-801178768218',key:assetPath,url:'https://bunyang-alimi.com/'+assetPath,kind:'image',contentType:name.endsWith('.png')?'image/png':'image/jpeg',sha256:sha256(data),bytes:data.length});
+ }
+ const manifest={source:'sites/gdmetro/source.html',sourceSha256:pages.sourceSha256,files:[...assets,...targets.map(({body,...t})=>({...t,kind:'html',contentType:'text/html; charset=utf-8',sha256:sha256(body),bytes:Buffer.byteLength(body)}))]};
  await fs.writeFile(path.join(root,'build-report.json'),JSON.stringify(manifest,null,2)+'\n');
  return manifest;
 }
