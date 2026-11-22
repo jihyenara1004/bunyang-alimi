@@ -1,25 +1,18 @@
 import fs from 'node:fs/promises';
-import crypto from 'node:crypto';
-import {fileURLToPath} from 'node:url';
-const base=fileURLToPath(new URL('.',import.meta.url));
-const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
-const results=[];
-for(const name of ['index.html','favicon.svg','robots.txt','sitemap.xml']){
- const url='https://gdmetro.bunyang-alimi.com/'+(name==='index.html'?'':name);
- const response=await fetch(url);
- const data=Buffer.from(await response.arrayBuffer());
- const local=await fs.readFile(`${base}/site/${name}`);
- const item={file:name,url,status:response.status,sha256:hash(data),matches:hash(data)===hash(local)};
- results.push(item);
- if(!response.ok||!item.matches)throw Error(JSON.stringify(item));
+import {sha256,build} from './build.mjs';
+const manifest=await build();
+const files=[];
+for(const file of manifest.files){
+ const r=await fetch(file.url,{cache:'no-store'});
+ const data=Buffer.from(await r.arrayBuffer());
+ const item={url:file.url,status:r.status,sha256:sha256(data),matches:sha256(data)===file.sha256,sameSource:data.toString().includes(`name="gd-source-sha256" content="${manifest.sourceSha256}"`)};
+ files.push(item);
+ if(!r.ok||!item.matches||!item.sameSource)throw Error(JSON.stringify(item));
 }
-const html=await fs.readFile(`${base}/site/index.html`,'utf8');
-const assetUrls=[...new Set([...html.matchAll(/(?:src|href)="(https:\/\/bunyang-alimi.com\/outputs\/[^"#]+)"/g)].map(m=>m[1]))];
-const assets=await Promise.all(assetUrls.map(async url=>{const r=await fetch(url,{method:'HEAD'});return {url,status:r.status};}));
-if(assets.some(r=>r.status!==200))throw Error('Asset unavailable');
-const original=await fetch('https://bunyang-alimi.com/gdmetro/');
-const unchanged=hash(Buffer.from(await original.arrayBuffer()))===(JSON.parse(await fs.readFile(`${base}/build-report.json`,'utf8'))).sourceSha256;
-if(!unchanged)throw Error('Original GD page differs; investigate');
-const report={checkedAt:new Date().toISOString(),files:results,assets,originalGdUnchanged:unchanged,leadSubmission:'Not submitted: no test personal data sent'};
-await fs.writeFile(`${base}/verification.json`,JSON.stringify(report,null,2));
-console.log(JSON.stringify({files:results.length,assets:assets.length,allPassed:true,originalGdUnchanged:unchanged}));
+const source=await fs.readFile(new URL('./site/index.html',import.meta.url),'utf8');
+const urls=[...new Set([...source.matchAll(/(?:src|href)="(https:\/\/bunyang-alimi.com\/outputs\/[^"#]+)"/g)].map(m=>m[1]))];
+const assets=await Promise.all(urls.map(async url=>({url,status:(await fetch(url,{method:'HEAD'})).status})));
+if(assets.some(x=>x.status!==200))throw Error('Shared asset unavailable');
+const report={checkedAt:new Date().toISOString(),sourceSha256:manifest.sourceSha256,files,assets,leadSubmission:'Not submitted'};
+await fs.writeFile(new URL('./verification.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({allPassed:true,urls:files.length,assets:assets.length,sourceSha256:manifest.sourceSha256}));

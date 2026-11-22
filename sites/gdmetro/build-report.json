@@ -1,9 +1,30 @@
 {
-  "domain": "gdmetro.bunyang-alimi.com",
-  "sourceUrl": "https://bunyang-alimi.com/gdmetro/",
+  "source": "sites/gdmetro/source.html",
   "sourceSha256": "af7046080e199a43d4d8686462f4daa62eded819eac520ab2f473704b178a358",
-  "indexSha256": "4c90d5aef05b2efed49ff9cc24705d0164b9a3ec1e861fd9b8623359bd95c180",
-  "formsUnchanged": true,
-  "automaticPopups": 0,
-  "inlineScriptsValid": true
+  "files": [
+    {
+      "path": "gdmetro/index.html",
+      "bucket": "bunyang-alimi-site-801178768218",
+      "key": "gdmetro/index.html",
+      "url": "https://bunyang-alimi.com/gdmetro/",
+      "sha256": "0475ad0326aa045b6ca1f1acf731455bfe8d1b81fc20b9f90274c4235b8307bc",
+      "bytes": 40779
+    },
+    {
+      "path": "outputs/portal/properties/gdmetro.html",
+      "bucket": "bunyang-alimi-site-801178768218",
+      "key": "outputs/portal/properties/gdmetro.html",
+      "url": "https://bunyang-alimi.com/outputs/portal/properties/gdmetro.html",
+      "sha256": "0475ad0326aa045b6ca1f1acf731455bfe8d1b81fc20b9f90274c4235b8307bc",
+      "bytes": 40779
+    },
+    {
+      "path": "sites/gdmetro/site/index.html",
+      "bucket": "gdmetro-site-801178768218",
+      "key": "index.html",
+      "url": "https://gdmetro.bunyang-alimi.com/",
+      "sha256": "962e81a5d1de15acb6b5bc0e3d00627e5135473f7da4941f679e5f457d7464d4",
+      "bytes": 43527
+    }
+  ]
 }

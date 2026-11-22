@@ -1,0 +1,36 @@
+{
+  "release": "20261122T153224Z-0da2ccce",
+  "sourceSha256": "af7046080e199a43d4d8686462f4daa62eded819eac520ab2f473704b178a358",
+  "changed": [
+    "bunyang-alimi-site-801178768218/gdmetro/index.html",
+    "bunyang-alimi-site-801178768218/outputs/portal/properties/gdmetro.html",
+    "gdmetro-site-801178768218/index.html"
+  ],
+  "invalidations": [
+    {
+      "distribution": "E32LEWGSB3SNIZ",
+      "id": "I7GV7UOURARDIICDFK8YRDZ4WS",
+      "paths": [
+        "/gdmetro",
+        "/gdmetro/*",
+        "/outputs/portal/properties/gdmetro.html*"
+      ],
+      "status": "Completed"
+    },
+    {
+      "distribution": "E3M5DDZ45DY2F9",
+      "id": "I45IYFVX19ZNIPW2Y133QLBO8H",
+      "paths": [
+        "/",
+        "/index.html*"
+      ],
+      "status": "Completed"
+    }
+  ],
+  "status": "cache-refresh-complete",
+  "unrelatedObjectsUnchanged": true,
+  "unrelatedObjectCount": {
+    "bunyang-alimi-site-801178768218": 878,
+    "gdmetro-site-801178768218": 3
+  }
+}

@@ -1,33 +1,27 @@
 {
-  "checkedAt": "2026-11-22T14:25:57.681Z",
+  "checkedAt": "2026-11-22T15:33:26.579Z",
+  "sourceSha256": "af7046080e199a43d4d8686462f4daa62eded819eac520ab2f473704b178a358",
   "files": [
     {
-      "file": "index.html",
+      "url": "https://bunyang-alimi.com/gdmetro/",
+      "status": 200,
+      "sha256": "0475ad0326aa045b6ca1f1acf731455bfe8d1b81fc20b9f90274c4235b8307bc",
+      "matches": true,
+      "sameSource": true
+    },
+    {
+      "url": "https://bunyang-alimi.com/outputs/portal/properties/gdmetro.html",
+      "status": 200,
+      "sha256": "0475ad0326aa045b6ca1f1acf731455bfe8d1b81fc20b9f90274c4235b8307bc",
+      "matches": true,
+      "sameSource": true
+    },
+    {
       "url": "https://gdmetro.bunyang-alimi.com/",
       "status": 200,
-      "sha256": "4c90d5aef05b2efed49ff9cc24705d0164b9a3ec1e861fd9b8623359bd95c180",
-      "matches": true
-    },
-    {
-      "file": "favicon.svg",
-      "url": "https://gdmetro.bunyang-alimi.com/favicon.svg",
-      "status": 200,
-      "sha256": "c138a21f8a021e659c4199b1180ceef5a3900749d30f5dfd8a664ff470871202",
-      "matches": true
-    },
-    {
-      "file": "robots.txt",
-      "url": "https://gdmetro.bunyang-alimi.com/robots.txt",
-      "status": 200,
-      "sha256": "b68eb0ecee3fa172f105f7e744a8c74e9991e702cf54b80be46b5401fd2f8edf",
-      "matches": true
-    },
-    {
-      "file": "sitemap.xml",
-      "url": "https://gdmetro.bunyang-alimi.com/sitemap.xml",
-      "status": 200,
-      "sha256": "ea878b37a2da92fd7fc7f43408fbf7541f1dfbdb381cb304079a9099660695c6",
-      "matches": true
+      "sha256": "962e81a5d1de15acb6b5bc0e3d00627e5135473f7da4941f679e5f457d7464d4",
+      "matches": true,
+      "sameSource": true
     }
   ],
   "assets": [
@@ -252,6 +246,5 @@
       "status": 200
     }
   ],
-  "originalGdUnchanged": true,
-  "leadSubmission": "Not submitted: no test personal data sent"
+  "leadSubmission": "Not submitted"
 }

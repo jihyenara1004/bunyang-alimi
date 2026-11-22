@@ -1,0 +1,50 @@
+[
+  {
+    "failedImages": 0,
+    "formFields": [
+      {
+        "name": "propertyName",
+        "required": false
+      },
+      {
+        "name": "name",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "required": true
+      },
+      {
+        "name": "consent",
+        "required": true
+      }
+    ],
+    "siteName": "분양알리미",
+    "source": "af7046080e199a43d4d8686462f4daa62eded819eac520ab2f473704b178a358",
+    "url": "https://bunyang-alimi.com/gdmetro/"
+  },
+  {
+    "failedImages": 0,
+    "formFields": [
+      {
+        "name": "propertyName",
+        "required": false
+      },
+      {
+        "name": "name",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "required": true
+      },
+      {
+        "name": "consent",
+        "required": true
+      }
+    ],
+    "siteName": "GD메트로타워",
+    "source": "af7046080e199a43d4d8686462f4daa62eded819eac520ab2f473704b178a358",
+    "url": "https://gdmetro.bunyang-alimi.com/"
+  }
+]
