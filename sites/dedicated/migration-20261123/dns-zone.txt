@@ -1,0 +1,10 @@
+brighton.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+luca831.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+byeolnae.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+lewest.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+dkvalleyview.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+gochon.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+thegrid.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+insignia.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+ph1603.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.
+vl-lewest.bunyang-alimi.com. 300 IN CNAME d1vx63so4nt7a.cloudfront.net.

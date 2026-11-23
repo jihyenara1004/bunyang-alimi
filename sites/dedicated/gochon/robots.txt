@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gochon.bunyang-alimi.com/sitemap.xml

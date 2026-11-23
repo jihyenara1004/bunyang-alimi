@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://insignia.bunyang-alimi.com/sitemap.xml

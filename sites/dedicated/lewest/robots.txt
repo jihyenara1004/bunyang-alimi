@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lewest.bunyang-alimi.com/sitemap.xml

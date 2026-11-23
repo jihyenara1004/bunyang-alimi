@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://byeolnae.bunyang-alimi.com/sitemap.xml

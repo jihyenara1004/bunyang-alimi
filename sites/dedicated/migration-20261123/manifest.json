@@ -1,0 +1,227 @@
+[
+  {
+    "path": "brighten/index.html",
+    "sha256": "55e80509b8ec4fd482cf152a1a71d512aebb4823fae4f0adc1962cd7842bb1db",
+    "bytes": 26695
+  },
+  {
+    "path": "byeolnae/index.html",
+    "sha256": "5907fd398eac7ee398095c42f031d6b73b1aac279a67699c2a021de571c75e26",
+    "bytes": 19541
+  },
+  {
+    "path": "dk/index.html",
+    "sha256": "2c060260ecd8a37b870b5a83cd67b396fd7084497d828510aebb205319430e86",
+    "bytes": 14039
+  },
+  {
+    "path": "gochon/index.html",
+    "sha256": "54d740c07b7d8a18db91ec5cfc6874169c88efdd7347347ad00456a26363e66b",
+    "bytes": 27508
+  },
+  {
+    "path": "index.html",
+    "sha256": "9f1b033a57896b9a1ee24a2558c02a1c1dae0fea4339c3e1877b7dc567e4488e",
+    "bytes": 22447
+  },
+  {
+    "path": "insignia/index.html",
+    "sha256": "07e70accb24664e154aa4581c6b8e84c019785818f1cfc5f38b21428d21370d4",
+    "bytes": 26145
+  },
+  {
+    "path": "lewest/index.html",
+    "sha256": "a309999d97b02a26badf75e64de071ee991589e47c14faab1e8c7524c5dfddfd",
+    "bytes": 29782
+  },
+  {
+    "path": "luca831/index.html",
+    "sha256": "d3bd484a205cf7e98c02fb9b7c3f0e442846f764b6f630c761894b3252d1aa3d",
+    "bytes": 25016
+  },
+  {
+    "path": "outputs/portal/app.js",
+    "sha256": "0995a95e099a2efeebc04d9068ae6594a98f6c278b12186e501e07bd2d5ff70e",
+    "bytes": 26875
+  },
+  {
+    "path": "outputs/portal/index.html",
+    "sha256": "482aaca028fd05e2e5b5ec883b880a2f70298106558a98e982e4a97cfbca8465",
+    "bytes": 21415
+  },
+  {
+    "path": "ph1603/index.html",
+    "sha256": "2a68595f6c62b5e3cd6d3b4bf1428ea12e47c2e8ebe11ea8c84e4788fd1e462b",
+    "bytes": 33409
+  },
+  {
+    "path": "sites/dedicated/brighten/favicon.svg",
+    "sha256": "284e7a7bef1e498dddaefaa2899f6cd7202a723cee1d4dd737c0064d79a48526",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/brighten/robots.txt",
+    "sha256": "e8e0a64078bfd74179698a3d4dc36cc364051774425e664e5645143f09b04e0e",
+    "bytes": 79
+  },
+  {
+    "path": "sites/dedicated/brighten/sitemap.xml",
+    "sha256": "a6371a5c2952a05af1b9d63773071dd4001e877cd1e391a33b995cbaca937f1d",
+    "bytes": 164
+  },
+  {
+    "path": "sites/dedicated/byeolnae/favicon.svg",
+    "sha256": "340b868d11d89e75e54182ab12daf3805ae16f6c987dbd7d0bc0f6d8573b1642",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/byeolnae/robots.txt",
+    "sha256": "9750faf3f51d25ed135345181fc23ee9313c451a79bd112d8485478b3a7106b7",
+    "bytes": 79
+  },
+  {
+    "path": "sites/dedicated/byeolnae/sitemap.xml",
+    "sha256": "123a3258592dfaed1fe743f653753c94ab357d19cae0593c968c1510720b8ddb",
+    "bytes": 164
+  },
+  {
+    "path": "sites/dedicated/dk/favicon.svg",
+    "sha256": "81b2c3b3231e2c71b08070a1381cf8b668106fae47799e4178f59c1b3d5f5c52",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/dk/robots.txt",
+    "sha256": "50ecf7a5466794157934ea90c9a31799ca656dc84cd4672eb28c03f97f3220bb",
+    "bytes": 83
+  },
+  {
+    "path": "sites/dedicated/dk/sitemap.xml",
+    "sha256": "26dfe35c88d79f8d9596be5903d88b6f186394f8ec5f4471585adaa9a30cfb7e",
+    "bytes": 168
+  },
+  {
+    "path": "sites/dedicated/gochon/favicon.svg",
+    "sha256": "340b868d11d89e75e54182ab12daf3805ae16f6c987dbd7d0bc0f6d8573b1642",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/gochon/robots.txt",
+    "sha256": "7e8deecdfe8e5d46f3d8a5ea37853935821cc3ad79ef2f8c551ce1fb3f1490dd",
+    "bytes": 77
+  },
+  {
+    "path": "sites/dedicated/gochon/sitemap.xml",
+    "sha256": "09de10a9c4dca89a9bd1115e9b926028c1b07e4952e86adccab5f07297b259e3",
+    "bytes": 162
+  },
+  {
+    "path": "sites/dedicated/insignia/favicon.svg",
+    "sha256": "ee49fbaf7614ec29f6b11c4e5317d5b19e826cf905e6d6d63d2fcc0d53080142",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/insignia/robots.txt",
+    "sha256": "7797764ae94eff564e97ee41c6f57ce0ba6f3c33b990ce65a85424b060006f22",
+    "bytes": 79
+  },
+  {
+    "path": "sites/dedicated/insignia/sitemap.xml",
+    "sha256": "ff9f5d561d66a5d91fe9c3e22ce120fc4e8c78c68385bcd5c36607639a46b876",
+    "bytes": 164
+  },
+  {
+    "path": "sites/dedicated/lewest/favicon.svg",
+    "sha256": "82f22ac4fee8a70d4a077f6ac8ab1ebc2553f38bfb94eb309fb59f385e759406",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/lewest/robots.txt",
+    "sha256": "ab450c53a6f4256a3d5ac7eaa2ad03fe8968a704bb1e3c7171b929aa0a09d437",
+    "bytes": 77
+  },
+  {
+    "path": "sites/dedicated/lewest/sitemap.xml",
+    "sha256": "08c01440cbb61c8c3d4852e7f7a8e96493cddfeb5d9a0175306beca88ba1a1f1",
+    "bytes": 162
+  },
+  {
+    "path": "sites/dedicated/luca831/favicon.svg",
+    "sha256": "389ef36962327e49fbc450be47a36cb3d33113a4c0677baeea25196971b0cf42",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/luca831/robots.txt",
+    "sha256": "bf7152bd97b1a91e586baf6403f1226b89b0e9860f8399d77660d9d1b4b9e21a",
+    "bytes": 78
+  },
+  {
+    "path": "sites/dedicated/luca831/sitemap.xml",
+    "sha256": "e2ea1c624857c15210a1dcc94b7d8dac616a5bb37c9d151c4e8b4daa5ffae6ee",
+    "bytes": 163
+  },
+  {
+    "path": "sites/dedicated/ph1603/favicon.svg",
+    "sha256": "2d325353b36ff1f184991121d3cf65d0ed4280d3f9045f4bcd53892dfd09ad11",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/ph1603/robots.txt",
+    "sha256": "a1366c79f79fb3a5677b1a9acb7051d495b781d0470a88d5d2f5ff123d963b6e",
+    "bytes": 77
+  },
+  {
+    "path": "sites/dedicated/ph1603/sitemap.xml",
+    "sha256": "f021d4c7d0e62c9d5313100007d177cdee04212ec434f6416bca78a7fae53817",
+    "bytes": 162
+  },
+  {
+    "path": "sites/dedicated/routing.js",
+    "sha256": "f918a15a1c3f7c0192cac479e808370de4c9ee8c04bb84f2ddea7e9f6b3940e4",
+    "bytes": 2167
+  },
+  {
+    "path": "sites/dedicated/sites.json",
+    "sha256": "59647e7fd2368b2a9fac162bbd3a8b24a7739f792affead84b864f62d58dffb6",
+    "bytes": 1623
+  },
+  {
+    "path": "sites/dedicated/thegrid/favicon.svg",
+    "sha256": "9b76838ab72ea2fa9e7e65373e10dc77b060a0222f8595a74a06a6cfee158e2a",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/thegrid/robots.txt",
+    "sha256": "0e2e7231fa6421a457a04e3e52b38220a2c3d6599295d0c58beb81a74b9f994a",
+    "bytes": 78
+  },
+  {
+    "path": "sites/dedicated/thegrid/sitemap.xml",
+    "sha256": "9c14456c5f2fe84cd03e4ceb229172daec937572dd12042291f34b5843d0d48c",
+    "bytes": 163
+  },
+  {
+    "path": "sites/dedicated/vl-lewest/favicon.svg",
+    "sha256": "f559c579e0de8d4ab88aa6fd67db9df1388d56269d34341d9eef9dec57b18c93",
+    "bytes": 245
+  },
+  {
+    "path": "sites/dedicated/vl-lewest/robots.txt",
+    "sha256": "0a3ba8026f30a1594838556b1655b0f1a760c6df0d0835a0237daf489a3f75dc",
+    "bytes": 80
+  },
+  {
+    "path": "sites/dedicated/vl-lewest/sitemap.xml",
+    "sha256": "bd65c6680b2a24a44db7b7974b42edc82f98e6da0bb93f98fd82240e37030b57",
+    "bytes": 165
+  },
+  {
+    "path": "thegrid/index.html",
+    "sha256": "1cdfce5dd2d46b83ff6fb1dc9025c513a398af551c08aa055fc8f16603650b60",
+    "bytes": 28059
+  },
+  {
+    "path": "vl-lewest/index.html",
+    "sha256": "99893a304e10f1834547ad0a484902140dc6c3068bdf18682bf5b9fff98b9a96",
+    "bytes": 40820
+  }
+]

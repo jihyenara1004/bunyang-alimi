@@ -1,0 +1,72 @@
+[
+  {
+    "id": "brighten",
+    "subdomain": "brighton",
+    "name": "브라이튼 여의도",
+    "icon": "BR",
+    "url": "https://brighton.bunyang-alimi.com/"
+  },
+  {
+    "id": "luca831",
+    "subdomain": "luca831",
+    "name": "루카831",
+    "icon": "LU",
+    "url": "https://luca831.bunyang-alimi.com/"
+  },
+  {
+    "id": "byeolnae",
+    "subdomain": "byeolnae",
+    "name": "별내자이 더 스타",
+    "icon": "XI",
+    "url": "https://byeolnae.bunyang-alimi.com/"
+  },
+  {
+    "id": "lewest",
+    "subdomain": "lewest",
+    "name": "마곡 롯데캐슬 르웨스트",
+    "icon": "LW",
+    "url": "https://lewest.bunyang-alimi.com/"
+  },
+  {
+    "id": "dk",
+    "subdomain": "dkvalleyview",
+    "name": "DK밸리뷰 용산",
+    "icon": "DK",
+    "url": "https://dkvalleyview.bunyang-alimi.com/"
+  },
+  {
+    "id": "gochon",
+    "subdomain": "gochon",
+    "name": "고촌센트럴자이",
+    "icon": "XI",
+    "url": "https://gochon.bunyang-alimi.com/"
+  },
+  {
+    "id": "thegrid",
+    "subdomain": "thegrid",
+    "name": "힐스테이트 송파더그리드",
+    "icon": "HG",
+    "url": "https://thegrid.bunyang-alimi.com/"
+  },
+  {
+    "id": "insignia",
+    "subdomain": "insignia",
+    "name": "인시그니아 반포",
+    "icon": "IN",
+    "url": "https://insignia.bunyang-alimi.com/"
+  },
+  {
+    "id": "ph1603",
+    "subdomain": "ph1603",
+    "name": "서초 PH1603",
+    "icon": "PH",
+    "url": "https://ph1603.bunyang-alimi.com/"
+  },
+  {
+    "id": "vl-lewest",
+    "subdomain": "vl-lewest",
+    "name": "VL 르웨스트",
+    "icon": "VL",
+    "url": "https://vl-lewest.bunyang-alimi.com/"
+  }
+]

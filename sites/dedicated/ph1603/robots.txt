@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ph1603.bunyang-alimi.com/sitemap.xml

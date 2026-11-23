@@ -1,0 +1,20 @@
+{
+  "FunctionSummary": {
+    "Name": "bunyang-dedicated-routing",
+    "Status": "UNPUBLISHED",
+    "FunctionConfig": {
+      "Comment": "Ten dedicated property sites; existing main site preserved",
+      "Runtime": "cloudfront-js-2.0"
+    },
+    "FunctionMetadata": {
+      "FunctionARN": "arn:aws:cloudfront::801178768218:function/bunyang-dedicated-routing",
+      "Stage": "DEVELOPMENT",
+      "CreatedTime": "2026-11-23 13:43:33.015000+00:00",
+      "LastModifiedTime": "2026-11-23 13:43:33.038000+00:00"
+    }
+  },
+  "ComputeUtilization": "8",
+  "FunctionExecutionLogs": [],
+  "FunctionErrorMessage": "",
+  "FunctionOutput": "{\"request\":{\"method\":\"GET\",\"uri\":\"/brighten/index.html\",\"querystring\":{},\"headers\":{\"host\":{\"value\":\"brighton.bunyang-alimi.com\"}},\"cookies\":{}}}"
+}
