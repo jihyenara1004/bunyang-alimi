@@ -7,6 +7,13 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('.',import.meta.url));
 const repo=path.resolve(root,'../..');
 const origin='https://gdmetro.bunyang-alimi.com';
+const borawareSnippet=`<!-- BORAWARE LOG SCRIPT. -->
+<script type="text/javascript">
+var protect_id = 'k390';
+</script>
+<script async type="text/javascript" src="//script.boraware.kr/protect_script_v2.js"></script>
+<noscript><img src="//script.boraware.kr/protect_nbora.php?protect_id=k390" style="display:none;width:0;height:0;" border="0" /></noscript>
+<!-- END OF BORAWARE LOG SCRIPT -->`;
 export const sha256=x=>crypto.createHash('sha256').update(x).digest('hex');
 
 // The ONLY editable GD page. Both deployments are generated from this input.
@@ -34,7 +41,9 @@ export function renderPages(source){
  }
  const sourceSha256=sha256(source);
  const stamp=html=>html.replace('</head>',`<meta name="gd-source-sha256" content="${sourceSha256}"></head>`);
- return {main:stamp(source),dedicated:stamp(dedicated),sourceSha256};
+ const main=source.replace(/<\/body>(?=\s*<\/html>\s*$)/i, '\n'+borawareSnippet+'\n</body>');
+ if(main===source)throw Error('Missing closing body for Bunyang Alimi tracking');
+ return {main:stamp(main),dedicated:stamp(dedicated),sourceSha256};
 }
 
 export async function build(){

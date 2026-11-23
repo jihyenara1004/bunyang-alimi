@@ -22,6 +22,8 @@ for(const name of ['main','dedicated']){
  assert.deepEqual(original[name].match(/<form\b[\s\S]*?<\/form>/g),source.match(/<form\b[\s\S]*?<\/form>/g));
  assert(!original[name].includes('detail-popup-layer'));
 }
+assert.equal((original.main.match(/protect_script_v2\.js/g) ?? []).length, 1, 'Install Boraware once on the registered portal');
+assert(!original.dedicated.includes('protect_script_v2.js'), 'The dedicated domain uses separate Boraware registration');
 assert.equal(original.sourceSha256,sha256(source));
 assert(original.main.includes('<meta property="og:site_name" content="분양알리미">'));
 assert(original.dedicated.includes('<meta property="og:site_name" content="GD메트로타워">'));
