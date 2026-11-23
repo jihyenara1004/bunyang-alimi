@@ -1,10 +1,7 @@
 {
-  "release": "20261122T162426Z-617e90bb",
-  "sourceSha256": "b1075babe203af07ea39c3f470cd38edc9c0707bc1b486ae60657c5a42482eb8",
+  "release": "20261123T155646Z-842616b3",
+  "sourceSha256": "78e183039b0d67786e10ed85a2aad87d43c40d25a591f6b9cc191d00b781188e",
   "changed": [
-    "bunyang-alimi-site-801178768218/outputs/portal/assets/gd-intro-day-20261123.png",
-    "bunyang-alimi-site-801178768218/outputs/portal/assets/gd-intro-night-20261123.jpg",
-    "bunyang-alimi-site-801178768218/outputs/portal/assets/gd-intro-wide-20261123.jpg",
     "bunyang-alimi-site-801178768218/gdmetro/index.html",
     "bunyang-alimi-site-801178768218/outputs/portal/properties/gdmetro.html",
     "gdmetro-site-801178768218/index.html"
@@ -12,7 +9,7 @@
   "invalidations": [
     {
       "distribution": "E32LEWGSB3SNIZ",
-      "id": "IRWMXZ00A7Y6HW0QE5U8JTJM7",
+      "id": "IA2V1F8YAMTCUHR5LNE1GQA0F6",
       "paths": [
         "/gdmetro",
         "/gdmetro/*",
@@ -22,21 +19,17 @@
     },
     {
       "distribution": "E3M5DDZ45DY2F9",
-      "id": "I5TATVQS2Z4Z7HLOMXY30QX0EU",
+      "id": "I3NZUAP0PW6JP6K07R8U77C3B1",
       "paths": [
         "/",
         "/index.html*"
       ]
     }
   ],
-  "status": "deployed-verified",
+  "status": "uploaded-cache-refresh-pending",
   "unrelatedObjectsUnchanged": true,
   "unrelatedObjectCount": {
-    "bunyang-alimi-site-801178768218": 878,
+    "bunyang-alimi-site-801178768218": 921,
     "gdmetro-site-801178768218": 3
-  },
-  "invalidationStates": [
-    "Completed",
-    "Completed"
-  ]
+  }
 }

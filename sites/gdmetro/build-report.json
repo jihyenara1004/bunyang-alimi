@@ -1,6 +1,6 @@
 {
   "source": "sites/gdmetro/source.html",
-  "sourceSha256": "b1075babe203af07ea39c3f470cd38edc9c0707bc1b486ae60657c5a42482eb8",
+  "sourceSha256": "78e183039b0d67786e10ed85a2aad87d43c40d25a591f6b9cc191d00b781188e",
   "files": [
     {
       "path": "outputs/portal/assets/gd-intro-day-20261123.png",
@@ -39,8 +39,8 @@
       "url": "https://bunyang-alimi.com/gdmetro/",
       "kind": "html",
       "contentType": "text/html; charset=utf-8",
-      "sha256": "8c2c051e23a24af86571986c827243f84517b0f488600d5eee64b9293048cd71",
-      "bytes": 40874
+      "sha256": "b20e640c448e0bb0afbf7a0d7d257b404529af911be4b2a552b051fcac20656d",
+      "bytes": 43023
     },
     {
       "path": "outputs/portal/properties/gdmetro.html",
@@ -49,8 +49,8 @@
       "url": "https://bunyang-alimi.com/outputs/portal/properties/gdmetro.html",
       "kind": "html",
       "contentType": "text/html; charset=utf-8",
-      "sha256": "8c2c051e23a24af86571986c827243f84517b0f488600d5eee64b9293048cd71",
-      "bytes": 40874
+      "sha256": "b20e640c448e0bb0afbf7a0d7d257b404529af911be4b2a552b051fcac20656d",
+      "bytes": 43023
     },
     {
       "path": "sites/gdmetro/site/index.html",
@@ -59,8 +59,8 @@
       "url": "https://gdmetro.bunyang-alimi.com/",
       "kind": "html",
       "contentType": "text/html; charset=utf-8",
-      "sha256": "e25dffe520f0a79e7951740ef2e516b091eff7d8994486f15c6cb04ef7d1e438",
-      "bytes": 43597
+      "sha256": "380daaf9d8da08d1c2f20746cdbd96ec4d23a9d61acb1c69674b2170753e399f",
+      "bytes": 45746
     }
   ]
 }
