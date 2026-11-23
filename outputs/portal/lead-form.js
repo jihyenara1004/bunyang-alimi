@@ -124,3 +124,17 @@ if(viewport&&matchMedia('(max-width: 760px), (pointer: coarse)').matches){
 })();
 
 // END GENERATED SHARED QUICK ACTIONS
+
+/* boraware-restore-k390: shared protection for bunyang-alimi sites. */
+(function () {
+  if (!/(^|\.)bunyang-alimi\.com$/i.test(location.hostname)) return;
+  if (document.querySelector('script[src*="script.boraware.kr/protect_script"]')) return;
+  window.protect_id = 'k390';
+  var style = document.createElement('style');
+  style.textContent = '#bora-message-check{top:130px!important;bottom:auto!important;}@media(max-width:767px){#bora-message-check{left:12px!important;}}';
+  document.head.appendChild(style);
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://script.boraware.kr/protect_script_v2.js';
+  document.head.appendChild(script);
+})();
