@@ -27,3 +27,11 @@
 - PH1603 독립 도메인 `서초ph1603.org`는 이번 전환 대상이 아니다. 분양알리미에 있는 PH1603만 `ph1603.bunyang-alimi.com`으로 연결했다.
 - 기존 GD 전용 사이트와 GD 단일 원본/배포 방식은 그대로 유지한다.
 
+
+
+## 공통 고정 메뉴 — 2026-11-23 사용자 승인
+
+- PC는 관심고객등록·카카오톡·TOP, 모바일은 카카오톡·TOP만 표시한다. 전화상담 고정 버튼은 제외한다.
+- UI 원본은 `outputs/portal/quick-actions.js`; `node scripts/build-quick-actions.mjs`로 공통 `lead-form.js`의 생성 구간을 갱신한다. 예약 처리 코드는 그대로 둔다.
+- 서초 PH1603 독립사이트는 사용자가 별도로 그대로 두라고 답변했으므로 이 공통 변경의 대상이 아니다.
+- 브라이튼의 정확한 전용 주소는 `https://brighten.bunyang-alimi.com/`이다. `brighton`은 호환용 자동 이동 주소다.

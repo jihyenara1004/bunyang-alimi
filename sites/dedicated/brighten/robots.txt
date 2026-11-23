@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://brighton.bunyang-alimi.com/sitemap.xml
+Sitemap: https://brighten.bunyang-alimi.com/sitemap.xml

@@ -4,7 +4,7 @@
 
 ## 수정 원본
 
-`sites.json`의 각 `id`에 해당하는 루트 `<id>/index.html`이 해당 현장의 유일한 HTML 수정 원본입니다. 예: 브라이튼은 `brighten/index.html`, 전용 주소는 `https://brighton.bunyang-alimi.com/`입니다.
+`sites.json`의 각 `id`에 해당하는 루트 `<id>/index.html`이 해당 현장의 유일한 HTML 수정 원본입니다. 예: 브라이튼은 `brighten/index.html`, 전용 주소는 `https://brighten.bunyang-alimi.com/`입니다.
 
 - 전용 도메인 `/` 요청은 CloudFront 함수가 같은 S3 `<id>/index.html` 객체로 내부 연결합니다. 별도 사이트 사본을 만들지 않습니다.
 - 기존 `/<id>/`, `/<id>/index.html`, `/properties/<id>.html`, `/outputs/portal/properties/<id>.html`은 새 주소로 301 이동합니다. 검색어·광고 매개변수를 보존하며 브라우저는 해시를 유지합니다.
@@ -33,3 +33,10 @@
 - 10개 전용 사이트의 제목, canonical, 현장별 예약 폼, 이름·연락처·필수 동의 항목을 브라우저에서 확인.
 - S3 배포 파일 45개 SHA-256 일치. CloudFront Deployed, 캐시 무효화 Completed.
 - 실제 고객 정보 제출은 하지 않았습니다.
+
+
+## 후속 수정
+
+브라이튼 영문 주소는 **brighten**으로 바로잡았습니다. `brighton.bunyang-alimi.com`은 오타 호환용 301 이동 주소입니다. 최초 migration 기록은 당시 이력을 보존하므로 현재 주소는 `sites.json`을 기준으로 확인합니다.
+
+사용자 승인된 PC·모바일 공통 고정 버튼은 `outputs/portal/quick-actions.js`에서 관리하며 `scripts/build-quick-actions.mjs`로 공통 접수 스크립트에 포함합니다. 기존 `mobile-cta`나 노란 카카오톡 버튼을 따로 복원하지 마세요.

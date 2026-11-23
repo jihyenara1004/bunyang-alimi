@@ -1,0 +1,245 @@
+{
+  "hashMismatches": [],
+  "files": 75,
+  "pageChecks": [
+    {
+      "path": "baekwoon/index.html",
+      "url": "https://bunyang-alimi.com/baekwoon/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "bluming/index.html",
+      "url": "https://bunyang-alimi.com/bluming/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "brighten/index.html",
+      "url": "https://brighten.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "brownstone/index.html",
+      "url": "https://bunyang-alimi.com/brownstone/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "byeolnae/index.html",
+      "url": "https://byeolnae.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "celstone/index.html",
+      "url": "https://bunyang-alimi.com/celstone/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "clav60/index.html",
+      "url": "https://bunyang-alimi.com/clav60/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "deokgye/index.html",
+      "url": "https://bunyang-alimi.com/deokgye/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "detre/index.html",
+      "url": "https://bunyang-alimi.com/detre/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "dk/index.html",
+      "url": "https://dkvalleyview.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "gdmetro/index.html",
+      "url": "https://bunyang-alimi.com/gdmetro/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "gochon/index.html",
+      "url": "https://gochon.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "gwacheon/index.html",
+      "url": "https://bunyang-alimi.com/gwacheon/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "hanam/index.html",
+      "url": "https://bunyang-alimi.com/hanam/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "hwaseo/index.html",
+      "url": "https://bunyang-alimi.com/hwaseo/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "index.html",
+      "url": "https://bunyang-alimi.com/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "insignia-retail/index.html",
+      "url": "https://bunyang-alimi.com/insignia-retail/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "insignia/index.html",
+      "url": "https://insignia.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "kaive/index.html",
+      "url": "https://bunyang-alimi.com/kaive/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "lewest/index.html",
+      "url": "https://lewest.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "luca831/index.html",
+      "url": "https://luca831.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "onam/index.html",
+      "url": "https://bunyang-alimi.com/onam/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "parkside/index.html",
+      "url": "https://bunyang-alimi.com/parkside/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "ph1603/index.html",
+      "url": "https://ph1603.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "raon/index.html",
+      "url": "https://bunyang-alimi.com/raon/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "riverfront/index.html",
+      "url": "https://bunyang-alimi.com/riverfront/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "roche/index.html",
+      "url": "https://bunyang-alimi.com/roche/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "sangdong/index.html",
+      "url": "https://bunyang-alimi.com/sangdong/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "sharphigh/index.html",
+      "url": "https://bunyang-alimi.com/sharphigh/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "sites/gdmetro/site/index.html",
+      "url": "https://gdmetro.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "starsella/index.html",
+      "url": "https://bunyang-alimi.com/starsella/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "thegrid/index.html",
+      "url": "https://thegrid.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "theraum/index.html",
+      "url": "https://bunyang-alimi.com/theraum/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "unjeong/index.html",
+      "url": "https://bunyang-alimi.com/unjeong/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "vl-lewest/index.html",
+      "url": "https://vl-lewest.bunyang-alimi.com/",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "wonjong/index.html",
+      "url": "https://bunyang-alimi.com/wonjong/index.html",
+      "status": 200,
+      "version": true
+    },
+    {
+      "path": "zienheim/index.html",
+      "url": "https://bunyang-alimi.com/zienheim/index.html",
+      "status": 200,
+      "version": true
+    }
+  ],
+  "invalidations": [
+    {
+      "distribution": "E32LEWGSB3SNIZ",
+      "id": "I56GZLYZ2AOCEYI608VU68AXP4",
+      "status": "Completed"
+    },
+    {
+      "distribution": "E3M5DDZ45DY2F9",
+      "id": "I7LLSZ4Z2EQ7DDHWHRE40GA4HA",
+      "status": "Completed"
+    },
+    {
+      "distribution": "E32LEWGSB3SNIZ",
+      "id": "IAKW01ZHLZFNJSQ57231SAROAR",
+      "status": "Completed"
+    }
+  ]
+}
